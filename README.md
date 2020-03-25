@@ -1,6 +1,3 @@
-[![Build Status](https://travis-ci.com/npeleg/asdf.svg?branch=master)](https://travis-ci.com/npeleg/asdf)
-![coverage](https://codecov.io/gh/npeleg/asdf/branch/master/graph/badge.svg)
-
 # Asdf
 Welcome to my Advanced System Design Final (ASDF) project!
 Here I will present instructions for installation and basic usage.
