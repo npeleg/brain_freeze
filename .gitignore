@@ -1,6 +1,6 @@
 .env/
 .pytest_cache/
 docs/build/
-local_tests/
+**/local_tests
 .mind.gz
 .mind
