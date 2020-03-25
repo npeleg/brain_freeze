@@ -1,6 +1,6 @@
 import sys
 import click
-import asdF
+import final
 
 
 @click.group()
@@ -12,7 +12,7 @@ def main():
 @click.argument('path', type=click.STRING)
 def read_sample(path):
     try:
-        reader = asdF.Reader(path)
+        reader = final.Reader(path)
         print(reader.user)
         for snapshot in reader:
             print(snapshot)
@@ -28,7 +28,7 @@ def read_sample(path):
 def client_upload_thought(address, user_id, thought):
     try:
         ip, port = address.split(':')
-        asdF.upload_thought((ip, int(port)), int(user_id), thought)
+        final.upload_thought((ip, int(port)), int(user_id), thought)
         print('done.')
     except Exception as error:
         print(f'Error: {error}')
@@ -41,7 +41,7 @@ def client_upload_thought(address, user_id, thought):
 def server_run_server(address, data_dir):
     try:
         ip, port = address.split(':')
-        asdF.run_server((ip, int(port)), data_dir)
+        final.run_server((ip, int(port)), data_dir)
     except Exception as error:
         print(f'Error: {error}')
         return 1
@@ -53,7 +53,7 @@ def server_run_server(address, data_dir):
 def web_run_webserver(address, data_dir):
     try:
         ip, port = address.split(':')
-        asdF.run_webserver((ip, int(port)), data_dir)
+        final.run_webserver((ip, int(port)), data_dir)
     except Exception as error:
         print(f'Error: {error}')
         return 1
