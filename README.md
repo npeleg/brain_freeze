@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/npeleg/final.svg?branch=master)](https://travis-ci.com/npeleg/final)
+
 # Asdf
 Welcome to my Advanced System Design Final (ASDF) project!
 Here I will present instructions for installation and basic usage.
