@@ -1,0 +1,4 @@
+Click==7.0
+pytest==5.3.0
+pytest-cov==2.8.1
+codecov
