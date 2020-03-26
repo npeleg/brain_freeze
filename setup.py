@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name = 'asdF',
+    name = 'final',
     version = '0.1.0',
     author = 'Peleg Neufeld',
     description = 'An example package.',
