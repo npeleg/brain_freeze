@@ -5,4 +5,5 @@ docs/build/
 **/lib
 **/bin
 **/include
+**/final.egg-info
 *.gz
