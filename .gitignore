@@ -2,4 +2,7 @@
 .pytest_cache/
 docs/build/
 **/local_tests
+**/lib
+**/bin
+**/include
 *.gz
