@@ -1,3 +1,5 @@
+.coverage
+.coverage.*
 .env/
 .pytest_cache/
 docs/build/
