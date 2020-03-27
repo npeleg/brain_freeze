@@ -7,5 +7,4 @@ docs/build/
 **/lib
 **/bin
 **/include
-*.egg-info/
 *.gz
