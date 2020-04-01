@@ -13,7 +13,8 @@ def main():
 def read_sample(path):
     try:
         reader = final.Reader(path)
-        print(reader.user)
+        print(f"printing user details:\n{reader.user}")
+        print("printing snapshots:\n")
         for snapshot in reader:
             print(snapshot)
     except Exception as error:
@@ -21,14 +22,14 @@ def read_sample(path):
         return 1
 
 
-@main.command('upload_thought')
+@main.command('upload_sample')
 @click.argument('address', type=click.STRING)
 @click.argument('user_id', type=click.INT)
 @click.argument('thought', type=click.STRING)
-def client_upload_thought(address, user_id, thought):
+def client_upload_sample(address, user_id, thought):
     try:
         ip, port = address.split(':')
-        final.upload_thought((ip, int(port)), int(user_id), thought)
+        final.upload_sample((ip, int(port)), int(user_id))
         print('done.')
     except Exception as error:
         print(f'Error: {error}')

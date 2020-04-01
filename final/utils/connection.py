@@ -3,14 +3,15 @@ import struct
 
 
 class Connection:
-    def __init__(self, socket):
-        self.socket = socket
+    def __init__(self, sock):
+        self.socket = sock
 
     def __repr__(self):
-        return f"<Connection from {str(self.socket.getsockname()[0])}:{str(self.socket.getsockname()[1])} to {str(self.socket.getpeername()[0])}:{str(self.socket.getpeername()[1])}>"
+        return f"<Connection from {str(self.socket.getsockname()[0])}:{str(self.socket.getsockname()[1])}" \
+               f"to {str(self.socket.getpeername()[0])}:{str(self.socket.getpeername()[1])}>"
 
     def send_message(self, data):
-        data_length = struct.pack('I', struct.calcsize(data))
+        data_length = struct.pack('I', len(data))
         self.socket.sendall(data_length + data)
 
     def receive_message(self):
@@ -35,6 +36,7 @@ class Connection:
             msg += received
         if len(msg) < msg_length:
             raise Exception("Connection closed before all data received")
+
         return msg
 
     def close(self):

@@ -4,18 +4,17 @@ import json
 class PoseParser:
     fields = ['translation', 'rotation']
 
-    def parse_translation(context, snapshot):
-        context.save('translation.json', json.dumps(dict(
-            x=snapshot.pose.translation.x,
-            y=snapshot.pose.translation.y,
-            z=snapshot.pose.translation.z,
-        )))
+    @classmethod
+    def parse_translation(cls, context, snapshot):
+        f = {'x': snapshot.pose.translation[0], 'y': snapshot.pose.translation[1],
+             'z': snapshot.pose.translation[2]}
+        context.save('translation.json', json.dumps(f))
 
-    def parse_rotation(context, snapshot):
+    @classmethod
+    def parse_rotation(cls, context, snapshot):
         context.save('rotation.json', json.dumps(dict(
-            x=snapshot.pose.rotation.x,
-            y=snapshot.pose.rotation.y,
-            z=snapshot.pose.rotation.z,
-            w=snapshot.pose.rotation.w,
+            x=snapshot.pose.rotation[0],
+            y=snapshot.pose.rotation[1],
+            z=snapshot.pose.rotation[2],
+            w=snapshot.pose.rotation[3],
         )))
-

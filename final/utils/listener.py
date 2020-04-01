@@ -11,7 +11,8 @@ class Listener:
         self.socket = None
 
     def __repr__(self):
-        return f"Listener(port={str(self.port)}, host='{self.host}', backlog={str(self.backlog)}, reuseaddr={str(self.reuseaddr)})"
+        return f"Listener(port={str(self.port)}, host='{self.host}'," \
+               f"backlog={str(self.backlog)}, reuseaddr={str(self.reuseaddr)})"
 
     def start(self):
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

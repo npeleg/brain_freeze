@@ -1,7 +1,11 @@
+import os
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import gzip
 import struct
-from . import reader_pb
-from .utils.protocol import User, Snapshot
+from final import reader_pb
+from final.utils.protocol import User, Snapshot
 
 
 def _read_user_data(file):
@@ -19,9 +23,9 @@ def get_user_info(path):
     user = reader_pb.User()
     user.parse_from_bytes(user_message)
     _gender = User.Gender.OTHER
-    if user.gender.value == 0:
+    if user.gender == 0:
         _gender = User.Gender.MALE
-    elif user.gender.value == 1:
+    elif user.gender == 1:
         _gender = User.Gender.FEMALE
     return User(user.user_id, user.username, user.birthday, _gender)
 
@@ -33,7 +37,8 @@ def _create_protocol_snapshot_from_protobuf(snapshot):
     pose = Snapshot.Pose(translation, rotation)
     color_image = Snapshot.ColorImage(snapshot.color_image.width, snapshot.color_image.height,
                                       snapshot.color_image.data)
-    depth_image = Snapshot.DepthImage(1, 2, 3)
+    depth_image = Snapshot.DepthImage(snapshot.depth_image.width, snapshot.depth_image.height,
+                                      snapshot.depth_image.data)
     feelings = Snapshot.Feelings(snapshot.feelings.hunger, snapshot.feelings.thirst,
                                  snapshot.feelings.exhaustion, snapshot.feelings.happiness)
     return Snapshot(timestamp, pose, color_image, depth_image, feelings)
@@ -58,3 +63,10 @@ class Reader:
                 protocol_snapshot = _create_protocol_snapshot_from_protobuf(snapshot)
                 yield protocol_snapshot
                 snapshot_size = file.read(struct.calcsize('I'))
+
+
+reader = Reader("../sample.mind.gz")
+for snapshot in reader:
+    print(snapshot)
+    assert 1 == 2
+    break

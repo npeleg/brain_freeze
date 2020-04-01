@@ -1,6 +1,6 @@
 import enum
 import time
-from . import protocol_layer_pb2
+from final.utils import protocol_pb
 
 
 class User:
@@ -13,34 +13,40 @@ class User:
         self.user_id = user_id
         self.username = username
         self.birthday = birthday
-        _gender = 'OTHER'
-        if gender == 0:
-            _gender = 'MALE'
-        elif gender == 1:
-            _gender = 'FEMALE'
-        self.gender = User.Gender[_gender]
+        self.gender = gender
 
     def __repr__(self):
-        dt = time.strftime('%Y-%m-%d_%H:%M:%S', time.localtime(self.birthday))
-        return f'user {self.user_id}: {self.username}, born {self.birthday} ({self.gender.name})'
+        dt = time.strftime('%Y-%m-%d_%H:%M:%S-%f', time.localtime(self.birthday / 1000))
+        return f'user {self.user_id}: {self.username}, born {dt} ({self.gender.name})'
 
     def serialize(self):
-        user_message = protocol_layer_pb2.UserP()
+        print("serialize user:\n" + self.__repr__())  # TODO
+        user_message = protocol_pb.UserP()
         user_message.user_id = self.user_id
         user_message.username = self.username
         user_message.birthday = self.birthday
-        user_message.gender = self.gender
-        return user_message.SerializeToString()
+        _gender = protocol_pb.UserP.Gender.OTHER
+        if self.gender == User.Gender.MALE:
+            _gender = protocol_pb.UserP.Gender.MALE
+        elif self.gender == User.Gender.FEMALE:
+            _gender = protocol_pb.UserP.Gender.FEMALE
+        user_message.gender = _gender
+        return user_message.encode_to_bytes()
 
     @classmethod
     def deserialize(cls, data):
-        user = protocol_layer_pb2.UserP()
-        user.ParseFromString(data)
+        user = protocol_pb.UserP()
+        user.parse_from_bytes(data)
         user_id = user.user_id
         username = user.username
         birthday = user.birthday
-        gender = user.gender
-        return User(user_id, username, birthday, gender)
+        _gender = User.Gender.OTHER
+        if user.gender == protocol_pb.UserP.Gender.MALE:
+            _gender = User.Gender.MALE
+        elif user.gender == protocol_pb.UserP.Gender.FEMALE:
+            _gender = User.Gender.FEMALE
+        print("deserialize user:\n" + User(user_id, username, birthday, _gender).__repr__())  # TODO
+        return User(user_id, username, birthday, _gender)
 
 
 class Config:
@@ -48,25 +54,26 @@ class Config:
         self.supported_fields = supported_fields
 
     def serialize(self):
-        config_message = protocol_layer_pb2.ConfigP()
+        print("serialize config:\n" + str(self.supported_fields))  # TODO
+        config_message = protocol_pb.ConfigP()
         for field in self.supported_fields:
-            to_add = config_message.supported_fields.add()
-            to_add = field
-        return config_message.SerializeToString()
+            config_message.field.append(field)
+        return config_message.encode_to_bytes()
 
     @classmethod
     def deserialize(cls, data):
         supported_fields = []
-        config = protocol_layer_pb2.ConfigP()
-        config.ParseFromString(data)
-        for field in config.supported_fields:
+        config = protocol_pb.ConfigP()
+        config.parse_from_bytes(data)
+        for field in config.field:
             supported_fields.append(field)
+        print("deserialize config:\n" + str(supported_fields))  # TODO
         return Config(supported_fields)
 
 
 class Snapshot:
     def __init__(self, datetime, pose, color_image, depth_image, feelings):
-        self.datetime = datetime  # TODO need to convert from milliseconds to seconds
+        self.datetime = datetime
         self.pose = pose
         self.color_image = color_image
         self.depth_image = depth_image
@@ -97,17 +104,18 @@ class Snapshot:
             self.happiness = happiness
 
     def __repr__(self):
-        dt = time.strftime('%Y-%m-%d_%H:%M:%S', time.localtime(self.datetime))
-        return f'{dt}: Pose is {self.pose.translation}, {self.pose.rotation}\n \
-              Color Image dimensions: {self.color_image.width}X{self.color_image.height}\n \
-              Depth Image dimensions: {self.depth_image.width}X{self.depth_image.height}\n \
-              Hunger: {self.feelings.hunger}, Thirst: {self.feelings.thirst}, Exhaustion: {self.feelings.exhaustion} \
-              Happiness: {self.feelings.happiness}'
+        dt = time.strftime('%Y-%m-%d_%H-%M-%S', time.localtime(self.datetime / 1000))
+        return f'{dt}: Translation is {self.pose.translation}\n \
+                        Rotation is {self.pose.rotation}\n \
+                        Color Image dimensions: {self.color_image.width}X{self.color_image.height}\n \
+                        Depth Image dimensions: {self.depth_image.width}X{self.depth_image.height}\n \
+                        Hunger: {self.feelings.hunger}, Thirst: {self.feelings.thirst}, \
+                        Exhaustion: {self.feelings.exhaustion}, Happiness: {self.feelings.happiness}'
 
     def serialize(self):
-        snapshot_message = protocol_layer_pb2.SnapshotP()
+        snapshot_message = protocol_pb.SnapshotP()
         snapshot_message.datetime = self.datetime
-
+        print("serialize snapshot:\n" + str(self.pose.translation))  # TODO
         snapshot_message.PoseP.TranslationP.x = self.pose.translation[0]
         snapshot_message.PoseP.TranslationP.y = self.pose.translation[1]
         snapshot_message.PoseP.TranslationP.z = self.pose.translation[2]
@@ -129,27 +137,28 @@ class Snapshot:
         snapshot_message.FeelingsP.exhaustion = self.feelings.exhaustion
         snapshot_message.FeelingsP.happiness = self.feelings.happiness
 
-        return snapshot_message.SerializeToString()
+        return snapshot_message.encode_to_bytes()
 
     @classmethod
     def deserialize(cls, data):
-        snapshot_message = protocol_layer_pb2.SnapshotP()
-        snapshot_message.ParseFromString(data)
+        snapshot_message = protocol_pb.SnapshotP()
+        snapshot_message.parse_from_bytes(data)
 
         datetime = snapshot_message.datetime
 
         translation = (snapshot_message.PoseP.TranslationP.x, snapshot_message.PoseP.TranslationP.y,
                        snapshot_message.PoseP.TranslationP.z)
+        print("deserialize snapshot:\n" + str(translation))  # TODO
         rotation = (snapshot_message.PoseP.RotationP.x, snapshot_message.PoseP.RotationP.y,
                     snapshot_message.PoseP.RotationP.z, snapshot_message.PoseP.RotationP.w)
 
         color_width = snapshot_message.ColorImageP.width
         color_height = snapshot_message.ColorImageP.height
-        color_pixels = snapshot_message.ColorImageP.pixels
+        color_pixels = snapshot_message.ColorImageP.data
 
         depth_width = snapshot_message.DepthImageP.width
         depth_height = snapshot_message.DepthImageP.height
-        depth_pixels = snapshot_message.DepthImageP.pixels
+        depth_pixels = snapshot_message.DepthImageP.data
 
         hunger = snapshot_message.FeelingsP.hunger
         thirst = snapshot_message.FeelingsP.thirst
