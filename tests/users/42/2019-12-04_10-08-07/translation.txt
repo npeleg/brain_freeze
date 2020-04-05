@@ -1,5 +1,6 @@
-2019-12-04_10-08-07: Translation is (-0.20727911591529846, 0.017360065132379532, 0.957891047000885)
-                         Rotation is (-0.15349750937485307, -0.4019578492768366, -0.08094490656702721, 0.8990641379352821)
-                         Color Image dimensions: 0X0
-                         Depth Image dimensions: 0X0
-                         Hunger: 0.0, Thirst: 0.0,                         Exhaustion: 0.0, Happiness: 0.0
+2019-12-04_10-08-07:
+Translation is (0.4873843491077423, 0.007090016733855009, -1.1306129693984985)
+Rotation is (-0.10888676356214629, -0.26755994585035286, -0.021271118915446748, 0.9571326384559261)
+Color Image dimensions: 0X0
+Depth Image dimensions: 0X0
+Hunger: 0.0, Thirst: 0.0, Exhaustion: 0.0, Happiness: 0.0

@@ -1,7 +1,7 @@
 import gzip
 import struct
 from . import reader_pb
-from .utils.protocol import User, Snapshot
+from .utils import protocol
 
 
 def _read_user_data(file):
@@ -18,25 +18,20 @@ def get_user_info(path):
         user_message = _read_user_data(file)
     user = reader_pb.User()
     user.parse_from_bytes(user_message)
-    _gender = User.Gender.OTHER
-    if user.gender.value == 0:
-        _gender = User.Gender.MALE
-    elif user.gender.value == 1:
-        _gender = User.Gender.FEMALE
-    return User(user.user_id, user.username, user.birthday, _gender)
+    return protocol.init_protocol_user(user.user_id, user.username, user.birthday, user.gender)
 
 
-def _create_protocol_snapshot_from_protobuf(snapshot):
-    timestamp = snapshot.datetime
-    translation = (snapshot.pose.translation.x, snapshot.pose.translation.y, snapshot.pose.translation.z)
-    rotation = (snapshot.pose.rotation.x, snapshot.pose.rotation.y, snapshot.pose.rotation.z, snapshot.pose.rotation.w)
-    pose = Snapshot.Pose(translation, rotation)
-    color_image = Snapshot.ColorImage(snapshot.color_image.width, snapshot.color_image.height,
-                                      snapshot.color_image.data)
-    depth_image = Snapshot.DepthImage(1, 2, 3)
-    feelings = Snapshot.Feelings(snapshot.feelings.hunger, snapshot.feelings.thirst,
-                                 snapshot.feelings.exhaustion, snapshot.feelings.happiness)
-    return Snapshot(timestamp, pose, color_image, depth_image, feelings)
+def get_snapshot_info(snapshot_message):
+    snapshot = reader_pb.Snapshot()
+    snapshot.parse_from_bytes(snapshot_message)
+    return protocol.init_protocol_snapshot(snapshot.datetime, snapshot.pose.translation.x,
+                                           snapshot.pose.translation.y, snapshot.pose.translation.z,
+                                           snapshot.pose.rotation.x, snapshot.pose.rotation.y,
+                                           snapshot.pose.rotation.z, snapshot.pose.rotation.w,
+                                           1, 2, 3,  # TODO
+                                           1, 2, 3,  # TODO
+                                           snapshot.feelings.hunger, snapshot.feelings.thirst,
+                                           snapshot.feelings.exhaustion, snapshot.feelings.happiness)
 
 
 class Reader:
@@ -53,8 +48,6 @@ class Reader:
                 snapshot_message = file.read(snapshot_size)
                 if not snapshot_message:
                     raise Exception("Illegal file format or problem in reading")
-                snapshot = reader_pb.Snapshot()
-                snapshot.parse_from_bytes(snapshot_message)
-                protocol_snapshot = _create_protocol_snapshot_from_protobuf(snapshot)
+                protocol_snapshot = get_snapshot_info(snapshot_message)
                 yield protocol_snapshot
                 snapshot_size = file.read(struct.calcsize('I'))

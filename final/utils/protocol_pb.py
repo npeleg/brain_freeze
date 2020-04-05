@@ -1,5 +1,5 @@
 from protobuf3.message import Message
-from protobuf3.fields import FloatField, UInt64Field, UInt32Field, EnumField, MessageField, StringField, DoubleField, BytesField
+from protobuf3.fields import UInt64Field, StringField, EnumField, FloatField, UInt32Field, BytesField, MessageField, DoubleField
 from enum import Enum
 
 
@@ -38,7 +38,7 @@ UserP.add_field('user_id', UInt64Field(field_number=1, optional=True))
 UserP.add_field('username', StringField(field_number=2, optional=True))
 UserP.add_field('birthday', UInt32Field(field_number=3, optional=True))
 UserP.add_field('gender', EnumField(field_number=4, optional=True, enum_cls=UserP.Gender))
-ConfigP.add_field('field', StringField(field_number=1, repeated=True))
+ConfigP.add_field('supported_fields', StringField(field_number=1, repeated=True))
 SnapshotP.PoseP.TranslationP.add_field('x', DoubleField(field_number=1, optional=True))
 SnapshotP.PoseP.TranslationP.add_field('y', DoubleField(field_number=2, optional=True))
 SnapshotP.PoseP.TranslationP.add_field('z', DoubleField(field_number=3, optional=True))

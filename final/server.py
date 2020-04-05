@@ -20,15 +20,15 @@ class ClientThread(threading.Thread):
         # parsers.load_parsers('./parsers')
 
         # receiving 'user' message from client:
-        user = protocol.User.deserialize(self.client_socket.receive_message())
+        user = protocol.deserialize_user(self.client_socket.receive_message())
 
         # sending 'config' message to client:
         # config = protocol.Config(parsers.get_fields())
-        config = protocol.Config({'translation', 'rotation'})
-        self.client_socket.send_message(config.serialize())
+        config = protocol.init_protocol_config({'pose'})
+        self.client_socket.send_message(protocol.serialize(config))
 
         # receiving 'snapshot' message from client:
-        snapshot = protocol.Snapshot.deserialize((self.client_socket.receive_message()))
+        snapshot = protocol.deserialize_snapshot(self.client_socket.receive_message())
 
         timestamp = time.strftime('%Y-%m-%d_%H-%M-%S', time.localtime(snapshot.datetime / 1000))
         path = self.data_dir / str(user.user_id) / str(timestamp)
@@ -36,7 +36,7 @@ class ClientThread(threading.Thread):
 
         ClientThread.lock.acquire()
         # parsers.parse_fields(context, snapshot)
-        context.save("translation.txt", snapshot.__repr__())
+        context.save("translation.txt", protocol.repr_protocol_snapshot(snapshot))
         ClientThread.lock.release()
 
 
