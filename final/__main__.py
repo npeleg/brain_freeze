@@ -23,13 +23,12 @@ def read_sample(path):
 
 
 @main.command('upload_sample')
-@click.argument('address', type=click.STRING)
-@click.argument('user_id', type=click.INT)
-@click.argument('thought', type=click.STRING)
-def client_upload_sample(address, user_id, thought):
+@click.argument('host', type=click.STRING)
+@click.argument('port', type=click.INT)
+@click.argument('path', type=click.STRING)
+def client_upload_sample(host, port, path):
     try:
-        ip, port = address.split(':')
-        final.upload_sample((ip, int(port)), int(user_id))
+        final.upload_sample((host, int(port)), path)
         print('done.')
     except Exception as error:
         print(f'Error: {error}')
@@ -37,12 +36,12 @@ def client_upload_sample(address, user_id, thought):
 
 
 @main.command('run_server')
-@click.argument('address', type=click.STRING)
+@click.argument('host', type=click.STRING)
+@click.argument('port', type=click.INT)
 @click.argument('data_dir', type=click.STRING)
-def server_run_server(address, data_dir):
+def server_run_server(host, port, data_dir):
     try:
-        ip, port = address.split(':')
-        final.run_server((ip, int(port)), data_dir)
+        final.run_server((host, int(port)), data_dir)
     except Exception as error:
         print(f'Error: {error}')
         return 1

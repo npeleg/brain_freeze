@@ -20,7 +20,6 @@ class User:
         return f'user {self.user_id}: {self.username}, born {dt} ({self.gender.name})'
 
     def serialize(self):
-        print("serialize user:\n" + self.__repr__())  # TODO
         user_message = protocol_pb.UserP()
         user_message.user_id = self.user_id
         user_message.username = self.username
@@ -45,7 +44,6 @@ class User:
             _gender = User.Gender.MALE
         elif user.gender == protocol_pb.UserP.Gender.FEMALE:
             _gender = User.Gender.FEMALE
-        print("deserialize user:\n" + User(user_id, username, birthday, _gender).__repr__())  # TODO
         return User(user_id, username, birthday, _gender)
 
 
@@ -54,7 +52,6 @@ class Config:
         self.supported_fields = supported_fields
 
     def serialize(self):
-        print("serialize config:\n" + str(self.supported_fields))  # TODO
         config_message = protocol_pb.ConfigP()
         for field in self.supported_fields:
             config_message.field.append(field)
@@ -67,7 +64,6 @@ class Config:
         config.parse_from_bytes(data)
         for field in config.field:
             supported_fields.append(field)
-        print("deserialize config:\n" + str(supported_fields))  # TODO
         return Config(supported_fields)
 
 
@@ -115,27 +111,26 @@ class Snapshot:
     def serialize(self):
         snapshot_message = protocol_pb.SnapshotP()
         snapshot_message.datetime = self.datetime
-        print("serialize snapshot:\n" + str(self.pose.translation))  # TODO
-        snapshot_message.PoseP.TranslationP.x = self.pose.translation[0]
-        snapshot_message.PoseP.TranslationP.y = self.pose.translation[1]
-        snapshot_message.PoseP.TranslationP.z = self.pose.translation[2]
-        snapshot_message.PoseP.RotationP.x = self.pose.rotation[0]
-        snapshot_message.PoseP.RotationP.y = self.pose.rotation[1]
-        snapshot_message.PoseP.RotationP.z = self.pose.rotation[2]
-        snapshot_message.PoseP.RotationP.w = self.pose.rotation[3]
+        snapshot_message.pose.translation.x = self.pose.translation[0]
+        snapshot_message.pose.translation.y = self.pose.translation[1]
+        snapshot_message.pose.translation.z = self.pose.translation[2]
+        snapshot_message.pose.rotation.x = self.pose.rotation[0]
+        snapshot_message.pose.rotation.y = self.pose.rotation[1]
+        snapshot_message.pose.rotation.z = self.pose.rotation[2]
+        snapshot_message.pose.rotation.w = self.pose.rotation[3]
 
-        snapshot_message.ColorImageP.width = self.color_image.width
-        snapshot_message.ColorImageP.height = self.color_image.height
-        snapshot_message.ColorImageP.data = self.color_image.pixels
+        snapshot_message.color_image.width = self.color_image.width
+        snapshot_message.color_image.height = self.color_image.height
+        snapshot_message.color_image.data = "abc".encode() if self.color_image.pixels is None else self.color_image.pixels
 
-        snapshot_message.DepthImageP.width = self.depth_image.width
-        snapshot_message.DepthImageP.height = self.depth_image.height
-        snapshot_message.DepthImageP.data = self.depth_image.pixels
+        snapshot_message.depth_image.width = self.depth_image.width
+        snapshot_message.depth_image.height = self.depth_image.height
+        snapshot_message.depth_image.data = 0 if self.color_image.pixels is None else self.color_image.pixels
 
-        snapshot_message.FeelingsP.hunger = self.feelings.hunger
-        snapshot_message.FeelingsP.thirst = self.feelings.thirst
-        snapshot_message.FeelingsP.exhaustion = self.feelings.exhaustion
-        snapshot_message.FeelingsP.happiness = self.feelings.happiness
+        snapshot_message.feelings.hunger = self.feelings.hunger
+        snapshot_message.feelings.thirst = self.feelings.thirst
+        snapshot_message.feelings.exhaustion = self.feelings.exhaustion
+        snapshot_message.feelings.happiness = self.feelings.happiness
 
         return snapshot_message.encode_to_bytes()
 
@@ -146,24 +141,23 @@ class Snapshot:
 
         datetime = snapshot_message.datetime
 
-        translation = (snapshot_message.PoseP.TranslationP.x, snapshot_message.PoseP.TranslationP.y,
-                       snapshot_message.PoseP.TranslationP.z)
-        print("deserialize snapshot:\n" + str(translation))  # TODO
-        rotation = (snapshot_message.PoseP.RotationP.x, snapshot_message.PoseP.RotationP.y,
-                    snapshot_message.PoseP.RotationP.z, snapshot_message.PoseP.RotationP.w)
+        translation = (snapshot_message.pose.translation.x, snapshot_message.pose.translation.y,
+                       snapshot_message.pose.translation.z)
+        rotation = (snapshot_message.pose.rotation.x, snapshot_message.pose.rotation.y,
+                    snapshot_message.pose.rotation.z, snapshot_message.pose.rotation.w)
 
-        color_width = snapshot_message.ColorImageP.width
-        color_height = snapshot_message.ColorImageP.height
-        color_pixels = snapshot_message.ColorImageP.data
+        color_width = snapshot_message.color_image.width
+        color_height = snapshot_message.color_image.height
+        color_pixels = snapshot_message.color_image.data
 
-        depth_width = snapshot_message.DepthImageP.width
-        depth_height = snapshot_message.DepthImageP.height
-        depth_pixels = snapshot_message.DepthImageP.data
+        depth_width = snapshot_message.depth_image.width
+        depth_height = snapshot_message.depth_image.height
+        depth_pixels = snapshot_message.depth_image.data
 
-        hunger = snapshot_message.FeelingsP.hunger
-        thirst = snapshot_message.FeelingsP.thirst
-        exhaustion = snapshot_message.FeelingsP.exhaustion
-        happiness = snapshot_message.FeelingsP.happiness
+        hunger = snapshot_message.feelings.hunger
+        thirst = snapshot_message.feelings.thirst
+        exhaustion = snapshot_message.feelings.exhaustion
+        happiness = snapshot_message.feelings.happiness
 
         return Snapshot(datetime, Snapshot.Pose(translation, rotation),
                         Snapshot.ColorImage(color_width, color_height, color_pixels),

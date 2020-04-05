@@ -36,16 +36,17 @@ class ClientThread(threading.Thread):
 
         ClientThread.lock.acquire()
         # parsers.parse_fields(context, snapshot)
-        print("Snapshot repr is:\n" + snapshot.__repr__())
         context.save("translation.txt", snapshot.__repr__())
         ClientThread.lock.release()
 
 
 def run_server(address, data_dir):
     with Listener(port=address[1], host=address[0]) as listener:
-        client_connection = listener.accept()
-        new_thread = ClientThread(client_connection, data_dir)
-        new_thread.start()
+        while True:
+            client_connection = listener.accept()
+            print("accepted ")
+            new_thread = ClientThread(client_connection, data_dir)
+            new_thread.start()
 
 
 class Parsers:

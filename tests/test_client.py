@@ -14,7 +14,6 @@ DATA_DIR = "./users"
 
 # @pytest.fixture()
 def test_client():
-    print("server is running")
     reader = Reader('../sample.mind.gz')
     print("read user info from file")
     for snapshot in reader:
@@ -25,7 +24,9 @@ def test_client():
             print("established connection")
             connection.send_message(user_message.serialize())
             config = protocol.Config.deserialize(connection.receive_message())
+            # print(snapshot.color_image.pixels)  # TODO delete
             partial_snapshot = snapshot.build_partial_snapshot(config)
+            # print(partial_snapshot.color_image.pixels)  # TODO delete
             connection.send_message(partial_snapshot.serialize())
         break
     path = pathlib.Path(DATA_DIR)
