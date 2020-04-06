@@ -2,7 +2,7 @@ import importlib
 import os
 import pathlib
 import sys
-import time
+from datetime import datetime as dt
 import threading
 from .utils import Listener, protocol
 
@@ -30,7 +30,8 @@ class ClientThread(threading.Thread):
         # receiving 'snapshot' message from client:
         snapshot = protocol.deserialize_snapshot(self.client_socket.receive_message())
 
-        timestamp = time.strftime('%Y-%m-%d_%H-%M-%S', time.localtime(snapshot.datetime / 1000))
+        timestamp = dt.fromtimestamp(snapshot.datetime / 1000)
+        timestamp = timestamp.strftime('%Y-%m-%d_%H-%M-%S.%f')[:-3]
         path = self.data_dir / str(user.user_id) / str(timestamp)
         context = Context(path)
 

@@ -3,9 +3,7 @@ from .utils import Connection, protocol
 
 
 def upload_sample(address, path):
-    print("reading")
     reader = Reader(path)
-    print("read")
     for snapshot in reader:
         user_message = protocol.init_protocol_user(reader.user.user_id, reader.user.username,
                                                    reader.user.birthday, reader.user.gender)

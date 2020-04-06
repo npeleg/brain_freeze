@@ -1,35 +1,39 @@
 import pathlib
-import pytest
-import threading
+import subprocess
 import time
+from datetime import datetime as dt
+from final import client, Reader
+from final.utils import protocol
 
-from final import Reader
-from final.utils import Connection, protocol
 
 ADDRESS = '127.0.0.1', 5000
+SMALL_SAMPLE_PATH = "./utils/small_sample.mind.gz"
 
 
-def test_client():
-    reader = Reader('../sample.mind.gz')
-    print("read user info from file")
-    for snapshot in reader:
-        print("producing user message")
-        user_message = protocol.init_protocol_user(reader.user.user_id, reader.user.username,
-                                                   reader.user.birthday, reader.user.gender)
-        with Connection.connect(*ADDRESS) as connection:
-            print("established connection")
-            connection.send_message(protocol.serialize(user_message))
-            config = protocol.deserialize_config(connection.receive_message())
-            partial_snapshot = protocol.build_partial_snapshot(snapshot, config)
-            connection.send_message(protocol.serialize(partial_snapshot))
-        break
-    path = pathlib.Path(tmp_path)
-    dt = time.strftime('%Y-%m-%d_%H-%M-%S', time.localtime(snapshot.datetime / 1000))
-    path = path / str(reader.user.user_id) / str(dt) / "translation.txt"
-    print(f'Is {str(path)} a file?')
-    print(path.is_file())
-    time.sleep(5)  # waiting for sever to write the file
-    with open(path, 'r') as file:
-        string = file.read()
-        print(string)
-        assert string == protocol.repr_protocol_snapshot(partial_snapshot)
+def capture(command, in_background=False):
+    command = [x.strip("'") for x in command.split(" ")]
+    process = subprocess.Popen(command,
+                               stdout=subprocess.PIPE,
+                               stderr=subprocess.PIPE,
+                               close_fds=in_background)
+    return process
+
+
+def test_upload_sample():
+    server_process = capture("python test_server.py '127.0.0.1' '5000'", in_background=True)
+    time.sleep(5)  # waiting for server
+    client.upload_sample(ADDRESS, SMALL_SAMPLE_PATH)
+    t_reader = Reader(SMALL_SAMPLE_PATH)
+    for snapshot in t_reader:
+        partial_snapshot = protocol.build_partial_snapshot(snapshot, protocol.init_protocol_config(['pose']))
+        timestamp = dt.fromtimestamp(snapshot.datetime / 1000)
+        timestamp = timestamp.strftime('%Y-%m-%d_%H-%M-%S.%f')[:-3]
+        path = pathlib.Path("./users")
+        path = path / str(t_reader.user.user_id) / str(timestamp) / "translation.txt"
+        time.sleep(1)  # waiting for server to write the file
+        with open(path, 'r') as file:
+            assert file.read() == protocol.repr_protocol_snapshot(partial_snapshot)
+    server_process.terminate()
+
+
+test_upload_sample()

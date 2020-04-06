@@ -1,5 +1,9 @@
-import time
+from datetime import datetime as dt
 from final.utils import protocol_pb
+
+
+def serialize(message):
+    return message.encode_to_bytes()
 
 
 # User Functions:
@@ -22,8 +26,9 @@ def init_protocol_user(user_id, username, birthday, gender):
 
 
 def repr_protocol_user(user):
-    dt = time.strftime('%Y-%m-%d_%H:%M:%S-%f', time.localtime(user.birthday / 1000))
-    return f'user {user.user_id}: {user.username}, born {dt} ({user.gender.name})'
+    birthday = dt.fromtimestamp(user.birthday / 1000)
+    birthday = birthday.strftime('%Y-%m-%d')
+    return f'user {user.user_id}: {user.username}, born {birthday} ({user.gender.name})'
 
 
 def deserialize_user(data):
@@ -74,8 +79,9 @@ def init_protocol_snapshot(datetime, t_x, t_y, t_z, r_x, r_y, r_z, r_w,
 
 
 def repr_protocol_snapshot(snapshot):
-    dt = time.strftime('%Y-%m-%d_%H-%M-%S', time.localtime(snapshot.datetime / 1000))
-    return f'{dt}:\n' \
+    timestamp = dt.fromtimestamp(snapshot.datetime / 1000)
+    timestamp = timestamp.strftime('%Y-%m-%d_%H-%M-%S.%f')[:-3]
+    return f'{timestamp}:\n' \
            f'Translation is ({snapshot.pose.translation.x}, {snapshot.pose.translation.y}, ' \
            f'{snapshot.pose.translation.z})\n' \
            f'Rotation is ({snapshot.pose.rotation.x}, {snapshot.pose.rotation.y}, ' \
@@ -124,7 +130,3 @@ def build_partial_snapshot(snapshot, config):
                                   color_width, color_height, color_data,
                                   depth_width, depth_height, depth_data,
                                   hunger, thirst, exhaustion, happiness)
-
-
-def serialize(message):
-    return message.encode_to_bytes()
