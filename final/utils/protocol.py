@@ -51,7 +51,7 @@ def deserialize_config(data):
     return config
 
 
-# Snapshot Functions:
+# Snapshot Functions :
 def init_protocol_snapshot(datetime, t_x, t_y, t_z, r_x, r_y, r_z, r_w,
                            color_width, color_height, color_data,
                            depth_width, depth_height, depth_data,
