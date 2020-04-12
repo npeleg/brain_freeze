@@ -77,3 +77,4 @@ class Context:
         pathlib.Path(self.dir).mkdir(parents=True, exist_ok=True)
         with open(self.dir / filename, 'w') as file:
             file.write(contents)
+        print(pathlib.Path(self.dir / filename).is_file())

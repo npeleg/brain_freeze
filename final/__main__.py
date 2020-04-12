@@ -33,7 +33,6 @@ def read_sample(path):
 def client_upload_sample(host, port, path):
     try:
         final.upload_sample((host, int(port)), path)
-        print('done.')
     except Exception as error:
         print(f'Error: {error}')
         return 1
