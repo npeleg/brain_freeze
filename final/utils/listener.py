@@ -1,5 +1,6 @@
 from . import Connection
 import socket
+import errno
 
 
 class Listener:

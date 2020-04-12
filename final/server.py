@@ -1,9 +1,8 @@
 import importlib
-import os
 import pathlib
+import threading
 import sys
 from datetime import datetime as dt
-import threading
 from .utils import Listener, protocol
 
 
@@ -45,7 +44,6 @@ def run_server(address, data_dir):
     with Listener(port=address[1], host=address[0]) as listener:
         while True:
             client_connection = listener.accept()
-            print("accepted ")
             new_thread = ClientThread(client_connection, data_dir)
             new_thread.start()
 

@@ -3,9 +3,9 @@
 import gzip
 import struct
 
-SAMPLE_PATH = "../sample.mind.gz"
-OUTPUT_PATH = "./small_sample.mind.gz"
-NUM_SNAPSHOTS = 10
+SAMPLE_PATH = "./sample/sample.mind.gz"
+OUTPUT_PATH = "./tests/utils/small_sample.mind.gz"
+NUM_SNAPSHOTS = 5
 
 with gzip.open(SAMPLE_PATH) as file:
     seq = message_size = file.read(struct.calcsize('I'))

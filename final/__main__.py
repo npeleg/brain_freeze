@@ -1,5 +1,9 @@
 import sys
 import click
+import os
+import sys
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import final
 
 
@@ -41,7 +45,7 @@ def client_upload_sample(host, port, path):
 @click.argument('data_dir', type=click.STRING)
 def server_run_server(host, port, data_dir):
     try:
-        final.run_server((host, int(port)), data_dir)
+        final.server.run_server((host, int(port)), data_dir)
     except Exception as error:
         print(f'Error: {error}')
         return 1
