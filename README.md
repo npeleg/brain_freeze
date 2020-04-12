@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.com/npeleg/final.svg?branch=master)](https://travis-ci.com/npeleg/final)
-
+[![codecov](https://codecov.io/gh/npeleg/final/branch/master/graph/badge.svg)](https://codecov.io/gh/npeleg/final)
 
 # Asdf
 Welcome to my Advanced System Design Final (ASDF) project!
