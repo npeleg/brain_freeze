@@ -1,5 +1,5 @@
-from .reader import Reader
-from .utils import Connection, protocol
+from ..reader import Reader
+from ..utils import Connection, protocol
 
 
 def upload_sample(address, path):

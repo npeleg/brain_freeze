@@ -1,5 +1,5 @@
 from datetime import datetime as dt
-from final.utils import protocol_pb
+from . import protocol_pb
 
 
 def serialize(message):
@@ -7,26 +7,17 @@ def serialize(message):
 
 
 # User Functions:
-def get_gender(gender):
-    _gender = protocol_pb.UserP.Gender.OTHER
-    if gender == 0:
-        _gender = protocol_pb.UserP.Gender.MALE
-    elif gender == 1:
-        _gender = protocol_pb.UserP.Gender.FEMALE
-    return _gender
-
-
 def init_protocol_user(user_id, username, birthday, gender):
     user = protocol_pb.UserP()
     user.user_id = user_id
     user.username = username
     user.birthday = birthday
-    user.gender = get_gender(gender)
+    user.gender = gender
     return user
 
 
 def repr_protocol_user(user):
-    birthday = dt.fromtimestamp(user.birthday / 1000)
+    birthday = dt.fromtimestamp(user.birthday)
     birthday = birthday.strftime('%Y-%m-%d')
     return f'user {user.user_id}: {user.username}, born {birthday} ({user.gender.name})'
 

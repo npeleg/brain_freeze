@@ -1,6 +1,6 @@
-from .client import upload_sample
-from .server import run_server
-from .web import run_webserver
+from .client import client
+from .server import server
+from .webserver import web
 from .reader import Reader
 
 

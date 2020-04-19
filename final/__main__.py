@@ -1,4 +1,3 @@
-import sys
 import click
 import os
 import sys
@@ -10,44 +9,6 @@ import final
 @click.group()
 def main():
     pass
-
-
-@main.command('read')
-@click.argument('path', type=click.STRING)
-def read_sample(path):
-    try:
-        reader = final.Reader(path)
-        print(f"printing user details:\n{reader.user}")
-        print("printing snapshots:\n")
-        for snapshot in reader:
-            print(snapshot)
-    except Exception as error:
-        print(f'Error: {error}')
-        return 1
-
-
-@main.command('upload_sample')
-@click.argument('host', type=click.STRING)
-@click.argument('port', type=click.INT)
-@click.argument('path', type=click.STRING)
-def client_upload_sample(host, port, path):
-    try:
-        final.upload_sample((host, int(port)), path)
-    except Exception as error:
-        print(f'Error: {error}')
-        return 1
-
-
-@main.command('run_server')
-@click.argument('host', type=click.STRING)
-@click.argument('port', type=click.INT)
-@click.argument('data_dir', type=click.STRING)
-def server_run_server(host, port, data_dir):
-    try:
-        final.server.run_server((host, int(port)), data_dir)
-    except Exception as error:
-        print(f'Error: {error}')
-        return 1
 
 
 @main.command('run_webserver')
