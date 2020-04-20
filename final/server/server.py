@@ -1,6 +1,7 @@
 import json
 import threading
-from ..message_queue import MessageQueue
+from ..message_queue import MQManager
+from ..parsers import Parsers
 from ..utils import Listener, protocol
 
 
@@ -15,6 +16,7 @@ class ClientThread(threading.Thread):
         user = protocol.deserialize_user(self.client_socket.receive_message())
 
         # sending 'config' message to client:
+        # TODO config = protocol.init_protocol_config(Parsers().get_parsers_names())
         config = protocol.init_protocol_config({'pose'})
         self.client_socket.send_message(protocol.serialize(config))
 
@@ -22,7 +24,8 @@ class ClientThread(threading.Thread):
         snapshot = protocol.deserialize_snapshot(self.client_socket.receive_message())
 
         # publishing user and snapshot data to message queue:
-        message = dict(user_id=user.user_id,
+        message = dict(type='snapshot',
+                       user_id=user.user_id,
                        username=user.username,
                        birthday=user.birthday,
                        gender=user.gender,
@@ -45,9 +48,9 @@ class ClientThread(threading.Thread):
 
 
 def run_server(address, url):
-    mq = MessageQueue(url)
+    message_queue = MQManager(url)
     with Listener(port=address[1], host=address[0]) as listener:
         while True:
             client_connection = listener.accept()
-            new_thread = ClientThread(client_connection, mq)
+            new_thread = ClientThread(client_connection, message_queue)
             new_thread.start()

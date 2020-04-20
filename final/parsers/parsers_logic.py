@@ -5,14 +5,12 @@ import sys
 
 class Parsers:
     def __init__(self):
-        self.parsers = {}
+        self.parsers_dict = {}
         Parsers.load_parsers('.')
-
-    def get_fields(self):  # TODO re-implement according to load_parsers
-        return self.supported_fields.keys()
 
     @classmethod
     def load_parsers(cls, parsers_dir):
+        """ Dynamically imports all the parsers in parsers_dir and inserts them to a dictionary"""
         parsers_dir = pathlib.Path(parsers_dir).absolute()
         sys.path.insert(0, str(parsers_dir.parent))
         for path in parsers_dir.iterdir():
@@ -20,16 +18,10 @@ class Parsers:
                 continue
             importlib.import_module(f'{parsers_dir.name}.{path.stem}', package=parsers_dir.name)
 
+    def get_parsers_names(self):
+        """Return the parsers' names (used to construct a protocol Config message)"""
+        return self.parsers_dict.keys()
+
     def parse_fields(self, context, snapshot):
-        for field in self.supported_fields:
-            self.supported_fields[field](context, snapshot)
-
-
-class Context:
-    def __init__(self, dir):
-        self.dir = dir
-
-    def save(self, filename, contents):
-        pathlib.Path(self.dir).mkdir(parents=True, exist_ok=True)
-        with open(self.dir / filename, 'w') as file:
-            file.write(contents)
+        for field in self.parsers_dict:
+            self.parsers_dict[field](context, snapshot)

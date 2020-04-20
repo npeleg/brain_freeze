@@ -1,1 +1,1 @@
-from .message_queue import MessageQueue
+from .message_queue import MQManager

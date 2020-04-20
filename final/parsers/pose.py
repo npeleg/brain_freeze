@@ -1,20 +1,16 @@
 import json
 
 
-class PoseParser:
-    fields = ['translation', 'rotation']
+def parse_pose(json_snapshot):
+    """extracts and returns the pose information from json_snapshot"""
+    message = json.loads(json_snapshot)
+    if message['type'] != 'snapshot':  # ignoring non-snapshot messages
+        return None
+    pose = dict(type='pose',
+                user_id=message['user_id'],
+                datetime=message['datetime'],
+                pose=message['pose'])
+    return json.dumps(pose)
 
-    @classmethod
-    def parse_translation(cls, context, snapshot):
-        f = {'x': snapshot.pose.translation[0], 'y': snapshot.pose.translation[1],
-             'z': snapshot.pose.translation[2]}
-        context.save('translation.json', json.dumps(f))
 
-    @classmethod
-    def parse_rotation(cls, context, snapshot):
-        context.save('rotation.json', json.dumps(dict(
-            x=snapshot.pose.rotation[0],
-            y=snapshot.pose.rotation[1],
-            z=snapshot.pose.rotation[2],
-            w=snapshot.pose.rotation[3],
-        )))
+parse_pose.name = 'pose'
