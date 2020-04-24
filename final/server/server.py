@@ -1,8 +1,10 @@
 import json
 import threading
-from ..message_queue import MQManager
+from .message_queue_manager import MQManager
 from ..parsers import Parsers
-from ..utils import Listener, protocol
+from ..utils import Listener, protocol, Logger
+
+logger = Logger(__name__).logger
 
 
 class ClientThread(threading.Thread):
@@ -44,12 +46,15 @@ class ClientThread(threading.Thread):
                                      happiness=snapshot.feelings.happiness)
                        )
         json_message = json.dumps(message)
+        logger.info('sending snapshot to message queue')
         self.message_queue.send(json_message)
 
 
 def run_server(address, url):
+    logger.info('initializing message queue')
     message_queue = MQManager(url)
     with Listener(port=address[1], host=address[0]) as listener:
+        logger.info('server is running')
         while True:
             client_connection = listener.accept()
             new_thread = ClientThread(client_connection, message_queue)

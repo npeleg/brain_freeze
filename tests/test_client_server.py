@@ -6,9 +6,8 @@ from final import client, Reader
 from final.utils import protocol
 
 
-ADDRESS = '127.0.0.1', 5000
+ADDRESS = '127.0.0.1', 8000
 SMALL_SAMPLE_PATH = "./tests/utils/small_sample.mind.gz"
-DATA_PATH = "./users"
 
 
 def run_subprocess(command):
@@ -21,7 +20,7 @@ def run_subprocess(command):
 
 
 def test_upload_sample():
-    server_process = run_subprocess("python -m final.server run_server 127.0.0.1 5000 " + DATA_PATH)
+    server_process = run_subprocess("python -m final.server run_server rabbitmq://127.0.0.1:5672/")
     time.sleep(1)  # waiting for server
     client.upload_sample(ADDRESS, SMALL_SAMPLE_PATH)
     server_process.terminate()
