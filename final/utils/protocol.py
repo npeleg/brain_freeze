@@ -112,7 +112,7 @@ def build_partial_snapshot(snapshot, config):
         depth_width, depth_height, depth_data = 0, 0, None
 
     if 'feelings' in config.supported_fields:
-        hunger, thirst, exhaustion, happiness = snapshot.feelings.hunger, snapshot.feeling.thirst, \
+        hunger, thirst, exhaustion, happiness = snapshot.feelings.hunger, snapshot.feelings.thirst, \
                                                 snapshot.feelings.exhaustion, snapshot.feelings.happiness
     else:
         hunger = thirst = exhaustion = happiness = 0

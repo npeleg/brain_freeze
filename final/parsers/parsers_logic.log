@@ -1,0 +1,4 @@
+2020-04-26 19:40:42,789 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-26 19:40:42,816 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-26 19:44:16,549 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-26 19:44:16,565 : parsers_logic : subscribing pose parser to incoming topic

@@ -8,6 +8,7 @@ from final.utils import protocol
 
 ADDRESS = '127.0.0.1', 8000
 SMALL_SAMPLE_PATH = "./tests/utils/small_sample.mind.gz"
+DATA_PATH = './users'
 
 
 def run_subprocess(command):
