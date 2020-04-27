@@ -16,4 +16,5 @@ def test_run_parser():
     time.sleep(5)
     process.terminate()
     out, err = process.communicate()
+    assert 'starting to consume' in out.decode()
     assert err == b''

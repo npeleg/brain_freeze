@@ -1,5 +1,5 @@
 import pika
-import threading
+import sys
 from ...utils import Logger
 
 logger = Logger(__name__).logger
@@ -23,14 +23,14 @@ class RabbitMQ:
         channel.queue_bind(exchange=topic, queue=queue_name)
 
         def callback(ch, method, properties, body):
-            parsed_data = func(body)
-            self.publish_to_topic(func.name, parsed_data)
+            func(body)
 
         channel.basic_consume(
             queue=queue_name, on_message_callback=callback, auto_ack=True)
-        
-        logger.info('starting to consume')
+
+        logger.info('starting to consume from topic ' + topic)
         print('starting to consume')
+        sys.stdout.flush()
         channel.start_consuming()
 
     def publish_to_topic(self, topic, data):

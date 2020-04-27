@@ -6,3 +6,60 @@
 2020-04-26 19:44:16,564 : rabbitmq : creating pose exchange
 2020-04-26 19:44:16,579 : rabbitmq : creating incoming exchange
 2020-04-26 19:44:16,601 : rabbitmq : starting to consume
+2020-04-27 14:39:28,129 : rabbitmq : creating pose exchange
+2020-04-27 14:39:28,144 : rabbitmq : creating incoming exchange
+2020-04-27 14:39:28,166 : rabbitmq : starting to consume
+2020-04-27 14:42:54,145 : rabbitmq : creating pose exchange
+2020-04-27 14:42:54,160 : rabbitmq : creating incoming exchange
+2020-04-27 14:42:54,183 : rabbitmq : starting to consume
+2020-04-27 14:43:31,572 : rabbitmq : creating pose exchange
+2020-04-27 14:43:31,587 : rabbitmq : creating incoming exchange
+2020-04-27 14:43:31,609 : rabbitmq : starting to consume
+2020-04-27 14:43:56,240 : rabbitmq : creating pose exchange
+2020-04-27 14:43:56,254 : rabbitmq : creating incoming exchange
+2020-04-27 14:43:56,276 : rabbitmq : starting to consume
+2020-04-27 14:44:28,371 : rabbitmq : creating pose exchange
+2020-04-27 14:44:28,386 : rabbitmq : creating incoming exchange
+2020-04-27 14:44:28,408 : rabbitmq : starting to consume
+2020-04-27 14:45:53,413 : rabbitmq : creating pose exchange
+2020-04-27 14:45:53,428 : rabbitmq : creating incoming exchange
+2020-04-27 14:45:53,450 : rabbitmq : starting to consume
+2020-04-27 14:48:00,616 : rabbitmq : creating pose exchange
+2020-04-27 14:48:00,631 : rabbitmq : creating incoming exchange
+2020-04-27 14:48:00,653 : rabbitmq : starting to consume
+2020-04-27 17:12:27,782 : rabbitmq : creating pose exchange
+2020-04-27 17:12:27,798 : rabbitmq : creating incoming exchange
+2020-04-27 17:12:27,824 : rabbitmq : starting to consume
+2020-04-27 17:12:56,714 : rabbitmq : creating pose exchange
+2020-04-27 17:12:56,730 : rabbitmq : creating incoming exchange
+2020-04-27 17:12:56,756 : rabbitmq : starting to consume
+2020-04-27 17:44:43,554 : rabbitmq : creating pose exchange
+2020-04-27 17:44:43,577 : rabbitmq : creating incoming exchange
+2020-04-27 17:44:43,611 : rabbitmq : starting to consume
+2020-04-27 17:47:02,451 : rabbitmq : creating pose exchange
+2020-04-27 17:47:02,466 : rabbitmq : creating incoming exchange
+2020-04-27 17:47:02,502 : rabbitmq : starting to consume
+2020-04-27 17:49:40,250 : rabbitmq : creating pose exchange
+2020-04-27 17:49:40,265 : rabbitmq : creating incoming exchange
+2020-04-27 17:49:40,291 : rabbitmq : starting to consume
+2020-04-27 17:49:44,793 : rabbitmq : starting to consume
+2020-04-27 17:51:03,974 : rabbitmq : creating pose exchange
+2020-04-27 17:51:04,002 : rabbitmq : creating incoming exchange
+2020-04-27 17:51:04,116 : rabbitmq : starting to consume
+2020-04-27 17:51:04,122 : rabbitmq : starting to consume
+2020-04-27 18:08:43,006 : rabbitmq : creating pose exchange
+2020-04-27 18:08:43,027 : rabbitmq : creating incoming exchange
+2020-04-27 18:08:43,066 : rabbitmq : starting to consume
+2020-04-27 18:08:43,484 : rabbitmq : starting to consume
+2020-04-27 18:10:59,441 : rabbitmq : creating pose exchange
+2020-04-27 18:10:59,455 : rabbitmq : creating incoming exchange
+2020-04-27 18:10:59,477 : rabbitmq : starting to consume from topicincoming
+2020-04-27 18:10:59,928 : rabbitmq : starting to consume from topicpose
+2020-04-27 18:19:13,717 : rabbitmq : creating pose exchange
+2020-04-27 18:19:13,734 : rabbitmq : creating incoming exchange
+2020-04-27 18:19:13,761 : rabbitmq : starting to consume from topic incoming
+2020-04-27 18:19:14,249 : rabbitmq : starting to consume from topic pose
+2020-04-27 18:19:47,673 : rabbitmq : creating pose exchange
+2020-04-27 18:19:47,717 : rabbitmq : creating incoming exchange
+2020-04-27 18:19:47,745 : rabbitmq : starting to consume from topic incoming
+2020-04-27 18:19:48,166 : rabbitmq : starting to consume from topic pose

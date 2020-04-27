@@ -2,3 +2,55 @@
 2020-04-26 19:40:42,816 : parsers_logic : subscribing pose parser to incoming topic
 2020-04-26 19:44:16,549 : parsers_logic : adding a topic for the parsed results of pose parser
 2020-04-26 19:44:16,565 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-27 14:39:28,107 : parsers_logic : loading parser modules
+2020-04-27 14:39:28,114 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-27 14:39:28,131 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-27 14:39:45,128 : parsers_logic : loading parser modules
+2020-04-27 14:42:54,123 : parsers_logic : loading parser modules
+2020-04-27 14:42:54,130 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-27 14:42:54,147 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-27 14:43:31,551 : parsers_logic : loading parser modules
+2020-04-27 14:43:31,557 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-27 14:43:31,573 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-27 14:43:56,218 : parsers_logic : loading parser modules
+2020-04-27 14:43:56,225 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-27 14:43:56,241 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-27 14:44:28,350 : parsers_logic : loading parser modules
+2020-04-27 14:44:28,357 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-27 14:44:28,373 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-27 14:45:53,392 : parsers_logic : loading parser modules
+2020-04-27 14:45:53,399 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-27 14:45:53,415 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-27 14:48:00,593 : parsers_logic : loading parser modules
+2020-04-27 14:48:00,601 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-27 14:48:00,617 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-27 17:12:27,752 : parsers_logic : loading parser modules
+2020-04-27 17:12:27,762 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-27 17:12:27,784 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-27 17:12:56,691 : parsers_logic : loading parser modules
+2020-04-27 17:12:56,698 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-27 17:12:56,715 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-27 17:44:43,532 : parsers_logic : loading parser modules
+2020-04-27 17:44:43,539 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-27 17:44:43,556 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-27 17:47:02,429 : parsers_logic : loading parser modules
+2020-04-27 17:47:02,436 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-27 17:47:02,452 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-27 17:49:40,228 : parsers_logic : loading parser modules
+2020-04-27 17:49:40,234 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-27 17:49:40,251 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-27 17:51:03,921 : parsers_logic : loading parser modules
+2020-04-27 17:51:03,940 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-27 17:51:03,977 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-27 18:08:42,980 : parsers_logic : loading parser modules
+2020-04-27 18:08:42,989 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-27 18:08:43,007 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-27 18:10:59,419 : parsers_logic : loading parser modules
+2020-04-27 18:10:59,426 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-27 18:10:59,442 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-27 18:19:13,695 : parsers_logic : loading parser modules
+2020-04-27 18:19:13,701 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-27 18:19:13,719 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-27 18:19:47,597 : parsers_logic : loading parser modules
+2020-04-27 18:19:47,621 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-27 18:19:47,685 : parsers_logic : subscribing pose parser to incoming topic

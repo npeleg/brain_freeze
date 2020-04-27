@@ -19,6 +19,14 @@ def load_parsers(parsers_dir, parsers_dict):
         parsers_dict[module.parse.name] = parse_func
 
 
+def wrap_parser(parser_name, parser_func, mq):
+    """ returns a function that parses data using parser_func and publishes the result to the parser_name topic"""
+    def parse_and_publish(data):
+        parsed_data = parser_func(data)
+        mq.publish_to_topic(parser_name, parsed_data)
+    return parse_and_publish
+
+
 class Parsers:
     def __init__(self):
         self.parsers_dict = {}
@@ -33,8 +41,11 @@ class Parsers:
 
     def run_parser(self, parser_name, mq_url):
         mq = MQManager(mq_url)
+        if parser_name not in self.parsers_dict:
+            raise KeyError("parser does not exist")
         parser = self.parsers_dict[parser_name]
         logger.info(f'adding a topic for the parsed results of {parser_name} parser')
         mq.create_topic(parser_name)
         logger.info(f'subscribing {parser_name} parser to incoming topic')
-        mq.subscribe_to_incoming_topic(parser)
+        parse_and_publish = wrap_parser(parser_name, parser, mq)
+        mq.subscribe_to_incoming_topic(parse_and_publish)
