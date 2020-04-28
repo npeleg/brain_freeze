@@ -34,6 +34,7 @@ class Parsers:
 
     def get_parsers_names(self):
         """ Return the parsers' names """
+        logger.info('sending parsers names to server')
         return self.parsers_dict.keys()
 
     def parse(self, field, data):

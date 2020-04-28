@@ -28,10 +28,10 @@ def save(database, parser_name, source_file):
 @main.command('run_saver')  # TODO with - or _ ?
 @click.argument('database', type=click.STRING)
 @click.argument('message_queue', type=click.STRING)
-def client_upload_sample(database, message_queue):
+def run_saver(database, message_queue):
     """ Subscribes the saver to messages from MESSAGE_QUEUE and saves them to DATABASE. """
     try:
-        pass  # TODO implement
+        Saver(database).run_saver(message_queue)
     except Exception as error:
         print(f'Error during run_saver command: {error}')
         return 1

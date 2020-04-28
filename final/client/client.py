@@ -17,3 +17,4 @@ def upload_sample(address, path):
             partial_snapshot = protocol.build_partial_snapshot(snapshot, config)
             connection.send_message(protocol.serialize(partial_snapshot))
     logger.info('finished uploading snapshots to server')
+    return 0

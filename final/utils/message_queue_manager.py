@@ -23,7 +23,8 @@ class MQManager:
         self.mq.subscribe_to_topic(topic, func)
 
     def subscribe_to_incoming_topic(self, func):
-        self.create_incoming_topic()
+        if INCOMING not in self.topics:
+            self.create_incoming_topic()
         self.subscribe_to_topic(INCOMING, func)
 
     def publish_to_topic(self, topic, data):
@@ -32,5 +33,6 @@ class MQManager:
         self.mq.publish_to_topic(topic, data)
 
     def publish_to_incoming_topic(self, data):
-        self.create_incoming_topic()
+        if INCOMING not in self.topics:
+            self.create_incoming_topic()
         self.publish_to_topic(INCOMING, data)

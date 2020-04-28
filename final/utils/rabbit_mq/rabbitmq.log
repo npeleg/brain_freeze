@@ -63,3 +63,897 @@
 2020-04-27 18:19:47,717 : rabbitmq : creating incoming exchange
 2020-04-27 18:19:47,745 : rabbitmq : starting to consume from topic incoming
 2020-04-27 18:19:48,166 : rabbitmq : starting to consume from topic pose
+2020-04-28 11:51:38,610 : rabbitmq : creating pose exchange
+2020-04-28 11:51:38,625 : rabbitmq : creating incoming exchange
+2020-04-28 11:51:38,646 : rabbitmq : starting to consume from topic incoming
+2020-04-28 11:51:39,140 : rabbitmq : starting to consume from topic pose
+2020-04-28 12:01:58,313 : rabbitmq : creating pose exchange
+2020-04-28 12:01:58,329 : rabbitmq : creating incoming exchange
+2020-04-28 12:01:58,346 : rabbitmq : starting to consume from topic incoming
+2020-04-28 12:01:58,913 : rabbitmq : starting to consume from topic pose
+2020-04-28 12:06:25,598 : rabbitmq : creating pose exchange
+2020-04-28 12:06:25,611 : rabbitmq : creating incoming exchange
+2020-04-28 12:06:25,627 : rabbitmq : starting to consume from topic incoming
+2020-04-28 12:06:26,199 : rabbitmq : starting to consume from topic pose
+2020-04-28 12:09:35,385 : rabbitmq : creating pose exchange
+2020-04-28 12:09:35,398 : rabbitmq : creating incoming exchange
+2020-04-28 12:09:35,415 : rabbitmq : starting to consume from topic incoming
+2020-04-28 12:09:35,720 : rabbitmq : starting to consume from topic pose
+2020-04-28 12:14:19,549 : rabbitmq : creating pose exchange
+2020-04-28 12:14:19,561 : rabbitmq : creating incoming exchange
+2020-04-28 12:14:19,581 : rabbitmq : starting to consume from topic incoming
+2020-04-28 12:14:20,138 : rabbitmq : starting to consume from topic pose
+2020-04-28 12:14:55,402 : rabbitmq : creating pose exchange
+2020-04-28 12:14:55,417 : rabbitmq : creating incoming exchange
+2020-04-28 12:14:55,435 : rabbitmq : starting to consume from topic incoming
+2020-04-28 12:14:55,646 : rabbitmq : starting to consume from topic pose
+2020-04-28 14:01:39,530 : rabbitmq : creating pose exchange
+2020-04-28 14:01:39,545 : rabbitmq : creating incoming exchange
+2020-04-28 14:01:39,562 : rabbitmq : starting to consume from topic incoming
+2020-04-28 14:01:40,997 : rabbitmq : starting to consume from topic pose
+2020-04-28 14:04:04,870 : rabbitmq : creating pose exchange
+2020-04-28 14:04:04,880 : rabbitmq : creating incoming exchange
+2020-04-28 14:04:04,898 : rabbitmq : starting to consume from topic incoming
+2020-04-28 14:04:07,745 : rabbitmq : starting to consume from topic pose
+2020-04-28 14:06:32,154 : rabbitmq : creating pose exchange
+2020-04-28 14:06:32,168 : rabbitmq : creating incoming exchange
+2020-04-28 14:06:32,186 : rabbitmq : starting to consume from topic incoming
+2020-04-28 14:06:33,587 : rabbitmq : starting to consume from topic pose
+2020-04-28 14:07:57,617 : rabbitmq : creating pose exchange
+2020-04-28 14:07:57,630 : rabbitmq : creating incoming exchange
+2020-04-28 14:07:57,648 : rabbitmq : starting to consume from topic incoming
+2020-04-28 14:07:59,087 : rabbitmq : starting to consume from topic pose
+2020-04-28 14:08:03,479 : rabbitmq : creating incoming exchange
+2020-04-28 14:08:03,518 : rabbitmq : sending message to topic incoming
+2020-04-28 14:08:03,519 : rabbitmq : callback function called
+2020-04-28 14:08:03,546 : rabbitmq : sending message to topic pose
+2020-04-28 14:08:03,550 : rabbitmq : callback function called
+2020-04-28 14:08:07,965 : rabbitmq : creating incoming exchange
+2020-04-28 14:08:07,989 : rabbitmq : sending message to topic incoming
+2020-04-28 14:08:07,990 : rabbitmq : callback function called
+2020-04-28 14:08:08,022 : rabbitmq : sending message to topic pose
+2020-04-28 14:08:08,026 : rabbitmq : callback function called
+2020-04-28 14:08:12,574 : rabbitmq : creating incoming exchange
+2020-04-28 14:08:12,607 : rabbitmq : sending message to topic incoming
+2020-04-28 14:08:12,610 : rabbitmq : callback function called
+2020-04-28 14:08:12,646 : rabbitmq : sending message to topic pose
+2020-04-28 14:08:12,653 : rabbitmq : callback function called
+2020-04-28 14:08:16,783 : rabbitmq : creating incoming exchange
+2020-04-28 14:08:16,801 : rabbitmq : sending message to topic incoming
+2020-04-28 14:08:16,804 : rabbitmq : callback function called
+2020-04-28 14:08:16,858 : rabbitmq : sending message to topic pose
+2020-04-28 14:08:16,861 : rabbitmq : callback function called
+2020-04-28 14:17:58,994 : rabbitmq : creating pose exchange
+2020-04-28 14:17:59,009 : rabbitmq : creating incoming exchange
+2020-04-28 14:17:59,027 : rabbitmq : starting to consume from topic incoming
+2020-04-28 14:18:00,658 : rabbitmq : starting to consume from topic pose
+2020-04-28 14:18:05,695 : rabbitmq : creating incoming exchange
+2020-04-28 14:18:05,717 : rabbitmq : sending message to topic incoming
+2020-04-28 14:18:05,722 : rabbitmq : callback function called
+2020-04-28 14:18:05,741 : rabbitmq : sending message to topic pose
+2020-04-28 14:18:05,743 : rabbitmq : callback function called
+2020-04-28 14:18:09,596 : rabbitmq : creating incoming exchange
+2020-04-28 14:18:09,617 : rabbitmq : sending message to topic incoming
+2020-04-28 14:18:09,618 : rabbitmq : callback function called
+2020-04-28 14:18:09,648 : rabbitmq : sending message to topic pose
+2020-04-28 14:18:09,650 : rabbitmq : callback function called
+2020-04-28 14:18:13,428 : rabbitmq : creating incoming exchange
+2020-04-28 14:18:13,453 : rabbitmq : sending message to topic incoming
+2020-04-28 14:18:13,454 : rabbitmq : callback function called
+2020-04-28 14:18:13,479 : rabbitmq : sending message to topic pose
+2020-04-28 14:18:13,481 : rabbitmq : callback function called
+2020-04-28 14:18:17,225 : rabbitmq : creating incoming exchange
+2020-04-28 14:18:17,246 : rabbitmq : sending message to topic incoming
+2020-04-28 14:18:17,248 : rabbitmq : callback function called
+2020-04-28 14:18:17,277 : rabbitmq : sending message to topic pose
+2020-04-28 14:18:17,279 : rabbitmq : callback function called
+2020-04-28 14:42:31,780 : rabbitmq : creating pose exchange
+2020-04-28 14:42:31,797 : rabbitmq : creating incoming exchange
+2020-04-28 14:42:31,814 : rabbitmq : starting to consume from topic incoming
+2020-04-28 14:42:33,373 : rabbitmq : starting to consume from topic pose
+2020-04-28 14:42:37,202 : rabbitmq : creating incoming exchange
+2020-04-28 14:42:37,223 : rabbitmq : sending message to topic incoming
+2020-04-28 14:42:37,225 : rabbitmq : callback function called
+2020-04-28 14:42:37,251 : rabbitmq : sending message to topic pose
+2020-04-28 14:42:37,254 : rabbitmq : callback function called
+2020-04-28 14:42:42,333 : rabbitmq : creating incoming exchange
+2020-04-28 14:42:42,359 : rabbitmq : sending message to topic incoming
+2020-04-28 14:42:42,361 : rabbitmq : callback function called
+2020-04-28 14:42:42,397 : rabbitmq : sending message to topic pose
+2020-04-28 14:42:42,400 : rabbitmq : callback function called
+2020-04-28 14:42:50,566 : rabbitmq : creating incoming exchange
+2020-04-28 14:42:50,603 : rabbitmq : sending message to topic incoming
+2020-04-28 14:42:50,610 : rabbitmq : callback function called
+2020-04-28 14:42:50,653 : rabbitmq : sending message to topic pose
+2020-04-28 14:42:50,655 : rabbitmq : callback function called
+2020-04-28 14:42:57,373 : rabbitmq : creating incoming exchange
+2020-04-28 14:42:57,399 : rabbitmq : sending message to topic incoming
+2020-04-28 14:42:57,401 : rabbitmq : callback function called
+2020-04-28 14:42:57,446 : rabbitmq : sending message to topic pose
+2020-04-28 14:42:57,448 : rabbitmq : callback function called
+2020-04-28 14:43:02,970 : rabbitmq : creating incoming exchange
+2020-04-28 14:43:02,985 : rabbitmq : sending message to topic incoming
+2020-04-28 14:43:02,987 : rabbitmq : callback function called
+2020-04-28 14:43:03,005 : rabbitmq : sending message to topic pose
+2020-04-28 14:43:03,008 : rabbitmq : callback function called
+2020-04-28 14:48:55,116 : rabbitmq : creating pose exchange
+2020-04-28 14:48:55,138 : rabbitmq : creating incoming exchange
+2020-04-28 14:48:55,167 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 14:48:56,749 : rabbitmq : starting to consume from exchange pose
+2020-04-28 14:49:00,925 : rabbitmq : creating incoming exchange
+2020-04-28 14:49:00,974 : rabbitmq : sending message to exchange incoming
+2020-04-28 14:49:00,981 : rabbitmq : callback function called
+2020-04-28 14:49:01,023 : rabbitmq : sending message to exchange pose
+2020-04-28 14:49:01,029 : rabbitmq : callback function called
+2020-04-28 14:49:05,993 : rabbitmq : creating incoming exchange
+2020-04-28 14:49:06,018 : rabbitmq : sending message to exchange incoming
+2020-04-28 14:49:06,022 : rabbitmq : callback function called
+2020-04-28 14:49:06,070 : rabbitmq : sending message to exchange pose
+2020-04-28 14:49:06,075 : rabbitmq : callback function called
+2020-04-28 14:49:10,525 : rabbitmq : creating incoming exchange
+2020-04-28 14:49:10,568 : rabbitmq : sending message to exchange incoming
+2020-04-28 14:49:10,574 : rabbitmq : callback function called
+2020-04-28 14:49:10,624 : rabbitmq : sending message to exchange pose
+2020-04-28 14:49:10,626 : rabbitmq : callback function called
+2020-04-28 14:49:16,762 : rabbitmq : creating incoming exchange
+2020-04-28 14:49:16,790 : rabbitmq : sending message to exchange incoming
+2020-04-28 14:49:16,794 : rabbitmq : callback function called
+2020-04-28 14:49:16,826 : rabbitmq : sending message to exchange pose
+2020-04-28 14:49:16,830 : rabbitmq : callback function called
+2020-04-28 14:49:22,422 : rabbitmq : creating incoming exchange
+2020-04-28 14:49:22,442 : rabbitmq : sending message to exchange incoming
+2020-04-28 14:49:22,446 : rabbitmq : callback function called
+2020-04-28 14:49:22,471 : rabbitmq : sending message to exchange pose
+2020-04-28 14:49:22,473 : rabbitmq : callback function called
+2020-04-28 14:49:28,972 : rabbitmq : creating pose exchange
+2020-04-28 14:49:28,992 : rabbitmq : creating incoming exchange
+2020-04-28 14:49:29,020 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 14:49:30,426 : rabbitmq : starting to consume from exchange pose
+2020-04-28 14:49:33,998 : rabbitmq : creating incoming exchange
+2020-04-28 14:49:34,024 : rabbitmq : sending message to exchange incoming
+2020-04-28 14:49:34,025 : rabbitmq : callback function called
+2020-04-28 14:49:34,054 : rabbitmq : sending message to exchange pose
+2020-04-28 14:49:34,056 : rabbitmq : callback function called
+2020-04-28 14:49:38,105 : rabbitmq : creating incoming exchange
+2020-04-28 14:49:38,129 : rabbitmq : sending message to exchange incoming
+2020-04-28 14:49:38,130 : rabbitmq : callback function called
+2020-04-28 14:49:38,162 : rabbitmq : sending message to exchange pose
+2020-04-28 14:49:38,163 : rabbitmq : callback function called
+2020-04-28 14:49:41,734 : rabbitmq : creating incoming exchange
+2020-04-28 14:49:41,757 : rabbitmq : sending message to exchange incoming
+2020-04-28 14:49:41,759 : rabbitmq : callback function called
+2020-04-28 14:49:41,787 : rabbitmq : sending message to exchange pose
+2020-04-28 14:49:41,788 : rabbitmq : callback function called
+2020-04-28 14:49:45,309 : rabbitmq : creating incoming exchange
+2020-04-28 14:49:45,333 : rabbitmq : sending message to exchange incoming
+2020-04-28 14:49:45,334 : rabbitmq : callback function called
+2020-04-28 14:49:45,358 : rabbitmq : sending message to exchange pose
+2020-04-28 14:49:45,359 : rabbitmq : callback function called
+2020-04-28 14:49:48,933 : rabbitmq : creating incoming exchange
+2020-04-28 14:49:48,945 : rabbitmq : sending message to exchange incoming
+2020-04-28 14:49:48,947 : rabbitmq : callback function called
+2020-04-28 14:49:48,964 : rabbitmq : sending message to exchange pose
+2020-04-28 14:49:48,966 : rabbitmq : callback function called
+2020-04-28 17:13:13,121 : rabbitmq : creating pose exchange
+2020-04-28 17:13:13,138 : rabbitmq : creating incoming exchange
+2020-04-28 17:13:13,160 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 17:13:15,034 : rabbitmq : starting to consume from exchange pose
+2020-04-28 17:13:20,203 : rabbitmq : creating incoming exchange
+2020-04-28 17:13:20,229 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:13:20,233 : rabbitmq : callback function called
+2020-04-28 17:13:20,257 : rabbitmq : sending message to exchange pose
+2020-04-28 17:13:20,259 : rabbitmq : callback function called
+2020-04-28 17:13:26,279 : rabbitmq : creating incoming exchange
+2020-04-28 17:13:26,406 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:13:26,409 : rabbitmq : callback function called
+2020-04-28 17:13:26,583 : rabbitmq : sending message to exchange pose
+2020-04-28 17:13:26,590 : rabbitmq : callback function called
+2020-04-28 17:13:33,157 : rabbitmq : creating incoming exchange
+2020-04-28 17:13:33,185 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:13:33,189 : rabbitmq : callback function called
+2020-04-28 17:13:33,218 : rabbitmq : sending message to exchange pose
+2020-04-28 17:13:33,222 : rabbitmq : callback function called
+2020-04-28 17:13:38,312 : rabbitmq : creating incoming exchange
+2020-04-28 17:13:38,365 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:13:38,367 : rabbitmq : callback function called
+2020-04-28 17:13:38,401 : rabbitmq : sending message to exchange pose
+2020-04-28 17:13:38,406 : rabbitmq : callback function called
+2020-04-28 17:13:45,108 : rabbitmq : creating incoming exchange
+2020-04-28 17:13:45,133 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:13:45,135 : rabbitmq : callback function called
+2020-04-28 17:13:45,157 : rabbitmq : sending message to exchange pose
+2020-04-28 17:13:45,160 : rabbitmq : callback function called
+2020-04-28 17:18:44,671 : rabbitmq : creating pose exchange
+2020-04-28 17:18:44,688 : rabbitmq : creating incoming exchange
+2020-04-28 17:18:44,710 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 17:18:46,265 : rabbitmq : starting to consume from exchange pose
+2020-04-28 17:23:34,793 : rabbitmq : creating pose exchange
+2020-04-28 17:23:34,809 : rabbitmq : creating incoming exchange
+2020-04-28 17:23:34,827 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 17:23:36,274 : rabbitmq : starting to consume from exchange pose
+2020-04-28 17:24:21,576 : rabbitmq : creating pose exchange
+2020-04-28 17:24:21,591 : rabbitmq : creating incoming exchange
+2020-04-28 17:24:21,611 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 17:24:23,208 : rabbitmq : starting to consume from exchange pose
+2020-04-28 17:24:27,485 : rabbitmq : creating incoming exchange
+2020-04-28 17:24:27,510 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:24:27,514 : rabbitmq : callback function called
+2020-04-28 17:24:27,545 : rabbitmq : sending message to exchange pose
+2020-04-28 17:24:27,547 : rabbitmq : callback function called
+2020-04-28 17:24:32,854 : rabbitmq : creating incoming exchange
+2020-04-28 17:24:32,911 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:24:32,913 : rabbitmq : callback function called
+2020-04-28 17:24:32,953 : rabbitmq : sending message to exchange pose
+2020-04-28 17:24:32,955 : rabbitmq : callback function called
+2020-04-28 17:24:39,801 : rabbitmq : creating incoming exchange
+2020-04-28 17:24:39,825 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:24:39,827 : rabbitmq : callback function called
+2020-04-28 17:24:39,865 : rabbitmq : sending message to exchange pose
+2020-04-28 17:24:39,867 : rabbitmq : callback function called
+2020-04-28 17:29:15,592 : rabbitmq : creating pose exchange
+2020-04-28 17:29:15,634 : rabbitmq : creating incoming exchange
+2020-04-28 17:29:15,682 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 17:29:17,051 : rabbitmq : starting to consume from exchange pose
+2020-04-28 17:29:23,867 : rabbitmq : creating incoming exchange
+2020-04-28 17:29:23,927 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:29:23,933 : rabbitmq : callback function called
+2020-04-28 17:29:23,978 : rabbitmq : sending message to exchange pose
+2020-04-28 17:29:23,989 : rabbitmq : callback function called
+2020-04-28 17:29:29,396 : rabbitmq : creating incoming exchange
+2020-04-28 17:29:29,421 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:29:29,424 : rabbitmq : callback function called
+2020-04-28 17:29:29,456 : rabbitmq : sending message to exchange pose
+2020-04-28 17:29:29,458 : rabbitmq : callback function called
+2020-04-28 17:29:34,249 : rabbitmq : creating incoming exchange
+2020-04-28 17:29:34,275 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:29:34,277 : rabbitmq : callback function called
+2020-04-28 17:29:34,307 : rabbitmq : sending message to exchange pose
+2020-04-28 17:29:34,309 : rabbitmq : callback function called
+2020-04-28 17:29:38,639 : rabbitmq : creating incoming exchange
+2020-04-28 17:29:38,672 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:29:38,674 : rabbitmq : callback function called
+2020-04-28 17:29:38,703 : rabbitmq : sending message to exchange pose
+2020-04-28 17:29:38,709 : rabbitmq : callback function called
+2020-04-28 17:29:43,041 : rabbitmq : creating incoming exchange
+2020-04-28 17:29:43,072 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:29:43,074 : rabbitmq : callback function called
+2020-04-28 17:29:43,116 : rabbitmq : sending message to exchange pose
+2020-04-28 17:29:43,119 : rabbitmq : callback function called
+2020-04-28 17:35:54,574 : rabbitmq : creating pose exchange
+2020-04-28 17:35:54,593 : rabbitmq : creating incoming exchange
+2020-04-28 17:35:54,615 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 17:35:56,072 : rabbitmq : starting to consume from exchange pose
+2020-04-28 17:36:05,861 : rabbitmq : creating pose exchange
+2020-04-28 17:36:05,879 : rabbitmq : creating incoming exchange
+2020-04-28 17:36:05,902 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 17:36:07,554 : rabbitmq : starting to consume from exchange pose
+2020-04-28 17:36:14,854 : rabbitmq : creating incoming exchange
+2020-04-28 17:36:14,881 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:36:14,883 : rabbitmq : callback function called
+2020-04-28 17:36:14,909 : rabbitmq : sending message to exchange pose
+2020-04-28 17:36:14,913 : rabbitmq : callback function called
+2020-04-28 17:36:20,351 : rabbitmq : creating incoming exchange
+2020-04-28 17:36:20,376 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:36:20,378 : rabbitmq : callback function called
+2020-04-28 17:36:20,421 : rabbitmq : sending message to exchange pose
+2020-04-28 17:36:20,426 : rabbitmq : callback function called
+2020-04-28 17:36:24,973 : rabbitmq : creating incoming exchange
+2020-04-28 17:36:24,997 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:36:25,002 : rabbitmq : callback function called
+2020-04-28 17:36:25,028 : rabbitmq : sending message to exchange pose
+2020-04-28 17:36:25,029 : rabbitmq : callback function called
+2020-04-28 17:36:29,685 : rabbitmq : creating incoming exchange
+2020-04-28 17:36:29,716 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:36:29,718 : rabbitmq : callback function called
+2020-04-28 17:36:29,743 : rabbitmq : sending message to exchange pose
+2020-04-28 17:36:29,750 : rabbitmq : callback function called
+2020-04-28 17:36:34,805 : rabbitmq : creating incoming exchange
+2020-04-28 17:36:34,828 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:36:34,830 : rabbitmq : callback function called
+2020-04-28 17:36:34,859 : rabbitmq : sending message to exchange pose
+2020-04-28 17:36:34,860 : rabbitmq : callback function called
+2020-04-28 17:36:58,046 : rabbitmq : creating pose exchange
+2020-04-28 17:36:58,073 : rabbitmq : creating incoming exchange
+2020-04-28 17:36:58,098 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 17:36:59,513 : rabbitmq : starting to consume from exchange pose
+2020-04-28 17:37:04,364 : rabbitmq : creating incoming exchange
+2020-04-28 17:37:04,388 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:37:04,390 : rabbitmq : callback function called
+2020-04-28 17:37:04,432 : rabbitmq : sending message to exchange pose
+2020-04-28 17:37:04,434 : rabbitmq : callback function called
+2020-04-28 17:37:09,163 : rabbitmq : creating incoming exchange
+2020-04-28 17:37:09,192 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:37:09,193 : rabbitmq : callback function called
+2020-04-28 17:37:09,237 : rabbitmq : sending message to exchange pose
+2020-04-28 17:37:09,242 : rabbitmq : callback function called
+2020-04-28 17:37:13,895 : rabbitmq : creating incoming exchange
+2020-04-28 17:37:13,915 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:37:13,917 : rabbitmq : callback function called
+2020-04-28 17:37:13,940 : rabbitmq : sending message to exchange pose
+2020-04-28 17:37:13,942 : rabbitmq : callback function called
+2020-04-28 17:37:18,460 : rabbitmq : creating incoming exchange
+2020-04-28 17:37:18,485 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:37:18,487 : rabbitmq : callback function called
+2020-04-28 17:37:18,512 : rabbitmq : sending message to exchange pose
+2020-04-28 17:37:18,517 : rabbitmq : callback function called
+2020-04-28 17:37:23,042 : rabbitmq : creating incoming exchange
+2020-04-28 17:37:23,069 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:37:23,071 : rabbitmq : callback function called
+2020-04-28 17:37:23,101 : rabbitmq : sending message to exchange pose
+2020-04-28 17:37:23,103 : rabbitmq : callback function called
+2020-04-28 17:41:31,155 : rabbitmq : creating pose exchange
+2020-04-28 17:41:31,170 : rabbitmq : creating incoming exchange
+2020-04-28 17:41:31,193 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 17:41:33,086 : rabbitmq : starting to consume from exchange pose
+2020-04-28 17:41:44,338 : rabbitmq : creating incoming exchange
+2020-04-28 17:41:44,458 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:41:44,540 : rabbitmq : callback function called
+2020-04-28 17:41:44,572 : rabbitmq : sending message to exchange pose
+2020-04-28 17:41:44,577 : rabbitmq : callback function called
+2020-04-28 17:41:55,322 : rabbitmq : creating incoming exchange
+2020-04-28 17:41:55,353 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:41:55,357 : rabbitmq : callback function called
+2020-04-28 17:41:55,396 : rabbitmq : sending message to exchange pose
+2020-04-28 17:42:02,582 : rabbitmq : creating incoming exchange
+2020-04-28 17:42:02,622 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:42:02,625 : rabbitmq : callback function called
+2020-04-28 17:42:02,690 : rabbitmq : sending message to exchange pose
+2020-04-28 17:42:07,873 : rabbitmq : creating incoming exchange
+2020-04-28 17:42:07,897 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:42:07,901 : rabbitmq : callback function called
+2020-04-28 17:42:07,934 : rabbitmq : sending message to exchange pose
+2020-04-28 17:42:13,376 : rabbitmq : creating incoming exchange
+2020-04-28 17:42:13,414 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:42:13,416 : rabbitmq : callback function called
+2020-04-28 17:42:13,457 : rabbitmq : sending message to exchange pose
+2020-04-28 17:42:23,534 : rabbitmq : creating pose exchange
+2020-04-28 17:42:23,552 : rabbitmq : creating incoming exchange
+2020-04-28 17:42:23,583 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 17:42:25,104 : rabbitmq : starting to consume from exchange pose
+2020-04-28 17:42:30,353 : rabbitmq : creating incoming exchange
+2020-04-28 17:42:30,400 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:42:30,404 : rabbitmq : callback function called
+2020-04-28 17:42:30,448 : rabbitmq : sending message to exchange pose
+2020-04-28 17:42:30,453 : rabbitmq : callback function called
+2020-04-28 17:42:37,143 : rabbitmq : creating incoming exchange
+2020-04-28 17:42:37,180 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:42:37,185 : rabbitmq : callback function called
+2020-04-28 17:42:37,231 : rabbitmq : sending message to exchange pose
+2020-04-28 17:42:42,752 : rabbitmq : creating incoming exchange
+2020-04-28 17:42:42,776 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:42:42,782 : rabbitmq : callback function called
+2020-04-28 17:42:42,811 : rabbitmq : sending message to exchange pose
+2020-04-28 17:42:47,674 : rabbitmq : creating incoming exchange
+2020-04-28 17:42:47,745 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:42:47,749 : rabbitmq : callback function called
+2020-04-28 17:42:47,789 : rabbitmq : sending message to exchange pose
+2020-04-28 17:42:52,945 : rabbitmq : creating incoming exchange
+2020-04-28 17:42:52,970 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:42:52,974 : rabbitmq : callback function called
+2020-04-28 17:42:53,013 : rabbitmq : sending message to exchange pose
+2020-04-28 17:51:44,313 : rabbitmq : creating pose exchange
+2020-04-28 17:51:44,330 : rabbitmq : creating incoming exchange
+2020-04-28 17:51:44,351 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 17:51:45,868 : rabbitmq : starting to consume from exchange pose
+2020-04-28 17:51:51,740 : rabbitmq : creating incoming exchange
+2020-04-28 17:51:51,793 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:51:51,793 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fa42b488b70>
+2020-04-28 17:51:51,798 : rabbitmq : callback function called
+2020-04-28 17:51:51,799 : rabbitmq : callback function called on data b'{"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-04-28 17:51:51,877 : rabbitmq : sending message to exchange pose
+2020-04-28 17:51:51,877 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f158b5033f0>
+2020-04-28 17:51:51,883 : rabbitmq : callback function called
+2020-04-28 17:51:51,883 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}}'
+2020-04-28 17:51:57,859 : rabbitmq : creating incoming exchange
+2020-04-28 17:51:57,888 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:51:57,888 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fa424003700>
+2020-04-28 17:51:57,890 : rabbitmq : callback function called
+2020-04-28 17:51:57,890 : rabbitmq : callback function called on data b'{"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-04-28 17:51:57,927 : rabbitmq : sending message to exchange pose
+2020-04-28 17:51:57,928 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f158b5033f0>
+2020-04-28 17:52:03,554 : rabbitmq : creating incoming exchange
+2020-04-28 17:52:03,588 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:52:03,589 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fa42400a090>
+2020-04-28 17:52:03,591 : rabbitmq : callback function called
+2020-04-28 17:52:03,592 : rabbitmq : callback function called on data b'{"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-04-28 17:52:03,632 : rabbitmq : sending message to exchange pose
+2020-04-28 17:52:03,633 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f158b5033f0>
+2020-04-28 17:52:09,926 : rabbitmq : creating incoming exchange
+2020-04-28 17:52:09,955 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:52:09,955 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fa42400a090>
+2020-04-28 17:52:09,962 : rabbitmq : callback function called
+2020-04-28 17:52:09,962 : rabbitmq : callback function called on data b'{"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}'
+2020-04-28 17:52:09,993 : rabbitmq : sending message to exchange pose
+2020-04-28 17:52:09,993 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f158b5033f0>
+2020-04-28 17:52:15,020 : rabbitmq : creating incoming exchange
+2020-04-28 17:52:15,048 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:52:15,049 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fa424002a20>
+2020-04-28 17:52:15,052 : rabbitmq : callback function called
+2020-04-28 17:52:15,052 : rabbitmq : callback function called on data b'{"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
+2020-04-28 17:52:15,121 : rabbitmq : sending message to exchange pose
+2020-04-28 17:52:15,121 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f158b5033f0>
+2020-04-28 17:52:36,660 : rabbitmq : creating pose exchange
+2020-04-28 17:52:36,674 : rabbitmq : creating incoming exchange
+2020-04-28 17:52:36,700 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 17:52:38,092 : rabbitmq : starting to consume from exchange pose
+2020-04-28 17:52:42,650 : rabbitmq : creating incoming exchange
+2020-04-28 17:52:42,679 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:52:42,679 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fb652af9b70>
+2020-04-28 17:52:42,681 : rabbitmq : callback function called
+2020-04-28 17:52:42,681 : rabbitmq : callback function called on data b'{"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-04-28 17:52:42,708 : rabbitmq : sending message to exchange pose
+2020-04-28 17:52:42,708 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f7a05d0c3f0>
+2020-04-28 17:52:42,710 : rabbitmq : callback function called
+2020-04-28 17:52:42,710 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}}'
+2020-04-28 17:52:47,577 : rabbitmq : creating incoming exchange
+2020-04-28 17:52:47,604 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:52:47,604 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fb64c003700>
+2020-04-28 17:52:47,606 : rabbitmq : callback function called
+2020-04-28 17:52:47,606 : rabbitmq : callback function called on data b'{"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-04-28 17:52:47,639 : rabbitmq : sending message to exchange pose
+2020-04-28 17:52:47,639 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f7a05d0c3f0>
+2020-04-28 17:52:52,153 : rabbitmq : creating incoming exchange
+2020-04-28 17:52:52,168 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:52:52,168 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fb64c00a090>
+2020-04-28 17:52:52,173 : rabbitmq : callback function called
+2020-04-28 17:52:52,174 : rabbitmq : callback function called on data b'{"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-04-28 17:52:52,196 : rabbitmq : sending message to exchange pose
+2020-04-28 17:52:52,196 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f7a05d0c3f0>
+2020-04-28 17:52:56,667 : rabbitmq : creating incoming exchange
+2020-04-28 17:52:56,696 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:52:56,696 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fb64c00a090>
+2020-04-28 17:52:56,701 : rabbitmq : callback function called
+2020-04-28 17:52:56,701 : rabbitmq : callback function called on data b'{"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}'
+2020-04-28 17:52:56,725 : rabbitmq : sending message to exchange pose
+2020-04-28 17:52:56,725 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f7a05d0c3f0>
+2020-04-28 17:53:01,920 : rabbitmq : creating incoming exchange
+2020-04-28 17:53:01,953 : rabbitmq : sending message to exchange incoming
+2020-04-28 17:53:01,953 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fb64c002a20>
+2020-04-28 17:53:01,955 : rabbitmq : callback function called
+2020-04-28 17:53:01,955 : rabbitmq : callback function called on data b'{"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
+2020-04-28 17:53:01,989 : rabbitmq : sending message to exchange pose
+2020-04-28 17:53:01,989 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f7a05d0c3f0>
+2020-04-28 18:07:52,303 : rabbitmq : creating pose exchange
+2020-04-28 18:07:52,351 : rabbitmq : creating incoming exchange
+2020-04-28 18:07:52,441 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 18:07:53,125 : rabbitmq : starting to consume from exchange pose
+2020-04-28 18:07:57,988 : rabbitmq : creating incoming exchange
+2020-04-28 18:07:58,015 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:07:58,015 : rabbitmq : sending the message {"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}
+2020-04-28 18:07:58,022 : rabbitmq : callback function called
+2020-04-28 18:08:04,521 : rabbitmq : creating incoming exchange
+2020-04-28 18:08:04,548 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:08:04,548 : rabbitmq : sending the message {"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}
+2020-04-28 18:08:11,867 : rabbitmq : creating incoming exchange
+2020-04-28 18:08:11,898 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:08:11,898 : rabbitmq : sending the message {"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}
+2020-04-28 18:08:16,993 : rabbitmq : creating incoming exchange
+2020-04-28 18:08:17,021 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:08:17,021 : rabbitmq : sending the message {"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}
+2020-04-28 18:08:21,733 : rabbitmq : creating incoming exchange
+2020-04-28 18:08:21,764 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:08:21,765 : rabbitmq : sending the message {"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}
+2020-04-28 18:08:52,999 : rabbitmq : creating pose exchange
+2020-04-28 18:08:53,014 : rabbitmq : creating incoming exchange
+2020-04-28 18:08:53,036 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 18:08:54,534 : rabbitmq : starting to consume from exchange pose
+2020-04-28 18:08:59,133 : rabbitmq : creating incoming exchange
+2020-04-28 18:08:59,164 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:08:59,164 : rabbitmq : sending the message {"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}
+2020-04-28 18:08:59,166 : rabbitmq : callback function called
+2020-04-28 18:09:04,445 : rabbitmq : creating incoming exchange
+2020-04-28 18:09:04,470 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:09:04,470 : rabbitmq : sending the message {"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}
+2020-04-28 18:09:09,110 : rabbitmq : creating incoming exchange
+2020-04-28 18:09:09,139 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:09:09,139 : rabbitmq : sending the message {"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}
+2020-04-28 18:09:13,857 : rabbitmq : creating incoming exchange
+2020-04-28 18:09:13,890 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:09:13,890 : rabbitmq : sending the message {"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}
+2020-04-28 18:09:18,737 : rabbitmq : creating incoming exchange
+2020-04-28 18:09:18,769 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:09:18,769 : rabbitmq : sending the message {"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}
+2020-04-28 18:14:22,733 : rabbitmq : creating pose exchange
+2020-04-28 18:14:22,754 : rabbitmq : creating incoming exchange
+2020-04-28 18:14:22,802 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 18:14:24,469 : rabbitmq : starting to consume from exchange pose
+2020-04-28 18:14:30,973 : rabbitmq : creating incoming exchange
+2020-04-28 18:14:30,999 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:14:30,999 : rabbitmq : sending the message {"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}
+2020-04-28 18:14:31,001 : rabbitmq : callback function called
+2020-04-28 18:14:36,054 : rabbitmq : creating incoming exchange
+2020-04-28 18:14:36,084 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:14:36,084 : rabbitmq : sending the message {"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}
+2020-04-28 18:14:40,817 : rabbitmq : creating incoming exchange
+2020-04-28 18:14:40,840 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:14:40,840 : rabbitmq : sending the message {"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}
+2020-04-28 18:14:45,813 : rabbitmq : creating incoming exchange
+2020-04-28 18:14:45,853 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:14:45,853 : rabbitmq : sending the message {"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}
+2020-04-28 18:14:51,894 : rabbitmq : creating incoming exchange
+2020-04-28 18:14:51,929 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:14:51,929 : rabbitmq : sending the message {"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}
+2020-04-28 18:15:24,663 : rabbitmq : creating pose exchange
+2020-04-28 18:15:24,677 : rabbitmq : creating incoming exchange
+2020-04-28 18:15:24,696 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 18:15:26,170 : rabbitmq : starting to consume from exchange pose
+2020-04-28 18:15:30,750 : rabbitmq : creating incoming exchange
+2020-04-28 18:15:30,781 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:15:30,781 : rabbitmq : sending the message {"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}
+2020-04-28 18:15:30,782 : rabbitmq : callback function called
+2020-04-28 18:15:35,658 : rabbitmq : creating incoming exchange
+2020-04-28 18:15:35,689 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:15:35,689 : rabbitmq : sending the message {"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}
+2020-04-28 18:15:40,733 : rabbitmq : creating incoming exchange
+2020-04-28 18:15:40,765 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:15:40,765 : rabbitmq : sending the message {"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}
+2020-04-28 18:15:45,633 : rabbitmq : creating incoming exchange
+2020-04-28 18:15:45,662 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:15:45,662 : rabbitmq : sending the message {"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}
+2020-04-28 18:15:50,520 : rabbitmq : creating incoming exchange
+2020-04-28 18:15:50,544 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:15:50,545 : rabbitmq : sending the message {"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE", "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}
+2020-04-28 18:22:20,143 : rabbitmq : creating pose exchange
+2020-04-28 18:22:20,161 : rabbitmq : creating incoming exchange
+2020-04-28 18:22:20,182 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 18:22:21,799 : rabbitmq : starting to consume from exchange pose
+2020-04-28 18:22:33,189 : rabbitmq : creating incoming exchange
+2020-04-28 18:22:33,246 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:22:33,255 : rabbitmq : callback function called
+2020-04-28 18:22:41,648 : rabbitmq : creating incoming exchange
+2020-04-28 18:22:41,674 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:22:48,465 : rabbitmq : creating incoming exchange
+2020-04-28 18:22:48,497 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:22:53,472 : rabbitmq : creating incoming exchange
+2020-04-28 18:22:53,501 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:22:58,186 : rabbitmq : creating incoming exchange
+2020-04-28 18:22:58,222 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:23:22,247 : rabbitmq : creating pose exchange
+2020-04-28 18:23:22,265 : rabbitmq : creating incoming exchange
+2020-04-28 18:23:22,289 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 18:23:23,878 : rabbitmq : starting to consume from exchange pose
+2020-04-28 18:23:28,630 : rabbitmq : creating incoming exchange
+2020-04-28 18:23:28,653 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:23:28,657 : rabbitmq : callback function called
+2020-04-28 18:23:33,537 : rabbitmq : creating incoming exchange
+2020-04-28 18:23:33,581 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:23:38,609 : rabbitmq : creating incoming exchange
+2020-04-28 18:23:38,635 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:23:43,528 : rabbitmq : creating incoming exchange
+2020-04-28 18:23:43,559 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:23:48,074 : rabbitmq : creating incoming exchange
+2020-04-28 18:23:48,108 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:31:02,760 : rabbitmq : creating pose exchange
+2020-04-28 18:31:02,793 : rabbitmq : creating incoming exchange
+2020-04-28 18:31:02,845 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 18:31:03,567 : rabbitmq : starting to consume from exchange pose
+2020-04-28 18:31:09,049 : rabbitmq : creating incoming exchange
+2020-04-28 18:31:09,080 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:31:09,082 : rabbitmq : callback function called
+2020-04-28 18:31:09,116 : rabbitmq : sending message to exchange pose
+2020-04-28 18:31:09,119 : rabbitmq : callback function called
+2020-04-28 18:31:14,494 : rabbitmq : creating incoming exchange
+2020-04-28 18:31:14,528 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:31:14,530 : rabbitmq : callback function called
+2020-04-28 18:31:14,578 : rabbitmq : sending message to exchange pose
+2020-04-28 18:31:14,582 : rabbitmq : callback function called
+2020-04-28 18:31:19,913 : rabbitmq : creating incoming exchange
+2020-04-28 18:31:19,932 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:31:19,934 : rabbitmq : callback function called
+2020-04-28 18:31:19,963 : rabbitmq : sending message to exchange pose
+2020-04-28 18:31:19,965 : rabbitmq : callback function called
+2020-04-28 18:31:24,488 : rabbitmq : creating incoming exchange
+2020-04-28 18:31:24,518 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:31:24,521 : rabbitmq : callback function called
+2020-04-28 18:31:24,552 : rabbitmq : sending message to exchange pose
+2020-04-28 18:31:24,554 : rabbitmq : callback function called
+2020-04-28 18:31:29,534 : rabbitmq : creating incoming exchange
+2020-04-28 18:31:29,565 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:31:29,567 : rabbitmq : callback function called
+2020-04-28 18:31:29,592 : rabbitmq : sending message to exchange pose
+2020-04-28 18:31:29,594 : rabbitmq : callback function called
+2020-04-28 18:32:03,745 : rabbitmq : creating pose exchange
+2020-04-28 18:32:03,762 : rabbitmq : creating incoming exchange
+2020-04-28 18:32:03,785 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 18:32:05,390 : rabbitmq : starting to consume from exchange pose
+2020-04-28 18:32:10,691 : rabbitmq : creating incoming exchange
+2020-04-28 18:32:10,738 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:32:10,741 : rabbitmq : callback function called
+2020-04-28 18:32:10,786 : rabbitmq : sending message to exchange pose
+2020-04-28 18:32:10,788 : rabbitmq : callback function called
+2020-04-28 18:32:16,263 : rabbitmq : creating incoming exchange
+2020-04-28 18:32:16,292 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:32:16,297 : rabbitmq : callback function called
+2020-04-28 18:32:16,333 : rabbitmq : sending message to exchange pose
+2020-04-28 18:32:16,337 : rabbitmq : callback function called
+2020-04-28 18:32:21,477 : rabbitmq : creating incoming exchange
+2020-04-28 18:32:21,501 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:32:21,503 : rabbitmq : callback function called
+2020-04-28 18:32:21,531 : rabbitmq : sending message to exchange pose
+2020-04-28 18:32:21,533 : rabbitmq : callback function called
+2020-04-28 18:32:26,578 : rabbitmq : creating incoming exchange
+2020-04-28 18:32:26,602 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:32:26,605 : rabbitmq : callback function called
+2020-04-28 18:32:26,637 : rabbitmq : sending message to exchange pose
+2020-04-28 18:32:26,640 : rabbitmq : callback function called
+2020-04-28 18:32:31,594 : rabbitmq : creating incoming exchange
+2020-04-28 18:32:31,621 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:32:31,623 : rabbitmq : callback function called
+2020-04-28 18:32:31,654 : rabbitmq : sending message to exchange pose
+2020-04-28 18:32:31,657 : rabbitmq : callback function called
+2020-04-28 18:36:37,638 : rabbitmq : creating pose exchange
+2020-04-28 18:36:37,657 : rabbitmq : creating incoming exchange
+2020-04-28 18:36:37,682 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 18:36:39,258 : rabbitmq : starting to consume from exchange pose
+2020-04-28 18:36:46,786 : rabbitmq : creating incoming exchange
+2020-04-28 18:36:46,853 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:36:46,862 : rabbitmq : callback function called
+2020-04-28 18:36:52,383 : rabbitmq : creating incoming exchange
+2020-04-28 18:36:52,417 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:36:57,521 : rabbitmq : creating incoming exchange
+2020-04-28 18:36:57,547 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:37:02,776 : rabbitmq : creating incoming exchange
+2020-04-28 18:37:02,806 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:37:07,916 : rabbitmq : creating incoming exchange
+2020-04-28 18:37:07,939 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:37:39,800 : rabbitmq : creating pose exchange
+2020-04-28 18:37:39,832 : rabbitmq : creating incoming exchange
+2020-04-28 18:37:39,870 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 18:37:41,363 : rabbitmq : starting to consume from exchange pose
+2020-04-28 18:37:47,019 : rabbitmq : creating incoming exchange
+2020-04-28 18:37:47,056 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:37:47,058 : rabbitmq : callback function called
+2020-04-28 18:37:52,960 : rabbitmq : creating incoming exchange
+2020-04-28 18:37:53,001 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:37:58,037 : rabbitmq : creating incoming exchange
+2020-04-28 18:37:58,075 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:38:03,417 : rabbitmq : creating incoming exchange
+2020-04-28 18:38:03,445 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:38:08,405 : rabbitmq : creating incoming exchange
+2020-04-28 18:38:08,432 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:50:24,718 : rabbitmq : creating pose exchange
+2020-04-28 18:50:24,739 : rabbitmq : creating incoming exchange
+2020-04-28 18:50:24,763 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 18:50:26,502 : rabbitmq : starting to consume from exchange pose
+2020-04-28 18:50:31,821 : rabbitmq : creating incoming exchange
+2020-04-28 18:50:31,886 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:50:31,897 : rabbitmq : callback function called
+2020-04-28 18:50:38,089 : rabbitmq : creating incoming exchange
+2020-04-28 18:50:38,176 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:50:45,166 : rabbitmq : creating incoming exchange
+2020-04-28 18:50:45,194 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:50:50,109 : rabbitmq : creating incoming exchange
+2020-04-28 18:50:50,141 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:50:55,424 : rabbitmq : creating incoming exchange
+2020-04-28 18:50:55,450 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:51:26,842 : rabbitmq : creating pose exchange
+2020-04-28 18:51:26,862 : rabbitmq : creating incoming exchange
+2020-04-28 18:51:26,887 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 18:51:28,538 : rabbitmq : starting to consume from exchange pose
+2020-04-28 18:51:33,533 : rabbitmq : creating incoming exchange
+2020-04-28 18:51:33,559 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:51:33,561 : rabbitmq : callback function called
+2020-04-28 18:51:38,421 : rabbitmq : creating incoming exchange
+2020-04-28 18:51:38,448 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:51:43,153 : rabbitmq : creating incoming exchange
+2020-04-28 18:51:43,184 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:51:48,121 : rabbitmq : creating incoming exchange
+2020-04-28 18:51:48,149 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:51:52,752 : rabbitmq : creating incoming exchange
+2020-04-28 18:51:52,780 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:52:48,273 : rabbitmq : creating pose exchange
+2020-04-28 18:52:48,289 : rabbitmq : creating incoming exchange
+2020-04-28 18:52:48,310 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 18:52:49,950 : rabbitmq : starting to consume from exchange pose
+2020-04-28 18:52:56,958 : rabbitmq : creating incoming exchange
+2020-04-28 18:52:56,979 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:52:56,985 : rabbitmq : callback function called
+2020-04-28 18:52:57,013 : rabbitmq : sending message to exchange pose
+2020-04-28 18:52:57,017 : rabbitmq : callback function called
+2020-04-28 18:53:04,940 : rabbitmq : creating incoming exchange
+2020-04-28 18:53:05,041 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:53:05,044 : rabbitmq : callback function called
+2020-04-28 18:53:05,102 : rabbitmq : sending message to exchange pose
+2020-04-28 18:53:05,126 : rabbitmq : callback function called
+2020-04-28 18:53:10,337 : rabbitmq : creating incoming exchange
+2020-04-28 18:53:10,377 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:53:10,381 : rabbitmq : callback function called
+2020-04-28 18:53:10,425 : rabbitmq : sending message to exchange pose
+2020-04-28 18:53:10,427 : rabbitmq : callback function called
+2020-04-28 18:53:15,301 : rabbitmq : creating incoming exchange
+2020-04-28 18:53:15,334 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:53:15,336 : rabbitmq : callback function called
+2020-04-28 18:53:15,369 : rabbitmq : sending message to exchange pose
+2020-04-28 18:53:15,388 : rabbitmq : callback function called
+2020-04-28 18:53:20,460 : rabbitmq : creating incoming exchange
+2020-04-28 18:53:20,486 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:53:20,489 : rabbitmq : callback function called
+2020-04-28 18:53:20,526 : rabbitmq : sending message to exchange pose
+2020-04-28 18:53:20,527 : rabbitmq : callback function called
+2020-04-28 18:53:50,437 : rabbitmq : creating pose exchange
+2020-04-28 18:53:50,455 : rabbitmq : creating incoming exchange
+2020-04-28 18:53:50,481 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 18:53:52,097 : rabbitmq : starting to consume from exchange pose
+2020-04-28 18:53:56,703 : rabbitmq : creating incoming exchange
+2020-04-28 18:53:56,729 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:53:56,731 : rabbitmq : callback function called
+2020-04-28 18:53:56,771 : rabbitmq : sending message to exchange pose
+2020-04-28 18:53:56,773 : rabbitmq : callback function called
+2020-04-28 18:54:01,940 : rabbitmq : creating incoming exchange
+2020-04-28 18:54:01,977 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:54:01,981 : rabbitmq : callback function called
+2020-04-28 18:54:02,025 : rabbitmq : sending message to exchange pose
+2020-04-28 18:54:02,027 : rabbitmq : callback function called
+2020-04-28 18:54:06,647 : rabbitmq : creating incoming exchange
+2020-04-28 18:54:06,679 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:54:06,680 : rabbitmq : callback function called
+2020-04-28 18:54:06,704 : rabbitmq : sending message to exchange pose
+2020-04-28 18:54:06,706 : rabbitmq : callback function called
+2020-04-28 18:54:11,249 : rabbitmq : creating incoming exchange
+2020-04-28 18:54:11,277 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:54:11,279 : rabbitmq : callback function called
+2020-04-28 18:54:11,314 : rabbitmq : sending message to exchange pose
+2020-04-28 18:54:11,317 : rabbitmq : callback function called
+2020-04-28 18:54:15,818 : rabbitmq : creating incoming exchange
+2020-04-28 18:54:15,845 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:54:15,848 : rabbitmq : callback function called
+2020-04-28 18:54:15,873 : rabbitmq : sending message to exchange pose
+2020-04-28 18:54:15,877 : rabbitmq : callback function called
+2020-04-28 18:56:35,791 : rabbitmq : creating pose exchange
+2020-04-28 18:56:35,810 : rabbitmq : creating incoming exchange
+2020-04-28 18:56:35,836 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 18:56:37,473 : rabbitmq : starting to consume from exchange pose
+2020-04-28 18:56:42,277 : rabbitmq : creating incoming exchange
+2020-04-28 18:56:42,309 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:56:42,312 : rabbitmq : callback function called
+2020-04-28 18:56:42,342 : rabbitmq : sending message to exchange pose
+2020-04-28 18:56:42,343 : rabbitmq : callback function called
+2020-04-28 18:56:48,189 : rabbitmq : creating incoming exchange
+2020-04-28 18:56:48,222 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:56:48,224 : rabbitmq : callback function called
+2020-04-28 18:56:48,268 : rabbitmq : sending message to exchange pose
+2020-04-28 18:56:48,274 : rabbitmq : callback function called
+2020-04-28 18:56:54,129 : rabbitmq : creating incoming exchange
+2020-04-28 18:56:54,164 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:56:54,170 : rabbitmq : callback function called
+2020-04-28 18:56:54,205 : rabbitmq : sending message to exchange pose
+2020-04-28 18:56:54,207 : rabbitmq : callback function called
+2020-04-28 18:57:01,440 : rabbitmq : creating incoming exchange
+2020-04-28 18:57:01,538 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:57:01,546 : rabbitmq : callback function called
+2020-04-28 18:57:01,606 : rabbitmq : sending message to exchange pose
+2020-04-28 18:57:01,621 : rabbitmq : callback function called
+2020-04-28 18:57:08,629 : rabbitmq : creating incoming exchange
+2020-04-28 18:57:08,665 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:57:08,667 : rabbitmq : callback function called
+2020-04-28 18:57:08,739 : rabbitmq : sending message to exchange pose
+2020-04-28 18:57:08,741 : rabbitmq : callback function called
+2020-04-28 18:57:37,991 : rabbitmq : creating pose exchange
+2020-04-28 18:57:38,011 : rabbitmq : creating incoming exchange
+2020-04-28 18:57:38,034 : rabbitmq : starting to consume from exchange incoming
+2020-04-28 18:57:39,603 : rabbitmq : starting to consume from exchange pose
+2020-04-28 18:57:44,890 : rabbitmq : creating incoming exchange
+2020-04-28 18:57:44,922 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:57:44,925 : rabbitmq : callback function called
+2020-04-28 18:57:44,949 : rabbitmq : sending message to exchange pose
+2020-04-28 18:57:44,952 : rabbitmq : callback function called
+2020-04-28 18:57:49,808 : rabbitmq : creating incoming exchange
+2020-04-28 18:57:49,835 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:57:49,836 : rabbitmq : callback function called
+2020-04-28 18:57:49,878 : rabbitmq : sending message to exchange pose
+2020-04-28 18:57:49,885 : rabbitmq : callback function called
+2020-04-28 18:57:54,773 : rabbitmq : creating incoming exchange
+2020-04-28 18:57:54,793 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:57:54,797 : rabbitmq : callback function called
+2020-04-28 18:57:54,820 : rabbitmq : sending message to exchange pose
+2020-04-28 18:57:54,822 : rabbitmq : callback function called
+2020-04-28 18:57:59,617 : rabbitmq : creating incoming exchange
+2020-04-28 18:57:59,638 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:57:59,641 : rabbitmq : callback function called
+2020-04-28 18:57:59,668 : rabbitmq : sending message to exchange pose
+2020-04-28 18:57:59,670 : rabbitmq : callback function called
+2020-04-28 18:58:04,901 : rabbitmq : creating incoming exchange
+2020-04-28 18:58:04,927 : rabbitmq : sending message to exchange incoming
+2020-04-28 18:58:04,928 : rabbitmq : callback function called
+2020-04-28 18:58:04,962 : rabbitmq : sending message to exchange pose
+2020-04-28 18:58:04,965 : rabbitmq : callback function called
+2020-04-28 19:07:53,048 : rabbitmq : creating pose exchange
+2020-04-28 19:07:53,076 : rabbitmq : creating incoming exchange
+2020-04-28 19:07:53,116 : rabbitmq : starting to consume from incoming exchange 
+2020-04-28 19:07:54,991 : rabbitmq : starting to consume from pose exchange 
+2020-04-28 19:08:00,369 : rabbitmq : creating incoming exchange
+2020-04-28 19:08:00,394 : rabbitmq : sending message to incoming exchange
+2020-04-28 19:08:00,398 : rabbitmq : callback function parse_and_publish called
+2020-04-28 19:08:00,435 : rabbitmq : sending message to pose exchange
+2020-04-28 19:08:00,442 : rabbitmq : callback function func called
+2020-04-28 19:08:07,189 : rabbitmq : sending message to incoming exchange
+2020-04-28 19:08:07,193 : rabbitmq : callback function parse_and_publish called
+2020-04-28 19:08:07,233 : rabbitmq : sending message to pose exchange
+2020-04-28 19:08:07,236 : rabbitmq : callback function func called
+2020-04-28 19:08:12,054 : rabbitmq : sending message to incoming exchange
+2020-04-28 19:08:12,056 : rabbitmq : callback function parse_and_publish called
+2020-04-28 19:08:12,085 : rabbitmq : sending message to pose exchange
+2020-04-28 19:08:12,087 : rabbitmq : callback function func called
+2020-04-28 19:08:16,693 : rabbitmq : sending message to incoming exchange
+2020-04-28 19:08:16,695 : rabbitmq : callback function parse_and_publish called
+2020-04-28 19:08:16,718 : rabbitmq : sending message to pose exchange
+2020-04-28 19:08:16,720 : rabbitmq : callback function func called
+2020-04-28 19:08:21,978 : rabbitmq : sending message to incoming exchange
+2020-04-28 19:08:21,981 : rabbitmq : callback function parse_and_publish called
+2020-04-28 19:08:22,008 : rabbitmq : sending message to pose exchange
+2020-04-28 19:08:22,009 : rabbitmq : callback function func called
+2020-04-28 19:08:55,033 : rabbitmq : creating pose exchange
+2020-04-28 19:08:55,053 : rabbitmq : creating incoming exchange
+2020-04-28 19:08:55,075 : rabbitmq : starting to consume from incoming exchange 
+2020-04-28 19:08:56,652 : rabbitmq : starting to consume from pose exchange 
+2020-04-28 19:09:01,528 : rabbitmq : creating incoming exchange
+2020-04-28 19:09:01,553 : rabbitmq : sending message to incoming exchange
+2020-04-28 19:09:01,558 : rabbitmq : callback function parse_and_publish called
+2020-04-28 19:09:01,586 : rabbitmq : sending message to pose exchange
+2020-04-28 19:09:01,593 : rabbitmq : callback function func called
+2020-04-28 19:09:07,018 : rabbitmq : sending message to incoming exchange
+2020-04-28 19:09:07,021 : rabbitmq : callback function parse_and_publish called
+2020-04-28 19:09:07,073 : rabbitmq : sending message to pose exchange
+2020-04-28 19:09:07,076 : rabbitmq : callback function func called
+2020-04-28 19:09:12,264 : rabbitmq : sending message to incoming exchange
+2020-04-28 19:09:12,266 : rabbitmq : callback function parse_and_publish called
+2020-04-28 19:09:12,294 : rabbitmq : sending message to pose exchange
+2020-04-28 19:09:12,297 : rabbitmq : callback function func called
+2020-04-28 19:09:17,673 : rabbitmq : sending message to incoming exchange
+2020-04-28 19:09:17,676 : rabbitmq : callback function parse_and_publish called
+2020-04-28 19:09:17,718 : rabbitmq : sending message to pose exchange
+2020-04-28 19:09:17,720 : rabbitmq : callback function func called
+2020-04-28 19:09:22,367 : rabbitmq : sending message to incoming exchange
+2020-04-28 19:09:22,370 : rabbitmq : callback function parse_and_publish called
+2020-04-28 19:09:22,411 : rabbitmq : sending message to pose exchange
+2020-04-28 19:09:22,413 : rabbitmq : callback function func called
+2020-04-28 19:32:17,069 : rabbitmq : creating pose exchange
+2020-04-28 19:32:17,085 : rabbitmq : creating incoming exchange
+2020-04-28 19:32:17,108 : rabbitmq : starting to consume from incoming exchange 
+2020-04-28 19:32:18,455 : rabbitmq : starting to consume from pose exchange 
+2020-04-28 19:32:23,462 : rabbitmq : creating incoming exchange
+2020-04-28 19:32:23,490 : rabbitmq : sending message to incoming exchange
+2020-04-28 19:32:23,493 : rabbitmq : callback function parse_and_publish called
+2020-04-28 19:32:23,521 : rabbitmq : sending message to pose exchange
+2020-04-28 19:32:23,525 : rabbitmq : callback function func called
+2020-04-28 19:32:27,866 : rabbitmq : sending message to incoming exchange
+2020-04-28 19:32:27,869 : rabbitmq : callback function parse_and_publish called
+2020-04-28 19:32:27,933 : rabbitmq : sending message to pose exchange
+2020-04-28 19:32:27,935 : rabbitmq : callback function func called
+2020-04-28 19:32:36,686 : rabbitmq : sending message to incoming exchange
+2020-04-28 19:32:36,706 : rabbitmq : callback function parse_and_publish called
+2020-04-28 19:32:36,755 : rabbitmq : sending message to pose exchange
+2020-04-28 19:32:36,762 : rabbitmq : callback function func called
+2020-04-28 19:32:43,294 : rabbitmq : sending message to incoming exchange
+2020-04-28 19:32:43,297 : rabbitmq : callback function parse_and_publish called
+2020-04-28 19:32:43,334 : rabbitmq : sending message to pose exchange
+2020-04-28 19:32:43,337 : rabbitmq : callback function func called
+2020-04-28 19:32:49,570 : rabbitmq : sending message to incoming exchange
+2020-04-28 19:32:49,573 : rabbitmq : callback function parse_and_publish called
+2020-04-28 19:32:49,609 : rabbitmq : sending message to pose exchange
+2020-04-28 19:32:49,613 : rabbitmq : callback function func called
+2020-04-28 19:33:19,389 : rabbitmq : creating pose exchange
+2020-04-28 19:33:19,408 : rabbitmq : creating incoming exchange
+2020-04-28 19:33:19,434 : rabbitmq : starting to consume from incoming exchange 
+2020-04-28 19:33:21,451 : rabbitmq : starting to consume from pose exchange 
+2020-04-28 19:33:26,448 : rabbitmq : creating incoming exchange
+2020-04-28 19:33:26,478 : rabbitmq : sending message to incoming exchange
+2020-04-28 19:33:26,481 : rabbitmq : callback function parse_and_publish called
+2020-04-28 19:33:26,510 : rabbitmq : sending message to pose exchange
+2020-04-28 19:33:26,516 : rabbitmq : callback function func called
+2020-04-28 19:33:32,678 : rabbitmq : sending message to incoming exchange
+2020-04-28 19:33:32,685 : rabbitmq : callback function parse_and_publish called
+2020-04-28 19:33:32,796 : rabbitmq : sending message to pose exchange
+2020-04-28 19:33:32,802 : rabbitmq : callback function func called
+2020-04-28 19:33:39,062 : rabbitmq : sending message to incoming exchange
+2020-04-28 19:33:39,064 : rabbitmq : callback function parse_and_publish called
+2020-04-28 19:33:39,109 : rabbitmq : sending message to pose exchange
+2020-04-28 19:33:39,112 : rabbitmq : callback function func called
+2020-04-28 19:33:45,598 : rabbitmq : sending message to incoming exchange
+2020-04-28 19:33:45,603 : rabbitmq : callback function parse_and_publish called
+2020-04-28 19:33:45,645 : rabbitmq : sending message to pose exchange
+2020-04-28 19:33:45,650 : rabbitmq : callback function func called
+2020-04-28 19:33:52,184 : rabbitmq : sending message to incoming exchange
+2020-04-28 19:33:52,186 : rabbitmq : callback function parse_and_publish called
+2020-04-28 19:33:52,235 : rabbitmq : sending message to pose exchange
+2020-04-28 19:33:52,241 : rabbitmq : callback function func called

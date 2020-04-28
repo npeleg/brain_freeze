@@ -10,7 +10,7 @@ def build_json_message(user, snapshot):
     message = dict(user_id=user.user_id,
                    username=user.username,
                    birthday=user.birthday,
-                   gender=user.gender,
+                   gender=user.gender.name,
                    datetime=snapshot.datetime,
                    pose=dict(translation=dict(x=snapshot.pose.translation.x,
                                               y=snapshot.pose.translation.y,
@@ -48,7 +48,7 @@ class ClientThread(threading.Thread):
         # publishing user and snapshot data to message queue:
         json_message = build_json_message(user, snapshot)
         logger.info('sending snapshot to message queue')
-        self.message_queue.send_to_incoming_topic(json_message)
+        self.message_queue.publish_to_incoming_topic(json_message)
 
 
 def run_server(address, url):
