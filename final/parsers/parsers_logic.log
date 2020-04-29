@@ -563,3 +563,117 @@
 2020-04-29 14:38:32,209 : parsers_logic : subscribing pose parser to incoming topic
 2020-04-29 14:38:34,117 : parsers_logic : loading parser modules
 2020-04-29 14:38:34,119 : parsers_logic : sending parsers names
+2020-04-29 18:56:00,562 : parsers_logic : loading parser modules
+2020-04-29 18:56:00,569 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-29 18:56:00,582 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-29 18:56:17,743 : parsers_logic : loading parser modules
+2020-04-29 18:56:17,749 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-29 18:56:17,769 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-29 18:56:25,861 : parsers_logic : loading parser modules
+2020-04-29 18:56:25,864 : parsers_logic : sending parsers names
+2020-04-29 18:56:30,264 : parsers_logic : loading parser modules
+2020-04-29 18:56:30,265 : parsers_logic : sending parsers names
+2020-04-29 18:56:34,497 : parsers_logic : loading parser modules
+2020-04-29 18:56:34,498 : parsers_logic : sending parsers names
+2020-04-29 18:56:39,440 : parsers_logic : loading parser modules
+2020-04-29 18:56:39,440 : parsers_logic : sending parsers names
+2020-04-29 18:56:44,085 : parsers_logic : loading parser modules
+2020-04-29 18:56:44,085 : parsers_logic : sending parsers names
+2020-04-29 18:57:20,887 : parsers_logic : loading parser modules
+2020-04-29 18:57:20,893 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-29 18:57:20,909 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-29 18:57:27,518 : parsers_logic : loading parser modules
+2020-04-29 18:57:27,520 : parsers_logic : sending parsers names
+2020-04-29 18:57:31,326 : parsers_logic : loading parser modules
+2020-04-29 18:57:31,327 : parsers_logic : sending parsers names
+2020-04-29 18:57:35,086 : parsers_logic : loading parser modules
+2020-04-29 18:57:35,087 : parsers_logic : sending parsers names
+2020-04-29 18:57:38,869 : parsers_logic : loading parser modules
+2020-04-29 18:57:38,870 : parsers_logic : sending parsers names
+2020-04-29 18:57:42,569 : parsers_logic : loading parser modules
+2020-04-29 18:57:42,569 : parsers_logic : sending parsers names
+2020-04-29 20:08:46,891 : parsers_logic : loading parser modules
+2020-04-29 20:08:46,897 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-29 20:08:46,912 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-29 20:08:53,816 : parsers_logic : loading parser modules
+2020-04-29 20:08:53,819 : parsers_logic : sending parsers names
+2020-04-29 20:08:57,617 : parsers_logic : loading parser modules
+2020-04-29 20:08:57,618 : parsers_logic : sending parsers names
+2020-04-29 20:09:02,737 : parsers_logic : loading parser modules
+2020-04-29 20:09:02,738 : parsers_logic : sending parsers names
+2020-04-29 20:09:07,398 : parsers_logic : loading parser modules
+2020-04-29 20:09:07,399 : parsers_logic : sending parsers names
+2020-04-29 20:09:11,279 : parsers_logic : loading parser modules
+2020-04-29 20:09:11,280 : parsers_logic : sending parsers names
+2020-04-29 20:09:50,404 : parsers_logic : loading parser modules
+2020-04-29 20:09:50,411 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-29 20:09:50,430 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-29 20:09:59,055 : parsers_logic : loading parser modules
+2020-04-29 20:09:59,059 : parsers_logic : sending parsers names
+2020-04-29 20:10:03,519 : parsers_logic : loading parser modules
+2020-04-29 20:10:03,520 : parsers_logic : sending parsers names
+2020-04-29 20:10:07,429 : parsers_logic : loading parser modules
+2020-04-29 20:10:07,429 : parsers_logic : sending parsers names
+2020-04-29 20:10:11,394 : parsers_logic : loading parser modules
+2020-04-29 20:10:11,395 : parsers_logic : sending parsers names
+2020-04-29 20:10:15,263 : parsers_logic : loading parser modules
+2020-04-29 20:10:15,264 : parsers_logic : sending parsers names
+2020-04-29 20:29:27,561 : parsers_logic : loading parser modules
+2020-04-29 20:29:27,567 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-29 20:29:27,582 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-29 20:29:37,148 : parsers_logic : loading parser modules
+2020-04-29 20:29:37,150 : parsers_logic : sending parsers names
+2020-04-29 20:29:41,748 : parsers_logic : loading parser modules
+2020-04-29 20:29:41,749 : parsers_logic : sending parsers names
+2020-04-29 20:29:46,122 : parsers_logic : loading parser modules
+2020-04-29 20:29:46,123 : parsers_logic : sending parsers names
+2020-04-29 20:29:50,959 : parsers_logic : loading parser modules
+2020-04-29 20:29:50,960 : parsers_logic : sending parsers names
+2020-04-29 20:29:55,076 : parsers_logic : loading parser modules
+2020-04-29 20:29:55,076 : parsers_logic : sending parsers names
+2020-04-29 20:36:51,029 : parsers_logic : loading parser modules
+2020-04-29 20:36:51,035 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-29 20:36:51,049 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-29 20:37:00,924 : parsers_logic : loading parser modules
+2020-04-29 20:37:00,926 : parsers_logic : sending parsers names
+2020-04-29 20:37:05,179 : parsers_logic : loading parser modules
+2020-04-29 20:37:05,180 : parsers_logic : sending parsers names
+2020-04-29 20:37:09,052 : parsers_logic : loading parser modules
+2020-04-29 20:37:09,053 : parsers_logic : sending parsers names
+2020-04-29 20:37:13,842 : parsers_logic : loading parser modules
+2020-04-29 20:37:13,843 : parsers_logic : sending parsers names
+2020-04-29 20:37:18,986 : parsers_logic : loading parser modules
+2020-04-29 20:37:18,987 : parsers_logic : sending parsers names
+2020-04-29 20:39:19,467 : parsers_logic : loading parser modules
+2020-04-29 20:39:19,475 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-29 20:39:19,495 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-29 20:39:26,597 : parsers_logic : loading parser modules
+2020-04-29 20:39:26,599 : parsers_logic : sending parsers names
+2020-04-29 20:39:30,827 : parsers_logic : loading parser modules
+2020-04-29 20:39:30,827 : parsers_logic : sending parsers names
+2020-04-29 20:39:34,610 : parsers_logic : loading parser modules
+2020-04-29 20:39:34,610 : parsers_logic : sending parsers names
+2020-04-29 20:39:38,310 : parsers_logic : loading parser modules
+2020-04-29 20:39:38,310 : parsers_logic : sending parsers names
+2020-04-29 20:39:42,106 : parsers_logic : loading parser modules
+2020-04-29 20:39:42,107 : parsers_logic : sending parsers names
+2020-04-29 20:42:31,574 : parsers_logic : loading parser modules
+2020-04-29 20:42:31,580 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-29 20:42:31,593 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-29 20:42:34,535 : parsers_logic : loading parser modules
+2020-04-29 20:42:34,542 : parsers_logic : sending parsers names
+2020-04-29 20:45:33,382 : parsers_logic : loading parser modules
+2020-04-29 20:45:33,388 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-29 20:45:33,420 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-29 20:45:35,439 : parsers_logic : loading parser modules
+2020-04-29 20:45:35,443 : parsers_logic : sending parsers names
+2020-04-29 20:56:09,686 : parsers_logic : loading parser modules
+2020-04-29 20:56:09,692 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-04-29 20:56:09,720 : parsers_logic : subscribing pose parser to incoming topic
+2020-04-29 20:56:11,716 : parsers_logic : loading parser modules
+2020-04-29 20:56:11,718 : parsers_logic : sending parsers names
+2020-04-29 20:56:16,908 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}}
+2020-04-29 20:56:20,635 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}}
+2020-04-29 20:56:24,455 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}}
+2020-04-29 20:56:28,167 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}}
+2020-04-29 20:56:31,951 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}}

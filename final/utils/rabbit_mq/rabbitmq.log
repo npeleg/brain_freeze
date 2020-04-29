@@ -1081,3 +1081,242 @@
 2020-04-29 14:38:54,406 : rabbitmq : sending message to incoming exchange
 2020-04-29 14:38:54,407 : rabbitmq : callback function parse_and_publish called
 2020-04-29 14:38:54,432 : rabbitmq : sending message to pose exchange
+2020-04-29 18:56:00,581 : rabbitmq : creating pose exchange
+2020-04-29 18:56:00,600 : rabbitmq : starting to consume from incoming exchange 
+2020-04-29 18:56:01,586 : rabbitmq : starting to consume from pose exchange 
+2020-04-29 18:56:17,768 : rabbitmq : creating pose exchange
+2020-04-29 18:56:17,782 : rabbitmq : starting to consume from incoming exchange 
+2020-04-29 18:56:18,753 : rabbitmq : starting to consume from pose exchange 
+2020-04-29 18:56:25,899 : rabbitmq : sending message to incoming exchange
+2020-04-29 18:56:25,900 : rabbitmq : callback function parse_and_publish called
+2020-04-29 18:56:25,926 : rabbitmq : sending message to pose exchange
+2020-04-29 18:56:25,929 : rabbitmq : callback function func called
+2020-04-29 18:56:30,297 : rabbitmq : sending message to incoming exchange
+2020-04-29 18:56:30,299 : rabbitmq : callback function parse_and_publish called
+2020-04-29 18:56:30,319 : rabbitmq : sending message to pose exchange
+2020-04-29 18:56:30,320 : rabbitmq : callback function func called
+2020-04-29 18:56:34,536 : rabbitmq : sending message to incoming exchange
+2020-04-29 18:56:34,539 : rabbitmq : callback function parse_and_publish called
+2020-04-29 18:56:34,562 : rabbitmq : sending message to pose exchange
+2020-04-29 18:56:34,564 : rabbitmq : callback function func called
+2020-04-29 18:56:39,467 : rabbitmq : sending message to incoming exchange
+2020-04-29 18:56:39,469 : rabbitmq : callback function parse_and_publish called
+2020-04-29 18:56:39,492 : rabbitmq : sending message to pose exchange
+2020-04-29 18:56:39,493 : rabbitmq : callback function func called
+2020-04-29 18:56:44,121 : rabbitmq : sending message to incoming exchange
+2020-04-29 18:56:44,125 : rabbitmq : callback function parse_and_publish called
+2020-04-29 18:56:44,164 : rabbitmq : sending message to pose exchange
+2020-04-29 18:56:44,166 : rabbitmq : callback function func called
+2020-04-29 18:57:20,908 : rabbitmq : creating pose exchange
+2020-04-29 18:57:20,926 : rabbitmq : starting to consume from incoming exchange 
+2020-04-29 18:57:21,858 : rabbitmq : starting to consume from pose exchange 
+2020-04-29 18:57:27,550 : rabbitmq : sending message to incoming exchange
+2020-04-29 18:57:27,551 : rabbitmq : callback function parse_and_publish called
+2020-04-29 18:57:27,578 : rabbitmq : sending message to pose exchange
+2020-04-29 18:57:27,583 : rabbitmq : callback function func called
+2020-04-29 18:57:31,352 : rabbitmq : sending message to incoming exchange
+2020-04-29 18:57:31,353 : rabbitmq : callback function parse_and_publish called
+2020-04-29 18:57:31,375 : rabbitmq : sending message to pose exchange
+2020-04-29 18:57:31,376 : rabbitmq : callback function func called
+2020-04-29 18:57:35,115 : rabbitmq : sending message to incoming exchange
+2020-04-29 18:57:35,116 : rabbitmq : callback function parse_and_publish called
+2020-04-29 18:57:35,139 : rabbitmq : sending message to pose exchange
+2020-04-29 18:57:35,140 : rabbitmq : callback function func called
+2020-04-29 18:57:38,900 : rabbitmq : sending message to incoming exchange
+2020-04-29 18:57:38,902 : rabbitmq : callback function parse_and_publish called
+2020-04-29 18:57:38,923 : rabbitmq : sending message to pose exchange
+2020-04-29 18:57:38,924 : rabbitmq : callback function func called
+2020-04-29 18:57:42,602 : rabbitmq : sending message to incoming exchange
+2020-04-29 18:57:42,603 : rabbitmq : callback function parse_and_publish called
+2020-04-29 18:57:42,624 : rabbitmq : sending message to pose exchange
+2020-04-29 18:57:42,625 : rabbitmq : callback function func called
+2020-04-29 20:08:46,911 : rabbitmq : creating pose exchange
+2020-04-29 20:08:46,929 : rabbitmq : starting to consume from incoming exchange 
+2020-04-29 20:08:47,918 : rabbitmq : starting to consume from pose exchange 
+2020-04-29 20:08:53,850 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:08:53,852 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:08:53,874 : rabbitmq : sending message to pose exchange
+2020-04-29 20:08:53,875 : rabbitmq : callback function func called
+2020-04-29 20:08:57,653 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:08:57,654 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:08:57,684 : rabbitmq : sending message to pose exchange
+2020-04-29 20:08:57,685 : rabbitmq : callback function func called
+2020-04-29 20:09:02,774 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:09:02,777 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:09:02,824 : rabbitmq : sending message to pose exchange
+2020-04-29 20:09:02,847 : rabbitmq : callback function func called
+2020-04-29 20:09:07,432 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:09:07,433 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:09:07,456 : rabbitmq : sending message to pose exchange
+2020-04-29 20:09:07,457 : rabbitmq : callback function func called
+2020-04-29 20:09:11,313 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:09:11,315 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:09:11,352 : rabbitmq : sending message to pose exchange
+2020-04-29 20:09:11,354 : rabbitmq : callback function func called
+2020-04-29 20:09:50,429 : rabbitmq : creating pose exchange
+2020-04-29 20:09:50,449 : rabbitmq : starting to consume from incoming exchange 
+2020-04-29 20:09:51,253 : rabbitmq : starting to consume from pose exchange 
+2020-04-29 20:09:59,105 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:09:59,108 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:09:59,140 : rabbitmq : sending message to pose exchange
+2020-04-29 20:09:59,142 : rabbitmq : callback function func called
+2020-04-29 20:10:03,555 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:10:03,556 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:10:03,579 : rabbitmq : sending message to pose exchange
+2020-04-29 20:10:03,582 : rabbitmq : callback function func called
+2020-04-29 20:10:07,464 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:10:07,465 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:10:07,483 : rabbitmq : sending message to pose exchange
+2020-04-29 20:10:07,485 : rabbitmq : callback function func called
+2020-04-29 20:10:11,427 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:10:11,429 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:10:11,452 : rabbitmq : sending message to pose exchange
+2020-04-29 20:10:11,454 : rabbitmq : callback function func called
+2020-04-29 20:10:15,295 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:10:15,296 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:10:15,322 : rabbitmq : sending message to pose exchange
+2020-04-29 20:10:15,324 : rabbitmq : callback function func called
+2020-04-29 20:29:27,581 : rabbitmq : creating pose exchange
+2020-04-29 20:29:27,597 : rabbitmq : starting to consume from incoming exchange 
+2020-04-29 20:29:28,587 : rabbitmq : starting to consume from pose exchange 
+2020-04-29 20:29:37,182 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:29:37,183 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:29:37,210 : rabbitmq : sending message to pose exchange
+2020-04-29 20:29:37,212 : rabbitmq : callback function func called
+2020-04-29 20:29:41,798 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:29:41,806 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:29:41,834 : rabbitmq : sending message to pose exchange
+2020-04-29 20:29:41,836 : rabbitmq : callback function func called
+2020-04-29 20:29:46,165 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:29:46,168 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:29:46,200 : rabbitmq : sending message to pose exchange
+2020-04-29 20:29:46,202 : rabbitmq : callback function func called
+2020-04-29 20:29:50,996 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:29:50,998 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:29:51,029 : rabbitmq : sending message to pose exchange
+2020-04-29 20:29:51,032 : rabbitmq : callback function func called
+2020-04-29 20:29:55,107 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:29:55,108 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:29:55,131 : rabbitmq : sending message to pose exchange
+2020-04-29 20:29:55,132 : rabbitmq : callback function func called
+2020-04-29 20:36:51,048 : rabbitmq : creating pose exchange
+2020-04-29 20:36:51,067 : rabbitmq : starting to consume from incoming exchange 
+2020-04-29 20:36:52,038 : rabbitmq : starting to consume from pose exchange 
+2020-04-29 20:37:00,962 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:37:00,966 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:37:00,992 : rabbitmq : sending message to pose exchange
+2020-04-29 20:37:00,994 : rabbitmq : callback function func called
+2020-04-29 20:37:05,206 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:37:05,207 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:37:05,237 : rabbitmq : sending message to pose exchange
+2020-04-29 20:37:05,238 : rabbitmq : callback function func called
+2020-04-29 20:37:09,086 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:37:09,088 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:37:09,119 : rabbitmq : sending message to pose exchange
+2020-04-29 20:37:09,121 : rabbitmq : callback function func called
+2020-04-29 20:37:13,878 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:37:13,883 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:37:13,916 : rabbitmq : sending message to pose exchange
+2020-04-29 20:37:13,918 : rabbitmq : callback function func called
+2020-04-29 20:37:19,020 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:37:19,021 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:37:19,048 : rabbitmq : sending message to pose exchange
+2020-04-29 20:37:19,052 : rabbitmq : callback function func called
+2020-04-29 20:39:19,493 : rabbitmq : creating pose exchange
+2020-04-29 20:39:19,513 : rabbitmq : starting to consume from incoming exchange 
+2020-04-29 20:39:20,444 : rabbitmq : creating pose exchange
+2020-04-29 20:39:20,463 : rabbitmq : starting to consume from pose exchange 
+2020-04-29 20:39:26,633 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:39:26,634 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:39:26,660 : rabbitmq : sending message to pose exchange
+2020-04-29 20:39:26,668 : rabbitmq : callback function func called
+2020-04-29 20:39:30,857 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:39:30,858 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:39:30,881 : rabbitmq : sending message to pose exchange
+2020-04-29 20:39:30,883 : rabbitmq : callback function func called
+2020-04-29 20:39:34,638 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:39:34,640 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:39:34,663 : rabbitmq : sending message to pose exchange
+2020-04-29 20:39:34,664 : rabbitmq : callback function func called
+2020-04-29 20:39:38,340 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:39:38,344 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:39:38,363 : rabbitmq : sending message to pose exchange
+2020-04-29 20:39:38,365 : rabbitmq : callback function func called
+2020-04-29 20:39:42,138 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:39:42,140 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:39:42,161 : rabbitmq : sending message to pose exchange
+2020-04-29 20:39:42,162 : rabbitmq : callback function func called
+2020-04-29 20:42:31,592 : rabbitmq : creating pose exchange
+2020-04-29 20:42:31,612 : rabbitmq : starting to consume from incoming exchange 
+2020-04-29 20:42:32,516 : rabbitmq : creating pose exchange
+2020-04-29 20:42:32,533 : rabbitmq : starting to consume from pose exchange 
+2020-04-29 20:42:41,109 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:42:41,111 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:42:41,151 : rabbitmq : sending message to pose exchange
+2020-04-29 20:42:41,157 : rabbitmq : callback function func called
+2020-04-29 20:42:47,219 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:42:47,220 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:42:47,270 : rabbitmq : sending message to pose exchange
+2020-04-29 20:42:47,281 : rabbitmq : callback function func called
+2020-04-29 20:42:51,970 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:42:51,972 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:42:52,003 : rabbitmq : sending message to pose exchange
+2020-04-29 20:42:52,004 : rabbitmq : callback function func called
+2020-04-29 20:42:56,115 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:42:56,117 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:42:56,137 : rabbitmq : sending message to pose exchange
+2020-04-29 20:42:56,139 : rabbitmq : callback function func called
+2020-04-29 20:43:01,064 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:43:01,068 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:43:01,092 : rabbitmq : sending message to pose exchange
+2020-04-29 20:43:01,094 : rabbitmq : callback function func called
+2020-04-29 20:45:33,404 : rabbitmq : creating pose exchange
+2020-04-29 20:45:33,419 : rabbitmq : creating incoming exchange
+2020-04-29 20:45:33,440 : rabbitmq : starting to consume from incoming exchange 
+2020-04-29 20:45:34,372 : rabbitmq : creating pose exchange
+2020-04-29 20:45:34,392 : rabbitmq : starting to consume from pose exchange 
+2020-04-29 20:45:42,416 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:45:42,422 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:45:42,449 : rabbitmq : sending message to pose exchange
+2020-04-29 20:45:42,451 : rabbitmq : callback function func called
+2020-04-29 20:45:46,914 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:45:46,915 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:45:46,948 : rabbitmq : sending message to pose exchange
+2020-04-29 20:45:46,949 : rabbitmq : callback function func called
+2020-04-29 20:45:51,602 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:45:51,608 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:45:51,655 : rabbitmq : sending message to pose exchange
+2020-04-29 20:45:51,657 : rabbitmq : callback function func called
+2020-04-29 20:45:56,995 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:45:56,996 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:45:57,025 : rabbitmq : sending message to pose exchange
+2020-04-29 20:45:57,026 : rabbitmq : callback function func called
+2020-04-29 20:46:01,394 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:46:01,396 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:46:01,417 : rabbitmq : sending message to pose exchange
+2020-04-29 20:46:01,418 : rabbitmq : callback function func called
+2020-04-29 20:56:09,707 : rabbitmq : creating pose exchange
+2020-04-29 20:56:09,719 : rabbitmq : creating incoming exchange
+2020-04-29 20:56:09,736 : rabbitmq : starting to consume from incoming exchange 
+2020-04-29 20:56:10,676 : rabbitmq : creating pose exchange
+2020-04-29 20:56:10,695 : rabbitmq : starting to consume from pose exchange 
+2020-04-29 20:56:16,901 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:56:16,908 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:56:16,926 : rabbitmq : sending message to pose exchange
+2020-04-29 20:56:16,927 : rabbitmq : callback function func called
+2020-04-29 20:56:20,633 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:56:20,634 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:56:20,661 : rabbitmq : sending message to pose exchange
+2020-04-29 20:56:20,663 : rabbitmq : callback function func called
+2020-04-29 20:56:24,454 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:56:24,455 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:56:24,481 : rabbitmq : sending message to pose exchange
+2020-04-29 20:56:24,482 : rabbitmq : callback function func called
+2020-04-29 20:56:28,165 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:56:28,166 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:56:28,193 : rabbitmq : sending message to pose exchange
+2020-04-29 20:56:28,194 : rabbitmq : callback function func called
+2020-04-29 20:56:31,950 : rabbitmq : sending message to incoming exchange
+2020-04-29 20:56:31,951 : rabbitmq : callback function parse_and_publish called
+2020-04-29 20:56:31,974 : rabbitmq : sending message to pose exchange
+2020-04-29 20:56:31,975 : rabbitmq : callback function func called

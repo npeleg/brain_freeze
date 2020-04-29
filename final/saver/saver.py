@@ -7,7 +7,7 @@ parsers = {'pose'}
 
 def func(data):
     logger.info("received data from pose exchange")
-    logger.info("message is : " + data)
+    logger.info(data)
     print("OK")
 
 
@@ -24,5 +24,5 @@ class Saver:
     def run_saver(self, mq_url):
         # TODO how to make this work with all the parsers
         mq = MQManager(mq_url)
-        # mq.create_topic('pose')
+        mq.create_topic('pose')
         mq.subscribe_to_topic('pose', func)

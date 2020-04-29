@@ -1,10 +1,5 @@
 import subprocess
 import time
-import multiprocessing
-import os
-import sys
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from final import client, utils
 
 ADDRESS = '127.0.0.1', 8000
 SMALL_SAMPLE_PATH = "./tests/utils/small_sample.mind.gz"
@@ -46,6 +41,3 @@ def test_end_to_end():
     print("saver out: " + out.decode())
     print("saver err: " + err.decode())
     # assert 'OK' in out.decode()
-
-
-test_end_to_end()
