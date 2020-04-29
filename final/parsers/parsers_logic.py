@@ -34,19 +34,20 @@ class Parsers:
 
     def get_parsers_names(self):
         """ Return the parsers' names """
-        logger.info('sending parsers names to server')
+        logger.info('sending parsers names')
         return self.parsers_dict.keys()
 
-    def parse(self, field, data):
-        return self.parsers_dict[field](data)
+    def parse(self, parser_name, data):
+        return self.parsers_dict[parser_name](data)
 
     def run_parser(self, parser_name, mq_url):
-        mq = MQManager(mq_url)
         if parser_name not in self.parsers_dict:
             raise KeyError("parser does not exist")
         parser = self.parsers_dict[parser_name]
+        mq = MQManager(mq_url)
         logger.info(f'adding a topic for the parsed results of {parser_name} parser')
         mq.create_topic(parser_name)
+        mq.create_incoming_topic()
         logger.info(f'subscribing {parser_name} parser to incoming topic')
         parse_and_publish = wrap_parser(parser_name, parser, mq)
         mq.subscribe_to_incoming_topic(parse_and_publish)

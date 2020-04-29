@@ -25,7 +25,7 @@ def save(database, parser_name, source_file):
         return 1
 
 
-@main.command('run_saver')  # TODO with - or _ ?
+@main.command('run_saver')
 @click.argument('database', type=click.STRING)
 @click.argument('message_queue', type=click.STRING)
 def run_saver(database, message_queue):
