@@ -124,3 +124,65 @@
 2020-04-29 21:10:13,527 : client : finished uploading snapshots to server
 2020-05-05 19:12:23,673 : client : starting to upload snapshots to server
 2020-05-05 19:19:07,433 : client : starting to upload snapshots to server
+2020-05-05 21:49:16,936 : client : starting to upload snapshots to server
+2020-05-05 22:19:10,094 : client : starting to upload snapshots to server
+2020-05-05 22:26:25,249 : client : starting to upload snapshots to server
+2020-05-05 22:32:28,885 : client : starting to upload snapshots to server
+2020-05-05 22:36:08,003 : client : starting to upload snapshots to server
+2020-05-05 22:40:11,499 : client : starting to upload snapshots to server
+2020-05-05 22:43:44,489 : client : starting to upload snapshots to server
+2020-05-05 22:43:49,190 : client : got response
+2020-05-05 22:43:49,190 : client : jsonified
+2020-05-05 22:48:52,867 : client : starting to upload snapshots to server
+2020-05-05 22:48:57,026 : client : got response
+2020-05-05 22:48:57,027 : client : jsonified
+2020-05-05 22:48:57,027 : client : returning parsers
+2020-05-05 22:48:57,027 : client : building config message
+2020-05-05 22:48:57,027 : client : building partial snapshot
+2020-05-05 22:48:57,031 : client : serializing snapshot
+2020-05-05 22:48:57,032 : client : sending to server
+2020-05-05 22:48:57,039 : client : got response
+2020-05-05 22:48:57,039 : client : jsonified
+2020-05-05 22:48:57,039 : client : server did not accept snapshot due to error: 'NoneType' object is not subscriptable
+2020-05-05 22:49:02,665 : client : got response
+2020-05-05 22:49:02,666 : client : jsonified
+2020-05-05 22:49:02,666 : client : returning parsers
+2020-05-05 22:49:02,666 : client : building config message
+2020-05-05 22:49:02,666 : client : building partial snapshot
+2020-05-05 22:49:02,671 : client : serializing snapshot
+2020-05-05 22:49:02,671 : client : sending to server
+2020-05-05 22:49:02,678 : client : got response
+2020-05-05 22:49:02,679 : client : jsonified
+2020-05-05 22:49:02,679 : client : server did not accept snapshot due to error: 'NoneType' object is not subscriptable
+2020-05-05 22:49:07,074 : client : got response
+2020-05-05 22:49:07,074 : client : jsonified
+2020-05-05 22:49:07,074 : client : returning parsers
+2020-05-05 22:49:07,074 : client : building config message
+2020-05-05 22:49:07,074 : client : building partial snapshot
+2020-05-05 22:49:07,078 : client : serializing snapshot
+2020-05-05 22:49:07,078 : client : sending to server
+2020-05-05 22:49:07,085 : client : got response
+2020-05-05 22:49:07,086 : client : jsonified
+2020-05-05 22:49:07,086 : client : server did not accept snapshot due to error: 'NoneType' object is not subscriptable
+2020-05-05 22:49:11,039 : client : got response
+2020-05-05 22:49:11,039 : client : jsonified
+2020-05-05 22:49:11,039 : client : returning parsers
+2020-05-05 22:49:11,039 : client : building config message
+2020-05-05 22:49:11,039 : client : building partial snapshot
+2020-05-05 22:49:11,043 : client : serializing snapshot
+2020-05-05 22:49:11,043 : client : sending to server
+2020-05-05 22:49:11,050 : client : got response
+2020-05-05 22:49:11,050 : client : jsonified
+2020-05-05 22:49:11,050 : client : server did not accept snapshot due to error: 'NoneType' object is not subscriptable
+2020-05-05 22:49:14,939 : client : got response
+2020-05-05 22:49:14,939 : client : jsonified
+2020-05-05 22:49:14,939 : client : returning parsers
+2020-05-05 22:49:14,940 : client : building config message
+2020-05-05 22:49:14,940 : client : building partial snapshot
+2020-05-05 22:49:14,944 : client : serializing snapshot
+2020-05-05 22:49:14,944 : client : sending to server
+2020-05-05 22:49:14,951 : client : got response
+2020-05-05 22:49:14,951 : client : jsonified
+2020-05-05 22:49:14,951 : client : server did not accept snapshot due to error: 'NoneType' object is not subscriptable
+2020-05-05 22:49:14,952 : client : finished uploading snapshots to server
+2020-05-05 23:17:10,717 : client : starting to upload snapshots to server

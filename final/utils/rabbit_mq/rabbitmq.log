@@ -1383,3 +1383,48 @@
 2020-05-05 19:19:04,359 : rabbitmq : starting to consume from incoming exchange 
 2020-05-05 19:19:05,395 : rabbitmq : creating pose exchange
 2020-05-05 19:19:05,422 : rabbitmq : starting to consume from pose exchange 
+2020-05-05 21:49:13,707 : rabbitmq : creating pose exchange
+2020-05-05 21:49:13,739 : rabbitmq : creating incoming exchange
+2020-05-05 21:49:13,780 : rabbitmq : starting to consume from incoming exchange 
+2020-05-05 21:49:14,971 : rabbitmq : creating pose exchange
+2020-05-05 21:49:15,016 : rabbitmq : starting to consume from pose exchange 
+2020-05-05 22:19:03,610 : rabbitmq : creating pose exchange
+2020-05-05 22:19:03,646 : rabbitmq : creating incoming exchange
+2020-05-05 22:19:03,682 : rabbitmq : starting to consume from incoming exchange 
+2020-05-05 22:19:04,707 : rabbitmq : creating pose exchange
+2020-05-05 22:19:04,756 : rabbitmq : starting to consume from pose exchange 
+2020-05-05 22:26:22,174 : rabbitmq : creating pose exchange
+2020-05-05 22:26:22,197 : rabbitmq : creating incoming exchange
+2020-05-05 22:26:22,224 : rabbitmq : starting to consume from incoming exchange 
+2020-05-05 22:26:23,255 : rabbitmq : creating pose exchange
+2020-05-05 22:26:23,285 : rabbitmq : starting to consume from pose exchange 
+2020-05-05 22:32:25,550 : rabbitmq : creating pose exchange
+2020-05-05 22:32:25,591 : rabbitmq : creating incoming exchange
+2020-05-05 22:32:25,645 : rabbitmq : starting to consume from incoming exchange 
+2020-05-05 22:32:27,444 : rabbitmq : creating pose exchange
+2020-05-05 22:32:27,503 : rabbitmq : starting to consume from pose exchange 
+2020-05-05 22:36:04,605 : rabbitmq : creating pose exchange
+2020-05-05 22:36:04,653 : rabbitmq : creating incoming exchange
+2020-05-05 22:36:04,691 : rabbitmq : starting to consume from incoming exchange 
+2020-05-05 22:36:05,844 : rabbitmq : creating pose exchange
+2020-05-05 22:36:05,908 : rabbitmq : starting to consume from pose exchange 
+2020-05-05 22:40:08,434 : rabbitmq : creating pose exchange
+2020-05-05 22:40:08,451 : rabbitmq : creating incoming exchange
+2020-05-05 22:40:08,489 : rabbitmq : starting to consume from incoming exchange 
+2020-05-05 22:40:09,559 : rabbitmq : creating pose exchange
+2020-05-05 22:40:09,598 : rabbitmq : starting to consume from pose exchange 
+2020-05-05 22:43:40,791 : rabbitmq : creating pose exchange
+2020-05-05 22:43:40,821 : rabbitmq : creating incoming exchange
+2020-05-05 22:43:40,885 : rabbitmq : starting to consume from incoming exchange 
+2020-05-05 22:43:42,459 : rabbitmq : creating pose exchange
+2020-05-05 22:43:42,533 : rabbitmq : starting to consume from pose exchange 
+2020-05-05 22:48:49,706 : rabbitmq : creating pose exchange
+2020-05-05 22:48:49,723 : rabbitmq : creating incoming exchange
+2020-05-05 22:48:49,745 : rabbitmq : starting to consume from incoming exchange 
+2020-05-05 22:48:50,703 : rabbitmq : creating pose exchange
+2020-05-05 22:48:50,731 : rabbitmq : starting to consume from pose exchange 
+2020-05-05 23:17:07,610 : rabbitmq : creating pose exchange
+2020-05-05 23:17:07,632 : rabbitmq : creating incoming exchange
+2020-05-05 23:17:07,657 : rabbitmq : starting to consume from incoming exchange 
+2020-05-05 23:17:08,602 : rabbitmq : creating pose exchange
+2020-05-05 23:17:08,627 : rabbitmq : starting to consume from pose exchange 

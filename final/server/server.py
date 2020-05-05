@@ -36,19 +36,24 @@ def build_json_message(user, snapshot):
 def return_parsers():
     global parsers
     logger.info('sending parsers list to client')
-    return flask.jsonify({'parsers': parsers})
+    return flask.jsonify({'parsers': parsers, 'error': None})
 
 
 @app.route('/snapshots', methods=['POST'])
 def receive_snapshot():
     global message_queue, user_function
     try:
-        request = flask.request.json
+        request = flask.request.get_json(force=True)
+        print(request)
         if user_function:
+            print('user function is not none')
             user_function(request['snapshot'])
         else:
+            print("1")
             user_message = protocol.deserialize_user(request['user'])
+            print("2")
             snapshot_message = protocol.deserialize_snapshot(request['snapshot'])
+            print("3")
             json_message = build_json_message(user_message, snapshot_message)
             logger.info('sending snapshot to message queue')
             message_queue.publish_to_incoming_topic(json_message)

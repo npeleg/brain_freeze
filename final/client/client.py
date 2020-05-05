@@ -8,16 +8,16 @@ logger = Logger(__name__).logger
 def get_parsers_from_server(host, port):
     r = requests.get(f'http://{host}:{port}/config')
     response = r.json()
-    if response['error'] is not None:
+    if response['error']:
         logger.error(f"could not get parsers from server due to error: {response['error']}")
         return None
     return response['parsers']
 
 
 def send_to_server(host, port, user, snapshot):
-    r = requests.post(f'http://{host}:{port}/snapshots', data={'user': user, 'snapshot': snapshot})
+    r = requests.post(f'http://{host}:{port}/snapshots', json={'user': user, 'snapshot': snapshot})
     response = r.json()
-    if response['error'] is not None:
+    if response['error']:
         logger.error(f"server did not accept snapshot due to error: {response['error']}")
 
 
@@ -30,6 +30,7 @@ def upload_sample(host, port, path):
     for snapshot in reader:
         parsers = get_parsers_from_server(host, port)
         if parsers is None:
+            logger.info("parsers is none")
             continue
         config = protocol.init_protocol_config(parsers)
         partial_snapshot = protocol.build_partial_snapshot(snapshot, config)

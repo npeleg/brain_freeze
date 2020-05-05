@@ -720,3 +720,58 @@
 2020-05-05 20:07:54,444 : parsers_logic : sending parsers names
 2020-05-05 20:08:30,932 : parsers_logic : loading parser modules
 2020-05-05 20:08:30,934 : parsers_logic : sending parsers names
+2020-05-05 21:49:13,670 : parsers_logic : loading parser modules
+2020-05-05 21:49:13,683 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-05-05 21:49:13,744 : parsers_logic : subscribing pose parser to incoming topic
+2020-05-05 21:49:16,255 : parsers_logic : loading parser modules
+2020-05-05 21:49:16,256 : parsers_logic : sending parsers names
+2020-05-05 22:19:03,584 : parsers_logic : loading parser modules
+2020-05-05 22:19:03,589 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-05-05 22:19:03,648 : parsers_logic : subscribing pose parser to incoming topic
+2020-05-05 22:19:06,166 : parsers_logic : loading parser modules
+2020-05-05 22:19:06,168 : parsers_logic : sending parsers names
+2020-05-05 22:26:22,144 : parsers_logic : loading parser modules
+2020-05-05 22:26:22,150 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-05-05 22:26:22,199 : parsers_logic : subscribing pose parser to incoming topic
+2020-05-05 22:26:24,242 : parsers_logic : loading parser modules
+2020-05-05 22:26:24,244 : parsers_logic : sending parsers names
+2020-05-05 22:32:25,491 : parsers_logic : loading parser modules
+2020-05-05 22:32:25,511 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-05-05 22:32:25,599 : parsers_logic : subscribing pose parser to incoming topic
+2020-05-05 22:32:28,374 : parsers_logic : loading parser modules
+2020-05-05 22:32:28,379 : parsers_logic : sending parsers names
+2020-05-05 22:36:04,565 : parsers_logic : loading parser modules
+2020-05-05 22:36:04,570 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-05-05 22:36:04,656 : parsers_logic : subscribing pose parser to incoming topic
+2020-05-05 22:36:07,439 : parsers_logic : loading parser modules
+2020-05-05 22:36:07,462 : parsers_logic : sending parsers names
+2020-05-05 22:40:08,396 : parsers_logic : loading parser modules
+2020-05-05 22:40:08,401 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-05-05 22:40:08,455 : parsers_logic : subscribing pose parser to incoming topic
+2020-05-05 22:40:10,675 : parsers_logic : loading parser modules
+2020-05-05 22:40:10,682 : parsers_logic : sending parsers names
+2020-05-05 22:43:40,746 : parsers_logic : loading parser modules
+2020-05-05 22:43:40,760 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-05-05 22:43:40,825 : parsers_logic : subscribing pose parser to incoming topic
+2020-05-05 22:43:44,126 : parsers_logic : loading parser modules
+2020-05-05 22:43:44,129 : parsers_logic : sending parsers names
+2020-05-05 22:48:49,681 : parsers_logic : loading parser modules
+2020-05-05 22:48:49,689 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-05-05 22:48:49,724 : parsers_logic : subscribing pose parser to incoming topic
+2020-05-05 22:48:51,634 : parsers_logic : loading parser modules
+2020-05-05 22:48:51,636 : parsers_logic : sending parsers names
+2020-05-05 22:54:23,838 : parsers_logic : loading parser modules
+2020-05-05 22:54:23,841 : parsers_logic : sending parsers names
+2020-05-05 22:56:03,312 : parsers_logic : loading parser modules
+2020-05-05 22:56:03,319 : parsers_logic : sending parsers names
+2020-05-05 22:59:27,747 : parsers_logic : loading parser modules
+2020-05-05 22:59:27,749 : parsers_logic : sending parsers names
+2020-05-05 23:10:50,985 : parsers_logic : loading parser modules
+2020-05-05 23:10:50,987 : parsers_logic : sending parsers names
+2020-05-05 23:13:12,816 : parsers_logic : loading parser modules
+2020-05-05 23:13:12,818 : parsers_logic : sending parsers names
+2020-05-05 23:17:07,582 : parsers_logic : loading parser modules
+2020-05-05 23:17:07,587 : parsers_logic : adding a topic for the parsed results of pose parser
+2020-05-05 23:17:07,634 : parsers_logic : subscribing pose parser to incoming topic
+2020-05-05 23:17:09,657 : parsers_logic : loading parser modules
+2020-05-05 23:17:09,659 : parsers_logic : sending parsers names

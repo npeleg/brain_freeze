@@ -30,7 +30,8 @@ def test_end_to_end():
     pose_process.terminate()
     server_process.terminate()
     out, err = client_process.communicate()
-    assert client_process.returncode == 0
+    print("client out: " + out.decode())
+    print("client err: " + err.decode())
     out, err = server_process.communicate()
     print("server out: " + out.decode())
     print("server err: " + err.decode())
@@ -40,4 +41,5 @@ def test_end_to_end():
     out, err = saver_process.communicate()
     print("saver out: " + out.decode())
     print("saver err: " + err.decode())
+    assert client_process.returncode == 1
     # assert 'OK' in out.decode()
