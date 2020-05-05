@@ -15,7 +15,7 @@ def main():
 def server_run_server(host, port, url):
     """ Passes snapshots received from clients to the message queue specified in url. """
     try:
-        run_server((host, int(port)), url)
+        run_server(host, int(port), url)
     except Exception as error:
         print(f'Error: {error}')
         return 1

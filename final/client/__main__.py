@@ -15,7 +15,7 @@ def main():
 def client_upload_sample(host, port, path):
     """ Upload snapshots from file in PATH to server. """
     try:
-        upload_sample((host, int(port)), path)
+        upload_sample(host, int(port), path)
     except Exception as error:
         print(f'Error: {error}')
         return 1

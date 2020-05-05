@@ -1,14 +1,18 @@
 import json
-import threading
+import flask
 from ..parsers import Parsers
-from ..utils import Listener, Logger, MQManager, protocol
+from ..utils import Logger, MQManager, protocol
 
 logger = Logger(__name__).logger
+app = flask.Flask(__name__)
+user_function = None
+message_queue = None
+parsers = []
 
 
 def build_json_message(user, snapshot):
     message = dict(user_id=user.user_id,
-                   username=user.username,
+                   username=user    .username,
                    birthday=user.birthday,
                    gender=user.gender.name,
                    datetime=snapshot.datetime,
@@ -28,37 +32,40 @@ def build_json_message(user, snapshot):
     return json.dumps(message)
 
 
-class ClientThread(threading.Thread):
-    def __init__(self, client_connection, mq, parsers):
-        threading.Thread.__init__(self)
-        self.client_socket = client_connection
-        self.mq = mq
-        self.parsers = parsers
-
-    def run(self):
-        # receiving 'user' message from client:
-        user = protocol.deserialize_user(self.client_socket.receive_message())
-
-        # sending 'config' message to client:
-        config = protocol.init_protocol_config(self.parsers)
-        self.client_socket.send_message(protocol.serialize(config))
-
-        # receiving 'snapshot' message from client:
-        snapshot = protocol.deserialize_snapshot(self.client_socket.receive_message())
-
-        # publishing user and snapshot data to message queue:
-        json_message = build_json_message(user, snapshot)
-        logger.info('sending snapshot to message queue')
-        self.mq.publish_to_incoming_topic(json_message)
+@app.route('/config')
+def return_parsers():
+    global parsers
+    logger.info('sending parsers list to client')
+    return flask.jsonify({'parsers': parsers})
 
 
-def run_server(address, url):
-    logger.info('initializing message queue')
-    mq = MQManager(url)
+@app.route('/snapshots', methods=['POST'])
+def receive_snapshot():
+    global message_queue, user_function
+    try:
+        request = flask.request.json
+        if user_function:
+            user_function(request['snapshot'])
+        else:
+            user_message = protocol.deserialize_user(request['user'])
+            snapshot_message = protocol.deserialize_snapshot(request['snapshot'])
+            json_message = build_json_message(user_message, snapshot_message)
+            logger.info('sending snapshot to message queue')
+            message_queue.publish_to_incoming_topic(json_message)
+        return flask.jsonify({'result': 'accepted', 'error': None}), 201
+    except Exception as error:
+        print('exception')
+        return flask.jsonify({'result': None, 'error': str(error)}), 404
+
+
+def run_server(host, port, publish):
+    global message_queue, user_function, parsers
+    try:
+        message_queue = MQManager(publish)
+        logger.info('initialized message queue')
+    except AttributeError:
+        logger.info('a user function was passed')
+        user_function = publish
     parsers = Parsers().get_parsers_names()
-    with Listener(port=address[1], host=address[0]) as listener:
-        logger.info('server is running')
-        while True:
-            client_connection = listener.accept()
-            new_thread = ClientThread(client_connection, mq, parsers)
-            new_thread.start()
+    logger.info('starting the server')
+    app.run(host=host, port=port)
