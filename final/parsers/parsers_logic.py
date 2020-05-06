@@ -46,9 +46,8 @@ class Parsers:
             raise KeyError("parser does not exist")
         parser = self.parsers_dict[parser_name]
         mq = MQManager(mq_url)
-        logger.info(f'adding a topic for the parsed results of {parser_name} parser')
-        mq.create_topic(parser_name)
-        mq.create_incoming_topic()
-        logger.info(f'subscribing {parser_name} parser to incoming topic')
+        logger.info(f'creating a topic for snapshots')
+        mq.create_snapshot_topic()
+        logger.info(f'subscribing {parser_name} parser to snapshot topic')
         parse_and_publish = wrap_parser(parser_name, parser, mq)
-        mq.subscribe_to_incoming_topic(parse_and_publish)
+        mq.subscribe_to_snapshot_topic(parse_and_publish)

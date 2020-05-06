@@ -10,11 +10,17 @@ message_queue = None
 parsers = []
 
 
-def build_json_message(user, snapshot):
+def build_user_json(user):
     message = dict(user_id=user.user_id,
-                   username=user    .username,
+                   username=user.username,
                    birthday=user.birthday,
                    gender=user.gender.name,
+                   )
+    return json.dumps(message)
+
+
+def build_snapshot_json(snapshot, user_id):
+    message = dict(user_id=user_id,
                    datetime=snapshot.datetime,
                    pose=dict(translation=dict(x=snapshot.pose.translation.x,
                                               y=snapshot.pose.translation.y,
@@ -36,30 +42,39 @@ def build_json_message(user, snapshot):
 def return_parsers():
     global parsers
     logger.info('sending parsers list to client')
-    return flask.jsonify({'parsers': parsers, 'error': None})
+    return flask.jsonify({'result': 'accepted', 'parsers': parsers, 'error': None})
 
 
-@app.route('/snapshots', methods=['POST'])
-def receive_snapshot():
+@app.route('/users', methods=['POST'])
+def receive_user():
     global message_queue, user_function
     try:
-        request = flask.request.get_json(force=True)
-        print(request)
-        if user_function:
-            print('user function is not none')
-            user_function(request['snapshot'])
-        else:
-            print("1")
-            user_message = protocol.deserialize_user(request['user'])
-            print("2")
-            snapshot_message = protocol.deserialize_snapshot(request['snapshot'])
-            print("3")
-            json_message = build_json_message(user_message, snapshot_message)
-            logger.info('sending snapshot to message queue')
-            message_queue.publish_to_incoming_topic(json_message)
+        request = flask.request.data
+        user_message = protocol.deserialize_user(request)
+        if not user_function:
+            json_message = build_user_json(user_message)
+            logger.info('sending user to message queue')
+            message_queue.publish_to_user_topic(json_message)
         return flask.jsonify({'result': 'accepted', 'error': None}), 201
     except Exception as error:
-        print('exception')
+        return flask.jsonify({'result': None, 'error': str(error)}), 404
+
+
+@app.route('/snapshots/<int:user_id>', methods=['POST'])
+def receive_snapshot(user_id):
+    global message_queue, user_function
+    try:
+        request = flask.request.data
+        snapshot_message = protocol.deserialize_snapshot(request)
+        if user_function:
+            user_function(snapshot_message)
+        else:
+            json_message = build_snapshot_json(snapshot_message, user_id)
+            logger.info('sending snapshot to message queue')
+            message_queue.publish_to_snapshot_topic(json_message)
+        return flask.jsonify({'result': 'accepted', 'error': None}), 201
+    except Exception as error:
+        print(error)
         return flask.jsonify({'result': None, 'error': str(error)}), 404
 
 

@@ -25,7 +25,6 @@ class RabbitMQ:
         def callback(ch, method, properties, body):
             logger.info(f'callback function {func.__name__} called')
             logger.debug('callback function called on data ' + body.__repr__())
-            print('callback function called')
             func(body)
 
         channel.basic_consume(
