@@ -1,12 +1,11 @@
 import pika
-import sys
 from ...utils import Logger
 
 logger = Logger(__name__).logger
 
 
 class RabbitMQ:
-    def __init__(self, host):
+    def __init__(self, host, port):
         self.host = host
 
     def create_topic(self, topic):
@@ -31,7 +30,6 @@ class RabbitMQ:
             queue=queue_name, on_message_callback=callback, auto_ack=True)
 
         logger.info(f'starting to consume from {topic} exchange ')
-        sys.stdout.flush()
         channel.start_consuming()
 
     def publish_to_topic(self, topic, data):

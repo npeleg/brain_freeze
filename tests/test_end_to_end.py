@@ -14,7 +14,8 @@ def run_subprocess(command):
 
 
 def test_end_to_end():
-    saver_process = run_subprocess("python -m final.saver run_saver database rabbitmq://127.0.0.1:5672/")
+    saver_process = run_subprocess("python -m final.saver run_saver "
+                                   "mongodb://127.0.0.1:27017 rabbitmq://127.0.0.1:5672/")
     time.sleep(1)
     pose_process = run_subprocess("python -m final.parsers run_parser pose rabbitmq://127.0.0.1:5672/")
     time.sleep(1)
@@ -23,7 +24,7 @@ def test_end_to_end():
     server_process = run_subprocess("python -m final.server run_server rabbitmq://127.0.0.1:5672/")
     time.sleep(1)  # waiting for server
     client_process = run_subprocess("python -m final.client upload_sample " + SMALL_SAMPLE_PATH)
-    time.sleep(30)
+    time.sleep(60)
     client_process.terminate()
     saver_process.terminate()
     pose_process.terminate()

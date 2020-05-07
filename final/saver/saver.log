@@ -354,3 +354,51 @@
 2020-05-06 21:30:23,337 : saver : b'{"user_id": 42, "datetime": 1575446887603, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
 2020-05-06 21:30:23,348 : saver : received data from exchange
 2020-05-06 21:30:23,348 : saver : b'{"user_id": 42, "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}}'
+2020-05-07 17:31:49,748 : saver : creating a topic for user data
+2020-05-07 17:31:49,838 : saver : subscribing to user topic
+2020-05-07 17:31:49,851 : saver : creating a topic for the parsed results of feelings parser
+2020-05-07 17:31:49,985 : saver : subscribing to feelings topic
+2020-05-07 17:31:50,008 : saver : creating a topic for the parsed results of pose parser
+2020-05-07 17:31:50,115 : saver : subscribing to pose topic
+2020-05-07 17:31:57,659 : saver : received data from exchange
+2020-05-07 17:31:57,659 : saver : b'{"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE"}'
+2020-05-07 17:32:03,162 : saver : received data from exchange
+2020-05-07 17:32:03,162 : saver : b'{"user_id": 42, "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}}'
+2020-05-07 17:32:03,165 : saver : received data from exchange
+2020-05-07 17:32:03,165 : saver : b'{"user_id": 42, "datetime": 1575446887339, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-05-07 17:32:08,534 : saver : received data from exchange
+2020-05-07 17:32:08,534 : saver : b'{"user_id": 42, "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}}'
+2020-05-07 17:32:08,537 : saver : received data from exchange
+2020-05-07 17:32:08,537 : saver : b'{"user_id": 42, "datetime": 1575446887412, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-05-07 17:32:13,521 : saver : received data from exchange
+2020-05-07 17:32:13,521 : saver : b'{"user_id": 42, "datetime": 1575446887476, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-05-07 17:32:13,525 : saver : received data from exchange
+2020-05-07 17:32:13,525 : saver : b'{"user_id": 42, "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}}'
+2020-05-07 17:33:21,509 : saver : creating a topic for user data
+2020-05-07 17:33:21,580 : saver : subscribing to user topic
+2020-05-07 17:33:21,599 : saver : creating a topic for the parsed results of pose parser
+2020-05-07 17:33:21,753 : saver : subscribing to pose topic
+2020-05-07 17:33:21,756 : saver : creating a topic for the parsed results of feelings parser
+2020-05-07 17:33:21,847 : saver : subscribing to feelings topic
+2020-05-07 17:33:30,110 : saver : received data from exchange
+2020-05-07 17:33:30,110 : saver : b'{"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE"}'
+2020-05-07 17:33:37,818 : saver : received data from exchange
+2020-05-07 17:33:37,819 : saver : b'{"user_id": 42, "datetime": 1575446887339, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-05-07 17:33:37,832 : saver : received data from exchange
+2020-05-07 17:33:37,832 : saver : b'{"user_id": 42, "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}}'
+2020-05-07 17:33:45,745 : saver : received data from exchange
+2020-05-07 17:33:45,745 : saver : b'{"user_id": 42, "datetime": 1575446887412, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-05-07 17:33:45,747 : saver : received data from exchange
+2020-05-07 17:33:45,748 : saver : b'{"user_id": 42, "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}}'
+2020-05-07 17:33:51,376 : saver : received data from exchange
+2020-05-07 17:33:51,376 : saver : b'{"user_id": 42, "datetime": 1575446887476, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-05-07 17:33:51,383 : saver : received data from exchange
+2020-05-07 17:33:51,383 : saver : b'{"user_id": 42, "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}}'
+2020-05-07 17:33:59,868 : saver : received data from exchange
+2020-05-07 17:33:59,868 : saver : b'{"user_id": 42, "datetime": 1575446887541, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}'
+2020-05-07 17:33:59,878 : saver : received data from exchange
+2020-05-07 17:33:59,878 : saver : b'{"user_id": 42, "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}}'
+2020-05-07 17:34:05,616 : saver : received data from exchange
+2020-05-07 17:34:05,616 : saver : b'{"user_id": 42, "datetime": 1575446887603, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
+2020-05-07 17:34:05,617 : saver : received data from exchange
+2020-05-07 17:34:05,617 : saver : b'{"user_id": 42, "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}}'
