@@ -3,6 +3,7 @@ import struct
 from . import reader_pb
 from ..utils import protocol, protocol_pb
 
+
 def get_protocol_gender(gender):
     _gender = protocol_pb.UserP.Gender.OTHER
     if gender == reader_pb.User.Gender.MALE:
@@ -10,6 +11,7 @@ def get_protocol_gender(gender):
     elif gender == reader_pb.User.Gender.FEMALE:
         _gender = protocol_pb.UserP.Gender.FEMALE
     return _gender
+
 
 def _read_user_message(file):
     message_size = file.read(struct.calcsize('I'))

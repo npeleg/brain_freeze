@@ -24,7 +24,7 @@ def test_end_to_end():
     server_process = run_subprocess("python -m final.server run_server rabbitmq://127.0.0.1:5672/")
     time.sleep(1)  # waiting for server
     client_process = run_subprocess("python -m final.client upload_sample " + SMALL_SAMPLE_PATH)
-    time.sleep(60)
+    time.sleep(120)
     client_process.terminate()
     saver_process.terminate()
     pose_process.terminate()

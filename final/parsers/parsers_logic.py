@@ -24,6 +24,7 @@ def wrap_parser(parser_name, parser_func, mq):
     def parse_and_publish(data):
         parsed_data = parser_func(data)
         logger.info('parsed data is: ' + parsed_data)
+        logger.info('sending to ' + parser_name + ' topic')
         mq.publish_to_topic(parser_name, parsed_data)
     return parse_and_publish
 

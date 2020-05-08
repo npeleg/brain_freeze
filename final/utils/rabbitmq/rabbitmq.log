@@ -1752,3 +1752,484 @@
 2020-05-07 17:34:05,598 : rabbitmq : sending message to pose exchange
 2020-05-07 17:34:05,616 : rabbitmq : callback function func called
 2020-05-07 17:34:05,617 : rabbitmq : callback function func called
+2020-05-07 20:28:24,596 : rabbitmq : creating users exchange
+2020-05-07 20:28:24,626 : rabbitmq : creating pose exchange
+2020-05-07 20:28:24,658 : rabbitmq : starting to consume from users exchange 
+2020-05-07 20:28:24,678 : rabbitmq : creating feelings exchange
+2020-05-07 20:28:24,690 : rabbitmq : starting to consume from pose exchange 
+2020-05-07 20:28:24,721 : rabbitmq : starting to consume from feelings exchange 
+2020-05-07 20:28:25,678 : rabbitmq : creating snapshots exchange
+2020-05-07 20:28:25,710 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-07 20:28:26,469 : rabbitmq : creating snapshots exchange
+2020-05-07 20:28:26,516 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-07 20:28:31,807 : rabbitmq : sending message to users exchange
+2020-05-07 20:28:31,820 : rabbitmq : callback function save_user_to_db called
+2020-05-07 20:28:37,901 : rabbitmq : sending message to snapshots exchange
+2020-05-07 20:28:37,904 : rabbitmq : callback function parse_and_publish called
+2020-05-07 20:28:37,905 : rabbitmq : callback function parse_and_publish called
+2020-05-07 20:28:37,943 : rabbitmq : sending message to feelings exchange
+2020-05-07 20:28:37,944 : rabbitmq : sending message to pose exchange
+2020-05-07 20:28:37,946 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 20:28:37,955 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 20:28:42,139 : rabbitmq : sending message to snapshots exchange
+2020-05-07 20:28:42,141 : rabbitmq : callback function parse_and_publish called
+2020-05-07 20:28:42,142 : rabbitmq : callback function parse_and_publish called
+2020-05-07 20:28:42,184 : rabbitmq : sending message to pose exchange
+2020-05-07 20:28:42,189 : rabbitmq : sending message to feelings exchange
+2020-05-07 20:28:46,396 : rabbitmq : sending message to snapshots exchange
+2020-05-07 20:28:46,400 : rabbitmq : callback function parse_and_publish called
+2020-05-07 20:28:46,402 : rabbitmq : callback function parse_and_publish called
+2020-05-07 20:28:46,429 : rabbitmq : sending message to feelings exchange
+2020-05-07 20:28:46,441 : rabbitmq : sending message to pose exchange
+2020-05-07 20:28:52,488 : rabbitmq : sending message to snapshots exchange
+2020-05-07 20:28:52,490 : rabbitmq : callback function parse_and_publish called
+2020-05-07 20:28:52,491 : rabbitmq : callback function parse_and_publish called
+2020-05-07 20:28:52,529 : rabbitmq : sending message to pose exchange
+2020-05-07 20:28:52,530 : rabbitmq : sending message to feelings exchange
+2020-05-07 20:28:57,606 : rabbitmq : sending message to snapshots exchange
+2020-05-07 20:28:57,609 : rabbitmq : callback function parse_and_publish called
+2020-05-07 20:28:57,610 : rabbitmq : callback function parse_and_publish called
+2020-05-07 20:28:57,654 : rabbitmq : sending message to pose exchange
+2020-05-07 20:28:57,655 : rabbitmq : sending message to feelings exchange
+2020-05-07 21:14:30,866 : rabbitmq : creating users exchange
+2020-05-07 21:14:30,922 : rabbitmq : creating pose exchange
+2020-05-07 21:14:30,939 : rabbitmq : starting to consume from users exchange 
+2020-05-07 21:14:30,984 : rabbitmq : creating feelings exchange
+2020-05-07 21:14:31,006 : rabbitmq : starting to consume from pose exchange 
+2020-05-07 21:14:31,046 : rabbitmq : starting to consume from feelings exchange 
+2020-05-07 21:14:32,321 : rabbitmq : creating snapshots exchange
+2020-05-07 21:14:32,354 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-07 21:14:34,398 : rabbitmq : creating snapshots exchange
+2020-05-07 21:14:34,461 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-07 21:14:38,109 : rabbitmq : sending message to users exchange
+2020-05-07 21:14:38,111 : rabbitmq : callback function save_user_to_db called
+2020-05-07 21:14:47,405 : rabbitmq : sending message to snapshots exchange
+2020-05-07 21:14:47,407 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:14:47,408 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:14:47,467 : rabbitmq : sending message to pose exchange
+2020-05-07 21:14:47,470 : rabbitmq : sending message to feelings exchange
+2020-05-07 21:14:47,473 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 21:14:47,481 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 21:14:52,458 : rabbitmq : sending message to snapshots exchange
+2020-05-07 21:14:52,460 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:14:52,461 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:14:52,501 : rabbitmq : sending message to pose exchange
+2020-05-07 21:14:52,508 : rabbitmq : sending message to feelings exchange
+2020-05-07 21:14:59,123 : rabbitmq : sending message to snapshots exchange
+2020-05-07 21:14:59,125 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:14:59,126 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:14:59,181 : rabbitmq : sending message to feelings exchange
+2020-05-07 21:14:59,183 : rabbitmq : sending message to pose exchange
+2020-05-07 21:15:06,047 : rabbitmq : sending message to snapshots exchange
+2020-05-07 21:15:06,049 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:15:06,051 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:15:06,102 : rabbitmq : sending message to feelings exchange
+2020-05-07 21:15:06,108 : rabbitmq : sending message to pose exchange
+2020-05-07 21:15:11,700 : rabbitmq : sending message to snapshots exchange
+2020-05-07 21:15:11,702 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:15:11,703 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:15:11,735 : rabbitmq : sending message to feelings exchange
+2020-05-07 21:15:11,754 : rabbitmq : sending message to pose exchange
+2020-05-07 21:24:09,421 : rabbitmq : creating users exchange
+2020-05-07 21:24:09,460 : rabbitmq : creating pose exchange
+2020-05-07 21:24:09,490 : rabbitmq : starting to consume from users exchange 
+2020-05-07 21:24:09,529 : rabbitmq : creating feelings exchange
+2020-05-07 21:24:09,550 : rabbitmq : starting to consume from pose exchange 
+2020-05-07 21:24:09,594 : rabbitmq : starting to consume from feelings exchange 
+2020-05-07 21:24:10,631 : rabbitmq : creating snapshots exchange
+2020-05-07 21:24:10,679 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-07 21:24:12,246 : rabbitmq : creating snapshots exchange
+2020-05-07 21:24:12,292 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-07 21:24:18,332 : rabbitmq : sending message to users exchange
+2020-05-07 21:24:18,335 : rabbitmq : callback function save_user_to_db called
+2020-05-07 21:24:30,410 : rabbitmq : sending message to snapshots exchange
+2020-05-07 21:24:30,412 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:24:30,413 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:24:30,458 : rabbitmq : sending message to pose exchange
+2020-05-07 21:24:30,462 : rabbitmq : sending message to feelings exchange
+2020-05-07 21:24:30,464 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 21:24:30,467 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 21:24:38,807 : rabbitmq : sending message to snapshots exchange
+2020-05-07 21:24:38,810 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:24:38,811 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:24:38,847 : rabbitmq : sending message to pose exchange
+2020-05-07 21:24:38,847 : rabbitmq : sending message to feelings exchange
+2020-05-07 21:24:38,851 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 21:24:38,853 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 21:24:45,989 : rabbitmq : sending message to snapshots exchange
+2020-05-07 21:24:45,992 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:24:45,993 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:24:46,033 : rabbitmq : sending message to feelings exchange
+2020-05-07 21:24:46,035 : rabbitmq : sending message to pose exchange
+2020-05-07 21:24:46,037 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 21:24:46,040 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 21:24:51,228 : rabbitmq : sending message to snapshots exchange
+2020-05-07 21:24:51,231 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:24:51,230 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:24:51,282 : rabbitmq : sending message to feelings exchange
+2020-05-07 21:24:51,284 : rabbitmq : sending message to pose exchange
+2020-05-07 21:24:51,287 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 21:24:51,291 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 21:24:56,577 : rabbitmq : sending message to snapshots exchange
+2020-05-07 21:24:56,580 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:24:56,579 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:24:56,618 : rabbitmq : sending message to feelings exchange
+2020-05-07 21:24:56,626 : rabbitmq : sending message to pose exchange
+2020-05-07 21:24:56,628 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 21:24:56,631 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 21:36:54,271 : rabbitmq : creating users exchange
+2020-05-07 21:36:54,344 : rabbitmq : creating pose exchange
+2020-05-07 21:36:54,419 : rabbitmq : starting to consume from users exchange 
+2020-05-07 21:36:54,450 : rabbitmq : creating feelings exchange
+2020-05-07 21:36:54,466 : rabbitmq : starting to consume from pose exchange 
+2020-05-07 21:36:55,657 : rabbitmq : creating snapshots exchange
+2020-05-07 21:36:55,706 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-07 21:36:56,815 : rabbitmq : creating snapshots exchange
+2020-05-07 21:36:56,855 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-07 21:37:01,029 : rabbitmq : sending message to users exchange
+2020-05-07 21:37:09,379 : rabbitmq : sending message to snapshots exchange
+2020-05-07 21:37:09,382 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:37:09,382 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:37:09,427 : rabbitmq : sending message to pose exchange
+2020-05-07 21:37:09,429 : rabbitmq : sending message to feelings exchange
+2020-05-07 21:37:18,900 : rabbitmq : sending message to snapshots exchange
+2020-05-07 21:37:18,902 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:37:18,902 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:37:18,938 : rabbitmq : sending message to feelings exchange
+2020-05-07 21:37:18,940 : rabbitmq : sending message to pose exchange
+2020-05-07 21:37:25,858 : rabbitmq : sending message to snapshots exchange
+2020-05-07 21:37:25,860 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:37:25,861 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:37:25,902 : rabbitmq : sending message to feelings exchange
+2020-05-07 21:37:25,893 : rabbitmq : sending message to pose exchange
+2020-05-07 21:37:35,605 : rabbitmq : sending message to snapshots exchange
+2020-05-07 21:37:35,607 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:37:35,609 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:37:35,646 : rabbitmq : sending message to feelings exchange
+2020-05-07 21:37:35,647 : rabbitmq : sending message to pose exchange
+2020-05-07 21:37:40,900 : rabbitmq : sending message to snapshots exchange
+2020-05-07 21:37:40,904 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:37:40,908 : rabbitmq : callback function parse_and_publish called
+2020-05-07 21:37:40,958 : rabbitmq : sending message to feelings exchange
+2020-05-07 21:37:40,960 : rabbitmq : sending message to pose exchange
+2020-05-07 22:23:49,040 : rabbitmq : creating users exchange
+2020-05-07 22:23:49,095 : rabbitmq : creating pose exchange
+2020-05-07 22:23:49,122 : rabbitmq : starting to consume from users exchange 
+2020-05-07 22:23:49,167 : rabbitmq : creating feelings exchange
+2020-05-07 22:23:49,179 : rabbitmq : starting to consume from pose exchange 
+2020-05-07 22:23:49,227 : rabbitmq : starting to consume from feelings exchange 
+2020-05-07 22:23:50,148 : rabbitmq : creating snapshots exchange
+2020-05-07 22:23:50,186 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-07 22:23:51,362 : rabbitmq : creating snapshots exchange
+2020-05-07 22:23:51,402 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-07 22:23:56,423 : rabbitmq : sending message to users exchange
+2020-05-07 22:23:56,426 : rabbitmq : callback function save_user_to_db called
+2020-05-07 22:24:04,280 : rabbitmq : sending message to snapshots exchange
+2020-05-07 22:24:04,282 : rabbitmq : callback function parse_and_publish called
+2020-05-07 22:24:04,284 : rabbitmq : callback function parse_and_publish called
+2020-05-07 22:24:04,321 : rabbitmq : sending message to feelings exchange
+2020-05-07 22:24:04,324 : rabbitmq : sending message to pose exchange
+2020-05-07 22:24:04,326 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 22:24:04,329 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 22:24:11,757 : rabbitmq : sending message to snapshots exchange
+2020-05-07 22:24:11,761 : rabbitmq : callback function parse_and_publish called
+2020-05-07 22:24:11,763 : rabbitmq : callback function parse_and_publish called
+2020-05-07 22:24:11,800 : rabbitmq : sending message to feelings exchange
+2020-05-07 22:24:11,809 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 22:24:11,811 : rabbitmq : sending message to pose exchange
+2020-05-07 22:24:11,815 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 22:24:20,253 : rabbitmq : sending message to snapshots exchange
+2020-05-07 22:24:20,255 : rabbitmq : callback function parse_and_publish called
+2020-05-07 22:24:20,257 : rabbitmq : callback function parse_and_publish called
+2020-05-07 22:24:20,312 : rabbitmq : sending message to pose exchange
+2020-05-07 22:24:20,313 : rabbitmq : sending message to feelings exchange
+2020-05-07 22:24:20,315 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 22:24:20,318 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 22:24:27,027 : rabbitmq : sending message to snapshots exchange
+2020-05-07 22:24:27,030 : rabbitmq : callback function parse_and_publish called
+2020-05-07 22:24:27,032 : rabbitmq : callback function parse_and_publish called
+2020-05-07 22:24:27,070 : rabbitmq : sending message to pose exchange
+2020-05-07 22:24:27,071 : rabbitmq : sending message to feelings exchange
+2020-05-07 22:24:27,073 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 22:24:27,081 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 22:24:31,824 : rabbitmq : sending message to snapshots exchange
+2020-05-07 22:24:31,826 : rabbitmq : callback function parse_and_publish called
+2020-05-07 22:24:31,827 : rabbitmq : callback function parse_and_publish called
+2020-05-07 22:24:31,859 : rabbitmq : sending message to pose exchange
+2020-05-07 22:24:31,861 : rabbitmq : sending message to feelings exchange
+2020-05-07 22:24:31,868 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-07 22:24:31,870 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 11:48:25,875 : rabbitmq : creating pose exchange
+2020-05-08 11:48:25,916 : rabbitmq : creating feelings exchange
+2020-05-08 11:48:25,941 : rabbitmq : starting to consume from pose exchange 
+2020-05-08 11:48:25,983 : rabbitmq : creating users exchange
+2020-05-08 11:48:26,005 : rabbitmq : starting to consume from feelings exchange 
+2020-05-08 11:48:26,031 : rabbitmq : starting to consume from users exchange 
+2020-05-08 11:48:27,318 : rabbitmq : creating snapshots exchange
+2020-05-08 11:48:27,365 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-08 11:48:28,842 : rabbitmq : creating snapshots exchange
+2020-05-08 11:48:28,881 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-08 11:48:31,261 : rabbitmq : sending message to users exchange
+2020-05-08 11:48:31,264 : rabbitmq : callback function save_user_to_db called
+2020-05-08 11:48:35,178 : rabbitmq : sending message to snapshots exchange
+2020-05-08 11:48:35,180 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:48:35,182 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:48:35,220 : rabbitmq : sending message to feelings exchange
+2020-05-08 11:48:35,221 : rabbitmq : sending message to pose exchange
+2020-05-08 11:48:38,981 : rabbitmq : sending message to snapshots exchange
+2020-05-08 11:48:38,983 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:48:38,985 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:48:39,024 : rabbitmq : sending message to pose exchange
+2020-05-08 11:48:39,025 : rabbitmq : sending message to feelings exchange
+2020-05-08 11:48:42,800 : rabbitmq : sending message to snapshots exchange
+2020-05-08 11:48:42,803 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:48:42,802 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:48:42,836 : rabbitmq : sending message to pose exchange
+2020-05-08 11:48:42,843 : rabbitmq : sending message to feelings exchange
+2020-05-08 11:48:46,571 : rabbitmq : sending message to snapshots exchange
+2020-05-08 11:48:46,573 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:48:46,575 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:48:46,607 : rabbitmq : sending message to pose exchange
+2020-05-08 11:48:46,613 : rabbitmq : sending message to feelings exchange
+2020-05-08 11:48:50,327 : rabbitmq : sending message to snapshots exchange
+2020-05-08 11:48:50,330 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:48:50,331 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:48:50,370 : rabbitmq : sending message to pose exchange
+2020-05-08 11:48:50,371 : rabbitmq : sending message to feelings exchange
+2020-05-08 11:52:17,301 : rabbitmq : creating pose exchange
+2020-05-08 11:52:17,344 : rabbitmq : creating feelings exchange
+2020-05-08 11:52:17,387 : rabbitmq : starting to consume from pose exchange 
+2020-05-08 11:52:17,420 : rabbitmq : creating users exchange
+2020-05-08 11:52:17,443 : rabbitmq : starting to consume from feelings exchange 
+2020-05-08 11:52:17,466 : rabbitmq : starting to consume from users exchange 
+2020-05-08 11:52:18,479 : rabbitmq : creating snapshots exchange
+2020-05-08 11:52:18,521 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-08 11:52:19,849 : rabbitmq : creating snapshots exchange
+2020-05-08 11:52:19,907 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-08 11:52:31,938 : rabbitmq : sending message to users exchange
+2020-05-08 11:52:31,949 : rabbitmq : callback function save_user_to_db called
+2020-05-08 11:52:44,928 : rabbitmq : sending message to snapshots exchange
+2020-05-08 11:52:44,930 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:52:44,930 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:52:44,972 : rabbitmq : sending message to feelings exchange
+2020-05-08 11:52:44,979 : rabbitmq : sending message to pose exchange
+2020-05-08 11:52:44,983 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 11:52:44,994 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 11:53:04,065 : rabbitmq : sending message to snapshots exchange
+2020-05-08 11:53:04,071 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:53:04,073 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:53:04,154 : rabbitmq : sending message to feelings exchange
+2020-05-08 11:53:04,158 : rabbitmq : sending message to pose exchange
+2020-05-08 11:53:04,167 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 11:53:04,171 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 11:53:14,348 : rabbitmq : sending message to snapshots exchange
+2020-05-08 11:53:14,352 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:53:14,354 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:53:14,397 : rabbitmq : sending message to feelings exchange
+2020-05-08 11:53:14,401 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 11:53:14,402 : rabbitmq : sending message to pose exchange
+2020-05-08 11:53:14,406 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 11:53:18,238 : rabbitmq : sending message to snapshots exchange
+2020-05-08 11:53:18,241 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:53:18,242 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:53:18,277 : rabbitmq : sending message to feelings exchange
+2020-05-08 11:53:18,282 : rabbitmq : sending message to pose exchange
+2020-05-08 11:53:18,284 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 11:53:18,287 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 11:54:42,990 : rabbitmq : creating pose exchange
+2020-05-08 11:54:43,052 : rabbitmq : creating feelings exchange
+2020-05-08 11:54:43,074 : rabbitmq : starting to consume from pose exchange 
+2020-05-08 11:54:43,116 : rabbitmq : creating users exchange
+2020-05-08 11:54:43,132 : rabbitmq : starting to consume from feelings exchange 
+2020-05-08 11:54:43,161 : rabbitmq : starting to consume from users exchange 
+2020-05-08 11:54:44,129 : rabbitmq : creating snapshots exchange
+2020-05-08 11:54:44,207 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-08 11:54:45,109 : rabbitmq : creating snapshots exchange
+2020-05-08 11:54:45,149 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-08 11:54:52,467 : rabbitmq : sending message to users exchange
+2020-05-08 11:54:52,471 : rabbitmq : callback function save_user_to_db called
+2020-05-08 11:54:59,024 : rabbitmq : sending message to snapshots exchange
+2020-05-08 11:54:59,030 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:54:59,032 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:54:59,105 : rabbitmq : sending message to pose exchange
+2020-05-08 11:54:59,109 : rabbitmq : sending message to feelings exchange
+2020-05-08 11:54:59,117 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 11:54:59,129 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 11:55:03,857 : rabbitmq : sending message to snapshots exchange
+2020-05-08 11:55:03,867 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:55:03,865 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:55:04,003 : rabbitmq : sending message to feelings exchange
+2020-05-08 11:55:04,013 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 11:55:04,017 : rabbitmq : sending message to pose exchange
+2020-05-08 11:55:04,040 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 11:55:08,206 : rabbitmq : sending message to snapshots exchange
+2020-05-08 11:55:08,209 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:55:08,208 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:55:08,249 : rabbitmq : sending message to feelings exchange
+2020-05-08 11:55:08,251 : rabbitmq : sending message to pose exchange
+2020-05-08 11:55:08,253 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 11:55:08,256 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 11:55:12,112 : rabbitmq : sending message to snapshots exchange
+2020-05-08 11:55:12,114 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:55:12,116 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:55:12,152 : rabbitmq : sending message to pose exchange
+2020-05-08 11:55:12,153 : rabbitmq : sending message to feelings exchange
+2020-05-08 11:55:12,156 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 11:55:12,159 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 11:55:16,128 : rabbitmq : sending message to snapshots exchange
+2020-05-08 11:55:16,132 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:55:16,135 : rabbitmq : callback function parse_and_publish called
+2020-05-08 11:55:16,177 : rabbitmq : sending message to feelings exchange
+2020-05-08 11:55:16,179 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 11:55:16,185 : rabbitmq : sending message to pose exchange
+2020-05-08 11:55:16,188 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 12:02:33,595 : rabbitmq : creating pose exchange
+2020-05-08 12:02:33,665 : rabbitmq : creating feelings exchange
+2020-05-08 12:02:33,691 : rabbitmq : starting to consume from pose exchange 
+2020-05-08 12:02:33,747 : rabbitmq : creating users exchange
+2020-05-08 12:02:33,764 : rabbitmq : starting to consume from feelings exchange 
+2020-05-08 12:02:33,800 : rabbitmq : starting to consume from users exchange 
+2020-05-08 12:02:50,440 : rabbitmq : creating pose exchange
+2020-05-08 12:02:50,498 : rabbitmq : creating feelings exchange
+2020-05-08 12:02:50,521 : rabbitmq : starting to consume from pose exchange 
+2020-05-08 12:02:50,565 : rabbitmq : creating users exchange
+2020-05-08 12:02:50,575 : rabbitmq : starting to consume from feelings exchange 
+2020-05-08 12:02:50,606 : rabbitmq : starting to consume from users exchange 
+2020-05-08 12:02:51,447 : rabbitmq : creating snapshots exchange
+2020-05-08 12:02:51,483 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-08 12:02:52,421 : rabbitmq : creating snapshots exchange
+2020-05-08 12:02:52,460 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-08 12:02:55,674 : rabbitmq : sending message to users exchange
+2020-05-08 12:02:55,683 : rabbitmq : callback function save_user_to_db called
+2020-05-08 12:03:00,404 : rabbitmq : sending message to snapshots exchange
+2020-05-08 12:03:00,406 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:03:00,408 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:03:00,445 : rabbitmq : sending message to feelings exchange
+2020-05-08 12:03:00,449 : rabbitmq : sending message to pose exchange
+2020-05-08 12:03:04,547 : rabbitmq : sending message to snapshots exchange
+2020-05-08 12:03:04,550 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:03:04,553 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:03:04,589 : rabbitmq : sending message to feelings exchange
+2020-05-08 12:03:04,594 : rabbitmq : sending message to pose exchange
+2020-05-08 12:03:08,684 : rabbitmq : sending message to snapshots exchange
+2020-05-08 12:03:08,687 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:03:08,688 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:03:08,725 : rabbitmq : sending message to feelings exchange
+2020-05-08 12:03:08,733 : rabbitmq : sending message to pose exchange
+2020-05-08 12:03:12,821 : rabbitmq : sending message to snapshots exchange
+2020-05-08 12:03:12,825 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:03:12,827 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:03:12,863 : rabbitmq : sending message to pose exchange
+2020-05-08 12:03:12,869 : rabbitmq : sending message to feelings exchange
+2020-05-08 12:03:16,895 : rabbitmq : sending message to snapshots exchange
+2020-05-08 12:03:16,897 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:03:16,899 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:03:16,939 : rabbitmq : sending message to feelings exchange
+2020-05-08 12:03:16,944 : rabbitmq : sending message to pose exchange
+2020-05-08 12:51:00,312 : rabbitmq : creating snapshots exchange
+2020-05-08 12:51:00,335 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-08 12:51:01,308 : rabbitmq : creating snapshots exchange
+2020-05-08 12:51:01,331 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-08 12:51:04,346 : rabbitmq : sending message to users exchange
+2020-05-08 12:51:08,614 : rabbitmq : sending message to snapshots exchange
+2020-05-08 12:51:08,616 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:51:08,617 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:51:08,655 : rabbitmq : sending message to pose exchange
+2020-05-08 12:51:08,653 : rabbitmq : sending message to feelings exchange
+2020-05-08 12:51:15,709 : rabbitmq : sending message to snapshots exchange
+2020-05-08 12:51:15,712 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:51:15,715 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:51:15,785 : rabbitmq : sending message to feelings exchange
+2020-05-08 12:51:15,819 : rabbitmq : sending message to pose exchange
+2020-05-08 12:51:20,637 : rabbitmq : sending message to snapshots exchange
+2020-05-08 12:51:20,640 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:51:20,640 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:51:20,685 : rabbitmq : sending message to feelings exchange
+2020-05-08 12:51:20,695 : rabbitmq : sending message to pose exchange
+2020-05-08 12:51:25,333 : rabbitmq : sending message to snapshots exchange
+2020-05-08 12:51:25,335 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:51:25,337 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:51:25,366 : rabbitmq : sending message to feelings exchange
+2020-05-08 12:51:25,390 : rabbitmq : sending message to pose exchange
+2020-05-08 12:51:29,346 : rabbitmq : sending message to snapshots exchange
+2020-05-08 12:51:29,348 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:51:29,350 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:51:29,396 : rabbitmq : sending message to pose exchange
+2020-05-08 12:51:29,398 : rabbitmq : sending message to feelings exchange
+2020-05-08 12:56:12,391 : rabbitmq : creating snapshots exchange
+2020-05-08 12:56:12,477 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-08 12:56:14,323 : rabbitmq : creating snapshots exchange
+2020-05-08 12:56:14,432 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-08 12:56:16,902 : rabbitmq : sending message to users exchange
+2020-05-08 12:56:22,603 : rabbitmq : sending message to snapshots exchange
+2020-05-08 12:56:22,606 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:56:22,607 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:56:22,646 : rabbitmq : sending message to feelings exchange
+2020-05-08 12:56:22,647 : rabbitmq : sending message to pose exchange
+2020-05-08 12:56:27,737 : rabbitmq : sending message to snapshots exchange
+2020-05-08 12:56:27,740 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:56:27,747 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:56:27,816 : rabbitmq : sending message to pose exchange
+2020-05-08 12:56:27,832 : rabbitmq : sending message to feelings exchange
+2020-05-08 12:56:32,537 : rabbitmq : sending message to snapshots exchange
+2020-05-08 12:56:32,539 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:56:32,540 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:56:32,593 : rabbitmq : sending message to pose exchange
+2020-05-08 12:56:32,605 : rabbitmq : sending message to feelings exchange
+2020-05-08 12:56:37,099 : rabbitmq : sending message to snapshots exchange
+2020-05-08 12:56:37,106 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:56:37,110 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:56:37,172 : rabbitmq : sending message to feelings exchange
+2020-05-08 12:56:37,173 : rabbitmq : sending message to pose exchange
+2020-05-08 12:56:42,167 : rabbitmq : sending message to snapshots exchange
+2020-05-08 12:56:42,178 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:56:42,180 : rabbitmq : callback function parse_and_publish called
+2020-05-08 12:56:42,280 : rabbitmq : sending message to feelings exchange
+2020-05-08 12:56:42,281 : rabbitmq : sending message to pose exchange
+2020-05-08 13:01:16,745 : rabbitmq : creating feelings exchange
+2020-05-08 13:01:16,765 : rabbitmq : creating pose exchange
+2020-05-08 13:01:16,789 : rabbitmq : starting to consume from feelings exchange 
+2020-05-08 13:01:16,809 : rabbitmq : creating users exchange
+2020-05-08 13:01:16,843 : rabbitmq : starting to consume from pose exchange 
+2020-05-08 13:01:16,857 : rabbitmq : starting to consume from users exchange 
+2020-05-08 13:01:17,707 : rabbitmq : creating snapshots exchange
+2020-05-08 13:01:17,730 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-08 13:01:18,679 : rabbitmq : creating snapshots exchange
+2020-05-08 13:01:18,732 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-08 13:01:22,185 : rabbitmq : sending message to users exchange
+2020-05-08 13:01:22,190 : rabbitmq : callback function save_user_to_db called
+2020-05-08 13:01:29,226 : rabbitmq : sending message to snapshots exchange
+2020-05-08 13:01:29,228 : rabbitmq : callback function parse_and_publish called
+2020-05-08 13:01:29,230 : rabbitmq : callback function parse_and_publish called
+2020-05-08 13:01:29,268 : rabbitmq : sending message to pose exchange
+2020-05-08 13:01:29,270 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 13:01:29,288 : rabbitmq : sending message to feelings exchange
+2020-05-08 13:01:29,290 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 13:01:33,536 : rabbitmq : sending message to snapshots exchange
+2020-05-08 13:01:33,538 : rabbitmq : callback function parse_and_publish called
+2020-05-08 13:01:33,540 : rabbitmq : callback function parse_and_publish called
+2020-05-08 13:01:33,581 : rabbitmq : sending message to pose exchange
+2020-05-08 13:01:33,584 : rabbitmq : sending message to feelings exchange
+2020-05-08 13:01:33,587 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 13:01:33,590 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 13:01:37,709 : rabbitmq : sending message to snapshots exchange
+2020-05-08 13:01:37,712 : rabbitmq : callback function parse_and_publish called
+2020-05-08 13:01:37,713 : rabbitmq : callback function parse_and_publish called
+2020-05-08 13:01:37,755 : rabbitmq : sending message to pose exchange
+2020-05-08 13:01:37,758 : rabbitmq : sending message to feelings exchange
+2020-05-08 13:01:37,760 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 13:01:37,768 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 13:01:41,882 : rabbitmq : sending message to snapshots exchange
+2020-05-08 13:01:41,884 : rabbitmq : callback function parse_and_publish called
+2020-05-08 13:01:41,884 : rabbitmq : callback function parse_and_publish called
+2020-05-08 13:01:41,921 : rabbitmq : sending message to feelings exchange
+2020-05-08 13:01:41,927 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 13:01:41,929 : rabbitmq : sending message to pose exchange
+2020-05-08 13:01:41,932 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 13:01:46,151 : rabbitmq : sending message to snapshots exchange
+2020-05-08 13:01:46,154 : rabbitmq : callback function parse_and_publish called
+2020-05-08 13:01:46,155 : rabbitmq : callback function parse_and_publish called
+2020-05-08 13:01:46,191 : rabbitmq : sending message to feelings exchange
+2020-05-08 13:01:46,192 : rabbitmq : sending message to pose exchange
+2020-05-08 13:01:46,198 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-08 13:01:46,207 : rabbitmq : callback function save_snapshot_to_db called

@@ -1,7 +1,7 @@
 import pymongo
-# from ...utils import Logger
+from ..logger import Logger
 
-# logger = Logger(__name__).logger
+logger = Logger(__name__).logger
 
 
 class MongoDB:
@@ -9,13 +9,17 @@ class MongoDB:
         client = pymongo.MongoClient(host=host, port=port)
         self.db = client.db
 
-    def insert_to_table(self, collection, document):
+    def insert_to_table(self, collection, primary_key, data):
+        document = {'_id': primary_key, 'data': data}
         self.db[collection].insert_one(document)
 
-    def update_value(self, collection, key, data):
-        self.db[collection].update_one({key, data})
+    def update_value(self, collection, primary_key, data):
+        query = {'_id': primary_key}
+        self.db[collection].update_one(query, {'$push': {'data': data}})
 
     def restore_from_table(self, collection, query):
         return self.db[collection].find_one(query)
 
-# if db.collection.count_documents({'UserIDS': newID}, limit=1):
+    def exists(self, collection, primary_key):
+        if self.db[collection].count_documents({'_id': primary_key}, limit=1):
+            return True
