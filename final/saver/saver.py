@@ -1,4 +1,3 @@
-import json
 import threading
 from ..utils import Logger, MQManager, DBManager
 
@@ -12,16 +11,12 @@ def wrap_saver(db, content):
     def save_user_to_db(data):
         with lock:
             logger.info('sending user data to save in db')
-        message = json.loads(data)
-        user_id = message['user_id']
-        db.insert_user(user_id, data)
+        db.insert_user(data)
 
     def save_snapshot_to_db(data):
         with lock:
             logger.info('sending snapshot data to save in db')
-        message = json.loads(data)
-        user_id = message['user_id']
-        db.insert_snapshot(user_id, data)
+        db.insert_snapshot(data)
 
     if content == 'user':
         return save_user_to_db
@@ -46,7 +41,6 @@ class Saver:
             logger.info(f'subscribing to {parser} topic')
             wrapped_saver_func = wrap_saver(self.db, 'snapshot')
             thread = threading.Thread(target=mq.subscribe_to_topic, args=(parser, wrapped_saver_func))
-            # process.daemon = True
             thread.start()
         logger.info(f'creating a topic for user data')
         mq.create_user_topic()

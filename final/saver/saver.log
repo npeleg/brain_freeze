@@ -529,3 +529,56 @@
 2020-05-08 13:01:41,932 : saver : sent snapshot data to save in db
 2020-05-08 13:01:46,198 : saver : sent snapshot data to save in db
 2020-05-08 13:01:46,207 : saver : sent snapshot data to save in db
+2020-05-10 13:37:17,210 : saver : creating a topic for the parsed results of feelings parser
+2020-05-10 13:37:17,252 : saver : subscribing to feelings topic
+2020-05-10 13:37:17,253 : saver : creating a topic for the parsed results of pose parser
+2020-05-10 13:37:17,294 : saver : subscribing to pose topic
+2020-05-10 13:37:17,314 : saver : creating a topic for user data
+2020-05-10 13:37:17,393 : saver : subscribing to user topic
+2020-05-10 13:37:28,302 : saver : sending user data to save in db
+2020-05-10 13:37:34,212 : saver : sending snapshot data to save in db
+2020-05-10 13:37:34,226 : saver : sending snapshot data to save in db
+2020-05-10 13:43:06,988 : saver : creating a topic for the parsed results of feelings parser
+2020-05-10 13:43:07,020 : saver : subscribing to feelings topic
+2020-05-10 13:43:07,025 : saver : creating a topic for the parsed results of pose parser
+2020-05-10 13:43:07,071 : saver : subscribing to pose topic
+2020-05-10 13:43:07,077 : saver : creating a topic for user data
+2020-05-10 13:43:07,140 : saver : subscribing to user topic
+2020-05-10 13:43:15,582 : saver : sending user data to save in db
+2020-05-10 13:43:23,116 : saver : sending snapshot data to save in db
+2020-05-10 13:43:23,174 : saver : sending snapshot data to save in db
+2020-05-10 15:30:20,695 : saver : creating a topic for the parsed results of pose parser
+2020-05-10 15:30:20,736 : saver : subscribing to pose topic
+2020-05-10 15:30:20,739 : saver : creating a topic for the parsed results of feelings parser
+2020-05-10 15:30:20,782 : saver : subscribing to feelings topic
+2020-05-10 15:30:20,795 : saver : creating a topic for user data
+2020-05-10 15:30:20,858 : saver : subscribing to user topic
+2020-05-10 15:30:26,964 : saver : sending user data to save in db
+2020-05-10 15:30:30,929 : saver : sending snapshot data to save in db
+2020-05-10 15:30:30,940 : saver : sending snapshot data to save in db
+2020-05-10 15:47:20,196 : saver : creating a topic for the parsed results of feelings parser
+2020-05-10 15:47:20,227 : saver : subscribing to feelings topic
+2020-05-10 15:47:20,232 : saver : creating a topic for the parsed results of pose parser
+2020-05-10 15:47:20,273 : saver : subscribing to pose topic
+2020-05-10 15:47:20,283 : saver : creating a topic for user data
+2020-05-10 15:47:20,330 : saver : subscribing to user topic
+2020-05-10 15:47:27,231 : saver : sending user data to save in db
+2020-05-10 15:47:33,828 : saver : sending snapshot data to save in db
+2020-05-10 15:47:33,857 : saver : sending snapshot data to save in db
+2020-05-10 15:51:28,140 : saver : creating a topic for the parsed results of feelings parser
+2020-05-10 15:51:28,163 : saver : subscribing to feelings topic
+2020-05-10 15:51:28,168 : saver : creating a topic for the parsed results of pose parser
+2020-05-10 15:51:28,202 : saver : subscribing to pose topic
+2020-05-10 15:51:28,213 : saver : creating a topic for user data
+2020-05-10 15:51:28,249 : saver : subscribing to user topic
+2020-05-10 15:51:34,067 : saver : sending user data to save in db
+2020-05-10 15:51:38,362 : saver : sending snapshot data to save in db
+2020-05-10 15:51:38,366 : saver : sending snapshot data to save in db
+2020-05-10 15:51:42,324 : saver : sending snapshot data to save in db
+2020-05-10 15:51:42,328 : saver : sending snapshot data to save in db
+2020-05-10 15:51:46,241 : saver : sending snapshot data to save in db
+2020-05-10 15:51:46,248 : saver : sending snapshot data to save in db
+2020-05-10 15:51:50,262 : saver : sending snapshot data to save in db
+2020-05-10 15:51:50,270 : saver : sending snapshot data to save in db
+2020-05-10 15:51:54,203 : saver : sending snapshot data to save in db
+2020-05-10 15:51:54,208 : saver : sending snapshot data to save in db

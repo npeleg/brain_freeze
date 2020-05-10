@@ -1,0 +1,21 @@
+2020-05-10 13:37:17,209 : mongodb : creating db
+2020-05-10 13:43:06,983 : mongodb : creating db
+2020-05-10 13:43:06,987 : mongodb : dbs: ['admin', 'config', 'local']
+2020-05-10 15:30:20,690 : mongodb : creating db
+2020-05-10 15:30:20,694 : mongodb : dbs: ['admin', 'config', 'local']
+2020-05-10 15:47:20,186 : mongodb : creating db
+2020-05-10 15:47:20,195 : mongodb : dbs: ['admin', 'config', 'local']
+2020-05-10 15:51:28,135 : mongodb : creating db
+2020-05-10 15:51:28,139 : mongodb : dbs: ['admin', 'config', 'local']
+2020-05-10 15:51:34,069 : mongodb : inserting data to collection
+2020-05-10 15:51:34,119 : mongodb : inserting data to collection
+2020-05-10 15:51:38,363 : mongodb : inserting data to collection
+2020-05-10 15:51:38,367 : mongodb : inserting data to collection
+2020-05-10 15:51:42,324 : mongodb : inserting data to collection
+2020-05-10 15:51:42,328 : mongodb : inserting data to collection
+2020-05-10 15:51:46,241 : mongodb : inserting data to collection
+2020-05-10 15:51:46,248 : mongodb : inserting data to collection
+2020-05-10 15:51:50,262 : mongodb : inserting data to collection
+2020-05-10 15:51:50,270 : mongodb : inserting data to collection
+2020-05-10 15:51:54,203 : mongodb : inserting data to collection
+2020-05-10 15:51:54,208 : mongodb : inserting data to collection
