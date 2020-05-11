@@ -3,6 +3,7 @@
     <words>
       <w>dest</w>
       <w>fanout</w>
+      <w>mongo</w>
       <w>rabbitmq</w>
       <w>reuseaddr</w>
     </words>

@@ -5,7 +5,7 @@ def parse(json_snapshot):
     """extracts and returns the pose information from json_snapshot"""
     message = json.loads(json_snapshot)
     pose = dict(user_id=message['user_id'],
-                key='pose',
+                result='pose',
                 datetime=message['datetime'],
                 pose=message['pose'])
     return json.dumps(pose)

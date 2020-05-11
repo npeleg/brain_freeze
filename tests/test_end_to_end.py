@@ -20,6 +20,7 @@ def test_end_to_end():
     client.drop_database('db')
 
     # Starting to run services:
+    api_process = run_subprocess("python -m final.api run_server mongodb://127.0.0.1:27017")
     saver_process = run_subprocess("python -m final.saver run_saver "
                                    "mongodb://127.0.0.1:27017 rabbitmq://127.0.0.1:5672/")
     time.sleep(1)
@@ -34,12 +35,17 @@ def test_end_to_end():
     client_process = run_subprocess("python -m final.client upload_sample " + SMALL_SAMPLE_PATH)
     time.sleep(120)
 
+    # Running the cli:
+    cli_process = run_subprocess("python -m final.cli get_users")
+    time.sleep(5)
+
     # Checking the results:
     client_process.terminate()
     saver_process.terminate()
     pose_process.terminate()
     feelings_process.terminate()
     server_process.terminate()
+    api_process.terminate()
     out, err = client_process.communicate()
     print("client out: " + out.decode())
     print("client err: " + err.decode())
@@ -52,4 +58,12 @@ def test_end_to_end():
     out, err = saver_process.communicate()
     print("saver out: " + out.decode())
     print("saver err: " + err.decode())
-    assert client_process.returncode == 1
+    out, err = api_process.communicate()
+    print("saver out: " + out.decode())
+    print("saver err: " + err.decode())
+    out, err = cli_process.communicate()
+    print("saver out: " + out.decode())
+    print("saver err: " + err.decode())
+
+    assert b'Dan Gittik' in out
+    assert client_process.returncode == 0
