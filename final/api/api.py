@@ -8,6 +8,10 @@ app = Flask(__name__)
 db = None
 
 
+def to_datetime(timestamp):
+    return dt.fromtimestamp(timestamp / 1000).strftime('%Y-%m-%d_%H-%M-%S.%f')[:-3]
+
+
 @app.route('/users', methods=['GET'])
 def get_all_users():
     try:
@@ -36,16 +40,11 @@ def get_user(user_id):
 @app.route('/users/<int:user_id>/snapshots', methods=['GET'])
 def get_user_snapshots(user_id):
     try:
-        snapshots_datetimes = get_user_snapshots(user_id)
-        if snapshots_datetimes is None:
-            output = "No such user"
-        elif snapshots_datetimes == []:
-            output = "User has no snapshots"
-        else:
-            output = []
-            for datetime in snapshots_datetimes:
-                _id = int(datetime.strftime('%Y-%m-%d_%H-%M-%S.%f'))
-                output.append({'snapshot_id': _id, 'datetime': datetime})
+        snapshot_ids = db.get_user_snapshots(user_id)
+        output = []
+        for _id in snapshot_ids:
+            datetime = to_datetime(_id)
+            output.append({'snapshot_id': _id, 'datetime': datetime})
         return jsonify({'result': output, 'error': None})
     except Exception as error:
         return jsonify({'result': None, 'error': str(error)}), 404
@@ -53,7 +52,24 @@ def get_user_snapshots(user_id):
 
 @app.route('/users/<int:user_id>/snapshots/<int:snapshot_id>', methods=['GET'])
 def get_snapshot_fields(user_id, snapshot_id):
-    
+    try:
+        datetime = to_datetime(snapshot_id)
+        output = {'snapshot_id': snapshot_id, 'datetime': datetime}
+        results_names = db.get_available_results(user_id, snapshot_id)
+        output['results_names'] = results_names
+        return jsonify({'result': output, 'error': None})
+    except Exception as error:
+        return jsonify({'result': None, 'error': str(error)})
+
+
+@app.route('/users/<int:user_id>/snapshots/<int:snapshot_id>/<result_name>', methods=['GET'])
+def get_result(user_id, snapshot_id, result_name):
+    try:
+        output = db.get_result(user_id, snapshot_id, result_name)
+        return jsonify({'result': output, 'error': None})
+    except Exception as error:
+        return jsonify({'result': None, 'error': str(error)})
+
 
 def run_api_server(host, port, database_url):
     """ listen on host:port and serve data from database_url """
