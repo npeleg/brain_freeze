@@ -1017,3 +1017,213 @@
 2020-05-11 17:17:15,106 : server : sending snapshot to message queue
 2020-05-11 17:17:19,455 : server : sending parsers list to client
 2020-05-11 17:17:19,468 : server : sending snapshot to message queue
+2020-05-11 18:47:09,307 : server : initialized message queue
+2020-05-11 18:47:09,310 : server : starting the server
+2020-05-11 18:47:10,499 : server : initialized message queue
+2020-05-11 18:47:10,502 : server : starting the server
+2020-05-11 18:47:10,542 : server : sending user to message queue
+2020-05-11 18:47:14,527 : server : sending parsers list to client
+2020-05-11 18:47:14,541 : server : sending snapshot to message queue
+2020-05-11 18:47:18,569 : server : sending parsers list to client
+2020-05-11 18:47:18,583 : server : sending snapshot to message queue
+2020-05-11 18:47:22,522 : server : sending parsers list to client
+2020-05-11 18:47:22,536 : server : sending snapshot to message queue
+2020-05-11 18:47:26,414 : server : sending parsers list to client
+2020-05-11 18:47:26,428 : server : sending snapshot to message queue
+2020-05-11 18:47:30,321 : server : sending parsers list to client
+2020-05-11 18:47:30,335 : server : sending snapshot to message queue
+2020-05-11 18:54:09,495 : server : initialized message queue
+2020-05-11 18:54:09,498 : server : starting the server
+2020-05-11 18:54:10,921 : server : initialized message queue
+2020-05-11 18:54:10,925 : server : starting the server
+2020-05-11 18:54:10,970 : server : sending user to message queue
+2020-05-11 18:54:15,477 : server : sending parsers list to client
+2020-05-11 18:54:15,491 : server : sending snapshot to message queue
+2020-05-11 18:54:19,879 : server : sending parsers list to client
+2020-05-11 18:54:19,892 : server : sending snapshot to message queue
+2020-05-11 18:54:24,841 : server : sending parsers list to client
+2020-05-11 18:54:24,878 : server : sending snapshot to message queue
+2020-05-11 18:54:30,426 : server : sending parsers list to client
+2020-05-11 18:54:30,443 : server : sending snapshot to message queue
+2020-05-11 18:54:35,188 : server : sending parsers list to client
+2020-05-11 18:54:35,216 : server : sending snapshot to message queue
+2020-05-11 19:13:45,315 : server : initialized message queue
+2020-05-11 19:13:45,317 : server : starting the server
+2020-05-11 19:13:46,887 : server : initialized message queue
+2020-05-11 19:13:46,889 : server : starting the server
+2020-05-11 19:13:46,927 : server : sending user to message queue
+2020-05-11 19:13:52,065 : server : sending parsers list to client
+2020-05-11 19:13:52,081 : server : sending snapshot to message queue
+2020-05-11 19:13:57,174 : server : sending parsers list to client
+2020-05-11 19:13:57,198 : server : sending snapshot to message queue
+2020-05-11 19:14:02,378 : server : sending parsers list to client
+2020-05-11 19:14:02,390 : server : sending snapshot to message queue
+2020-05-11 19:14:07,251 : server : sending parsers list to client
+2020-05-11 19:14:07,267 : server : sending snapshot to message queue
+2020-05-11 19:14:11,567 : server : sending parsers list to client
+2020-05-11 19:14:11,585 : server : sending snapshot to message queue
+2020-05-11 19:21:19,829 : server : initialized message queue
+2020-05-11 19:21:19,848 : server : starting the server
+2020-05-11 19:21:21,364 : server : initialized message queue
+2020-05-11 19:21:21,366 : server : starting the server
+2020-05-11 19:21:21,406 : server : sending user to message queue
+2020-05-11 19:21:25,232 : server : sending parsers list to client
+2020-05-11 19:21:25,244 : server : sending snapshot to message queue
+2020-05-11 19:21:29,117 : server : sending parsers list to client
+2020-05-11 19:21:29,129 : server : sending snapshot to message queue
+2020-05-11 19:21:33,297 : server : sending parsers list to client
+2020-05-11 19:21:33,310 : server : sending snapshot to message queue
+2020-05-11 19:21:38,125 : server : sending parsers list to client
+2020-05-11 19:21:38,141 : server : sending snapshot to message queue
+2020-05-11 19:21:42,401 : server : sending parsers list to client
+2020-05-11 19:21:42,414 : server : sending snapshot to message queue
+2020-05-11 19:43:18,733 : server : initialized message queue
+2020-05-11 19:43:18,738 : server : starting the server
+2020-05-11 19:43:19,966 : server : initialized message queue
+2020-05-11 19:43:19,971 : server : starting the server
+2020-05-11 19:43:20,022 : server : sending user to message queue
+2020-05-11 19:43:23,997 : server : sending parsers list to client
+2020-05-11 19:43:24,013 : server : sending snapshot to message queue
+2020-05-11 19:43:27,918 : server : sending parsers list to client
+2020-05-11 19:43:27,931 : server : sending snapshot to message queue
+2020-05-11 19:43:31,799 : server : sending parsers list to client
+2020-05-11 19:43:31,813 : server : sending snapshot to message queue
+2020-05-11 19:43:35,716 : server : sending parsers list to client
+2020-05-11 19:43:35,731 : server : sending snapshot to message queue
+2020-05-11 19:43:39,563 : server : sending parsers list to client
+2020-05-11 19:43:39,577 : server : sending snapshot to message queue
+2020-05-11 19:47:42,533 : server : initialized message queue
+2020-05-11 19:47:42,544 : server : starting the server
+2020-05-11 19:47:44,129 : server : initialized message queue
+2020-05-11 19:47:44,132 : server : starting the server
+2020-05-11 19:47:44,174 : server : sending user to message queue
+2020-05-11 19:47:48,162 : server : sending parsers list to client
+2020-05-11 19:47:48,175 : server : sending snapshot to message queue
+2020-05-11 19:47:53,678 : server : sending parsers list to client
+2020-05-11 19:47:53,692 : server : sending snapshot to message queue
+2020-05-11 19:47:57,663 : server : sending parsers list to client
+2020-05-11 19:47:57,676 : server : sending snapshot to message queue
+2020-05-11 19:48:01,608 : server : sending parsers list to client
+2020-05-11 19:48:01,621 : server : sending snapshot to message queue
+2020-05-11 19:48:05,513 : server : sending parsers list to client
+2020-05-11 19:48:05,526 : server : sending snapshot to message queue
+2020-05-11 20:07:35,029 : server : initialized message queue
+2020-05-11 20:07:35,039 : server : starting the server
+2020-05-11 20:07:37,379 : server : initialized message queue
+2020-05-11 20:07:37,382 : server : starting the server
+2020-05-11 20:07:37,770 : server : sending user to message queue
+2020-05-11 20:07:41,721 : server : sending parsers list to client
+2020-05-11 20:07:41,732 : server : sending snapshot to message queue
+2020-05-11 20:07:45,826 : server : sending parsers list to client
+2020-05-11 20:07:45,839 : server : sending snapshot to message queue
+2020-05-11 20:07:49,816 : server : sending parsers list to client
+2020-05-11 20:07:49,828 : server : sending snapshot to message queue
+2020-05-11 20:07:53,763 : server : sending parsers list to client
+2020-05-11 20:07:53,779 : server : sending snapshot to message queue
+2020-05-11 20:07:57,659 : server : sending parsers list to client
+2020-05-11 20:07:57,674 : server : sending snapshot to message queue
+2020-05-11 20:10:44,328 : server : initialized message queue
+2020-05-11 20:10:44,332 : server : starting the server
+2020-05-11 20:10:46,149 : server : initialized message queue
+2020-05-11 20:10:46,151 : server : starting the server
+2020-05-11 20:10:46,190 : server : sending user to message queue
+2020-05-11 20:10:50,132 : server : sending parsers list to client
+2020-05-11 20:10:50,145 : server : sending snapshot to message queue
+2020-05-11 20:10:54,110 : server : sending parsers list to client
+2020-05-11 20:10:54,124 : server : sending snapshot to message queue
+2020-05-11 20:10:58,108 : server : sending parsers list to client
+2020-05-11 20:10:58,122 : server : sending snapshot to message queue
+2020-05-11 20:11:02,082 : server : sending parsers list to client
+2020-05-11 20:11:02,095 : server : sending snapshot to message queue
+2020-05-11 20:11:05,948 : server : sending parsers list to client
+2020-05-11 20:11:05,961 : server : sending snapshot to message queue
+2020-05-11 20:18:32,773 : server : initialized message queue
+2020-05-11 20:18:32,777 : server : starting the server
+2020-05-11 20:18:34,608 : server : initialized message queue
+2020-05-11 20:18:34,610 : server : starting the server
+2020-05-11 20:18:34,650 : server : sending user to message queue
+2020-05-11 20:18:38,668 : server : sending parsers list to client
+2020-05-11 20:18:38,681 : server : sending snapshot to message queue
+2020-05-11 20:18:42,608 : server : sending parsers list to client
+2020-05-11 20:18:42,620 : server : sending snapshot to message queue
+2020-05-11 20:18:46,643 : server : sending parsers list to client
+2020-05-11 20:18:46,656 : server : sending snapshot to message queue
+2020-05-11 20:18:50,560 : server : sending parsers list to client
+2020-05-11 20:18:50,572 : server : sending snapshot to message queue
+2020-05-11 20:18:54,487 : server : sending parsers list to client
+2020-05-11 20:18:54,500 : server : sending snapshot to message queue
+2020-05-11 20:22:40,491 : server : initialized message queue
+2020-05-11 20:22:40,494 : server : starting the server
+2020-05-11 20:22:42,243 : server : initialized message queue
+2020-05-11 20:22:42,250 : server : starting the server
+2020-05-11 20:22:42,436 : server : sending user to message queue
+2020-05-11 20:22:46,340 : server : sending parsers list to client
+2020-05-11 20:22:46,353 : server : sending snapshot to message queue
+2020-05-11 20:22:50,293 : server : sending parsers list to client
+2020-05-11 20:22:50,305 : server : sending snapshot to message queue
+2020-05-11 20:22:54,285 : server : sending parsers list to client
+2020-05-11 20:22:54,298 : server : sending snapshot to message queue
+2020-05-11 20:22:58,226 : server : sending parsers list to client
+2020-05-11 20:22:58,238 : server : sending snapshot to message queue
+2020-05-11 20:23:02,218 : server : sending parsers list to client
+2020-05-11 20:23:02,230 : server : sending snapshot to message queue
+2020-05-11 20:30:40,810 : server : initialized message queue
+2020-05-11 20:30:40,941 : server : starting the server
+2020-05-11 20:30:43,190 : server : initialized message queue
+2020-05-11 20:30:43,192 : server : starting the server
+2020-05-11 20:30:43,248 : server : sending user to message queue
+2020-05-11 20:30:47,945 : server : sending parsers list to client
+2020-05-11 20:30:47,965 : server : sending snapshot to message queue
+2020-05-11 20:30:52,140 : server : sending parsers list to client
+2020-05-11 20:30:52,155 : server : sending snapshot to message queue
+2020-05-11 20:30:56,086 : server : sending parsers list to client
+2020-05-11 20:30:56,100 : server : sending snapshot to message queue
+2020-05-11 20:31:00,330 : server : sending parsers list to client
+2020-05-11 20:31:00,343 : server : sending snapshot to message queue
+2020-05-11 20:31:04,163 : server : sending parsers list to client
+2020-05-11 20:31:04,175 : server : sending snapshot to message queue
+2020-05-11 20:45:26,700 : server : initialized message queue
+2020-05-11 20:45:26,709 : server : starting the server
+2020-05-11 20:45:29,123 : server : initialized message queue
+2020-05-11 20:45:29,130 : server : starting the server
+2020-05-11 20:45:29,172 : server : sending user to message queue
+2020-05-11 20:45:33,580 : server : sending parsers list to client
+2020-05-11 20:45:33,608 : server : sending snapshot to message queue
+2020-05-11 20:45:38,095 : server : sending parsers list to client
+2020-05-11 20:45:38,108 : server : sending snapshot to message queue
+2020-05-11 20:45:43,316 : server : sending parsers list to client
+2020-05-11 20:45:43,355 : server : sending snapshot to message queue
+2020-05-11 20:45:48,012 : server : sending parsers list to client
+2020-05-11 20:45:48,026 : server : sending snapshot to message queue
+2020-05-11 20:45:52,073 : server : sending parsers list to client
+2020-05-11 20:45:52,088 : server : sending snapshot to message queue
+2020-05-11 20:58:43,530 : server : initialized message queue
+2020-05-11 20:58:43,538 : server : starting the server
+2020-05-11 20:58:45,510 : server : initialized message queue
+2020-05-11 20:58:45,512 : server : starting the server
+2020-05-11 20:58:45,549 : server : sending user to message queue
+2020-05-11 20:58:49,277 : server : sending parsers list to client
+2020-05-11 20:58:49,289 : server : sending snapshot to message queue
+2020-05-11 20:58:54,347 : server : sending parsers list to client
+2020-05-11 20:58:54,363 : server : sending snapshot to message queue
+2020-05-11 20:58:59,699 : server : sending parsers list to client
+2020-05-11 20:58:59,720 : server : sending snapshot to message queue
+2020-05-11 20:59:05,490 : server : sending parsers list to client
+2020-05-11 20:59:05,519 : server : sending snapshot to message queue
+2020-05-11 20:59:09,863 : server : sending parsers list to client
+2020-05-11 20:59:09,877 : server : sending snapshot to message queue
+2020-05-11 21:18:21,422 : server : initialized message queue
+2020-05-11 21:18:21,425 : server : starting the server
+2020-05-11 21:18:23,814 : server : initialized message queue
+2020-05-11 21:18:23,821 : server : starting the server
+2020-05-11 21:18:24,005 : server : sending user to message queue
+2020-05-11 21:18:30,630 : server : sending parsers list to client
+2020-05-11 21:18:30,667 : server : sending snapshot to message queue
+2020-05-11 21:18:34,812 : server : sending parsers list to client
+2020-05-11 21:18:34,824 : server : sending snapshot to message queue
+2020-05-11 21:18:38,633 : server : sending parsers list to client
+2020-05-11 21:18:38,647 : server : sending snapshot to message queue
+2020-05-11 21:18:42,481 : server : sending parsers list to client
+2020-05-11 21:18:42,494 : server : sending snapshot to message queue
+2020-05-11 21:18:46,400 : server : sending parsers list to client
+2020-05-11 21:18:46,413 : server : sending snapshot to message queue

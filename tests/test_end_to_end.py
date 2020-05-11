@@ -20,7 +20,6 @@ def test_end_to_end():
     client.drop_database('db')
 
     # Starting to run services:
-    api_process = run_subprocess("python -m final.api run_server mongodb://127.0.0.1:27017")
     saver_process = run_subprocess("python -m final.saver run_saver "
                                    "mongodb://127.0.0.1:27017 rabbitmq://127.0.0.1:5672/")
     time.sleep(1)
@@ -30,13 +29,22 @@ def test_end_to_end():
     time.sleep(1)
     server_process = run_subprocess("python -m final.server run_server rabbitmq://127.0.0.1:5672/")
     time.sleep(1)
-
     # Running the client:
     client_process = run_subprocess("python -m final.client upload_sample " + SMALL_SAMPLE_PATH)
     time.sleep(120)
 
-    # Running the cli:
-    cli_process = run_subprocess("python -m final.cli get_users")
+    # Running the api and cli:
+    api_process = run_subprocess("python -m final.api run_server")
+    time.sleep(1)
+    cli_users_process = run_subprocess("python -m final.cli get_users")
+    time.sleep(5)
+    cli_user_process = run_subprocess("python -m final.cli get_user 42")
+    time.sleep(5)
+    cli_snapshots_process = run_subprocess("python -m final.cli get_snapshots 42")
+    time.sleep(5)
+    cli_snapshot_process = run_subprocess("python -m final.cli get_snapshot 42 1575446887339")
+    time.sleep(5)
+    cli_result_process = run_subprocess("python -m final.cli get_snapshot 42 1575446887339 pose")
     time.sleep(5)
 
     # Checking the results:
@@ -49,21 +57,47 @@ def test_end_to_end():
     out, err = client_process.communicate()
     print("client out: " + out.decode())
     print("client err: " + err.decode())
+    assert client_process.returncode == 0
+
     out, err = server_process.communicate()
     print("server out: " + out.decode())
     print("server err: " + err.decode())
+
     out, err = pose_process.communicate()
     print("pose out: " + out.decode())
     print("pose err: " + err.decode())
+
     out, err = saver_process.communicate()
     print("saver out: " + out.decode())
     print("saver err: " + err.decode())
+    
     out, err = api_process.communicate()
-    print("saver out: " + out.decode())
-    print("saver err: " + err.decode())
-    out, err = cli_process.communicate()
-    print("saver out: " + out.decode())
-    print("saver err: " + err.decode())
+    print("api out: " + out.decode())
+    print("api err: " + err.decode())
 
+    out, err = cli_users_process.communicate()
+    print("cli_users out: " + out.decode())
+    print("cli_users err: " + err.decode())
     assert b'Dan Gittik' in out
-    assert client_process.returncode == 0
+
+    out, err = cli_user_process.communicate()
+    print("cli_user out: " + out.decode())
+    print("cli_user err: " + err.decode())
+    assert b'Dan Gittik' in out
+
+    out, err = cli_snapshots_process.communicate()
+    print("cli_snapshots_process out: " + out.decode())
+    print("cli_snapshots_process err: " + err.decode())
+    assert b'1575446887339' in out
+
+    out, err = cli_snapshot_process.communicate()
+    print("cli_snapshot_process out: " + out.decode())
+    print("cli_snapshot_process err: " + err.decode())
+    assert b'pose' in out
+    assert b'feelings' in out
+
+    out, err = cli_result_process.communicate()
+    print("cli_result_process out: " + out.decode())
+    print("cli_result_process err: " + err.decode())
+    assert b'0.4873843491077423' in out
+

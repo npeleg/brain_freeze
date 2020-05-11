@@ -1,3 +1,4 @@
+import json
 from .logger import Logger
 from .mongodb import MongoDB
 from .service_finder import find_service
@@ -13,14 +14,13 @@ class DBManager:
         self.db = find_service(url, dbs)
 
     def insert_user(self, data):
-        self.db.insert(USER_TABLE, data)
+        self.db.insert(USER_TABLE, json.loads(data))
 
     def insert_snapshot(self, data):
-        self.db.insert(SNAPSHOT_TABLE, data)
+        self.db.insert(SNAPSHOT_TABLE, json.loads(data))
 
     def get_all_users(self):
-        primary_key = 'user_id'
-        return self.db.get_all(USER_TABLE, primary_key)
+        return self.db.get_all(USER_TABLE)
 
     def get_user_data(self, user_id):
         query = {'user_id': user_id}

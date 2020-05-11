@@ -1,6 +1,8 @@
+import os
 import click
 import sys
-from .api import run_api_server
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from . import api
 
 
 @click.group()
@@ -15,9 +17,9 @@ def main():
 def run_api_server(host, port, database):
     """ Listen on HOST:PORT and serve data from DATABASE"""
     try:
-        pass  # TODO implement
+        api.run_api_server(host, port, database)
     except Exception as error:
-        print(f'Error during run_saver command: {error}')
+        print(f'Error during run_api_server command: {error}')
         return 1
 
 
