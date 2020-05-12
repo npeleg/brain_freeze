@@ -3,6 +3,28 @@ import sys
 import requests
 
 
+def send_and_handle_request(request, is_list, file_path):
+    try:
+        r = requests.get(request).json()
+        if r['result']:
+            string_result = ""
+            if is_list:
+                for item in r['result']:
+                    string_result += str(item) + '\n'
+            else:
+                string_result = r['result']
+            if file_path:
+                with open(file_path, 'w') as file:
+                    file.write(string_result)
+            else:
+                print(string_result)
+        else:
+            print(r['error'])
+    except Exception as error:
+        print(f'Error: {error}')
+        return 1
+
+
 @click.group()
 def main():
     pass
@@ -13,13 +35,8 @@ def main():
 @click.option('-p', '--port', type=click.INT, default=5000, help='port of the server')
 def get_users(host, port):
     """ Get a list of all the users. """
-    try:
-        r = requests.get(f'http://{host}:{port}/users')
-        for user in r.json()['result']:
-            print(user)
-    except Exception as error:
-        print(f'Error: {error}')
-        return 1
+    request = f'http://{host}:{port}/users'
+    send_and_handle_request(request, is_list=True, file_path=None)
 
 
 @main.command('get_user')
@@ -28,12 +45,8 @@ def get_users(host, port):
 @click.argument('user_id', type=click.INT)
 def get_user(host, port, user_id):
     """ Get info about the user whose ID is USER_ID. """
-    try:
-        r = requests.get(f'http://{host}:{port}/users/{user_id}')
-        print(r.json()['result'])
-    except Exception as error:
-        print(f'Error: {error}')
-        return 1
+    request = f'http://{host}:{port}/users/{user_id}'
+    send_and_handle_request(request, is_list=False, file_path=None)
 
 
 @main.command('get_snapshots')
@@ -42,13 +55,8 @@ def get_user(host, port, user_id):
 @click.argument('user_id', type=click.INT)
 def get_snapshots(host, port, user_id):
     """ Get a list of all the snapshots of USER_ID. """
-    try:
-        r = requests.get(f'http://{host}:{port}/users/{user_id}/snapshots')
-        for snapshot in r.json()['result']:
-            print(snapshot)
-    except Exception as error:
-        print(f'Error: {error}')
-        return 1
+    request = f'http://{host}:{port}/users/{user_id}/snapshots'
+    send_and_handle_request(request, is_list=True, file_path=None)
 
 
 @main.command('get_snapshot')
@@ -58,12 +66,8 @@ def get_snapshots(host, port, user_id):
 @click.argument('snapshot_id', type=click.INT)
 def get_snapshot(host, port, user_id, snapshot_id):
     """ Get a list of the results in snapshot SNAPSHOT_ID of USER_ID. """
-    try:
-        r = requests.get(f'http://{host}:{port}/users/{user_id}/snapshots/{snapshot_id}')
-        print(r.json()['result'])
-    except Exception as error:
-        print(f'Error: {error}')
-        return 1
+    request = f'http://{host}:{port}/users/{user_id}/snapshots/{snapshot_id}'
+    send_and_handle_request(request, is_list=False, file_path=None)
 
 
 @main.command('get_result')
@@ -75,17 +79,8 @@ def get_snapshot(host, port, user_id, snapshot_id):
 @click.argument('result', type=click.STRING)
 def get_result(host, port, user_id, snapshot_id, result, save):
     """ Get the RESULT of snapshot SNAPSHOT_ID of USER_ID, optionally saving it to SAVE path. """
-    try:
-        r = requests.get(f'http://{host}:{port}/users/{user_id}/snapshots/{snapshot_id}/{result}')
-        result = r.json()['result']
-        if save:
-            with open(save, 'w') as file:
-                file.write(result)
-        else:
-            print(result)
-    except Exception as error:
-        print(f'Error: {error}')
-        return 1
+    request = f'http://{host}:{port}/users/{user_id}/snapshots/{snapshot_id}/{result}'
+    send_and_handle_request(request, is_list=False, file_path=save)
 
 
 if __name__ == '__main__':

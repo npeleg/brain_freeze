@@ -21,9 +21,13 @@ class MongoDB:
                 lst.append({key: value})
             query = {"$and": lst}
         if distinct_key:
-            return [x[distinct_key] for x in self.db[collection].find(query).distinct(distinct_key)]
+            return self.db[collection].find(query).distinct(distinct_key)
         else:
-            return self.db[collection].find_one(query)
+            result = self.db[collection].find_one(query)
+            print(result)
+            if result:
+                del result['_id']
+            return result
 
     def get(self, collection, query):
         return self._get_general(collection, query, None)

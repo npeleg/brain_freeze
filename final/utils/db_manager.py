@@ -37,5 +37,6 @@ class DBManager:
         return self.db.get_one_of_each(SNAPSHOT_TABLE, query, distinct_key)
 
     def get_result(self, user_id, datetime, result_name):
-        query = {'user_id': user_id, 'datetime': datetime, 'result_name': result_name}
+        query = {'user_id': user_id, 'datetime': datetime, 'result': result_name}
+        print(query)
         return self.db.get(SNAPSHOT_TABLE, query)

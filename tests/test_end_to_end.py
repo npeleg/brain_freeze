@@ -31,21 +31,21 @@ def test_end_to_end():
     time.sleep(1)
     # Running the client:
     client_process = run_subprocess("python -m final.client upload_sample " + SMALL_SAMPLE_PATH)
-    time.sleep(120)
+    time.sleep(100)
 
     # Running the api and cli:
     api_process = run_subprocess("python -m final.api run_server")
     time.sleep(1)
     cli_users_process = run_subprocess("python -m final.cli get_users")
-    time.sleep(5)
+    time.sleep(3)
     cli_user_process = run_subprocess("python -m final.cli get_user 42")
-    time.sleep(5)
+    time.sleep(3)
     cli_snapshots_process = run_subprocess("python -m final.cli get_snapshots 42")
-    time.sleep(5)
+    time.sleep(3)
     cli_snapshot_process = run_subprocess("python -m final.cli get_snapshot 42 1575446887339")
-    time.sleep(5)
-    cli_result_process = run_subprocess("python -m final.cli get_snapshot 42 1575446887339 pose")
-    time.sleep(5)
+    time.sleep(3)
+    cli_result_process = run_subprocess("python -m final.cli get_result 42 1575446887339 pose")
+    time.sleep(3)
 
     # Checking the results:
     client_process.terminate()
@@ -70,7 +70,7 @@ def test_end_to_end():
     out, err = saver_process.communicate()
     print("saver out: " + out.decode())
     print("saver err: " + err.decode())
-    
+
     out, err = api_process.communicate()
     print("api out: " + out.decode())
     print("api err: " + err.decode())

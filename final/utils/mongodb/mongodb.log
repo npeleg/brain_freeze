@@ -295,3 +295,153 @@
 2020-05-11 21:18:46,469 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887603, 'pose': {'translation': {'x': -0.08363257348537445, 'y': 0.03274262696504593, 'z': 0.44446834921836853}, 'rotation': {'x': -0.18523385018409705, 'y': -0.011889715927864218, 'z': 0.01159230178272562, 'w': 0.9825541582734808}}} to collection snapshots
 2020-05-11 21:18:46,473 : mongodb : inserting data to collection
 2020-05-11 21:18:46,473 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887603, 'feelings': {'hunger': 0.004000000189989805, 'thirst': 0.012000000104308128, 'exhaustion': 0.00800000037997961, 'happiness': 0.30000001192092896}} to collection snapshots
+2020-05-12 10:50:49,047 : mongodb : inserting data to collection
+2020-05-12 10:50:49,047 : mongodb : inserting data: {'user_id': 42, 'username': 'Dan Gittik', 'birthday': 699746400, 'gender': 'MALE'} to collection users
+2020-05-12 10:50:53,999 : mongodb : inserting data to collection
+2020-05-12 10:50:53,999 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887339, 'pose': {'translation': {'x': 0.4873843491077423, 'y': 0.007090016733855009, 'z': -1.1306129693984985}, 'rotation': {'x': -0.10888676356214629, 'y': -0.26755994585035286, 'z': -0.021271118915446748, 'w': 0.9571326384559261}}} to collection snapshots
+2020-05-12 10:50:54,014 : mongodb : inserting data to collection
+2020-05-12 10:50:54,014 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887339, 'feelings': {'hunger': 0.0, 'thirst': 0.0, 'exhaustion': 0.0, 'happiness': 0.0}} to collection snapshots
+2020-05-12 10:50:58,528 : mongodb : inserting data to collection
+2020-05-12 10:50:58,528 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887412, 'feelings': {'hunger': 0.0010000000474974513, 'thirst': 0.003000000026077032, 'exhaustion': 0.0020000000949949026, 'happiness': 0.0}} to collection snapshots
+2020-05-12 10:50:58,532 : mongodb : inserting data to collection
+2020-05-12 10:50:58,532 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887412, 'pose': {'translation': {'x': 0.15600797533988953, 'y': 0.08133671432733536, 'z': -0.49068963527679443}, 'rotation': {'x': -0.2959017411322204, 'y': -0.16749024140672616, 'z': -0.04752900380336424, 'w': 0.9392178514199446}}} to collection snapshots
+2020-05-12 10:51:03,316 : mongodb : inserting data to collection
+2020-05-12 10:51:03,316 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887476, 'feelings': {'hunger': 0.0020000000949949026, 'thirst': 0.006000000052154064, 'exhaustion': 0.004000000189989805, 'happiness': 0.0}} to collection snapshots
+2020-05-12 10:51:03,324 : mongodb : inserting data to collection
+2020-05-12 10:51:03,324 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887476, 'pose': {'translation': {'x': -0.05690298229455948, 'y': 0.09136273711919785, 'z': -0.1454082578420639}, 'rotation': {'x': -0.30262250114734884, 'y': 0.024984587319575428, 'z': 0.01379476785565966, 'w': 0.9526831039624887}}} to collection snapshots
+2020-05-12 10:51:08,770 : mongodb : inserting data to collection
+2020-05-12 10:51:08,770 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887541, 'pose': {'translation': {'x': -0.06873919069766998, 'y': 0.06515509635210037, 'z': 0.20628340542316437}, 'rotation': {'x': -0.2268025104015529, 'y': 0.016296475938769883, 'z': 0.034513309202044845, 'w': 0.9731926210342198}}} to collection snapshots
+2020-05-12 10:51:08,775 : mongodb : inserting data to collection
+2020-05-12 10:51:08,775 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887541, 'feelings': {'hunger': 0.003000000026077032, 'thirst': 0.008999999612569809, 'exhaustion': 0.006000000052154064, 'happiness': 0.0}} to collection snapshots
+2020-05-12 10:51:12,987 : mongodb : inserting data to collection
+2020-05-12 10:51:12,988 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887603, 'pose': {'translation': {'x': -0.08363257348537445, 'y': 0.03274262696504593, 'z': 0.44446834921836853}, 'rotation': {'x': -0.18523385018409705, 'y': -0.011889715927864218, 'z': 0.01159230178272562, 'w': 0.9825541582734808}}} to collection snapshots
+2020-05-12 10:51:12,993 : mongodb : inserting data to collection
+2020-05-12 10:51:12,993 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887603, 'feelings': {'hunger': 0.004000000189989805, 'thirst': 0.012000000104308128, 'exhaustion': 0.00800000037997961, 'happiness': 0.30000001192092896}} to collection snapshots
+2020-05-12 13:09:33,064 : mongodb : inserting data to collection
+2020-05-12 13:09:33,064 : mongodb : inserting data: {'user_id': 42, 'username': 'Dan Gittik', 'birthday': 699746400, 'gender': 'MALE'} to collection users
+2020-05-12 13:09:36,936 : mongodb : inserting data to collection
+2020-05-12 13:09:36,936 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887339, 'feelings': {'hunger': 0.0, 'thirst': 0.0, 'exhaustion': 0.0, 'happiness': 0.0}} to collection snapshots
+2020-05-12 13:09:36,940 : mongodb : inserting data to collection
+2020-05-12 13:09:36,940 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887339, 'pose': {'translation': {'x': 0.4873843491077423, 'y': 0.007090016733855009, 'z': -1.1306129693984985}, 'rotation': {'x': -0.10888676356214629, 'y': -0.26755994585035286, 'z': -0.021271118915446748, 'w': 0.9571326384559261}}} to collection snapshots
+2020-05-12 13:09:40,818 : mongodb : inserting data to collection
+2020-05-12 13:09:40,818 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887412, 'feelings': {'hunger': 0.0010000000474974513, 'thirst': 0.003000000026077032, 'exhaustion': 0.0020000000949949026, 'happiness': 0.0}} to collection snapshots
+2020-05-12 13:09:40,825 : mongodb : inserting data to collection
+2020-05-12 13:09:40,825 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887412, 'pose': {'translation': {'x': 0.15600797533988953, 'y': 0.08133671432733536, 'z': -0.49068963527679443}, 'rotation': {'x': -0.2959017411322204, 'y': -0.16749024140672616, 'z': -0.04752900380336424, 'w': 0.9392178514199446}}} to collection snapshots
+2020-05-12 13:09:44,675 : mongodb : inserting data to collection
+2020-05-12 13:09:44,675 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887476, 'pose': {'translation': {'x': -0.05690298229455948, 'y': 0.09136273711919785, 'z': -0.1454082578420639}, 'rotation': {'x': -0.30262250114734884, 'y': 0.024984587319575428, 'z': 0.01379476785565966, 'w': 0.9526831039624887}}} to collection snapshots
+2020-05-12 13:09:44,681 : mongodb : inserting data to collection
+2020-05-12 13:09:44,682 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887476, 'feelings': {'hunger': 0.0020000000949949026, 'thirst': 0.006000000052154064, 'exhaustion': 0.004000000189989805, 'happiness': 0.0}} to collection snapshots
+2020-05-12 13:09:49,743 : mongodb : inserting data to collection
+2020-05-12 13:09:49,743 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887541, 'pose': {'translation': {'x': -0.06873919069766998, 'y': 0.06515509635210037, 'z': 0.20628340542316437}, 'rotation': {'x': -0.2268025104015529, 'y': 0.016296475938769883, 'z': 0.034513309202044845, 'w': 0.9731926210342198}}} to collection snapshots
+2020-05-12 13:09:49,751 : mongodb : inserting data to collection
+2020-05-12 13:09:49,751 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887541, 'feelings': {'hunger': 0.003000000026077032, 'thirst': 0.008999999612569809, 'exhaustion': 0.006000000052154064, 'happiness': 0.0}} to collection snapshots
+2020-05-12 13:09:53,555 : mongodb : inserting data to collection
+2020-05-12 13:09:53,555 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887603, 'pose': {'translation': {'x': -0.08363257348537445, 'y': 0.03274262696504593, 'z': 0.44446834921836853}, 'rotation': {'x': -0.18523385018409705, 'y': -0.011889715927864218, 'z': 0.01159230178272562, 'w': 0.9825541582734808}}} to collection snapshots
+2020-05-12 13:09:53,559 : mongodb : inserting data to collection
+2020-05-12 13:09:53,560 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887603, 'feelings': {'hunger': 0.004000000189989805, 'thirst': 0.012000000104308128, 'exhaustion': 0.00800000037997961, 'happiness': 0.30000001192092896}} to collection snapshots
+2020-05-12 15:14:03,981 : mongodb : inserting data to collection
+2020-05-12 15:14:03,982 : mongodb : inserting data: {'user_id': 42, 'username': 'Dan Gittik', 'birthday': 699746400, 'gender': 'MALE'} to collection users
+2020-05-12 15:14:09,145 : mongodb : inserting data to collection
+2020-05-12 15:14:09,145 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887339, 'pose': {'translation': {'x': 0.4873843491077423, 'y': 0.007090016733855009, 'z': -1.1306129693984985}, 'rotation': {'x': -0.10888676356214629, 'y': -0.26755994585035286, 'z': -0.021271118915446748, 'w': 0.9571326384559261}}} to collection snapshots
+2020-05-12 15:14:09,153 : mongodb : inserting data to collection
+2020-05-12 15:14:09,153 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887339, 'feelings': {'hunger': 0.0, 'thirst': 0.0, 'exhaustion': 0.0, 'happiness': 0.0}} to collection snapshots
+2020-05-12 15:14:14,412 : mongodb : inserting data to collection
+2020-05-12 15:14:14,412 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887412, 'feelings': {'hunger': 0.0010000000474974513, 'thirst': 0.003000000026077032, 'exhaustion': 0.0020000000949949026, 'happiness': 0.0}} to collection snapshots
+2020-05-12 15:14:14,426 : mongodb : inserting data to collection
+2020-05-12 15:14:14,426 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887412, 'pose': {'translation': {'x': 0.15600797533988953, 'y': 0.08133671432733536, 'z': -0.49068963527679443}, 'rotation': {'x': -0.2959017411322204, 'y': -0.16749024140672616, 'z': -0.04752900380336424, 'w': 0.9392178514199446}}} to collection snapshots
+2020-05-12 15:14:18,556 : mongodb : inserting data to collection
+2020-05-12 15:14:18,556 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887476, 'feelings': {'hunger': 0.0020000000949949026, 'thirst': 0.006000000052154064, 'exhaustion': 0.004000000189989805, 'happiness': 0.0}} to collection snapshots
+2020-05-12 15:14:18,560 : mongodb : inserting data to collection
+2020-05-12 15:14:18,560 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887476, 'pose': {'translation': {'x': -0.05690298229455948, 'y': 0.09136273711919785, 'z': -0.1454082578420639}, 'rotation': {'x': -0.30262250114734884, 'y': 0.024984587319575428, 'z': 0.01379476785565966, 'w': 0.9526831039624887}}} to collection snapshots
+2020-05-12 15:14:23,200 : mongodb : inserting data to collection
+2020-05-12 15:14:23,200 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887541, 'pose': {'translation': {'x': -0.06873919069766998, 'y': 0.06515509635210037, 'z': 0.20628340542316437}, 'rotation': {'x': -0.2268025104015529, 'y': 0.016296475938769883, 'z': 0.034513309202044845, 'w': 0.9731926210342198}}} to collection snapshots
+2020-05-12 15:14:23,210 : mongodb : inserting data to collection
+2020-05-12 15:14:23,211 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887541, 'feelings': {'hunger': 0.003000000026077032, 'thirst': 0.008999999612569809, 'exhaustion': 0.006000000052154064, 'happiness': 0.0}} to collection snapshots
+2020-05-12 15:14:27,921 : mongodb : inserting data to collection
+2020-05-12 15:14:27,922 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887603, 'feelings': {'hunger': 0.004000000189989805, 'thirst': 0.012000000104308128, 'exhaustion': 0.00800000037997961, 'happiness': 0.30000001192092896}} to collection snapshots
+2020-05-12 15:14:27,928 : mongodb : inserting data to collection
+2020-05-12 15:14:27,928 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887603, 'pose': {'translation': {'x': -0.08363257348537445, 'y': 0.03274262696504593, 'z': 0.44446834921836853}, 'rotation': {'x': -0.18523385018409705, 'y': -0.011889715927864218, 'z': 0.01159230178272562, 'w': 0.9825541582734808}}} to collection snapshots
+2020-05-12 15:18:58,157 : mongodb : inserting data to collection
+2020-05-12 15:18:58,157 : mongodb : inserting data: {'user_id': 42, 'username': 'Dan Gittik', 'birthday': 699746400, 'gender': 'MALE'} to collection users
+2020-05-12 15:19:02,981 : mongodb : inserting data to collection
+2020-05-12 15:19:02,982 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887339, 'feelings': {'hunger': 0.0, 'thirst': 0.0, 'exhaustion': 0.0, 'happiness': 0.0}} to collection snapshots
+2020-05-12 15:19:02,983 : mongodb : inserting data to collection
+2020-05-12 15:19:02,984 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887339, 'feelings': {'hunger': 0.0, 'thirst': 0.0, 'exhaustion': 0.0, 'happiness': 0.0}} to collection snapshots
+2020-05-12 15:19:03,004 : mongodb : inserting data to collection
+2020-05-12 15:19:03,004 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887339, 'pose': {'translation': {'x': 0.4873843491077423, 'y': 0.007090016733855009, 'z': -1.1306129693984985}, 'rotation': {'x': -0.10888676356214629, 'y': -0.26755994585035286, 'z': -0.021271118915446748, 'w': 0.9571326384559261}}} to collection snapshots
+2020-05-12 15:19:03,006 : mongodb : inserting data to collection
+2020-05-12 15:19:03,008 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887339, 'pose': {'translation': {'x': 0.4873843491077423, 'y': 0.007090016733855009, 'z': -1.1306129693984985}, 'rotation': {'x': -0.10888676356214629, 'y': -0.26755994585035286, 'z': -0.021271118915446748, 'w': 0.9571326384559261}}} to collection snapshots
+2020-05-12 15:19:07,639 : mongodb : inserting data to collection
+2020-05-12 15:19:07,639 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887412, 'feelings': {'hunger': 0.0010000000474974513, 'thirst': 0.003000000026077032, 'exhaustion': 0.0020000000949949026, 'happiness': 0.0}} to collection snapshots
+2020-05-12 15:19:07,640 : mongodb : inserting data to collection
+2020-05-12 15:19:07,640 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887412, 'feelings': {'hunger': 0.0010000000474974513, 'thirst': 0.003000000026077032, 'exhaustion': 0.0020000000949949026, 'happiness': 0.0}} to collection snapshots
+2020-05-12 15:19:07,647 : mongodb : inserting data to collection
+2020-05-12 15:19:07,647 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887412, 'pose': {'translation': {'x': 0.15600797533988953, 'y': 0.08133671432733536, 'z': -0.49068963527679443}, 'rotation': {'x': -0.2959017411322204, 'y': -0.16749024140672616, 'z': -0.04752900380336424, 'w': 0.9392178514199446}}} to collection snapshots
+2020-05-12 15:19:07,650 : mongodb : inserting data to collection
+2020-05-12 15:19:07,650 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887412, 'pose': {'translation': {'x': 0.15600797533988953, 'y': 0.08133671432733536, 'z': -0.49068963527679443}, 'rotation': {'x': -0.2959017411322204, 'y': -0.16749024140672616, 'z': -0.04752900380336424, 'w': 0.9392178514199446}}} to collection snapshots
+2020-05-12 15:19:12,156 : mongodb : inserting data to collection
+2020-05-12 15:19:12,156 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887476, 'pose': {'translation': {'x': -0.05690298229455948, 'y': 0.09136273711919785, 'z': -0.1454082578420639}, 'rotation': {'x': -0.30262250114734884, 'y': 0.024984587319575428, 'z': 0.01379476785565966, 'w': 0.9526831039624887}}} to collection snapshots
+2020-05-12 15:19:12,159 : mongodb : inserting data to collection
+2020-05-12 15:19:12,159 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887476, 'pose': {'translation': {'x': -0.05690298229455948, 'y': 0.09136273711919785, 'z': -0.1454082578420639}, 'rotation': {'x': -0.30262250114734884, 'y': 0.024984587319575428, 'z': 0.01379476785565966, 'w': 0.9526831039624887}}} to collection snapshots
+2020-05-12 15:19:12,172 : mongodb : inserting data to collection
+2020-05-12 15:19:12,172 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887476, 'feelings': {'hunger': 0.0020000000949949026, 'thirst': 0.006000000052154064, 'exhaustion': 0.004000000189989805, 'happiness': 0.0}} to collection snapshots
+2020-05-12 15:19:12,175 : mongodb : inserting data to collection
+2020-05-12 15:19:12,175 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887476, 'feelings': {'hunger': 0.0020000000949949026, 'thirst': 0.006000000052154064, 'exhaustion': 0.004000000189989805, 'happiness': 0.0}} to collection snapshots
+2020-05-12 15:19:16,732 : mongodb : inserting data to collection
+2020-05-12 15:19:16,732 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887541, 'feelings': {'hunger': 0.003000000026077032, 'thirst': 0.008999999612569809, 'exhaustion': 0.006000000052154064, 'happiness': 0.0}} to collection snapshots
+2020-05-12 15:19:16,734 : mongodb : inserting data to collection
+2020-05-12 15:19:16,734 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887541, 'feelings': {'hunger': 0.003000000026077032, 'thirst': 0.008999999612569809, 'exhaustion': 0.006000000052154064, 'happiness': 0.0}} to collection snapshots
+2020-05-12 15:19:16,741 : mongodb : inserting data to collection
+2020-05-12 15:19:16,741 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887541, 'pose': {'translation': {'x': -0.06873919069766998, 'y': 0.06515509635210037, 'z': 0.20628340542316437}, 'rotation': {'x': -0.2268025104015529, 'y': 0.016296475938769883, 'z': 0.034513309202044845, 'w': 0.9731926210342198}}} to collection snapshots
+2020-05-12 15:19:16,740 : mongodb : inserting data to collection
+2020-05-12 15:19:16,743 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887541, 'pose': {'translation': {'x': -0.06873919069766998, 'y': 0.06515509635210037, 'z': 0.20628340542316437}, 'rotation': {'x': -0.2268025104015529, 'y': 0.016296475938769883, 'z': 0.034513309202044845, 'w': 0.9731926210342198}}} to collection snapshots
+2020-05-12 15:19:21,234 : mongodb : inserting data to collection
+2020-05-12 15:19:21,235 : mongodb : inserting data to collection
+2020-05-12 15:19:21,235 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887603, 'feelings': {'hunger': 0.004000000189989805, 'thirst': 0.012000000104308128, 'exhaustion': 0.00800000037997961, 'happiness': 0.30000001192092896}} to collection snapshots
+2020-05-12 15:19:21,237 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887603, 'feelings': {'hunger': 0.004000000189989805, 'thirst': 0.012000000104308128, 'exhaustion': 0.00800000037997961, 'happiness': 0.30000001192092896}} to collection snapshots
+2020-05-12 15:19:21,245 : mongodb : inserting data to collection
+2020-05-12 15:19:21,251 : mongodb : inserting data to collection
+2020-05-12 15:19:21,251 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887603, 'pose': {'translation': {'x': -0.08363257348537445, 'y': 0.03274262696504593, 'z': 0.44446834921836853}, 'rotation': {'x': -0.18523385018409705, 'y': -0.011889715927864218, 'z': 0.01159230178272562, 'w': 0.9825541582734808}}} to collection snapshots
+2020-05-12 15:19:21,253 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887603, 'pose': {'translation': {'x': -0.08363257348537445, 'y': 0.03274262696504593, 'z': 0.44446834921836853}, 'rotation': {'x': -0.18523385018409705, 'y': -0.011889715927864218, 'z': 0.01159230178272562, 'w': 0.9825541582734808}}} to collection snapshots
+2020-05-12 15:24:57,723 : mongodb : inserting data to collection
+2020-05-12 15:24:57,723 : mongodb : inserting data: {'user_id': 42, 'username': 'Dan Gittik', 'birthday': 699746400, 'gender': 'MALE'} to collection users
+2020-05-12 15:25:02,011 : mongodb : inserting data to collection
+2020-05-12 15:25:02,011 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887339, 'pose': {'translation': {'x': 0.4873843491077423, 'y': 0.007090016733855009, 'z': -1.1306129693984985}, 'rotation': {'x': -0.10888676356214629, 'y': -0.26755994585035286, 'z': -0.021271118915446748, 'w': 0.9571326384559261}}} to collection snapshots
+2020-05-12 15:25:02,020 : mongodb : inserting data to collection
+2020-05-12 15:25:02,020 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887339, 'pose': {'translation': {'x': 0.4873843491077423, 'y': 0.007090016733855009, 'z': -1.1306129693984985}, 'rotation': {'x': -0.10888676356214629, 'y': -0.26755994585035286, 'z': -0.021271118915446748, 'w': 0.9571326384559261}}} to collection snapshots
+2020-05-12 15:25:02,032 : mongodb : inserting data to collection
+2020-05-12 15:25:02,032 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887339, 'feelings': {'hunger': 0.0, 'thirst': 0.0, 'exhaustion': 0.0, 'happiness': 0.0}} to collection snapshots
+2020-05-12 15:25:02,039 : mongodb : inserting data to collection
+2020-05-12 15:25:02,039 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887339, 'feelings': {'hunger': 0.0, 'thirst': 0.0, 'exhaustion': 0.0, 'happiness': 0.0}} to collection snapshots
+2020-05-12 15:25:06,123 : mongodb : inserting data to collection
+2020-05-12 15:25:06,123 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887412, 'feelings': {'hunger': 0.0010000000474974513, 'thirst': 0.003000000026077032, 'exhaustion': 0.0020000000949949026, 'happiness': 0.0}} to collection snapshots
+2020-05-12 15:25:06,125 : mongodb : inserting data to collection
+2020-05-12 15:25:06,125 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887412, 'feelings': {'hunger': 0.0010000000474974513, 'thirst': 0.003000000026077032, 'exhaustion': 0.0020000000949949026, 'happiness': 0.0}} to collection snapshots
+2020-05-12 15:25:06,132 : mongodb : inserting data to collection
+2020-05-12 15:25:06,132 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887412, 'pose': {'translation': {'x': 0.15600797533988953, 'y': 0.08133671432733536, 'z': -0.49068963527679443}, 'rotation': {'x': -0.2959017411322204, 'y': -0.16749024140672616, 'z': -0.04752900380336424, 'w': 0.9392178514199446}}} to collection snapshots
+2020-05-12 15:25:06,135 : mongodb : inserting data to collection
+2020-05-12 15:25:06,135 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887412, 'pose': {'translation': {'x': 0.15600797533988953, 'y': 0.08133671432733536, 'z': -0.49068963527679443}, 'rotation': {'x': -0.2959017411322204, 'y': -0.16749024140672616, 'z': -0.04752900380336424, 'w': 0.9392178514199446}}} to collection snapshots
+2020-05-12 15:25:10,043 : mongodb : inserting data to collection
+2020-05-12 15:25:10,044 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887476, 'feelings': {'hunger': 0.0020000000949949026, 'thirst': 0.006000000052154064, 'exhaustion': 0.004000000189989805, 'happiness': 0.0}} to collection snapshots
+2020-05-12 15:25:10,045 : mongodb : inserting data to collection
+2020-05-12 15:25:10,045 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887476, 'feelings': {'hunger': 0.0020000000949949026, 'thirst': 0.006000000052154064, 'exhaustion': 0.004000000189989805, 'happiness': 0.0}} to collection snapshots
+2020-05-12 15:25:10,050 : mongodb : inserting data to collection
+2020-05-12 15:25:10,051 : mongodb : inserting data to collection
+2020-05-12 15:25:10,051 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887476, 'pose': {'translation': {'x': -0.05690298229455948, 'y': 0.09136273711919785, 'z': -0.1454082578420639}, 'rotation': {'x': -0.30262250114734884, 'y': 0.024984587319575428, 'z': 0.01379476785565966, 'w': 0.9526831039624887}}} to collection snapshots
+2020-05-12 15:25:10,053 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887476, 'pose': {'translation': {'x': -0.05690298229455948, 'y': 0.09136273711919785, 'z': -0.1454082578420639}, 'rotation': {'x': -0.30262250114734884, 'y': 0.024984587319575428, 'z': 0.01379476785565966, 'w': 0.9526831039624887}}} to collection snapshots
+2020-05-12 15:25:14,101 : mongodb : inserting data to collection
+2020-05-12 15:25:14,103 : mongodb : inserting data to collection
+2020-05-12 15:25:14,104 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887541, 'pose': {'translation': {'x': -0.06873919069766998, 'y': 0.06515509635210037, 'z': 0.20628340542316437}, 'rotation': {'x': -0.2268025104015529, 'y': 0.016296475938769883, 'z': 0.034513309202044845, 'w': 0.9731926210342198}}} to collection snapshots
+2020-05-12 15:25:14,108 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887541, 'pose': {'translation': {'x': -0.06873919069766998, 'y': 0.06515509635210037, 'z': 0.20628340542316437}, 'rotation': {'x': -0.2268025104015529, 'y': 0.016296475938769883, 'z': 0.034513309202044845, 'w': 0.9731926210342198}}} to collection snapshots
+2020-05-12 15:25:14,126 : mongodb : inserting data to collection
+2020-05-12 15:25:14,127 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887541, 'feelings': {'hunger': 0.003000000026077032, 'thirst': 0.008999999612569809, 'exhaustion': 0.006000000052154064, 'happiness': 0.0}} to collection snapshots
+2020-05-12 15:25:14,129 : mongodb : inserting data to collection
+2020-05-12 15:25:14,129 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887541, 'feelings': {'hunger': 0.003000000026077032, 'thirst': 0.008999999612569809, 'exhaustion': 0.006000000052154064, 'happiness': 0.0}} to collection snapshots
+2020-05-12 15:25:18,205 : mongodb : inserting data to collection
+2020-05-12 15:25:18,206 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887603, 'pose': {'translation': {'x': -0.08363257348537445, 'y': 0.03274262696504593, 'z': 0.44446834921836853}, 'rotation': {'x': -0.18523385018409705, 'y': -0.011889715927864218, 'z': 0.01159230178272562, 'w': 0.9825541582734808}}} to collection snapshots
+2020-05-12 15:25:18,208 : mongodb : inserting data to collection
+2020-05-12 15:25:18,208 : mongodb : inserting data: {'user_id': 42, 'result': 'pose', 'datetime': 1575446887603, 'pose': {'translation': {'x': -0.08363257348537445, 'y': 0.03274262696504593, 'z': 0.44446834921836853}, 'rotation': {'x': -0.18523385018409705, 'y': -0.011889715927864218, 'z': 0.01159230178272562, 'w': 0.9825541582734808}}} to collection snapshots
+2020-05-12 15:25:18,214 : mongodb : inserting data to collection
+2020-05-12 15:25:18,215 : mongodb : inserting data to collection
+2020-05-12 15:25:18,215 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887603, 'feelings': {'hunger': 0.004000000189989805, 'thirst': 0.012000000104308128, 'exhaustion': 0.00800000037997961, 'happiness': 0.30000001192092896}} to collection snapshots
+2020-05-12 15:25:18,214 : mongodb : inserting data: {'user_id': 42, 'result': 'feelings', 'datetime': 1575446887603, 'feelings': {'hunger': 0.004000000189989805, 'thirst': 0.012000000104308128, 'exhaustion': 0.00800000037997961, 'happiness': 0.30000001192092896}} to collection snapshots

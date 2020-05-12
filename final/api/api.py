@@ -8,8 +8,10 @@ app = Flask(__name__)
 db = None
 
 
-def to_datetime(timestamp):
-    return dt.fromtimestamp(timestamp / 1000).strftime('%Y-%m-%d_%H-%M-%S.%f')[:-3]
+def to_datetime(timestamp, milliseconds):
+    if milliseconds:
+        return dt.fromtimestamp(timestamp / 1000).strftime('%Y-%m-%d_%H-%M-%S.%f')[:-3]
+    return dt.fromtimestamp(timestamp).strftime('%Y-%m-%d')
 
 
 @app.route('/users', methods=['GET'])
@@ -27,8 +29,9 @@ def get_all_users():
 @app.route('/users/<int:user_id>', methods=['GET'])
 def get_user(user_id):
     try:
-        user = db.get_user(user_id)
+        user = db.get_user_data(user_id)
         if user:
+            user['birthday'] = to_datetime(user['birthday'], milliseconds=False)
             output = user
         else:
             output = "No such user"
@@ -43,7 +46,7 @@ def get_user_snapshots(user_id):
         snapshot_ids = db.get_user_snapshots(user_id)
         output = []
         for _id in snapshot_ids:
-            datetime = to_datetime(_id)
+            datetime = to_datetime(_id, milliseconds=True)
             output.append({'snapshot_id': _id, 'datetime': datetime})
         return jsonify({'result': output, 'error': None})
     except Exception as error:
@@ -53,7 +56,7 @@ def get_user_snapshots(user_id):
 @app.route('/users/<int:user_id>/snapshots/<int:snapshot_id>', methods=['GET'])
 def get_snapshot_fields(user_id, snapshot_id):
     try:
-        datetime = to_datetime(snapshot_id)
+        datetime = to_datetime(snapshot_id, milliseconds=True)
         output = {'snapshot_id': snapshot_id, 'datetime': datetime}
         results_names = db.get_available_results(user_id, snapshot_id)
         output['results_names'] = results_names

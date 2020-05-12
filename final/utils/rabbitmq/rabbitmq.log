@@ -3590,3 +3590,473 @@
 2020-05-11 21:18:46,468 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}}'
 2020-05-11 21:18:46,472 : rabbitmq : callback function save_snapshot_to_db called
 2020-05-11 21:18:46,473 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887603, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
+2020-05-12 10:50:43,610 : rabbitmq : creating pose exchange
+2020-05-12 10:50:43,631 : rabbitmq : creating feelings exchange
+2020-05-12 10:50:43,656 : rabbitmq : starting to consume from pose exchange 
+2020-05-12 10:50:43,684 : rabbitmq : creating users exchange
+2020-05-12 10:50:43,701 : rabbitmq : starting to consume from feelings exchange 
+2020-05-12 10:50:43,727 : rabbitmq : starting to consume from users exchange 
+2020-05-12 10:50:44,602 : rabbitmq : creating snapshots exchange
+2020-05-12 10:50:44,626 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-12 10:50:45,614 : rabbitmq : creating snapshots exchange
+2020-05-12 10:50:45,638 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-12 10:50:49,042 : rabbitmq : sending message to users exchange
+2020-05-12 10:50:49,043 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fd806893030>
+2020-05-12 10:50:49,046 : rabbitmq : callback function save_user_to_db called
+2020-05-12 10:50:49,047 : rabbitmq : callback function called on data b'{"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE"}'
+2020-05-12 10:50:53,944 : rabbitmq : sending message to snapshots exchange
+2020-05-12 10:50:53,944 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fd806843b20>
+2020-05-12 10:50:53,947 : rabbitmq : callback function parse_and_publish called
+2020-05-12 10:50:53,947 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-05-12 10:50:53,949 : rabbitmq : callback function parse_and_publish called
+2020-05-12 10:50:53,949 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-05-12 10:50:53,992 : rabbitmq : sending message to pose exchange
+2020-05-12 10:50:53,992 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f4ea7d0bea0>
+2020-05-12 10:50:53,996 : rabbitmq : sending message to feelings exchange
+2020-05-12 10:50:53,996 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f39b3312b90>
+2020-05-12 10:50:53,999 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 10:50:53,999 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}}'
+2020-05-12 10:50:54,014 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 10:50:54,014 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887339, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-05-12 10:50:58,477 : rabbitmq : sending message to snapshots exchange
+2020-05-12 10:50:58,477 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fd806852200>
+2020-05-12 10:50:58,480 : rabbitmq : callback function parse_and_publish called
+2020-05-12 10:50:58,480 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-05-12 10:50:58,482 : rabbitmq : callback function parse_and_publish called
+2020-05-12 10:50:58,482 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-05-12 10:50:58,517 : rabbitmq : sending message to pose exchange
+2020-05-12 10:50:58,517 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f4ea7d0bea0>
+2020-05-12 10:50:58,518 : rabbitmq : sending message to feelings exchange
+2020-05-12 10:50:58,518 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f39b2852730>
+2020-05-12 10:50:58,527 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 10:50:58,527 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887412, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-05-12 10:50:58,532 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 10:50:58,532 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}}'
+2020-05-12 10:51:03,247 : rabbitmq : sending message to snapshots exchange
+2020-05-12 10:51:03,248 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fd806852200>
+2020-05-12 10:51:03,251 : rabbitmq : callback function parse_and_publish called
+2020-05-12 10:51:03,252 : rabbitmq : callback function parse_and_publish called
+2020-05-12 10:51:03,252 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-05-12 10:51:03,256 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-05-12 10:51:03,311 : rabbitmq : sending message to feelings exchange
+2020-05-12 10:51:03,312 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f39b2852730>
+2020-05-12 10:51:03,313 : rabbitmq : sending message to pose exchange
+2020-05-12 10:51:03,313 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f4ea7d0bea0>
+2020-05-12 10:51:03,316 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 10:51:03,316 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887476, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-05-12 10:51:03,323 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 10:51:03,323 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}}'
+2020-05-12 10:51:08,667 : rabbitmq : sending message to snapshots exchange
+2020-05-12 10:51:08,667 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fd8068a13b0>
+2020-05-12 10:51:08,670 : rabbitmq : callback function parse_and_publish called
+2020-05-12 10:51:08,670 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}'
+2020-05-12 10:51:08,674 : rabbitmq : callback function parse_and_publish called
+2020-05-12 10:51:08,674 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}'
+2020-05-12 10:51:08,746 : rabbitmq : sending message to feelings exchange
+2020-05-12 10:51:08,746 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f39b2852730>
+2020-05-12 10:51:08,748 : rabbitmq : sending message to pose exchange
+2020-05-12 10:51:08,749 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f4ea7d0bea0>
+2020-05-12 10:51:08,770 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 10:51:08,770 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}}'
+2020-05-12 10:51:08,774 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 10:51:08,775 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887541, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}'
+2020-05-12 10:51:12,924 : rabbitmq : sending message to snapshots exchange
+2020-05-12 10:51:12,925 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fd806852200>
+2020-05-12 10:51:12,929 : rabbitmq : callback function parse_and_publish called
+2020-05-12 10:51:12,929 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
+2020-05-12 10:51:12,930 : rabbitmq : callback function parse_and_publish called
+2020-05-12 10:51:12,931 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
+2020-05-12 10:51:12,984 : rabbitmq : sending message to pose exchange
+2020-05-12 10:51:12,984 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f4ea7d0bea0>
+2020-05-12 10:51:12,985 : rabbitmq : sending message to feelings exchange
+2020-05-12 10:51:12,985 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f39b29047a0>
+2020-05-12 10:51:12,987 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 10:51:12,987 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}}'
+2020-05-12 10:51:12,992 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 10:51:12,992 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887603, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
+2020-05-12 13:09:28,313 : rabbitmq : creating feelings exchange
+2020-05-12 13:09:28,333 : rabbitmq : creating pose exchange
+2020-05-12 13:09:28,356 : rabbitmq : starting to consume from feelings exchange 
+2020-05-12 13:09:28,376 : rabbitmq : creating users exchange
+2020-05-12 13:09:28,397 : rabbitmq : starting to consume from pose exchange 
+2020-05-12 13:09:28,405 : rabbitmq : starting to consume from users exchange 
+2020-05-12 13:09:29,266 : rabbitmq : creating snapshots exchange
+2020-05-12 13:09:29,294 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-12 13:09:30,274 : rabbitmq : creating snapshots exchange
+2020-05-12 13:09:30,297 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-12 13:09:33,061 : rabbitmq : sending message to users exchange
+2020-05-12 13:09:33,062 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f50d562a030>
+2020-05-12 13:09:33,064 : rabbitmq : callback function save_user_to_db called
+2020-05-12 13:09:33,064 : rabbitmq : callback function called on data b'{"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE"}'
+2020-05-12 13:09:36,887 : rabbitmq : sending message to snapshots exchange
+2020-05-12 13:09:36,887 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f50d55d8990>
+2020-05-12 13:09:36,890 : rabbitmq : callback function parse_and_publish called
+2020-05-12 13:09:36,890 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-05-12 13:09:36,892 : rabbitmq : callback function parse_and_publish called
+2020-05-12 13:09:36,892 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-05-12 13:09:36,928 : rabbitmq : sending message to pose exchange
+2020-05-12 13:09:36,928 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fbd38c11ea0>
+2020-05-12 13:09:36,929 : rabbitmq : sending message to feelings exchange
+2020-05-12 13:09:36,929 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f9dd5473b90>
+2020-05-12 13:09:36,935 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 13:09:36,935 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887339, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-05-12 13:09:36,939 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 13:09:36,939 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}}'
+2020-05-12 13:09:40,772 : rabbitmq : sending message to snapshots exchange
+2020-05-12 13:09:40,773 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f50d55e7200>
+2020-05-12 13:09:40,775 : rabbitmq : callback function parse_and_publish called
+2020-05-12 13:09:40,775 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-05-12 13:09:40,775 : rabbitmq : callback function parse_and_publish called
+2020-05-12 13:09:40,777 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-05-12 13:09:40,813 : rabbitmq : sending message to feelings exchange
+2020-05-12 13:09:40,813 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f9dd49b4730>
+2020-05-12 13:09:40,815 : rabbitmq : sending message to pose exchange
+2020-05-12 13:09:40,818 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 13:09:40,818 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887412, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-05-12 13:09:40,817 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fbd38c11ea0>
+2020-05-12 13:09:40,824 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 13:09:40,824 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}}'
+2020-05-12 13:09:44,603 : rabbitmq : sending message to snapshots exchange
+2020-05-12 13:09:44,603 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f50d55e7200>
+2020-05-12 13:09:44,610 : rabbitmq : callback function parse_and_publish called
+2020-05-12 13:09:44,611 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-05-12 13:09:44,618 : rabbitmq : callback function parse_and_publish called
+2020-05-12 13:09:44,618 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-05-12 13:09:44,663 : rabbitmq : sending message to pose exchange
+2020-05-12 13:09:44,664 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fbd38c11ea0>
+2020-05-12 13:09:44,670 : rabbitmq : sending message to feelings exchange
+2020-05-12 13:09:44,670 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f9dd49b4730>
+2020-05-12 13:09:44,674 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 13:09:44,675 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}}'
+2020-05-12 13:09:44,681 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 13:09:44,681 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887476, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-05-12 13:09:49,699 : rabbitmq : sending message to snapshots exchange
+2020-05-12 13:09:49,700 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f50d56363b0>
+2020-05-12 13:09:49,702 : rabbitmq : callback function parse_and_publish called
+2020-05-12 13:09:49,702 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}'
+2020-05-12 13:09:49,704 : rabbitmq : callback function parse_and_publish called
+2020-05-12 13:09:49,704 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}'
+2020-05-12 13:09:49,738 : rabbitmq : sending message to pose exchange
+2020-05-12 13:09:49,739 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fbd38c11ea0>
+2020-05-12 13:09:49,741 : rabbitmq : sending message to feelings exchange
+2020-05-12 13:09:49,741 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f9dd49b4730>
+2020-05-12 13:09:49,743 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 13:09:49,743 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}}'
+2020-05-12 13:09:49,750 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 13:09:49,751 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887541, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}'
+2020-05-12 13:09:53,500 : rabbitmq : sending message to snapshots exchange
+2020-05-12 13:09:53,500 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f50d55e7200>
+2020-05-12 13:09:53,502 : rabbitmq : callback function parse_and_publish called
+2020-05-12 13:09:53,502 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
+2020-05-12 13:09:53,505 : rabbitmq : callback function parse_and_publish called
+2020-05-12 13:09:53,506 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
+2020-05-12 13:09:53,537 : rabbitmq : sending message to pose exchange
+2020-05-12 13:09:53,537 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7fbd38c11ea0>
+2020-05-12 13:09:53,538 : rabbitmq : sending message to feelings exchange
+2020-05-12 13:09:53,538 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f9dd4a667a0>
+2020-05-12 13:09:53,554 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 13:09:53,554 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}}'
+2020-05-12 13:09:53,559 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 13:09:53,559 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887603, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
+2020-05-12 15:13:56,552 : rabbitmq : creating pose exchange
+2020-05-12 15:13:56,578 : rabbitmq : creating feelings exchange
+2020-05-12 15:13:56,622 : rabbitmq : starting to consume from pose exchange 
+2020-05-12 15:13:56,630 : rabbitmq : creating users exchange
+2020-05-12 15:13:56,651 : rabbitmq : starting to consume from feelings exchange 
+2020-05-12 15:13:56,679 : rabbitmq : starting to consume from users exchange 
+2020-05-12 15:13:57,805 : rabbitmq : creating snapshots exchange
+2020-05-12 15:13:57,845 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-12 15:13:59,095 : rabbitmq : creating snapshots exchange
+2020-05-12 15:13:59,154 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-12 15:14:03,978 : rabbitmq : sending message to users exchange
+2020-05-12 15:14:03,978 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f6dbe54d030>
+2020-05-12 15:14:03,981 : rabbitmq : callback function save_user_to_db called
+2020-05-12 15:14:03,981 : rabbitmq : callback function called on data b'{"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE"}'
+2020-05-12 15:14:09,052 : rabbitmq : sending message to snapshots exchange
+2020-05-12 15:14:09,052 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f6dbe4feb20>
+2020-05-12 15:14:09,055 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:14:09,055 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-05-12 15:14:09,056 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:14:09,056 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-05-12 15:14:09,139 : rabbitmq : sending message to feelings exchange
+2020-05-12 15:14:09,140 : rabbitmq : sending message to pose exchange
+2020-05-12 15:14:09,140 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f4116022ea0>
+2020-05-12 15:14:09,141 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f5020bddb90>
+2020-05-12 15:14:09,144 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:14:09,145 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}}'
+2020-05-12 15:14:09,152 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:14:09,152 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887339, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-05-12 15:14:14,367 : rabbitmq : sending message to snapshots exchange
+2020-05-12 15:14:14,367 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f6dbe50d200>
+2020-05-12 15:14:14,370 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:14:14,370 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-05-12 15:14:14,371 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:14:14,371 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-05-12 15:14:14,403 : rabbitmq : sending message to feelings exchange
+2020-05-12 15:14:14,403 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f502011e730>
+2020-05-12 15:14:14,412 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:14:14,412 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887412, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-05-12 15:14:14,407 : rabbitmq : sending message to pose exchange
+2020-05-12 15:14:14,420 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f4116022ea0>
+2020-05-12 15:14:14,426 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:14:14,426 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}}'
+2020-05-12 15:14:18,506 : rabbitmq : sending message to snapshots exchange
+2020-05-12 15:14:18,507 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f6dbe50d200>
+2020-05-12 15:14:18,510 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:14:18,511 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-05-12 15:14:18,512 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:14:18,513 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-05-12 15:14:18,551 : rabbitmq : sending message to feelings exchange
+2020-05-12 15:14:18,552 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f502011e730>
+2020-05-12 15:14:18,553 : rabbitmq : sending message to pose exchange
+2020-05-12 15:14:18,553 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f4116022ea0>
+2020-05-12 15:14:18,555 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:14:18,556 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887476, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-05-12 15:14:18,560 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:14:18,560 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}}'
+2020-05-12 15:14:23,132 : rabbitmq : sending message to snapshots exchange
+2020-05-12 15:14:23,132 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f6dbe55a3b0>
+2020-05-12 15:14:23,134 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:14:23,134 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}'
+2020-05-12 15:14:23,135 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:14:23,135 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}'
+2020-05-12 15:14:23,195 : rabbitmq : sending message to pose exchange
+2020-05-12 15:14:23,195 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f4116022ea0>
+2020-05-12 15:14:23,199 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:14:23,199 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}}'
+2020-05-12 15:14:23,204 : rabbitmq : sending message to feelings exchange
+2020-05-12 15:14:23,204 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f502011e730>
+2020-05-12 15:14:23,210 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:14:23,210 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887541, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}'
+2020-05-12 15:14:27,869 : rabbitmq : sending message to snapshots exchange
+2020-05-12 15:14:27,869 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f6dbe50d200>
+2020-05-12 15:14:27,872 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:14:27,872 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
+2020-05-12 15:14:27,874 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:14:27,874 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
+2020-05-12 15:14:27,912 : rabbitmq : sending message to feelings exchange
+2020-05-12 15:14:27,912 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f50201d07a0>
+2020-05-12 15:14:27,916 : rabbitmq : sending message to pose exchange
+2020-05-12 15:14:27,916 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f4116022ea0>
+2020-05-12 15:14:27,921 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:14:27,921 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887603, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
+2020-05-12 15:14:27,927 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:14:27,927 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}}'
+2020-05-12 15:17:59,613 : rabbitmq : creating feelings exchange
+2020-05-12 15:17:59,661 : rabbitmq : creating pose exchange
+2020-05-12 15:17:59,677 : rabbitmq : starting to consume from feelings exchange 
+2020-05-12 15:17:59,713 : rabbitmq : creating users exchange
+2020-05-12 15:17:59,730 : rabbitmq : starting to consume from pose exchange 
+2020-05-12 15:17:59,764 : rabbitmq : starting to consume from users exchange 
+2020-05-12 15:18:01,338 : rabbitmq : creating snapshots exchange
+2020-05-12 15:18:01,373 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-12 15:18:02,826 : rabbitmq : creating snapshots exchange
+2020-05-12 15:18:02,882 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-12 15:18:50,315 : rabbitmq : creating feelings exchange
+2020-05-12 15:18:50,352 : rabbitmq : creating pose exchange
+2020-05-12 15:18:50,378 : rabbitmq : starting to consume from feelings exchange 
+2020-05-12 15:18:50,405 : rabbitmq : creating users exchange
+2020-05-12 15:18:50,442 : rabbitmq : starting to consume from pose exchange 
+2020-05-12 15:18:50,464 : rabbitmq : starting to consume from users exchange 
+2020-05-12 15:18:52,430 : rabbitmq : creating snapshots exchange
+2020-05-12 15:18:52,512 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-12 15:18:55,431 : rabbitmq : creating snapshots exchange
+2020-05-12 15:18:55,520 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-12 15:18:58,152 : rabbitmq : sending message to users exchange
+2020-05-12 15:18:58,152 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f91ac644030>
+2020-05-12 15:18:58,156 : rabbitmq : callback function save_user_to_db called
+2020-05-12 15:18:58,156 : rabbitmq : callback function called on data b'{"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE"}'
+2020-05-12 15:19:02,925 : rabbitmq : sending message to snapshots exchange
+2020-05-12 15:19:02,925 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f91ac5f2990>
+2020-05-12 15:19:02,928 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:19:02,928 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-05-12 15:19:02,930 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:19:02,930 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-05-12 15:19:02,969 : rabbitmq : sending message to feelings exchange
+2020-05-12 15:19:02,975 : rabbitmq : sending message to pose exchange
+2020-05-12 15:19:02,976 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f80701b4ea0>
+2020-05-12 15:19:02,970 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f8e8735bb90>
+2020-05-12 15:19:02,981 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:19:02,981 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887339, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-05-12 15:19:02,983 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:19:02,983 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887339, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-05-12 15:19:03,003 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:19:03,003 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}}'
+2020-05-12 15:19:03,005 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:19:03,006 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}}'
+2020-05-12 15:19:07,570 : rabbitmq : sending message to snapshots exchange
+2020-05-12 15:19:07,570 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f91ac601200>
+2020-05-12 15:19:07,574 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:19:07,574 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-05-12 15:19:07,576 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:19:07,576 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-05-12 15:19:07,627 : rabbitmq : sending message to pose exchange
+2020-05-12 15:19:07,628 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f80701b4ea0>
+2020-05-12 15:19:07,635 : rabbitmq : sending message to feelings exchange
+2020-05-12 15:19:07,635 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f8e8689c730>
+2020-05-12 15:19:07,637 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:19:07,638 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887412, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-05-12 15:19:07,638 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:19:07,640 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887412, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-05-12 15:19:07,646 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:19:07,646 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}}'
+2020-05-12 15:19:07,649 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:19:07,649 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}}'
+2020-05-12 15:19:12,092 : rabbitmq : sending message to snapshots exchange
+2020-05-12 15:19:12,092 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f91ac601200>
+2020-05-12 15:19:12,095 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:19:12,095 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-05-12 15:19:12,097 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:19:12,097 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-05-12 15:19:12,146 : rabbitmq : sending message to pose exchange
+2020-05-12 15:19:12,147 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f80701b4ea0>
+2020-05-12 15:19:12,150 : rabbitmq : sending message to feelings exchange
+2020-05-12 15:19:12,151 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f8e8689c730>
+2020-05-12 15:19:12,155 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:19:12,155 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}}'
+2020-05-12 15:19:12,154 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:19:12,159 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}}'
+2020-05-12 15:19:12,171 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:19:12,172 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887476, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-05-12 15:19:12,174 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:19:12,175 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887476, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-05-12 15:19:16,660 : rabbitmq : sending message to snapshots exchange
+2020-05-12 15:19:16,661 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f91ac6513b0>
+2020-05-12 15:19:16,666 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:19:16,666 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}'
+2020-05-12 15:19:16,669 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:19:16,669 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}'
+2020-05-12 15:19:16,721 : rabbitmq : sending message to feelings exchange
+2020-05-12 15:19:16,721 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f8e8689c730>
+2020-05-12 15:19:16,724 : rabbitmq : sending message to pose exchange
+2020-05-12 15:19:16,724 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f80701b4ea0>
+2020-05-12 15:19:16,732 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:19:16,732 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887541, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}'
+2020-05-12 15:19:16,731 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:19:16,733 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887541, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}'
+2020-05-12 15:19:16,740 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:19:16,740 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}}'
+2020-05-12 15:19:16,741 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:19:16,741 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}}'
+2020-05-12 15:19:21,181 : rabbitmq : sending message to snapshots exchange
+2020-05-12 15:19:21,181 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f91ac601200>
+2020-05-12 15:19:21,184 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:19:21,184 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
+2020-05-12 15:19:21,186 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:19:21,186 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
+2020-05-12 15:19:21,230 : rabbitmq : sending message to feelings exchange
+2020-05-12 15:19:21,230 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f8e8694e7a0>
+2020-05-12 15:19:21,231 : rabbitmq : sending message to pose exchange
+2020-05-12 15:19:21,231 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f80701b4ea0>
+2020-05-12 15:19:21,234 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:19:21,234 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887603, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
+2020-05-12 15:19:21,235 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:19:21,235 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887603, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
+2020-05-12 15:19:21,244 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:19:21,245 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}}'
+2020-05-12 15:19:21,250 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:19:21,251 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}}'
+2020-05-12 15:24:51,208 : rabbitmq : creating pose exchange
+2020-05-12 15:24:51,252 : rabbitmq : creating feelings exchange
+2020-05-12 15:24:51,270 : rabbitmq : starting to consume from pose exchange 
+2020-05-12 15:24:51,295 : rabbitmq : creating users exchange
+2020-05-12 15:24:51,335 : rabbitmq : starting to consume from feelings exchange 
+2020-05-12 15:24:51,348 : rabbitmq : starting to consume from users exchange 
+2020-05-12 15:24:52,927 : rabbitmq : creating snapshots exchange
+2020-05-12 15:24:52,974 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-12 15:24:54,461 : rabbitmq : creating snapshots exchange
+2020-05-12 15:24:54,512 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-12 15:24:57,720 : rabbitmq : sending message to users exchange
+2020-05-12 15:24:57,720 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f533b6ce030>
+2020-05-12 15:24:57,723 : rabbitmq : callback function save_user_to_db called
+2020-05-12 15:24:57,723 : rabbitmq : callback function called on data b'{"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE"}'
+2020-05-12 15:25:01,958 : rabbitmq : sending message to snapshots exchange
+2020-05-12 15:25:01,958 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f533b67e990>
+2020-05-12 15:25:01,961 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:25:01,961 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-05-12 15:25:01,962 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:25:01,962 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-05-12 15:25:02,006 : rabbitmq : sending message to feelings exchange
+2020-05-12 15:25:02,007 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f4c34280b90>
+2020-05-12 15:25:02,007 : rabbitmq : sending message to pose exchange
+2020-05-12 15:25:02,008 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f5050de2ea0>
+2020-05-12 15:25:02,010 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:25:02,011 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}}'
+2020-05-12 15:25:02,015 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:25:02,019 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887339, "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}}'
+2020-05-12 15:25:02,032 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:25:02,032 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887339, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-05-12 15:25:02,039 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:25:02,039 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887339, "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}'
+2020-05-12 15:25:06,076 : rabbitmq : sending message to snapshots exchange
+2020-05-12 15:25:06,076 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f533b68d200>
+2020-05-12 15:25:06,079 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:25:06,080 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:25:06,080 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-05-12 15:25:06,079 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-05-12 15:25:06,118 : rabbitmq : sending message to feelings exchange
+2020-05-12 15:25:06,118 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f4c337c1730>
+2020-05-12 15:25:06,119 : rabbitmq : sending message to pose exchange
+2020-05-12 15:25:06,119 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f5050de2ea0>
+2020-05-12 15:25:06,122 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:25:06,122 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887412, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-05-12 15:25:06,123 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:25:06,123 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887412, "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}'
+2020-05-12 15:25:06,131 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:25:06,131 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}}'
+2020-05-12 15:25:06,134 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:25:06,135 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887412, "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}}'
+2020-05-12 15:25:09,991 : rabbitmq : sending message to snapshots exchange
+2020-05-12 15:25:09,992 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f533b68d200>
+2020-05-12 15:25:09,994 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:25:09,994 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-05-12 15:25:09,995 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:25:09,995 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-05-12 15:25:10,039 : rabbitmq : sending message to feelings exchange
+2020-05-12 15:25:10,039 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f4c337c1730>
+2020-05-12 15:25:10,040 : rabbitmq : sending message to pose exchange
+2020-05-12 15:25:10,040 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f5050de2ea0>
+2020-05-12 15:25:10,042 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:25:10,042 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887476, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-05-12 15:25:10,043 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:25:10,043 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887476, "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}'
+2020-05-12 15:25:10,050 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:25:10,050 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}}'
+2020-05-12 15:25:10,051 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:25:10,051 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887476, "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}}'
+2020-05-12 15:25:14,049 : rabbitmq : sending message to snapshots exchange
+2020-05-12 15:25:14,049 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f533b6da3b0>
+2020-05-12 15:25:14,051 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:25:14,051 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}'
+2020-05-12 15:25:14,053 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:25:14,053 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}'
+2020-05-12 15:25:14,091 : rabbitmq : sending message to pose exchange
+2020-05-12 15:25:14,091 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f5050de2ea0>
+2020-05-12 15:25:14,100 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:25:14,100 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}}'
+2020-05-12 15:25:14,099 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:25:14,103 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887541, "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}}'
+2020-05-12 15:25:14,116 : rabbitmq : sending message to feelings exchange
+2020-05-12 15:25:14,117 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f4c337c1730>
+2020-05-12 15:25:14,125 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:25:14,126 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:25:14,126 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887541, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}'
+2020-05-12 15:25:14,125 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887541, "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}'
+2020-05-12 15:25:18,156 : rabbitmq : sending message to snapshots exchange
+2020-05-12 15:25:18,156 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f533b68d200>
+2020-05-12 15:25:18,158 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:25:18,158 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
+2020-05-12 15:25:18,160 : rabbitmq : callback function parse_and_publish called
+2020-05-12 15:25:18,160 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
+2020-05-12 15:25:18,197 : rabbitmq : sending message to feelings exchange
+2020-05-12 15:25:18,198 : rabbitmq : sending message to pose exchange
+2020-05-12 15:25:18,198 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f5050de2ea0>
+2020-05-12 15:25:18,197 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f4c338737a0>
+2020-05-12 15:25:18,205 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:25:18,205 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}}'
+2020-05-12 15:25:18,207 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:25:18,207 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "pose", "datetime": 1575446887603, "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}}'
+2020-05-12 15:25:18,214 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:25:18,214 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887603, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
+2020-05-12 15:25:18,215 : rabbitmq : callback function save_snapshot_to_db called
+2020-05-12 15:25:18,215 : rabbitmq : callback function called on data b'{"user_id": 42, "result": "feelings", "datetime": 1575446887603, "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'

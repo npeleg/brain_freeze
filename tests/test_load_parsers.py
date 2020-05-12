@@ -2,8 +2,8 @@ import json
 from final.parsers import Parsers
 
 raw = json.dumps(dict(user_id=1, datetime=2, pose=3, feelings=4))
-parsed_pose = json.dumps(dict(user_id=1, datetime=2, pose=3))
-parsed_feelings = json.dumps(dict(user_id=1, datetime=2, feelings=4))
+parsed_pose = json.dumps(dict(user_id=1, result='pose', datetime=2, pose=3))
+parsed_feelings = json.dumps(dict(user_id=1, result='feelings', datetime=2, feelings=4))
 
 
 def test_load_parsers():
