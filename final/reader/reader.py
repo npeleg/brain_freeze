@@ -1,7 +1,9 @@
 import gzip
 import struct
 from . import reader_pb
-from ..utils import protocol, protocol_pb
+from ..utils import protocol, protocol_pb, Logger
+
+logger = Logger(__name__).logger
 
 
 def get_protocol_gender(gender):
@@ -33,14 +35,15 @@ def get_user_info(path):
 def get_snapshot_info(snapshot_message):
     snapshot = reader_pb.Snapshot()
     snapshot.parse_from_bytes(snapshot_message)
-    return protocol.init_protocol_snapshot(snapshot.datetime, snapshot.pose.translation.x,
-                                           snapshot.pose.translation.y, snapshot.pose.translation.z,
-                                           snapshot.pose.rotation.x, snapshot.pose.rotation.y,
-                                           snapshot.pose.rotation.z, snapshot.pose.rotation.w,
-                                           1, 2, 3,  # TODO
-                                           1, 2, 3,  # TODO
-                                           snapshot.feelings.hunger, snapshot.feelings.thirst,
-                                           snapshot.feelings.exhaustion, snapshot.feelings.happiness)
+    protocol_snapshot = protocol.init_protocol_snapshot(snapshot.datetime, snapshot.pose.translation.x,
+                                    snapshot.pose.translation.y, snapshot.pose.translation.z,
+                                    snapshot.pose.rotation.x, snapshot.pose.rotation.y,
+                                    snapshot.pose.rotation.z, snapshot.pose.rotation.w,
+                                    1, 2, 3,  # TODO
+                                    1, 2, 3,  # TODO
+                                    snapshot.feelings.hunger, snapshot.feelings.thirst,
+                                    snapshot.feelings.exhaustion, snapshot.feelings.happiness)
+    return protocol_snapshot
 
 
 class Reader:

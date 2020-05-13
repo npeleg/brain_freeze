@@ -395,3 +395,68 @@
 2020-05-12 15:24:56,812 : client : sending user message to server
 2020-05-12 15:24:57,757 : client : starting to upload snapshots to server
 2020-05-12 15:25:18,200 : client : finished uploading snapshots to server
+2020-05-13 12:44:17,909 : client : sending user message to server
+2020-05-13 12:44:17,996 : client : starting to upload snapshots to server
+2020-05-13 12:44:39,805 : client : finished uploading snapshots to server
+2020-05-13 12:54:11,090 : client : sending user message to server
+2020-05-13 12:54:11,215 : client : starting to upload snapshots to server
+2020-05-13 12:54:38,886 : client : finished uploading snapshots to server
+2020-05-13 13:17:19,121 : client : sending user message to server
+2020-05-13 13:17:19,166 : client : starting to upload snapshots to server
+2020-05-13 13:17:23,022 : client : getting parsers
+2020-05-13 13:17:23,031 : client : got parsers
+2020-05-13 13:17:23,031 : client : building config message
+2020-05-13 13:17:23,031 : client : building config message
+2020-05-13 13:17:23,036 : client : built snapshot
+2020-05-13 13:17:23,036 : client : serialized snapshot
+2020-05-13 13:17:28,987 : client : getting parsers
+2020-05-13 13:17:29,003 : client : got parsers
+2020-05-13 13:17:29,003 : client : building config message
+2020-05-13 13:17:29,003 : client : building config message
+2020-05-13 13:17:29,009 : client : built snapshot
+2020-05-13 13:17:29,009 : client : serialized snapshot
+2020-05-13 13:17:34,581 : client : getting parsers
+2020-05-13 13:17:34,601 : client : got parsers
+2020-05-13 13:17:34,601 : client : building config message
+2020-05-13 13:17:34,601 : client : building config message
+2020-05-13 13:17:34,605 : client : built snapshot
+2020-05-13 13:17:34,606 : client : serialized snapshot
+2020-05-13 13:17:40,849 : client : getting parsers
+2020-05-13 13:17:40,856 : client : got parsers
+2020-05-13 13:17:40,856 : client : building config message
+2020-05-13 13:17:40,856 : client : building config message
+2020-05-13 13:17:40,860 : client : built snapshot
+2020-05-13 13:17:40,860 : client : serialized snapshot
+2020-05-13 13:17:45,260 : client : getting parsers
+2020-05-13 13:17:45,270 : client : got parsers
+2020-05-13 13:17:45,270 : client : building config message
+2020-05-13 13:17:45,270 : client : building config message
+2020-05-13 13:17:45,274 : client : built snapshot
+2020-05-13 13:17:45,274 : client : serialized snapshot
+2020-05-13 13:17:45,375 : client : finished uploading snapshots to server
+2020-05-13 13:28:07,805 : client : sending user message to server
+2020-05-13 13:28:07,841 : client : starting to upload snapshots to server
+2020-05-13 13:28:32,543 : client : finished uploading snapshots to server
+2020-05-13 13:41:46,951 : client : sending user message to server
+2020-05-13 13:41:46,986 : client : starting to upload snapshots to server
+2020-05-13 13:42:14,480 : client : finished uploading snapshots to server
+2020-05-13 16:07:50,894 : client : sending user message to server
+2020-05-13 16:11:36,553 : client : sending user message to server
+2020-05-13 16:11:43,094 : client : sending user message to server
+2020-05-13 16:12:06,811 : client : sending user message to server
+2020-05-13 16:15:12,637 : client : sending user message to server
+2020-05-13 16:37:59,181 : client : sending user message to server
+2020-05-13 16:39:58,093 : client : sending user message to server
+2020-05-13 16:39:59,840 : client : starting to upload snapshots to server
+2020-05-13 16:40:30,293 : client : finished uploading snapshots to server
+2020-05-13 16:49:11,933 : client : starting to upload snapshots to server
+2020-05-13 16:49:35,311 : client : finished uploading snapshots to server
+2020-05-13 16:55:14,859 : client : starting to upload snapshots to server
+2020-05-13 16:55:39,121 : client : finished uploading snapshots to server
+2020-05-13 16:58:42,290 : client : starting to upload snapshots to server
+2020-05-13 16:59:50,826 : client : starting to upload snapshots to server
+2020-05-13 17:00:16,477 : client : finished uploading snapshots to server
+2020-05-13 17:03:28,240 : client : starting to upload snapshots to server
+2020-05-13 17:03:50,520 : client : finished uploading snapshots to server
+2020-05-13 17:06:29,409 : client : starting to upload snapshots to server
+2020-05-13 17:06:51,617 : client : finished uploading snapshots to server

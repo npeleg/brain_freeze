@@ -34,7 +34,6 @@ def upload_sample(host, port, path):
     user_message = protocol.init_protocol_user(reader.user.user_id, reader.user.username,
                                                reader.user.birthday, reader.user.gender)
     serialized_user_message = protocol.serialize(user_message)
-    logger.info('sending user message to server')
     send_to_server(host, port, serialized_user_message, None)
     logger.info('starting to upload snapshots to server')
     for snapshot in reader:

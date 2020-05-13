@@ -82,7 +82,6 @@ def run_server(host, port, publish):
     global message_queue, user_function, parsers
     try:
         message_queue = MQManager(publish)
-        logger.info('initialized message queue')
     except AttributeError:
         logger.info('a user function was passed')
         user_function = publish

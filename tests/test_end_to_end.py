@@ -31,7 +31,7 @@ def test_end_to_end():
     time.sleep(1)
     # Running the client:
     client_process = run_subprocess("python -m final.client upload_sample " + SMALL_SAMPLE_PATH)
-    time.sleep(100)
+    time.sleep(30)
 
     # Running the api and cli:
     api_process = run_subprocess("python -m final.api run_server")
@@ -100,4 +100,3 @@ def test_end_to_end():
     print("cli_result_process out: " + out.decode())
     print("cli_result_process err: " + err.decode())
     assert b'0.4873843491077423' in out
-
