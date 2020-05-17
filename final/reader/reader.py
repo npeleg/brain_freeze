@@ -31,7 +31,6 @@ def get_user_info(path):
     user.parse_from_bytes(user_message)
     return protocol.init_protocol_user(user.user_id, user.username, user.birthday, get_protocol_gender(user.gender))
 
-
 def get_snapshot_info(snapshot_message):
     snapshot = reader_pb.Snapshot()
     snapshot.parse_from_bytes(snapshot_message)

@@ -30,7 +30,7 @@ def main():
     pass
 
 
-@main.command('get_users')
+@main.command('get-users')
 @click.option('-h', '--host', type=click.STRING, default='127.0.0.1', help='IP address of the server')
 @click.option('-p', '--port', type=click.INT, default=5000, help='port of the server')
 def get_users(host, port):
@@ -39,7 +39,7 @@ def get_users(host, port):
     send_and_handle_request(request, is_list=True, file_path=None)
 
 
-@main.command('get_user')
+@main.command('get-user')
 @click.option('-h', '--host', type=click.STRING, default='127.0.0.1', help='IP address of the server')
 @click.option('-p', '--port', type=click.INT, default=5000, help='port of the server')
 @click.argument('user_id', type=click.INT)
@@ -49,7 +49,7 @@ def get_user(host, port, user_id):
     send_and_handle_request(request, is_list=False, file_path=None)
 
 
-@main.command('get_snapshots')
+@main.command('get-snapshots')
 @click.option('-h', '--host', type=click.STRING, default='127.0.0.1', help='IP address of the server')
 @click.option('-p', '--port', type=click.INT, default=5000, help='port of the server')
 @click.argument('user_id', type=click.INT)
@@ -59,7 +59,7 @@ def get_snapshots(host, port, user_id):
     send_and_handle_request(request, is_list=True, file_path=None)
 
 
-@main.command('get_snapshot')
+@main.command('get-snapshot')
 @click.option('-h', '--host', type=click.STRING, default='127.0.0.1', help='IP address of the server')
 @click.option('-p', '--port', type=click.INT, default=5000, help='port of the server')
 @click.argument('user_id', type=click.INT)
@@ -70,7 +70,7 @@ def get_snapshot(host, port, user_id, snapshot_id):
     send_and_handle_request(request, is_list=False, file_path=None)
 
 
-@main.command('get_result')
+@main.command('get-result')
 @click.option('-h', '--host', type=click.STRING, default='127.0.0.1', help='IP address of the server')
 @click.option('-p', '--port', type=click.INT, default=5000, help='port of the server')
 @click.option('-s', '--save', type=click.STRING)

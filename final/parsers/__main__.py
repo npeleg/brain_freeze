@@ -7,13 +7,13 @@ from .parsers_logic import Parsers
 def main():
     pass
 
-"""
+
 @main.command('parse')
 @click.argument('parser_name', type=click.STRING)
 @click.argument('source_file', type=click.STRING)
-@click.option('dest_file', type=click.STRING, default=None, help='file in which the parsed data is stored')
+@click.argument('dest_file', type=click.STRING, default=None)
 def parse(parser_name, source_file, dest_file):
-    """ """Applies PARSER_NAME parser on DATA_FILE snapshots from file in PATH to server. """"""
+    """ Applies PARSER_NAME parser on SOURCE_FILE, optionally stores the result in DEST_FILE. """
     try:
         result = Parsers().parse(parser_name, source_file)
         if dest_file is None:
@@ -23,10 +23,10 @@ def parse(parser_name, source_file, dest_file):
                 file.write(result)
     except Exception as error:
         print(f'Error during parse command: {error}')
-        return 1 """
+        return 1
 
 
-@main.command('run_parser')
+@main.command('run-parser')
 @click.argument('parser_name', type=click.STRING)
 @click.argument('url', type=click.STRING)
 def run_parser(parser_name, url):

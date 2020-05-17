@@ -8,7 +8,7 @@ def main():
     pass
 
 
-@main.command('run_server')
+@main.command('run-server')
 @click.option('-h', '--host', type=click.STRING, default='127.0.0.1', help='IP address of the server')
 @click.option('-p', '--port', type=click.INT, default=8000, help='port to be bound')
 @click.argument('url', type=click.STRING)

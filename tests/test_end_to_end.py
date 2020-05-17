@@ -20,32 +20,32 @@ def test_end_to_end():
     client.drop_database('db')
 
     # Starting to run services:
-    saver_process = run_subprocess("python -m final.saver run_saver "
+    saver_process = run_subprocess("python -m final.saver run-saver "
                                    "mongodb://127.0.0.1:27017 rabbitmq://127.0.0.1:5672/")
     time.sleep(1)
-    pose_process = run_subprocess("python -m final.parsers run_parser pose rabbitmq://127.0.0.1:5672/")
+    pose_process = run_subprocess("python -m final.parsers run-parser pose rabbitmq://127.0.0.1:5672/")
     time.sleep(1)
-    feelings_process = run_subprocess("python -m final.parsers run_parser feelings rabbitmq://127.0.0.1:5672/")
+    feelings_process = run_subprocess("python -m final.parsers run-parser feelings rabbitmq://127.0.0.1:5672/")
     time.sleep(1)
-    server_process = run_subprocess("python -m final.server run_server rabbitmq://127.0.0.1:5672/")
+    server_process = run_subprocess("python -m final.server run-server rabbitmq://127.0.0.1:5672/")
     time.sleep(1)
     # Running the client:
     client_process = run_subprocess("python -m final.client upload_sample " + SMALL_SAMPLE_PATH)
-    time.sleep(30)
+    time.sleep(45)
 
     # Running the api and cli:
-    api_process = run_subprocess("python -m final.api run_server")
-    time.sleep(1)
-    cli_users_process = run_subprocess("python -m final.cli get_users")
-    time.sleep(3)
-    cli_user_process = run_subprocess("python -m final.cli get_user 42")
-    time.sleep(3)
-    cli_snapshots_process = run_subprocess("python -m final.cli get_snapshots 42")
-    time.sleep(3)
-    cli_snapshot_process = run_subprocess("python -m final.cli get_snapshot 42 1575446887339")
-    time.sleep(3)
-    cli_result_process = run_subprocess("python -m final.cli get_result 42 1575446887339 pose")
-    time.sleep(3)
+    api_process = run_subprocess("python -m final.api run-server")
+    time.sleep(2)
+    cli_users_process = run_subprocess("python -m final.cli get-users")
+    time.sleep(2)
+    cli_user_process = run_subprocess("python -m final.cli get-user 42")
+    time.sleep(2)
+    cli_snapshots_process = run_subprocess("python -m final.cli get-snapshots 42")
+    time.sleep(2)
+    cli_snapshot_process = run_subprocess("python -m final.cli get-snapshot 42 1575446887339")
+    time.sleep(2)
+    cli_result_process = run_subprocess("python -m final.cli get-result 42 1575446887339 pose")
+    time.sleep(2)
 
     # Checking the results:
     client_process.terminate()

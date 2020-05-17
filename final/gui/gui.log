@@ -1,0 +1,6 @@
+2020-05-17 18:54:12,413 : gui : HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /users (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8200ea3460>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-05-17 21:08:55,541 : gui : <function index at 0x7f7faa9320d0>.html
+2020-05-17 21:10:59,419 : gui : <function index at 0x7f78d49bc0d0>.html
+2020-05-17 21:14:24,843 : gui : <function index at 0x7f78d49bc0d0>.html
+2020-05-17 21:14:51,179 : gui : <function index at 0x7fe5c57fd0d0>.html
+2020-05-17 21:24:46,662 : gui : unexpected ')', expected ']'

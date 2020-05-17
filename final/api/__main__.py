@@ -1,7 +1,5 @@
-import os
 import click
 import sys
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from . import api
 
 
@@ -10,7 +8,7 @@ def main():
     pass
 
 
-@main.command('run_server')
+@main.command('run-server')
 @click.option('-h', '--host', type=click.STRING, default='127.0.0.1', help='IP address of the server')
 @click.option('-p', '--port', type=click.INT, default=5000, help='port of the server')
 @click.option('-d', '--database', type=click.STRING, default='mongodb://localhost:27017')
