@@ -4,3 +4,15 @@
 2020-05-17 21:14:24,843 : gui : <function index at 0x7f78d49bc0d0>.html
 2020-05-17 21:14:51,179 : gui : <function index at 0x7fe5c57fd0d0>.html
 2020-05-17 21:24:46,662 : gui : unexpected ')', expected ']'
+2020-05-18 10:50:25,672 : gui : unexpected ')', expected ']'
+2020-05-18 10:52:20,695 : gui : Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+2020-05-18 10:57:19,130 : gui : unexpected '}', expected ']'
+2020-05-18 10:58:00,405 : gui : expected token 'end of print statement', got 'user'
+2020-05-18 10:58:22,877 : gui : unexpected '}'
+2020-05-18 16:19:09,859 : gui : {'datetime': '2019-12-04_10-08-07.339', 'results_names': ['feelings', 'pose'], 'snapshot_id': 1575446887339}
+2020-05-18 16:21:13,438 : gui : {'datetime': '2019-12-04_10-08-07.339', 'result_names': ['feelings', 'pose'], 'snapshot_id': 1575446887339}
+2020-05-18 16:23:05,908 : gui : {'feelings': {'datetime': 1575446887339, 'feelings': {'exhaustion': 0.0, 'happiness': 0.0, 'hunger': 0.0, 'thirst': 0.0}, 'result': 'feelings', 'user_id': 42}, 'pose': {'datetime': 1575446887339, 'pose': {'rotation': {'w': 0.9571326384559261, 'x': -0.10888676356214629, 'y': -0.26755994585035286, 'z': -0.021271118915446748}, 'translation': {'x': 0.4873843491077423, 'y': 0.007090016733855009, 'z': -1.1306129693984985}}, 'result': 'pose', 'user_id': 42}}
+2020-05-18 16:24:33,985 : gui : {'feelings': {'exhaustion': 0.0, 'happiness': 0.0, 'hunger': 0.0, 'thirst': 0.0}, 'pose': {'rotation': {'w': 0.9571326384559261, 'x': -0.10888676356214629, 'y': -0.26755994585035286, 'z': -0.021271118915446748}, 'translation': {'x': 0.4873843491077423, 'y': 0.007090016733855009, 'z': -1.1306129693984985}}}
+2020-05-18 16:35:33,067 : gui : {'feelings': {'exhaustion': 0.0, 'happiness': 0.0, 'hunger': 0.0, 'thirst': 0.0}, 'pose': {'rotation': {'w': 0.9571326384559261, 'x': -0.10888676356214629, 'y': -0.26755994585035286, 'z': -0.021271118915446748}, 'translation': {'x': 0.4873843491077423, 'y': 0.007090016733855009, 'z': -1.1306129693984985}}}
+2020-05-18 16:35:51,682 : gui : {'feelings': {'exhaustion': 0.0, 'happiness': 0.0, 'hunger': 0.0, 'thirst': 0.0}, 'pose': {'rotation': {'w': 0.9571326384559261, 'x': -0.10888676356214629, 'y': -0.26755994585035286, 'z': -0.021271118915446748}, 'translation': {'x': 0.4873843491077423, 'y': 0.007090016733855009, 'z': -1.1306129693984985}}}
+2020-05-18 16:38:01,103 : gui : {'feelings': {'exhaustion': 0.0, 'happiness': 0.0, 'hunger': 0.0, 'thirst': 0.0}, 'pose': {'rotation': {'w': 0.9571326384559261, 'x': -0.10888676356214629, 'y': -0.26755994585035286, 'z': -0.021271118915446748}, 'translation': {'x': 0.4873843491077423, 'y': 0.007090016733855009, 'z': -1.1306129693984985}}}

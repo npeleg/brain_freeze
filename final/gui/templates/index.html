@@ -1,7 +1,10 @@
 {% extends 'base.html' %}
 {% block title %}Welcome to BrainFreeze{% endblock %}
 {% block body %}
-<h1>Choose a user to browse</h1>
-{% for user in result %}
-<h2>{{ user[username] (user[user_id) }}</h2>
+<h1>Welcome to BrainFreeze!</h1>
+<h2>Choose a user to browse</h2>
+<li> {% for user in users %}
+    <a href="{{user.link}}">{{ user.username }} (id {{ user.user_id }})</a>
+</li>
+{% endfor %}
 {% endblock %}

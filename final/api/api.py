@@ -20,7 +20,7 @@ def get_all_users():
         users = db.get_all_users()
         output = []
         for user in users:
-            output.append({'user_id': user['user_id'], 'name': user['username']})
+            output.append({'user_id': user['user_id'], 'username': user['username']})
         return jsonify({'result': output, 'error': None})
     except Exception as error:
         return jsonify({'result': None, 'error': str(error)}), 404
@@ -59,7 +59,7 @@ def get_snapshot_fields(user_id, snapshot_id):
         datetime = to_datetime(snapshot_id, milliseconds=True)
         output = {'snapshot_id': snapshot_id, 'datetime': datetime}
         results_names = db.get_available_results(user_id, snapshot_id)
-        output['results_names'] = results_names
+        output['result_names'] = results_names
         return jsonify({'result': output, 'error': None})
     except Exception as error:
         return jsonify({'result': None, 'error': str(error)})

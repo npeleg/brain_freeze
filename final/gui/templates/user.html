@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}BrainFreeze: snapshot list{% endblock %}
+{% block body %}
+<h1>{{username}}'s details:</h1>
+<h2>User ID: {{ user_id }}</h2>
+<h2>Birthday: {{ birthday }}</h2>
+<h2>Gender: {{ gender }}</h2>
+<h2><a href="{{snapshots_link}}">Go to {{username}}'s snapshots</a></h2>
+{% endblock %}

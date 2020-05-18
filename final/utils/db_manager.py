@@ -38,5 +38,4 @@ class DBManager:
 
     def get_result(self, user_id, datetime, result_name):
         query = {'user_id': user_id, 'datetime': datetime, 'result': result_name}
-        print(query)
         return self.db.get(SNAPSHOT_TABLE, query)

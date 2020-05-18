@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}BrainFreeze: snapshot list{% endblock %}
+{% block body %}
+<h1> List of Snapshots:</h1>
+<h1> </h1>
+    {% for snapshot in snapshot_list %}
+    <h2>id: {{snapshot.snapshot_id}}   |      <a href="{{snapshot.link}}">   {{snapshot.datetime}}</a></h2>
+{% endfor %}
+{% endblock %}

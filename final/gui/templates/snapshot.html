@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}BrainFreeze: snapshot results{% endblock %}
+{% block body %}
+<h1> Results of snapshot {{snapshot_id}}:</h1>
+<li>
+    {% for key in results %}
+    <h2>{{key}}: {{results[key]}}</h2>
+</li>
+{% endfor %}
+{% endblock %}
