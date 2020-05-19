@@ -15,8 +15,20 @@ def main():
 def server_run_server(host, port, url):
     """ Passes snapshots received from clients to the message queue specified in url. """
     try:
-        print('running:')
         run_server(host, int(port), url)
+    except Exception as error:
+        print(f'Error: {error}')
+        return 1
+
+
+@main.command('server-print')
+def server_print():
+    """ Prints snapshots arriving to server. """
+    def print_message(message):
+        print('got snapshot')
+    try:
+        print('running:')
+        run_server(host='127.0.0.1', port=8000, publish=print_message)
     except Exception as error:
         print(f'Error: {error}')
         return 1

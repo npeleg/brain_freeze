@@ -1869,3 +1869,126 @@
 2020-05-18 19:01:10,476 : server : sending snapshot to message queue
 2020-05-18 19:01:14,542 : server : sending parsers list to client
 2020-05-18 19:01:14,556 : server : sending snapshot to message queue
+2020-05-19 10:22:15,374 : server : starting the server
+2020-05-19 10:22:19,751 : server : starting the server
+2020-05-19 10:22:19,832 : server : sending user to message queue
+2020-05-19 10:22:28,896 : server : sending parsers list to client
+2020-05-19 10:22:28,923 : server : sending snapshot to message queue
+2020-05-19 10:22:38,003 : server : sending parsers list to client
+2020-05-19 10:22:38,028 : server : sending snapshot to message queue
+2020-05-19 10:22:45,790 : server : sending parsers list to client
+2020-05-19 10:22:45,803 : server : sending snapshot to message queue
+2020-05-19 10:22:50,959 : server : sending parsers list to client
+2020-05-19 10:22:50,972 : server : sending snapshot to message queue
+2020-05-19 10:22:54,746 : server : sending parsers list to client
+2020-05-19 10:22:54,758 : server : sending snapshot to message queue
+2020-05-19 10:27:00,142 : server : starting the server
+2020-05-19 10:27:01,103 : server : starting the server
+2020-05-19 10:27:01,143 : server : sending user to message queue
+2020-05-19 10:27:09,076 : server : sending parsers list to client
+2020-05-19 10:27:09,089 : server : sending snapshot to message queue
+2020-05-19 10:27:15,015 : server : sending parsers list to client
+2020-05-19 10:27:15,028 : server : sending snapshot to message queue
+2020-05-19 10:27:18,856 : server : sending parsers list to client
+2020-05-19 10:27:18,869 : server : sending snapshot to message queue
+2020-05-19 10:27:23,270 : server : sending parsers list to client
+2020-05-19 10:27:23,283 : server : sending snapshot to message queue
+2020-05-19 10:27:27,811 : server : sending parsers list to client
+2020-05-19 10:27:27,835 : server : sending snapshot to message queue
+2020-05-19 11:21:10,046 : server : starting the server
+2020-05-19 11:21:11,776 : server : starting the server
+2020-05-19 11:21:11,811 : server : sending user to message queue
+2020-05-19 11:21:26,745 : server : sending parsers list to client
+2020-05-19 11:21:26,759 : server : sending snapshot to message queue
+2020-05-19 11:21:43,896 : server : sending parsers list to client
+2020-05-19 11:21:43,908 : server : sending snapshot to message queue
+2020-05-19 11:22:32,630 : server : starting the server
+2020-05-19 11:22:36,201 : server : starting the server
+2020-05-19 11:22:36,265 : server : sending user to message queue
+2020-05-19 11:23:01,527 : server : sending parsers list to client
+2020-05-19 11:23:01,551 : server : sending snapshot to message queue
+2020-05-19 11:24:04,843 : server : starting the server
+2020-05-19 11:24:06,379 : server : starting the server
+2020-05-19 11:24:06,511 : server : sending user to message queue
+2020-05-19 11:24:27,646 : server : sending parsers list to client
+2020-05-19 11:24:27,659 : server : sending snapshot to message queue
+2020-05-19 11:24:42,714 : server : sending parsers list to client
+2020-05-19 11:24:42,730 : server : sending snapshot to message queue
+2020-05-19 11:24:58,244 : server : sending parsers list to client
+2020-05-19 11:24:58,258 : server : sending snapshot to message queue
+2020-05-19 11:27:08,165 : server : starting the server
+2020-05-19 11:27:09,209 : server : starting the server
+2020-05-19 11:27:09,250 : server : sending user to message queue
+2020-05-19 11:27:24,165 : server : sending parsers list to client
+2020-05-19 11:27:24,179 : server : sending snapshot to message queue
+2020-05-19 11:27:40,422 : server : sending parsers list to client
+2020-05-19 11:27:40,434 : server : sending snapshot to message queue
+2020-05-19 11:36:39,569 : server : starting the server
+2020-05-19 11:36:41,720 : server : starting the server
+2020-05-19 11:36:42,022 : server : sending user to message queue
+2020-05-19 11:37:00,501 : server : sending parsers list to client
+2020-05-19 12:39:06,081 : server : a user function was passed
+2020-05-19 12:39:06,084 : server : starting the server
+2020-05-19 12:39:06,911 : server : a user function was passed
+2020-05-19 12:39:06,915 : server : starting the server
+2020-05-19 12:40:44,274 : server : sending parsers list to client
+2020-05-19 12:47:42,529 : server : sending parsers list to client
+2020-05-19 12:50:15,406 : server : a user function was passed
+2020-05-19 12:50:15,410 : server : starting the server
+2020-05-19 12:51:06,349 : server : sending parsers list to client
+2020-05-19 13:17:42,258 : server : a user function was passed
+2020-05-19 13:17:42,269 : server : starting the server
+2020-05-19 13:17:59,183 : server : sending parsers list to client
+2020-05-19 13:18:54,819 : server : a user function was passed
+2020-05-19 13:18:54,822 : server : starting the server
+2020-05-19 13:19:11,796 : server : sending parsers list to client
+2020-05-19 13:21:34,276 : server : a user function was passed
+2020-05-19 13:21:34,281 : server : starting the server
+2020-05-19 13:21:50,210 : server : sending parsers list to client
+2020-05-19 15:11:30,364 : server : sending parsers list to client
+2020-05-19 15:13:16,253 : server : a user function was passed
+2020-05-19 15:13:16,256 : server : starting the server
+2020-05-19 15:13:34,958 : server : sending parsers list to client
+2020-05-19 15:14:03,520 : server : a user function was passed
+2020-05-19 15:14:03,523 : server : starting the server
+2020-05-19 15:14:19,932 : server : sending parsers list to client
+2020-05-19 16:13:46,003 : server : a user function was passed
+2020-05-19 16:13:46,015 : server : starting the server
+2020-05-19 16:14:07,982 : server : sending parsers list to client
+2020-05-19 16:14:23,713 : server : sending parsers list to client
+2020-05-19 16:14:43,816 : server : sending parsers list to client
+2020-05-19 16:15:01,229 : server : sending parsers list to client
+2020-05-19 16:15:17,003 : server : sending parsers list to client
+2020-05-19 16:24:59,112 : server : a user function was passed
+2020-05-19 16:24:59,115 : server : starting the server
+2020-05-19 16:25:27,387 : server : sending parsers list to client
+2020-05-19 16:26:12,613 : server : sending parsers list to client
+2020-05-19 16:27:06,125 : server : sending parsers list to client
+2020-05-19 16:27:24,892 : server : a user function was passed
+2020-05-19 16:27:24,903 : server : starting the server
+2020-05-19 16:27:51,868 : server : sending parsers list to client
+2020-05-19 16:28:26,470 : server : sending parsers list to client
+2020-05-19 16:29:40,149 : server : a user function was passed
+2020-05-19 16:29:40,154 : server : starting the server
+2020-05-19 16:29:41,329 : server : a user function was passed
+2020-05-19 16:29:41,343 : server : starting the server
+2020-05-19 16:29:58,287 : server : sending parsers list to client
+2020-05-19 16:30:30,476 : server : sending parsers list to client
+2020-05-19 16:31:00,088 : server : sending parsers list to client
+2020-05-19 16:31:32,017 : server : sending parsers list to client
+2020-05-19 16:32:01,716 : server : sending parsers list to client
+2020-05-19 21:41:51,684 : server : a user function was passed
+2020-05-19 21:42:20,477 : server : a user function was passed
+2020-05-19 21:42:20,480 : server : starting the server
+2020-05-19 21:42:21,325 : server : a user function was passed
+2020-05-19 21:42:21,328 : server : starting the server
+2020-05-19 21:42:49,240 : server : sending parsers list to client
+2020-05-19 21:42:49,241 : server : ['feelings', 'pose', 'color_image']
+2020-05-19 21:44:37,366 : server : sending parsers list to client
+2020-05-19 21:44:37,366 : server : ['feelings', 'pose', 'color_image']
+2020-05-19 21:51:55,171 : server : sending parsers list to client
+2020-05-19 21:51:55,171 : server : ['feelings', 'pose', 'color_image']
+2020-05-19 22:16:40,133 : server : a user function was passed
+2020-05-19 22:16:40,154 : server : starting the server
+2020-05-19 22:35:26,925 : server : a user function was passed
+2020-05-19 22:35:26,976 : server : starting the server

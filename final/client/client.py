@@ -39,11 +39,18 @@ def upload_sample(host, port, path):
     for snapshot in reader:
         parsers = get_parsers_from_server(host, port)
         if parsers is None:
-            logger.info("parsers is none")
+            logger.info("no parsers supported in this server")
             continue
         config = protocol.init_protocol_config(parsers)
+        logger.info('building snapshot')
         partial_snapshot = protocol.build_partial_snapshot(snapshot, config)
         serialized_snapshot_message = protocol.serialize(partial_snapshot)
+        print(snapshot.color_image.width)
+        print(snapshot.color_image.height)
+        # with open('./image_bytes', 'wb') as file:
+        #    file.write(snapshot.color_image.data)
+        #    logger.info('saved')
+        break
         send_to_server(host, port, serialized_snapshot_message, user_message.user_id)
     logger.info('finished uploading snapshots to server')
     return 0

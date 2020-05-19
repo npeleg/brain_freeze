@@ -8,6 +8,7 @@ app = flask.Flask(__name__)
 user_function = None
 message_queue = None
 parsers = []
+data_volume = '/data_volume'
 
 
 def build_user_json(user):
@@ -19,7 +20,7 @@ def build_user_json(user):
     return json.dumps(message)
 
 
-def build_snapshot_json(snapshot, user_id):
+def build_snapshot_json(snapshot, user_id, path, color_image_path, depth_image_path):
     message = dict(user_id=user_id,
                    datetime=snapshot.datetime,
                    pose=dict(translation=dict(x=snapshot.pose.translation.x,
@@ -29,7 +30,14 @@ def build_snapshot_json(snapshot, user_id):
                                            y=snapshot.pose.rotation.y,
                                            z=snapshot.pose.rotation.z,
                                            w=snapshot.pose.rotation.w)),
-                   # TODO color and depth images
+                   color_image=dict(width=snapshot.color_image.width,
+                                    height=snapshot.color_image.height,
+                                    dir_path=path,
+                                    file_path=color_image_path),
+                   depth_image=dict(width=snapshot.depth_image.width,
+                                    height=snapshot.depth_image.height,
+                                    dir_path=path,
+                                    file_path=depth_image_path),
                    feelings=dict(hunger=snapshot.feelings.hunger,
                                  thirst=snapshot.feelings.thirst,
                                  exhaustion=snapshot.feelings.exhaustion,
@@ -38,10 +46,25 @@ def build_snapshot_json(snapshot, user_id):
     return json.dumps(message)
 
 
+def store_images(snapshot, user_id):
+    """ stores color_image and depth_image, if exist in snapshot, and returns their paths"""
+    color_path, depth_path = None, None
+    path = data_volume + f'/{user_id}/{snapshot.datetime}'
+    if 'color_image' in parsers:
+        color_path = path + '/color_image'
+        with open(color_path, 'wb') as file:
+            file.write(snapshot.color_image.data)
+    if 'depth_image' in parsers:
+        depth_path = path + '/depth_image'
+        with open(depth_path, 'wb') as file:
+            file.write(snapshot.depth_image.data)
+    return path, color_path, depth_path
+
+
 @app.route('/config')
-def return_parsers():
-    global parsers
+def send_parsers():
     logger.info('sending parsers list to client')
+    logger.debug(parsers)
     return flask.jsonify({'result': 'accepted', 'parsers': parsers, 'error': None})
 
 
@@ -69,7 +92,8 @@ def receive_snapshot(user_id):
         if user_function:
             user_function(snapshot_message)
         else:
-            json_message = build_snapshot_json(snapshot_message, user_id)
+            path, color_path, depth_path = store_images(snapshot_message, user_id)
+            json_message = build_snapshot_json(snapshot_message, user_id, path, color_path, depth_path)
             logger.info('sending snapshot to message queue')
             message_queue.publish_to_snapshot_topic(json_message)
         return flask.jsonify({'result': 'accepted', 'error': None}), 201

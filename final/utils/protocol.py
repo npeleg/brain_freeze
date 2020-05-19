@@ -1,5 +1,8 @@
 from datetime import datetime as dt
 from . import protocol_pb
+from ..utils import Logger
+
+logger = Logger(__name__).logger
 
 
 def serialize(message):
@@ -56,9 +59,16 @@ def init_protocol_snapshot(datetime, t_x, t_y, t_z, r_x, r_y, r_z, r_w,
     snapshot.pose.rotation.y = r_y
     snapshot.pose.rotation.z = r_z
     snapshot.pose.rotation.w = r_w
+    logger.info('assigning width')
     snapshot.color_image.width = color_width
+    logger.info('assigning height')
     snapshot.color_image.height = color_height
-    # snapshot.color_image.data = color_data TODO
+    logger.info('assigning data')
+    try:
+        snapshot.color_image.data = color_data
+    except Exception as error:
+        print(error.__repr__())
+    logger.info('assigned')
     snapshot.depth_image.width = depth_width
     snapshot.depth_image.height = depth_height
     # snapshot.depth_image.data = depth_data TODO
@@ -66,6 +76,7 @@ def init_protocol_snapshot(datetime, t_x, t_y, t_z, r_x, r_y, r_z, r_w,
     snapshot.feelings.thirst = thirst
     snapshot.feelings.exhaustion = exhaustion
     snapshot.feelings.happiness = happiness
+    logger.info('initiated protocol snapshot')
     return snapshot
 
 
@@ -116,8 +127,10 @@ def build_partial_snapshot(snapshot, config):
                                                 snapshot.feelings.exhaustion, snapshot.feelings.happiness
     else:
         hunger = thirst = exhaustion = happiness = 0
-
-    return init_protocol_snapshot(snapshot.datetime, t_x, t_y, t_z, r_x, r_y, r_z, r_w,
+    logger.info('sending to init_protocol_snapshot')
+    partial_snapshot = init_protocol_snapshot(snapshot.datetime, t_x, t_y, t_z, r_x, r_y, r_z, r_w,
                                   color_width, color_height, color_data,
                                   depth_width, depth_height, depth_data,
                                   hunger, thirst, exhaustion, happiness)
+    logger.info('returning partial snapshot')
+    return partial_snapshot

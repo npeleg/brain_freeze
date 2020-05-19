@@ -519,3 +519,68 @@
 2020-05-17 21:03:04,790 : client : finished uploading snapshots to server
 2020-05-18 19:00:53,968 : client : starting to upload snapshots to server
 2020-05-18 19:01:14,619 : client : finished uploading snapshots to server
+2020-05-19 10:22:19,863 : client : server did not accept data due to error. Got 404 status code
+2020-05-19 10:22:19,863 : client : server did not accept data due to error: StreamLostError: ('Transport indicated EOF',)
+2020-05-19 10:22:19,864 : client : starting to upload snapshots to server
+2020-05-19 10:22:28,938 : client : server did not accept data due to error. Got 404 status code
+2020-05-19 10:22:28,938 : client : server did not accept data due to error: StreamLostError: ('Transport indicated EOF',)
+2020-05-19 10:22:38,043 : client : server did not accept data due to error. Got 404 status code
+2020-05-19 10:22:38,044 : client : server did not accept data due to error: StreamLostError: ('Transport indicated EOF',)
+2020-05-19 10:22:45,809 : client : server did not accept data due to error. Got 404 status code
+2020-05-19 10:22:45,809 : client : server did not accept data due to error: StreamLostError: ('Transport indicated EOF',)
+2020-05-19 10:22:54,780 : client : finished uploading snapshots to server
+2020-05-19 10:27:01,185 : client : starting to upload snapshots to server
+2020-05-19 10:27:27,883 : client : finished uploading snapshots to server
+2020-05-19 11:21:11,860 : client : starting to upload snapshots to server
+2020-05-19 11:22:36,336 : client : starting to upload snapshots to server
+2020-05-19 11:24:06,561 : client : starting to upload snapshots to server
+2020-05-19 11:27:09,294 : client : starting to upload snapshots to server
+2020-05-19 11:36:42,067 : client : starting to upload snapshots to server
+2020-05-19 12:40:28,951 : client : starting to upload snapshots to server
+2020-05-19 12:47:25,143 : client : starting to upload snapshots to server
+2020-05-19 12:47:42,531 : client : building snapshot
+2020-05-19 12:50:17,959 : client : starting to upload snapshots to server
+2020-05-19 12:51:06,354 : client : building snapshot
+2020-05-19 13:17:44,364 : client : starting to upload snapshots to server
+2020-05-19 13:17:59,185 : client : building snapshot
+2020-05-19 13:18:56,913 : client : starting to upload snapshots to server
+2020-05-19 13:19:11,799 : client : building snapshot
+2020-05-19 13:21:34,881 : client : starting to upload snapshots to server
+2020-05-19 13:21:50,212 : client : building snapshot
+2020-05-19 15:11:15,297 : client : starting to upload snapshots to server
+2020-05-19 15:11:30,366 : client : building snapshot
+2020-05-19 15:13:19,412 : client : starting to upload snapshots to server
+2020-05-19 15:13:34,960 : client : building snapshot
+2020-05-19 15:14:04,829 : client : starting to upload snapshots to server
+2020-05-19 15:14:19,936 : client : building snapshot
+2020-05-19 16:13:47,629 : client : starting to upload snapshots to server
+2020-05-19 16:14:07,985 : client : building snapshot
+2020-05-19 16:14:23,715 : client : building snapshot
+2020-05-19 16:14:43,819 : client : building snapshot
+2020-05-19 16:15:01,232 : client : building snapshot
+2020-05-19 16:15:17,005 : client : building snapshot
+2020-05-19 16:15:17,044 : client : finished uploading snapshots to server
+2020-05-19 16:25:11,799 : client : starting to upload snapshots to server
+2020-05-19 16:25:27,390 : client : building snapshot
+2020-05-19 16:26:12,616 : client : building snapshot
+2020-05-19 16:27:06,127 : client : building snapshot
+2020-05-19 16:27:51,871 : client : building snapshot
+2020-05-19 16:28:26,472 : client : building snapshot
+2020-05-19 16:28:43,924 : client : finished uploading snapshots to server
+2020-05-19 16:29:43,336 : client : starting to upload snapshots to server
+2020-05-19 16:29:58,290 : client : building snapshot
+2020-05-19 16:30:30,478 : client : building snapshot
+2020-05-19 16:31:00,091 : client : building snapshot
+2020-05-19 16:31:32,019 : client : building snapshot
+2020-05-19 16:32:01,718 : client : building snapshot
+2020-05-19 16:32:18,144 : client : finished uploading snapshots to server
+2020-05-19 21:42:31,286 : client : starting to upload snapshots to server
+2020-05-19 21:42:49,243 : client : building snapshot
+2020-05-19 21:43:04,575 : client : finished uploading snapshots to server
+2020-05-19 21:44:17,686 : client : starting to upload snapshots to server
+2020-05-19 21:44:37,369 : client : building snapshot
+2020-05-19 21:44:54,508 : client : saved
+2020-05-19 21:44:54,509 : client : finished uploading snapshots to server
+2020-05-19 21:51:33,989 : client : starting to upload snapshots to server
+2020-05-19 21:51:55,177 : client : building snapshot
+2020-05-19 21:52:16,875 : client : finished uploading snapshots to server

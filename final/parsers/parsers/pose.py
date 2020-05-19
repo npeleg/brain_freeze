@@ -3,11 +3,11 @@ import json
 
 def parse(json_snapshot):
     """extracts and returns the pose information from json_snapshot"""
-    message = json.loads(json_snapshot)
-    pose = dict(user_id=message['user_id'],
+    snapshot = json.loads(json_snapshot)
+    pose = dict(user_id=snapshot['user_id'],
+                datetime=snapshot['datetime'],
                 result='pose',
-                datetime=message['datetime'],
-                pose=message['pose'])
+                pose=snapshot['pose'])
     return json.dumps(pose)
 
 

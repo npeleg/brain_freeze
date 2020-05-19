@@ -65,3 +65,81 @@
 2020-05-13 16:40:25,283 : reader : parsing from bytes
 2020-05-13 16:40:30,186 : reader : building snapshot protocol
 2020-05-13 16:40:30,193 : reader : returning snapshot
+2020-05-19 12:47:25,283 : reader : sending to parse_snapshot
+2020-05-19 12:47:42,523 : reader : returning snapshot
+2020-05-19 12:47:42,524 : reader : yielding snapshot
+2020-05-19 12:50:18,077 : reader : sending to parse_snapshot
+2020-05-19 12:51:06,309 : reader : returning snapshot
+2020-05-19 12:51:06,310 : reader : yielding snapshot
+2020-05-19 13:17:44,487 : reader : sending to parse_snapshot
+2020-05-19 13:17:59,177 : reader : returning snapshot
+2020-05-19 13:17:59,178 : reader : yielding snapshot
+2020-05-19 13:18:57,041 : reader : sending to parse_snapshot
+2020-05-19 13:19:11,790 : reader : returning snapshot
+2020-05-19 13:19:11,791 : reader : yielding snapshot
+2020-05-19 13:21:34,980 : reader : sending to parse_snapshot
+2020-05-19 13:21:50,204 : reader : returning snapshot
+2020-05-19 13:21:50,205 : reader : yielding snapshot
+2020-05-19 15:11:15,406 : reader : sending to parse_snapshot
+2020-05-19 15:11:30,358 : reader : returning snapshot
+2020-05-19 15:11:30,359 : reader : yielding snapshot
+2020-05-19 15:13:19,530 : reader : sending to parse_snapshot
+2020-05-19 15:13:34,953 : reader : returning snapshot
+2020-05-19 15:13:34,953 : reader : yielding snapshot
+2020-05-19 15:14:04,944 : reader : sending to parse_snapshot
+2020-05-19 15:14:19,927 : reader : returning snapshot
+2020-05-19 15:14:19,928 : reader : yielding snapshot
+2020-05-19 16:13:47,731 : reader : sending to parse_snapshot
+2020-05-19 16:14:07,976 : reader : returning snapshot
+2020-05-19 16:14:07,977 : reader : yielding snapshot
+2020-05-19 16:14:08,155 : reader : sending to parse_snapshot
+2020-05-19 16:14:23,708 : reader : returning snapshot
+2020-05-19 16:14:23,708 : reader : yielding snapshot
+2020-05-19 16:14:23,861 : reader : sending to parse_snapshot
+2020-05-19 16:14:43,812 : reader : returning snapshot
+2020-05-19 16:14:43,812 : reader : yielding snapshot
+2020-05-19 16:14:43,951 : reader : sending to parse_snapshot
+2020-05-19 16:15:01,216 : reader : returning snapshot
+2020-05-19 16:15:01,217 : reader : yielding snapshot
+2020-05-19 16:15:01,447 : reader : sending to parse_snapshot
+2020-05-19 16:15:16,996 : reader : returning snapshot
+2020-05-19 16:15:16,996 : reader : yielding snapshot
+2020-05-19 16:25:11,917 : reader : sending to parse_snapshot
+2020-05-19 16:25:27,381 : reader : returning snapshot
+2020-05-19 16:25:27,382 : reader : yielding snapshot
+2020-05-19 16:25:54,003 : reader : sending to parse_snapshot
+2020-05-19 16:26:12,594 : reader : returning snapshot
+2020-05-19 16:26:12,600 : reader : yielding snapshot
+2020-05-19 16:26:44,358 : reader : sending to parse_snapshot
+2020-05-19 16:27:06,119 : reader : returning snapshot
+2020-05-19 16:27:06,119 : reader : yielding snapshot
+2020-05-19 16:27:35,577 : reader : sending to parse_snapshot
+2020-05-19 16:27:51,863 : reader : returning snapshot
+2020-05-19 16:27:51,863 : reader : yielding snapshot
+2020-05-19 16:28:09,371 : reader : sending to parse_snapshot
+2020-05-19 16:28:26,465 : reader : returning snapshot
+2020-05-19 16:28:26,465 : reader : yielding snapshot
+2020-05-19 16:29:43,450 : reader : sending to parse_snapshot
+2020-05-19 16:29:58,282 : reader : returning snapshot
+2020-05-19 16:29:58,283 : reader : yielding snapshot
+2020-05-19 16:30:14,489 : reader : sending to parse_snapshot
+2020-05-19 16:30:30,471 : reader : returning snapshot
+2020-05-19 16:30:30,472 : reader : yielding snapshot
+2020-05-19 16:30:45,407 : reader : sending to parse_snapshot
+2020-05-19 16:31:00,083 : reader : returning snapshot
+2020-05-19 16:31:00,083 : reader : yielding snapshot
+2020-05-19 16:31:16,564 : reader : sending to parse_snapshot
+2020-05-19 16:31:32,012 : reader : returning snapshot
+2020-05-19 16:31:32,013 : reader : yielding snapshot
+2020-05-19 16:31:46,964 : reader : sending to parse_snapshot
+2020-05-19 16:32:01,710 : reader : returning snapshot
+2020-05-19 16:32:01,710 : reader : yielding snapshot
+2020-05-19 21:42:31,408 : reader : sending to parse_snapshot
+2020-05-19 21:42:49,223 : reader : returning snapshot
+2020-05-19 21:42:49,224 : reader : yielding snapshot
+2020-05-19 21:44:17,804 : reader : sending to parse_snapshot
+2020-05-19 21:44:37,361 : reader : returning snapshot
+2020-05-19 21:44:37,362 : reader : yielding snapshot
+2020-05-19 21:51:34,133 : reader : sending to parse_snapshot
+2020-05-19 21:51:55,158 : reader : returning snapshot
+2020-05-19 21:51:55,164 : reader : yielding snapshot
