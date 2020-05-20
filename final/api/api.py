@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, send_from_directory
 from flask import jsonify
 from datetime import datetime as dt
 from ..utils import DBManager, Logger
@@ -6,6 +6,7 @@ from ..utils import DBManager, Logger
 logger = Logger(__name__).logger
 app = Flask(__name__)
 db = None
+data_volume = '/data_volume'
 
 
 def to_datetime(timestamp, milliseconds):
@@ -72,6 +73,11 @@ def get_result(user_id, snapshot_id, result_name):
         return jsonify({'result': output, 'error': None})
     except Exception as error:
         return jsonify({'result': None, 'error': str(error)})
+
+
+@app.route('/users/<int:user_id>/snapshots/<int:snapshot_id>/<result_name>/<data_path>', methods=['GET'])
+def get_data(user_id, snapshot_id, result_name, data_path):
+    send_from_directory(directory=data_volume + f'{user_id}/{snapshot_id}', filename=data_path, as_attachment=True)
 
 
 def run_api_server(host, port, database_url):

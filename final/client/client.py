@@ -45,12 +45,10 @@ def upload_sample(host, port, path):
         logger.info('building snapshot')
         partial_snapshot = protocol.build_partial_snapshot(snapshot, config)
         serialized_snapshot_message = protocol.serialize(partial_snapshot)
-        print(snapshot.color_image.width)
-        print(snapshot.color_image.height)
-        # with open('./image_bytes', 'wb') as file:
-        #    file.write(snapshot.color_image.data)
-        #    logger.info('saved')
-        break
         send_to_server(host, port, serialized_snapshot_message, user_message.user_id)
     logger.info('finished uploading snapshots to server')
     return 0
+
+# with open('./image_bytes', 'wb') as file:
+#    file.write(snapshot.color_image.data)
+#    logger.info('saved')

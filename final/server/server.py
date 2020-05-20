@@ -50,14 +50,19 @@ def store_images(snapshot, user_id):
     """ stores color_image and depth_image, if exist in snapshot, and returns their paths"""
     color_path, depth_path = None, None
     path = data_volume + f'/{user_id}/{snapshot.datetime}'
-    if 'color_image' in parsers:
-        color_path = path + '/color_image'
+    try:
+        if 'color_image' in parsers:
+            color_path = path + '/color_image'
         with open(color_path, 'wb') as file:
             file.write(snapshot.color_image.data)
-    if 'depth_image' in parsers:
-        depth_path = path + '/depth_image'
+        if 'depth_image' in parsers:
+            depth_path = path + '/depth_image'
         with open(depth_path, 'wb') as file:
             file.write(snapshot.depth_image.data)
+    except Exception as error:
+        logger.error('failed to save images:')
+        logger.error(str(error))
+        return None, None, None
     return path, color_path, depth_path
 
 

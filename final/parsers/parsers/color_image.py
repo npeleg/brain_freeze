@@ -16,7 +16,7 @@ def parse(json_snapshot):
     color_image = dict(user_id=snapshot['user_id'],
                        datetime=snapshot['datetime'],
                        result='color_image',
-                       color_image=str(dest_path))
+                       color_image='color_image.jpg')
     return json.dumps(color_image)
 
 

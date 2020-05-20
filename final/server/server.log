@@ -1992,3 +1992,142 @@
 2020-05-19 22:16:40,154 : server : starting the server
 2020-05-19 22:35:26,925 : server : a user function was passed
 2020-05-19 22:35:26,976 : server : starting the server
+2020-05-20 12:39:42,038 : server : a user function was passed
+2020-05-20 12:39:42,059 : server : starting the server
+2020-05-20 13:04:44,781 : server : starting the server
+2020-05-20 13:04:45,979 : server : starting the server
+2020-05-20 13:04:46,022 : server : sending user to message queue
+2020-05-20 13:05:06,014 : server : sending parsers list to client
+2020-05-20 13:05:06,014 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 13:13:15,117 : server : starting the server
+2020-05-20 13:13:16,033 : server : starting the server
+2020-05-20 13:13:16,075 : server : sending user to message queue
+2020-05-20 13:13:43,024 : server : sending parsers list to client
+2020-05-20 13:13:43,024 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 13:18:06,026 : server : sending user to message queue
+2020-05-20 13:18:07,747 : server : starting the server
+2020-05-20 13:18:24,889 : server : sending parsers list to client
+2020-05-20 13:18:24,889 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 13:23:23,499 : server : sending user to message queue
+2020-05-20 13:23:23,835 : server : starting the server
+2020-05-20 13:23:42,975 : server : sending parsers list to client
+2020-05-20 13:23:42,976 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 13:36:06,563 : server : starting the server
+2020-05-20 13:36:08,606 : server : starting the server
+2020-05-20 13:36:08,661 : server : sending user to message queue
+2020-05-20 13:36:26,347 : server : sending parsers list to client
+2020-05-20 13:36:26,347 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 17:46:10,592 : server : starting the server
+2020-05-20 17:46:14,712 : server : starting the server
+2020-05-20 17:46:14,846 : server : sending user to message queue
+2020-05-20 17:46:31,374 : server : sending parsers list to client
+2020-05-20 17:46:31,374 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 17:46:46,641 : server : failed to save images:
+2020-05-20 17:46:46,641 : server : [Errno 2] No such file or directory: '/data_volume/42/1575446887339/color_image'
+2020-05-20 17:46:54,074 : server : sending snapshot to message queue
+2020-05-20 17:47:09,852 : server : sending parsers list to client
+2020-05-20 17:47:09,852 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 17:47:26,480 : server : failed to save images:
+2020-05-20 17:47:26,481 : server : [Errno 2] No such file or directory: '/data_volume/42/1575446887412/color_image'
+2020-05-20 17:47:34,279 : server : sending snapshot to message queue
+2020-05-20 17:47:51,314 : server : sending parsers list to client
+2020-05-20 17:47:51,314 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 17:48:06,538 : server : failed to save images:
+2020-05-20 17:48:06,538 : server : [Errno 2] No such file or directory: '/data_volume/42/1575446887476/color_image'
+2020-05-20 17:48:14,819 : server : sending snapshot to message queue
+2020-05-20 17:48:39,966 : server : sending parsers list to client
+2020-05-20 17:48:39,972 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 17:48:55,548 : server : failed to save images:
+2020-05-20 17:48:55,548 : server : [Errno 2] No such file or directory: '/data_volume/42/1575446887541/color_image'
+2020-05-20 17:49:03,921 : server : sending snapshot to message queue
+2020-05-20 17:49:21,570 : server : sending parsers list to client
+2020-05-20 17:49:21,570 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 17:49:36,841 : server : failed to save images:
+2020-05-20 17:49:36,841 : server : [Errno 2] No such file or directory: '/data_volume/42/1575446887603/color_image'
+2020-05-20 17:49:44,262 : server : sending snapshot to message queue
+2020-05-20 18:37:01,555 : server : starting the server
+2020-05-20 18:37:03,243 : server : starting the server
+2020-05-20 18:37:03,282 : server : sending user to message queue
+2020-05-20 18:37:22,687 : server : sending parsers list to client
+2020-05-20 18:37:22,687 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 18:37:39,943 : server : failed to save images:
+2020-05-20 18:37:39,945 : server : [Errno 2] No such file or directory: '/data_volume/42/1575446887339/color_image'
+2020-05-20 18:37:48,249 : server : sending snapshot to message queue
+2020-05-20 18:38:04,033 : server : sending parsers list to client
+2020-05-20 18:38:04,034 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 18:38:20,589 : server : failed to save images:
+2020-05-20 18:38:20,590 : server : [Errno 2] No such file or directory: '/data_volume/42/1575446887412/color_image'
+2020-05-20 18:38:28,223 : server : sending snapshot to message queue
+2020-05-20 18:38:43,602 : server : sending parsers list to client
+2020-05-20 18:38:43,602 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 18:38:58,743 : server : failed to save images:
+2020-05-20 18:38:58,744 : server : [Errno 2] No such file or directory: '/data_volume/42/1575446887476/color_image'
+2020-05-20 18:39:06,367 : server : sending snapshot to message queue
+2020-05-20 18:39:23,008 : server : sending parsers list to client
+2020-05-20 18:39:23,009 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 18:39:38,728 : server : failed to save images:
+2020-05-20 18:39:38,728 : server : [Errno 2] No such file or directory: '/data_volume/42/1575446887541/color_image'
+2020-05-20 18:39:46,105 : server : sending snapshot to message queue
+2020-05-20 18:40:01,424 : server : sending parsers list to client
+2020-05-20 18:40:01,424 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 18:40:18,043 : server : failed to save images:
+2020-05-20 18:40:18,043 : server : [Errno 2] No such file or directory: '/data_volume/42/1575446887603/color_image'
+2020-05-20 18:40:25,543 : server : sending snapshot to message queue
+2020-05-20 18:56:56,124 : server : starting the server
+2020-05-20 18:56:57,666 : server : starting the server
+2020-05-20 19:23:41,664 : server : starting the server
+2020-05-20 19:23:43,362 : server : starting the server
+2020-05-20 19:23:43,405 : server : sending user to message queue
+2020-05-20 19:23:59,805 : server : sending parsers list to client
+2020-05-20 19:23:59,806 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 19:24:14,696 : server : failed to save images:
+2020-05-20 19:24:14,697 : server : [Errno 2] No such file or directory: '/data_volume/42/1575446887339/color_image'
+2020-05-20 19:24:24,659 : server : sending snapshot to message queue
+2020-05-20 19:24:43,234 : server : sending parsers list to client
+2020-05-20 19:24:43,234 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 19:24:59,837 : server : failed to save images:
+2020-05-20 19:24:59,842 : server : [Errno 2] No such file or directory: '/data_volume/42/1575446887412/color_image'
+2020-05-20 19:25:08,224 : server : sending snapshot to message queue
+2020-05-20 19:25:23,983 : server : sending parsers list to client
+2020-05-20 19:25:23,983 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 19:25:39,432 : server : failed to save images:
+2020-05-20 19:25:39,433 : server : [Errno 2] No such file or directory: '/data_volume/42/1575446887476/color_image'
+2020-05-20 19:25:47,308 : server : sending snapshot to message queue
+2020-05-20 19:26:04,820 : server : sending parsers list to client
+2020-05-20 19:26:04,820 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 19:26:20,237 : server : failed to save images:
+2020-05-20 19:26:20,238 : server : [Errno 2] No such file or directory: '/data_volume/42/1575446887541/color_image'
+2020-05-20 19:26:29,221 : server : sending snapshot to message queue
+2020-05-20 19:26:46,078 : server : sending parsers list to client
+2020-05-20 19:26:46,078 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 19:27:01,710 : server : failed to save images:
+2020-05-20 19:27:01,710 : server : [Errno 2] No such file or directory: '/data_volume/42/1575446887603/color_image'
+2020-05-20 19:27:10,789 : server : sending snapshot to message queue
+2020-05-20 19:37:20,669 : server : starting the server
+2020-05-20 19:37:21,702 : server : starting the server
+2020-05-20 19:37:21,742 : server : sending user to message queue
+2020-05-20 19:37:44,887 : server : sending parsers list to client
+2020-05-20 19:37:44,887 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 19:38:01,774 : server : failed to save images:
+2020-05-20 19:38:01,774 : server : [Errno 2] No such file or directory: '/data_volume/42/1575446887339/color_image'
+2020-05-20 19:38:09,458 : server : sending snapshot to message queue
+2020-05-20 19:38:26,707 : server : sending parsers list to client
+2020-05-20 19:38:26,707 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 19:38:41,623 : server : failed to save images:
+2020-05-20 19:38:41,624 : server : [Errno 2] No such file or directory: '/data_volume/42/1575446887412/color_image'
+2020-05-20 19:38:49,075 : server : sending snapshot to message queue
+2020-05-20 19:39:04,637 : server : sending parsers list to client
+2020-05-20 19:39:04,637 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 19:39:22,042 : server : failed to save images:
+2020-05-20 19:39:22,043 : server : [Errno 2] No such file or directory: '/data_volume/42/1575446887476/color_image'
+2020-05-20 19:39:31,243 : server : sending snapshot to message queue
+2020-05-20 19:39:47,202 : server : sending parsers list to client
+2020-05-20 19:39:47,202 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 19:40:02,444 : server : failed to save images:
+2020-05-20 19:40:02,445 : server : [Errno 2] No such file or directory: '/data_volume/42/1575446887541/color_image'
+2020-05-20 19:40:10,078 : server : sending snapshot to message queue
+2020-05-20 19:40:26,855 : server : sending parsers list to client
+2020-05-20 19:40:26,855 : server : ['feelings', 'pose', 'color_image']
+2020-05-20 19:40:45,571 : server : failed to save images:
+2020-05-20 19:40:45,572 : server : [Errno 2] No such file or directory: '/data_volume/42/1575446887603/color_image'
+2020-05-20 19:40:56,750 : server : sending snapshot to message queue

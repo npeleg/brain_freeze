@@ -6,20 +6,24 @@ import requests
 def send_and_handle_request(request, is_list, file_path):
     try:
         r = requests.get(request).json()
-        if r['result']:
-            string_result = ""
-            if is_list:
-                for item in r['result']:
-                    string_result += str(item) + '\n'
-            else:
-                string_result = r['result']
-            if file_path:
-                with open(file_path, 'w') as file:
-                    file.write(string_result)
-            else:
-                print(string_result)
-        else:
+        if r['result'] is None:
             print(r['error'])
+            return
+        string_result = bytes() if type(r['result']) is bytes else ""
+
+        if is_list:
+            for item in r['result']:
+                string_result += str(item) + '\n'
+        else:
+            string_result = r['result']
+
+        if file_path is None:
+            print(string_result)
+            return
+        mode = 'wb' if type(string_result) is bytes else 'w'
+        with open(file_path, mode) as file:
+            file.write(string_result)
+
     except Exception as error:
         print(f'Error: {error}')
         return 1

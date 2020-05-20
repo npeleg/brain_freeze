@@ -27,11 +27,15 @@ def test_end_to_end():
     time.sleep(1)
     feelings_process = run_subprocess("python -m final.parsers run-parser feelings rabbitmq://127.0.0.1:5672/")
     time.sleep(1)
+    color_process = run_subprocess("python -m final.parsers run-parser color_image rabbitmq://127.0.0.1:5672/")
+    time.sleep(1)
     server_process = run_subprocess("python -m final.server run-server rabbitmq://127.0.0.1:5672/")
     time.sleep(1)
     # Running the client:
+    # code = final.client.upload_sample('127.0.0.1', 8000, './tests/utils/small_sample.mind.gz')
+    # assert code == 0
     client_process = run_subprocess("python -m final.client upload_sample " + SMALL_SAMPLE_PATH)
-    time.sleep(40)
+    time.sleep(300)
 
     # Running the api and cli:
     api_process = run_subprocess("python -m final.api run-server")
@@ -52,6 +56,7 @@ def test_end_to_end():
     saver_process.terminate()
     pose_process.terminate()
     feelings_process.terminate()
+    color_process.terminate()
     server_process.terminate()
     api_process.terminate()
     out, err = client_process.communicate()
@@ -62,6 +67,10 @@ def test_end_to_end():
     out, err = server_process.communicate()
     print("server out: " + out.decode())
     print("server err: " + err.decode())
+
+    out, err = color_process.communicate()
+    print("color out: " + out.decode())
+    print("color err: " + err.decode())
 
     out, err = pose_process.communicate()
     print("pose out: " + out.decode())
@@ -100,3 +109,4 @@ def test_end_to_end():
     print("cli_result_process out: " + out.decode())
     print("cli_result_process err: " + err.decode())
     assert b'0.4873843491077423' in out
+    assert 1 == 0
