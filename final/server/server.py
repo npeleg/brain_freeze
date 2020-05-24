@@ -51,22 +51,12 @@ def build_snapshot_json(snapshot, user_id, path, color_image_path, depth_image_p
 def store_images(snapshot, user_id):
     """ stores color_image and depth_image, if exist in snapshot, and returns their paths"""
     try:
-        print('trying')
-        sys.stdout.flush()
         path = pathlib.Path(data_volume + f'/{user_id}/{snapshot.datetime}')
-        print('created path')
-        sys.stdout.flush()
         path.mkdir(parents=True, exist_ok=True)
-        print('did makedir')
-        sys.stdout.flush()
         if 'color_image' in parsers:
             color_path = path / 'color_image'
-            print('creted file path')
-            sys.stdout.flush()
             with color_path.open('wb') as file:
                 file.write(snapshot.color_image.data)
-                print('wrote to color_image')
-                sys.stdout.flush()
         else:
             color_path = None
         if 'depth_image' in parsers:
@@ -92,11 +82,7 @@ def send_parsers():
 @app.route('/users', methods=['POST'])
 def receive_user():
     global message_queue, user_function
-    print('check1')
-    sys.stdout.flush()
     try:
-        print('check2')
-        sys.stdout.flush()
         request = flask.request.data
         user_message = protocol.deserialize_user(request)
         if not user_function:
@@ -105,8 +91,6 @@ def receive_user():
             message_queue.publish_to_user_topic(json_message)
         return flask.jsonify({'result': 'accepted', 'error': None}), 201
     except Exception as error:
-        print('check3')
-        sys.stdout.flush()
         return flask.jsonify({'result': None, 'error': str(error)}), 404
 
 
@@ -114,7 +98,6 @@ def receive_user():
 def receive_snapshot(user_id):
     global message_queue, user_function
     try:
-        print('check4')
         sys.stdout.flush()
         request = flask.request.data
         snapshot_message = protocol.deserialize_snapshot(request)
@@ -122,9 +105,8 @@ def receive_snapshot(user_id):
             try:
                 user_function(snapshot_message)
             except Exception as error:
-                print('check5')
-                sys.stdout.flush()
-                logger.info('user passed a non callable object')
+                logger.info('error in user function or user passed a non callable object:')
+                logger.info(str(error))
         else:
             path, color_path, depth_path = store_images(snapshot_message, user_id)
             json_message = build_snapshot_json(snapshot_message, user_id, path, color_path, depth_path)
@@ -132,9 +114,7 @@ def receive_snapshot(user_id):
             message_queue.publish_to_snapshot_topic(json_message)
         return flask.jsonify({'result': 'accepted', 'error': None}), 201
     except Exception as error:
-        print(error)
-        print('check7')
-        sys.stdout.flush()
+        logger.error(str(error))
         return flask.jsonify({'result': None, 'error': str(error)}), 404
 
 

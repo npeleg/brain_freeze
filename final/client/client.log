@@ -933,3 +933,33 @@
 2020-05-24 19:28:02,037 : client : server did not accept data due to error. Got 404 status code
 2020-05-24 19:28:02,038 : client : error: 'str' object is not callable
 2020-05-24 19:28:02,038 : client : finished uploading snapshots to server
+2020-05-24 21:01:13,064 : client : starting to upload snapshots to server
+2020-05-24 21:01:35,828 : client : building snapshot
+2020-05-24 21:02:05,821 : client : building snapshot
+2020-05-24 21:02:36,964 : client : building snapshot
+2020-05-24 21:03:10,595 : client : building snapshot
+2020-05-24 21:03:43,991 : client : building snapshot
+2020-05-24 21:03:59,109 : client : finished uploading snapshots to server
+2020-05-24 21:11:30,104 : client : starting to upload snapshots to server
+2020-05-24 21:11:47,517 : client : building snapshot
+2020-05-24 21:12:20,505 : client : building snapshot
+2020-05-24 21:12:51,043 : client : building snapshot
+2020-05-24 21:13:20,655 : client : building snapshot
+2020-05-24 21:13:50,908 : client : building snapshot
+2020-05-24 21:14:05,365 : client : finished uploading snapshots to server
+2020-05-24 21:14:06,034 : client : starting to upload snapshots to server
+2020-05-24 21:14:21,067 : client : building snapshot
+2020-05-24 21:14:56,015 : client : building snapshot
+2020-05-24 21:15:32,877 : client : building snapshot
+2020-05-24 21:16:05,044 : client : building snapshot
+2020-05-24 21:16:34,716 : client : building snapshot
+2020-05-24 21:16:49,480 : client : finished uploading snapshots to server
+2020-05-24 21:44:40,340 : client : starting to upload snapshots to server
+2020-05-24 21:46:03,079 : client : starting to upload snapshots to server
+2020-05-24 21:56:08,172 : client : starting to upload snapshots to server
+2020-05-24 21:59:12,043 : client : finished uploading snapshots to server
+2020-05-24 21:59:12,761 : client : starting to upload snapshots to server
+2020-05-24 22:02:47,726 : client : finished uploading snapshots to server
+2020-05-24 22:23:46,973 : client : starting to upload snapshots to server
+2020-05-24 22:23:46,986 : client : starting to upload snapshots to server
+2020-05-24 22:23:47,020 : client : starting to upload snapshots to server

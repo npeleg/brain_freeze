@@ -1,4 +1,7 @@
 import subprocess
+import time
+
+SMALL_SAMPLE_PATH = "./tests/utils/small_sample.mind.gz"
 
 
 def run_subprocess(command):
@@ -8,3 +11,7 @@ def run_subprocess(command):
                                stderr=subprocess.PIPE,
                                close_fds=True)
     return process
+
+
+def sleep(duration):
+    time.sleep(duration)
