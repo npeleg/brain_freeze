@@ -22,10 +22,15 @@ def load_parsers(parsers_dir, parsers_dict):
 def wrap_parser(parser_name, parser_func, mq):
     """ returns a function that parses data using parser_func and publishes the result to the parser_name topic"""
     def parse_and_publish(data):
-        parsed_data = parser_func(data)
-        logger.info('parsed data is: ' + parsed_data)
-        logger.info('sending to ' + parser_name + ' topic')
-        mq.publish_to_topic(parser_name, parsed_data)
+        try:
+            parsed_data = parser_func(data)
+            logger.info('parsed data is: ' + parsed_data)
+            logger.info('sending to ' + parser_name + ' topic')
+            mq.publish_to_topic(parser_name, parsed_data)
+        except Exception as error:
+            print('error in parser func')
+            print(error)
+            sys.stdout.flush()
     return parse_and_publish
 
 
@@ -45,10 +50,17 @@ class Parsers:
     def run_parser(self, parser_name, mq_url):
         if parser_name not in self.parsers_dict:
             raise KeyError("parser does not exist")
+        print('looking for parser in dict')
+        print(self.parsers_dict)
+        sys.stdout.flush()
         parser = self.parsers_dict[parser_name]
+        print('ok')
+        sys.stdout.flush()
         mq = MQManager(mq_url)
         logger.info(f'creating a topic for snapshots')
         mq.create_snapshot_topic()
         logger.info(f'subscribing {parser_name} parser to snapshot topic')
-        parse_and_publish = wrap_parser(parser_name, parser, mq)
-        mq.subscribe_to_snapshot_topic(parse_and_publish)
+        wrapped_parser = wrap_parser(parser_name, parser, mq)
+        print('wrapped parser')
+        sys.stdout.flush()
+        mq.subscribe_to_snapshot_topic(wrapped_parser)

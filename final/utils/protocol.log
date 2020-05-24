@@ -576,3 +576,243 @@
 2020-05-20 19:40:39,184 : protocol : assigned
 2020-05-20 19:40:39,185 : protocol : initiated protocol snapshot
 2020-05-20 19:40:39,185 : protocol : returning partial snapshot
+2020-05-24 12:16:05,670 : protocol : assigning width
+2020-05-24 12:16:05,670 : protocol : assigning height
+2020-05-24 12:16:05,670 : protocol : assigning data
+2020-05-24 12:16:05,671 : protocol : assigned
+2020-05-24 12:16:05,672 : protocol : initiated protocol snapshot
+2020-05-24 12:16:18,480 : protocol : sending to init_protocol_snapshot
+2020-05-24 12:16:18,483 : protocol : assigning width
+2020-05-24 12:16:18,484 : protocol : assigning height
+2020-05-24 12:16:18,484 : protocol : assigning data
+2020-05-24 12:16:18,485 : protocol : assigned
+2020-05-24 12:16:18,485 : protocol : initiated protocol snapshot
+2020-05-24 12:16:18,485 : protocol : returning partial snapshot
+2020-05-24 12:16:46,400 : protocol : assigning width
+2020-05-24 12:16:46,401 : protocol : assigning height
+2020-05-24 12:16:46,401 : protocol : assigning data
+2020-05-24 12:16:46,402 : protocol : assigned
+2020-05-24 12:16:46,402 : protocol : initiated protocol snapshot
+2020-05-24 12:16:57,064 : protocol : sending to init_protocol_snapshot
+2020-05-24 12:16:57,065 : protocol : assigning width
+2020-05-24 12:16:57,066 : protocol : assigning height
+2020-05-24 12:16:57,066 : protocol : assigning data
+2020-05-24 12:16:57,067 : protocol : assigned
+2020-05-24 12:16:57,067 : protocol : initiated protocol snapshot
+2020-05-24 12:16:57,067 : protocol : returning partial snapshot
+2020-05-24 12:17:23,303 : protocol : assigning width
+2020-05-24 12:17:23,304 : protocol : assigning height
+2020-05-24 12:17:23,304 : protocol : assigning data
+2020-05-24 12:17:23,305 : protocol : assigned
+2020-05-24 12:17:23,305 : protocol : initiated protocol snapshot
+2020-05-24 12:17:34,084 : protocol : sending to init_protocol_snapshot
+2020-05-24 12:17:34,086 : protocol : assigning width
+2020-05-24 12:17:34,087 : protocol : assigning height
+2020-05-24 12:17:34,087 : protocol : assigning data
+2020-05-24 12:17:34,088 : protocol : assigned
+2020-05-24 12:17:34,089 : protocol : initiated protocol snapshot
+2020-05-24 12:17:34,089 : protocol : returning partial snapshot
+2020-05-24 12:18:00,938 : protocol : assigning width
+2020-05-24 12:18:00,939 : protocol : assigning height
+2020-05-24 12:18:00,939 : protocol : assigning data
+2020-05-24 12:18:00,940 : protocol : assigned
+2020-05-24 12:18:00,940 : protocol : initiated protocol snapshot
+2020-05-24 12:18:11,601 : protocol : sending to init_protocol_snapshot
+2020-05-24 12:18:11,603 : protocol : assigning width
+2020-05-24 12:18:11,603 : protocol : assigning height
+2020-05-24 12:18:11,603 : protocol : assigning data
+2020-05-24 12:18:11,604 : protocol : assigned
+2020-05-24 12:18:11,605 : protocol : initiated protocol snapshot
+2020-05-24 12:18:11,606 : protocol : returning partial snapshot
+2020-05-24 12:18:36,584 : protocol : assigning width
+2020-05-24 12:18:36,584 : protocol : assigning height
+2020-05-24 12:18:36,585 : protocol : assigning data
+2020-05-24 12:18:36,586 : protocol : assigned
+2020-05-24 12:18:36,586 : protocol : initiated protocol snapshot
+2020-05-24 12:18:48,862 : protocol : sending to init_protocol_snapshot
+2020-05-24 12:18:48,864 : protocol : assigning width
+2020-05-24 12:18:48,864 : protocol : assigning height
+2020-05-24 12:18:48,864 : protocol : assigning data
+2020-05-24 12:18:48,865 : protocol : assigned
+2020-05-24 12:18:48,865 : protocol : initiated protocol snapshot
+2020-05-24 12:18:48,865 : protocol : returning partial snapshot
+2020-05-24 12:29:43,732 : protocol : assigning width
+2020-05-24 12:29:43,732 : protocol : assigning height
+2020-05-24 12:29:43,733 : protocol : assigning data
+2020-05-24 12:29:43,734 : protocol : assigned
+2020-05-24 12:29:43,734 : protocol : initiated protocol snapshot
+2020-05-24 12:30:06,722 : protocol : sending to init_protocol_snapshot
+2020-05-24 12:30:06,725 : protocol : assigning width
+2020-05-24 12:30:06,726 : protocol : assigning height
+2020-05-24 12:30:06,727 : protocol : assigning data
+2020-05-24 12:30:06,728 : protocol : assigned
+2020-05-24 12:30:06,731 : protocol : initiated protocol snapshot
+2020-05-24 12:30:06,732 : protocol : returning partial snapshot
+2020-05-24 12:30:39,630 : protocol : assigning width
+2020-05-24 12:30:39,630 : protocol : assigning height
+2020-05-24 12:30:39,631 : protocol : assigning data
+2020-05-24 12:30:39,632 : protocol : assigned
+2020-05-24 12:30:39,632 : protocol : initiated protocol snapshot
+2020-05-24 12:30:51,382 : protocol : sending to init_protocol_snapshot
+2020-05-24 12:30:51,385 : protocol : assigning width
+2020-05-24 12:30:51,386 : protocol : assigning height
+2020-05-24 12:30:51,386 : protocol : assigning data
+2020-05-24 12:30:51,388 : protocol : assigned
+2020-05-24 12:30:51,389 : protocol : initiated protocol snapshot
+2020-05-24 12:30:51,390 : protocol : returning partial snapshot
+2020-05-24 12:31:24,305 : protocol : assigning width
+2020-05-24 12:31:24,306 : protocol : assigning height
+2020-05-24 12:31:24,306 : protocol : assigning data
+2020-05-24 12:31:24,307 : protocol : assigned
+2020-05-24 12:31:24,307 : protocol : initiated protocol snapshot
+2020-05-24 12:31:39,621 : protocol : sending to init_protocol_snapshot
+2020-05-24 12:31:39,623 : protocol : assigning width
+2020-05-24 12:31:39,623 : protocol : assigning height
+2020-05-24 12:31:39,623 : protocol : assigning data
+2020-05-24 12:31:39,624 : protocol : assigned
+2020-05-24 12:31:39,625 : protocol : initiated protocol snapshot
+2020-05-24 12:31:39,625 : protocol : returning partial snapshot
+2020-05-24 12:32:11,168 : protocol : assigning width
+2020-05-24 12:32:11,169 : protocol : assigning height
+2020-05-24 12:32:11,169 : protocol : assigning data
+2020-05-24 12:32:11,170 : protocol : assigned
+2020-05-24 12:32:11,171 : protocol : initiated protocol snapshot
+2020-05-24 12:32:23,386 : protocol : sending to init_protocol_snapshot
+2020-05-24 12:32:23,388 : protocol : assigning width
+2020-05-24 12:32:23,388 : protocol : assigning height
+2020-05-24 12:32:23,389 : protocol : assigning data
+2020-05-24 12:32:23,390 : protocol : assigned
+2020-05-24 12:32:23,391 : protocol : initiated protocol snapshot
+2020-05-24 12:32:23,391 : protocol : returning partial snapshot
+2020-05-24 12:32:54,636 : protocol : assigning width
+2020-05-24 12:32:54,637 : protocol : assigning height
+2020-05-24 12:32:54,637 : protocol : assigning data
+2020-05-24 12:32:54,638 : protocol : assigned
+2020-05-24 12:32:54,638 : protocol : initiated protocol snapshot
+2020-05-24 12:33:08,215 : protocol : sending to init_protocol_snapshot
+2020-05-24 12:33:08,217 : protocol : assigning width
+2020-05-24 12:33:08,217 : protocol : assigning height
+2020-05-24 12:33:08,217 : protocol : assigning data
+2020-05-24 12:33:08,218 : protocol : assigned
+2020-05-24 12:33:08,219 : protocol : initiated protocol snapshot
+2020-05-24 12:33:08,219 : protocol : returning partial snapshot
+2020-05-24 13:08:06,055 : protocol : assigning width
+2020-05-24 13:08:06,056 : protocol : assigning height
+2020-05-24 13:08:06,056 : protocol : assigning data
+2020-05-24 13:08:06,057 : protocol : assigned
+2020-05-24 13:08:06,058 : protocol : initiated protocol snapshot
+2020-05-24 13:08:17,615 : protocol : sending to init_protocol_snapshot
+2020-05-24 13:08:17,617 : protocol : assigning width
+2020-05-24 13:08:17,617 : protocol : assigning height
+2020-05-24 13:08:17,617 : protocol : assigning data
+2020-05-24 13:08:17,618 : protocol : assigned
+2020-05-24 13:08:17,619 : protocol : initiated protocol snapshot
+2020-05-24 13:08:17,619 : protocol : returning partial snapshot
+2020-05-24 13:08:51,351 : protocol : assigning width
+2020-05-24 13:08:51,352 : protocol : assigning height
+2020-05-24 13:08:51,352 : protocol : assigning data
+2020-05-24 13:08:51,353 : protocol : assigned
+2020-05-24 13:08:51,354 : protocol : initiated protocol snapshot
+2020-05-24 13:09:07,524 : protocol : sending to init_protocol_snapshot
+2020-05-24 13:09:07,525 : protocol : assigning width
+2020-05-24 13:09:07,525 : protocol : assigning height
+2020-05-24 13:09:07,526 : protocol : assigning data
+2020-05-24 13:09:07,527 : protocol : assigned
+2020-05-24 13:09:07,527 : protocol : initiated protocol snapshot
+2020-05-24 13:09:07,527 : protocol : returning partial snapshot
+2020-05-24 13:09:38,939 : protocol : assigning width
+2020-05-24 13:09:38,940 : protocol : assigning height
+2020-05-24 13:09:38,941 : protocol : assigning data
+2020-05-24 13:09:38,942 : protocol : assigned
+2020-05-24 13:09:38,943 : protocol : initiated protocol snapshot
+2020-05-24 13:09:53,935 : protocol : sending to init_protocol_snapshot
+2020-05-24 13:09:53,937 : protocol : assigning width
+2020-05-24 13:09:53,938 : protocol : assigning height
+2020-05-24 13:09:53,938 : protocol : assigning data
+2020-05-24 13:09:53,939 : protocol : assigned
+2020-05-24 13:09:53,940 : protocol : initiated protocol snapshot
+2020-05-24 13:09:53,940 : protocol : returning partial snapshot
+2020-05-24 13:10:26,019 : protocol : assigning width
+2020-05-24 13:10:26,019 : protocol : assigning height
+2020-05-24 13:10:26,020 : protocol : assigning data
+2020-05-24 13:10:26,020 : protocol : assigned
+2020-05-24 13:10:26,021 : protocol : initiated protocol snapshot
+2020-05-24 13:10:39,546 : protocol : sending to init_protocol_snapshot
+2020-05-24 13:10:39,548 : protocol : assigning width
+2020-05-24 13:10:39,548 : protocol : assigning height
+2020-05-24 13:10:39,548 : protocol : assigning data
+2020-05-24 13:10:39,549 : protocol : assigned
+2020-05-24 13:10:39,549 : protocol : initiated protocol snapshot
+2020-05-24 13:10:39,549 : protocol : returning partial snapshot
+2020-05-24 13:11:12,260 : protocol : assigning width
+2020-05-24 13:11:12,261 : protocol : assigning height
+2020-05-24 13:11:12,261 : protocol : assigning data
+2020-05-24 13:11:12,262 : protocol : assigned
+2020-05-24 13:11:12,263 : protocol : initiated protocol snapshot
+2020-05-24 13:11:26,921 : protocol : sending to init_protocol_snapshot
+2020-05-24 13:11:26,925 : protocol : assigning width
+2020-05-24 13:11:26,925 : protocol : assigning height
+2020-05-24 13:11:26,926 : protocol : assigning data
+2020-05-24 13:11:26,928 : protocol : assigned
+2020-05-24 13:11:26,929 : protocol : initiated protocol snapshot
+2020-05-24 13:11:26,929 : protocol : returning partial snapshot
+2020-05-24 13:35:09,312 : protocol : assigning width
+2020-05-24 13:35:09,312 : protocol : assigning height
+2020-05-24 13:35:09,312 : protocol : assigning data
+2020-05-24 13:35:09,313 : protocol : assigned
+2020-05-24 13:35:09,314 : protocol : initiated protocol snapshot
+2020-05-24 13:35:21,196 : protocol : sending to init_protocol_snapshot
+2020-05-24 13:35:21,201 : protocol : assigning width
+2020-05-24 13:35:21,201 : protocol : assigning height
+2020-05-24 13:35:21,202 : protocol : assigning data
+2020-05-24 13:35:21,208 : protocol : assigned
+2020-05-24 13:35:21,209 : protocol : initiated protocol snapshot
+2020-05-24 13:35:21,209 : protocol : returning partial snapshot
+2020-05-24 13:35:49,878 : protocol : assigning width
+2020-05-24 13:35:49,879 : protocol : assigning height
+2020-05-24 13:35:49,879 : protocol : assigning data
+2020-05-24 13:35:49,880 : protocol : assigned
+2020-05-24 13:35:49,881 : protocol : initiated protocol snapshot
+2020-05-24 13:36:01,055 : protocol : sending to init_protocol_snapshot
+2020-05-24 13:36:01,057 : protocol : assigning width
+2020-05-24 13:36:01,057 : protocol : assigning height
+2020-05-24 13:36:01,057 : protocol : assigning data
+2020-05-24 13:36:01,058 : protocol : assigned
+2020-05-24 13:36:01,059 : protocol : initiated protocol snapshot
+2020-05-24 13:36:01,059 : protocol : returning partial snapshot
+2020-05-24 13:36:28,892 : protocol : assigning width
+2020-05-24 13:36:28,892 : protocol : assigning height
+2020-05-24 13:36:28,892 : protocol : assigning data
+2020-05-24 13:36:28,894 : protocol : assigned
+2020-05-24 13:36:28,894 : protocol : initiated protocol snapshot
+2020-05-24 13:36:39,983 : protocol : sending to init_protocol_snapshot
+2020-05-24 13:36:39,984 : protocol : assigning width
+2020-05-24 13:36:39,984 : protocol : assigning height
+2020-05-24 13:36:39,984 : protocol : assigning data
+2020-05-24 13:36:39,985 : protocol : assigned
+2020-05-24 13:36:39,986 : protocol : initiated protocol snapshot
+2020-05-24 13:36:39,987 : protocol : returning partial snapshot
+2020-05-24 13:37:08,326 : protocol : assigning width
+2020-05-24 13:37:08,327 : protocol : assigning height
+2020-05-24 13:37:08,327 : protocol : assigning data
+2020-05-24 13:37:08,328 : protocol : assigned
+2020-05-24 13:37:08,328 : protocol : initiated protocol snapshot
+2020-05-24 13:37:20,574 : protocol : sending to init_protocol_snapshot
+2020-05-24 13:37:20,577 : protocol : assigning width
+2020-05-24 13:37:20,577 : protocol : assigning height
+2020-05-24 13:37:20,578 : protocol : assigning data
+2020-05-24 13:37:20,579 : protocol : assigned
+2020-05-24 13:37:20,581 : protocol : initiated protocol snapshot
+2020-05-24 13:37:20,581 : protocol : returning partial snapshot
+2020-05-24 13:37:51,581 : protocol : assigning width
+2020-05-24 13:37:51,582 : protocol : assigning height
+2020-05-24 13:37:51,582 : protocol : assigning data
+2020-05-24 13:37:51,583 : protocol : assigned
+2020-05-24 13:37:51,584 : protocol : initiated protocol snapshot
+2020-05-24 13:38:03,023 : protocol : sending to init_protocol_snapshot
+2020-05-24 13:38:03,024 : protocol : assigning width
+2020-05-24 13:38:03,024 : protocol : assigning height
+2020-05-24 13:38:03,025 : protocol : assigning data
+2020-05-24 13:38:03,026 : protocol : assigned
+2020-05-24 13:38:03,026 : protocol : initiated protocol snapshot
+2020-05-24 13:38:03,026 : protocol : returning partial snapshot

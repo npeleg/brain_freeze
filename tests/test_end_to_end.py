@@ -32,10 +32,8 @@ def test_end_to_end():
     server_process = run_subprocess("python -m final.server run-server rabbitmq://127.0.0.1:5672/")
     time.sleep(1)
     # Running the client:
-    # code = final.client.upload_sample('127.0.0.1', 8000, './tests/utils/small_sample.mind.gz')
-    # assert code == 0
     client_process = run_subprocess("python -m final.client upload_sample " + SMALL_SAMPLE_PATH)
-    time.sleep(300)
+    time.sleep(350)
 
     # Running the api and cli:
     api_process = run_subprocess("python -m final.api run-server")
@@ -75,6 +73,10 @@ def test_end_to_end():
     out, err = pose_process.communicate()
     print("pose out: " + out.decode())
     print("pose err: " + err.decode())
+
+    out, err = feelings_process.communicate()
+    print("feelings out: " + out.decode())
+    print("feelings err: " + err.decode())
 
     out, err = saver_process.communicate()
     print("saver out: " + out.decode())
