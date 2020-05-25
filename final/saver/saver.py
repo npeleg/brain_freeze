@@ -17,7 +17,7 @@ def wrap_saver(db, content):
     def save_snapshot_to_db(data):
         with lock:
             logger.info('sending snapshot data to save in db')
-        db.insert_snapshot(data)
+        db.insert_snapshot('', data)
 
     if content == 'user':
         return save_user_to_db
