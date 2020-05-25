@@ -35,7 +35,7 @@ def wrap_parser(parser_name, parser_func, mq):
 class Parsers:
     def __init__(self):
         self.parsers_dict = {}
-        load_parsers('./final/parsers/parsers', self.parsers_dict)
+        load_parsers('./brain_freeze/parsers/parsers', self.parsers_dict)
 
     def get_parsers_names(self):
         """ Return the parsers' names """

@@ -1,5 +1,5 @@
-from final.reader import Reader
-from final.utils import protocol
+from brain_freeze.reader import Reader
+from brain_freeze.utils import protocol
 
 
 def test_serialize_deserialize():

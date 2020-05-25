@@ -1,5 +1,5 @@
 import json
-from final.parsers import Parsers
+from brain_freeze.parsers import Parsers
 from utils.simulate_process import run_subprocess, sleep
 
 raw = json.dumps(dict(user_id=1, datetime=2, pose=3, feelings=4))
@@ -25,7 +25,7 @@ def test_parse_cli(tmp_path):
     with open(str(file), 'w') as f:
         f.write(raw)
     for parser in parsed_results:
-        parser_proc = run_subprocess(f"python -m final.parsers parse {parser} {str(file)}")
+        parser_proc = run_subprocess(f"python -m brain_freeze.parsers parse {parser} {str(file)}")
         parser_proc.wait()
         parser_proc.terminate()
         out, err = parser_proc.communicate()
@@ -40,7 +40,7 @@ def tes_parse_to_file(tmp_path):  # TODO repair
     with open(str(src_file), 'w') as f:
         f.write(raw)
     for parser in parsed_results:
-        parser_proc = run_subprocess(f"python -m final.parsers parse "
+        parser_proc = run_subprocess(f"python -m brain_freeze.parsers parse "
                                      f"{parser} {str(src_file)} > {str(dst_file)}")
         parser_proc.wait()
         parser_proc.terminate()
@@ -53,7 +53,7 @@ def tes_parse_to_file(tmp_path):  # TODO repair
 def test_run_parser():
     processes = []
     for parser in parsed_results:
-        parser_process = run_subprocess(f"python -m final.parsers run-parser {parser} rabbitmq://127.0.0.1:5672/")
+        parser_process = run_subprocess(f"python -m brain_freeze.parsers run-parser {parser} rabbitmq://127.0.0.1:5672/")
         processes.append(parser_process)
     sleep(5)
     for process in processes:

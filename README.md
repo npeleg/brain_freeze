@@ -1,19 +1,30 @@
 [![Build Status](https://travis-ci.com/npeleg/final.svg?branch=master)](https://travis-ci.com/npeleg/final)
 [![codecov](https://codecov.io/gh/npeleg/final/branch/master/graph/badge.svg)](https://codecov.io/gh/npeleg/final)
 
-# Asdf
-Welcome to my Advanced System Design Final (ASDF) project!
-Here I will present instructions for installation and basic usage.
+# BrainFreeze
+Welcome to the BrainFreeze project!
+Here you will find instructions for installation and basic usage of the project's features.
+For the full documentation click here.
 
+BrainFreeze constitutes the software side of a computer-brain interface product.
+The product's hardware side constantly produces cognition snapshots of the user, sent to BrainFreeze system for processing and analysis.
+A cognition snapshot consists of: 
+ - the user's location and head's rotation (combining those forms the user's 'pose')
+ - the image that the user saw 
+ - the depth image that the user saw (the distance of the nearest object in each point of the user's view)
+ - the timestamp the snapshot was taken at
+ 
+To simulate the hardware side, you are supplied with a binary file containing the user's cognition snapshots taken in the morning hours of April 4th, 2019. 
+The software side - the BrainFreeze system and its components - is explained below.
 
 ## Installation
 
 1. Clone the repository and enter it:
 
     ```sh
-    $ git clone https://github.com/npeleg/asdF.git
+    $ git clone https://github.com/npeleg/brain_freeze.git 
     ...
-    $ cd asdf/
+    $ cd brain_freeze/
     ```
 
 2. Run the installation script and activate the virtual environment:
@@ -22,11 +33,10 @@ Here I will present instructions for installation and basic usage.
     $ ./scripts/install.sh
     ...
     $ source .env/bin/activate
-    [foobar] $ # you're good to go!
+    [brain_freeze] $ # that's it!
     ```
 
 3. To check that everything is working as expected, run the tests:
-
 
     ```sh
     $ pytest tests/
@@ -35,11 +45,11 @@ Here I will present instructions for installation and basic usage.
 
 ## Usage
 
-The `asdF` package provides the following classes:
+The `brain_freeze` package provides the following components:
 
-- `Foo`
+- `client`
 
-    This class encapsulates the concept of `foo`, and returns `"foo"` when run.
+    The client component encapsulates the concept of `foo`, and returns `"foo"` when run.
 
     In addition, it provides the `inc` method to increment integers, and the
     `add` method to sum them.

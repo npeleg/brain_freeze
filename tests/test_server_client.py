@@ -1,13 +1,13 @@
-from final.client import upload_sample
+from brain_freeze.client import upload_sample
 from utils.simulate_process import run_subprocess, sleep, SMALL_SAMPLE_PATH
 
 
 def test_client():
     # running the server with a dummy user function
-    server_process = run_subprocess("python -m final.server run-server dummy")
+    server_process = run_subprocess("python -m brain_freeze.server run-server dummy")
     sleep(2)
 
-    client_process = run_subprocess("python -m final.client upload_sample " + SMALL_SAMPLE_PATH)
+    client_process = run_subprocess("python -m brain_freeze.client upload_sample " + SMALL_SAMPLE_PATH)
     client_process.wait()
     client_process.terminate()
     out, err = client_process.communicate()

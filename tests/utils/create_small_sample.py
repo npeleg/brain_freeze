@@ -1,5 +1,3 @@
-# Create a small sample from the binary file, to use in non-local tests
-
 import gzip
 import struct
 
@@ -8,6 +6,7 @@ OUTPUT_PATH = "./tests/utils/small_sample.mind.gz"
 NUM_SNAPSHOTS = 5
 
 with gzip.open(SAMPLE_PATH) as file:
+    """ Create a small sample from the binary file, to use in non-local tests """
     seq = message_size = file.read(struct.calcsize('I'))
     user_size = struct.unpack('I', message_size)[0]
     seq += file.read(user_size)
