@@ -14,10 +14,10 @@ class DBManager:
         self.db = find_service(url, dbs)
 
     def insert_user(self, data):
-        self.db.insert(USER_TABLE, json.loads(data))
+        return self.db.insert(USER_TABLE, json.loads(data))
 
-    def insert_snapshot(self, data):
-        self.db.insert(SNAPSHOT_TABLE, json.loads(data))
+    def insert_snapshot(self, parser_name, data):
+        return self.db.insert(SNAPSHOT_TABLE, parser_name, json.loads(data))
 
     def get_all_users(self):
         return self.db.get_all(USER_TABLE)
@@ -38,4 +38,10 @@ class DBManager:
 
     def get_result(self, user_id, datetime, result_name):
         query = {'user_id': user_id, 'datetime': datetime, 'result': result_name}
+        return self.db.get(SNAPSHOT_TABLE, query)
+
+    def _get_result_by_id(self, _id):
+        """ for testing: returns the item using its internal id """
+        query = {'_id': _id}
+        print(query)
         return self.db.get(SNAPSHOT_TABLE, query)

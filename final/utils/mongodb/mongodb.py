@@ -9,10 +9,11 @@ class MongoDB:
         client = pymongo.MongoClient(host=host, port=port)
         self.db = client.db
 
-    def insert(self, collection, data):
+    def insert(self, collection, data_type, data):
         logger.info(f'inserting data to collection')
         logger.debug(f'inserting data: {data} to collection {collection}')
-        self.db[collection].insert_one(data)
+        result = self.db[collection].insert_one(data)
+        return result.inserted_id
 
     def _get_general(self, collection, query, distinct_key):
         if query != {}:
@@ -24,9 +25,8 @@ class MongoDB:
             return self.db[collection].find(query).distinct(distinct_key)
         else:
             result = self.db[collection].find_one(query)
-            print(result)
             if result:
-                del result['_id']
+                del result['_id']  # deleting id to hide internal db implementation
             return result
 
     def get(self, collection, query):

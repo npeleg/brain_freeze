@@ -31,7 +31,7 @@ class Saver:
     def save(self, parser_name, data):
         if data is None:
             return
-        self.db.insert_snapshot(data)
+        return self.db.insert_snapshot(parser_name, data)
 
     def run_saver(self, mq_url):
         mq = MQManager(mq_url)

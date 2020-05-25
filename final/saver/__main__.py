@@ -9,7 +9,7 @@ def main():
 
 
 @main.command('save')
-@click.option('-d', '--database', type=click.STRING, default='postgresql://127.0.0.1:5432',
+@click.option('-d', '--database', type=click.STRING, default='mongodb://127.0.0.1:27017',
               help='Database in which the data is stored')
 @click.argument('parser_name', type=click.STRING)
 @click.argument('source_file', type=click.STRING)

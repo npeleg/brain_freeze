@@ -15524,3 +15524,41 @@
 2020-05-24 18:21:45,097 : rabbitmq : starting to consume from snapshots exchange 
 2020-05-24 18:21:46,583 : rabbitmq : creating snapshots exchange
 2020-05-24 18:21:46,640 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-25 15:20:39,861 : rabbitmq : creating snapshots exchange
+2020-05-25 15:20:39,884 : rabbitmq : creating snapshots exchange
+2020-05-25 15:20:39,917 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-25 15:20:39,932 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-25 15:21:33,420 : rabbitmq : creating snapshots exchange
+2020-05-25 15:21:33,512 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-25 15:24:08,473 : rabbitmq : creating snapshots exchange
+2020-05-25 15:24:08,532 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-25 15:25:01,441 : rabbitmq : creating snapshots exchange
+2020-05-25 15:26:07,513 : rabbitmq : creating snapshots exchange
+2020-05-25 15:26:07,557 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-25 15:26:35,857 : rabbitmq : creating snapshots exchange
+2020-05-25 15:27:34,096 : rabbitmq : creating snapshots exchange
+2020-05-25 15:27:34,159 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-25 15:27:34,229 : rabbitmq : creating snapshots exchange
+2020-05-25 15:27:34,271 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-25 15:28:08,967 : rabbitmq : creating snapshots exchange
+2020-05-25 15:28:09,003 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-25 15:28:09,067 : rabbitmq : creating snapshots exchange
+2020-05-25 15:28:09,089 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-25 15:28:31,269 : rabbitmq : creating snapshots exchange
+2020-05-25 15:28:31,286 : rabbitmq : creating snapshots exchange
+2020-05-25 15:28:31,315 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-25 15:28:31,322 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-25 15:29:21,717 : rabbitmq : creating snapshots exchange
+2020-05-25 15:29:21,748 : rabbitmq : creating snapshots exchange
+2020-05-25 15:29:21,761 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-25 15:29:21,778 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-25 15:29:47,708 : rabbitmq : creating snapshots exchange
+2020-05-25 15:29:47,755 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-25 15:30:06,640 : rabbitmq : creating snapshots exchange
+2020-05-25 15:30:06,681 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-25 15:30:06,709 : rabbitmq : creating snapshots exchange
+2020-05-25 15:30:06,757 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-25 15:42:24,211 : rabbitmq : creating snapshots exchange
+2020-05-25 15:42:24,296 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-25 15:42:24,515 : rabbitmq : creating snapshots exchange
+2020-05-25 15:42:24,550 : rabbitmq : starting to consume from snapshots exchange 

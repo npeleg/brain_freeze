@@ -12,7 +12,6 @@ def get_parsers_from_server(host, port):
         logger.error(f"could not get parsers from server due to error. Got {r.status_code} status code")
         return None
     elif response['result'] != 'accepted':
-        received_successfully = False
         logger.error(f"could not get parsers from server due to error: {response['error']}")
         return None
     return response['parsers']
@@ -48,7 +47,7 @@ def upload_sample(host, port, path):
     logger.info('uploading snapshots to server')
     for snapshot in reader:
         parsers = get_parsers_from_server(host, port)
-        if parsers is None:
+        if not parsers:
             logger.info("no parsers supported in this server")
             continue
         config = protocol.init_protocol_config(parsers)

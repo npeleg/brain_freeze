@@ -11,16 +11,13 @@ def main():
 @main.command('parse')
 @click.argument('parser_name', type=click.STRING)
 @click.argument('source_file', type=click.STRING)
-@click.argument('dest_file', type=click.STRING, default=None)
-def parse(parser_name, source_file, dest_file):
-    """ Applies PARSER_NAME parser on SOURCE_FILE, optionally stores the result in DEST_FILE. """
+def parse(parser_name, source_file):
+    """ Applies PARSER_NAME parser on SOURCE_FILE and prints the result. """
     try:
-        result = Parsers().parse(parser_name, source_file)
-        if dest_file is None:
-            print(result)
-        else:
-            with open(dest_file, 'w') as file:
-                file.write(result)
+        with open(source_file, 'r') as file:
+            data = file.read()
+        result = Parsers().parse(parser_name, data)
+        print(result)
     except Exception as error:
         print(f'Error during parse command: {error}')
         return 1

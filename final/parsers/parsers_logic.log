@@ -4884,3 +4884,187 @@
 2020-05-25 11:14:10,778 : parsers_logic : sending parsers names
 2020-05-25 11:23:52,006 : parsers_logic : loading parser modules
 2020-05-25 11:23:52,017 : parsers_logic : sending parsers names
+2020-05-25 12:53:12,340 : parsers_logic : loading parser modules
+2020-05-25 12:53:12,586 : parsers_logic : loading parser modules
+2020-05-25 12:53:12,621 : parsers_logic : loading parser modules
+2020-05-25 12:53:13,398 : parsers_logic : loading parser modules
+2020-05-25 12:55:57,485 : parsers_logic : loading parser modules
+2020-05-25 12:55:57,529 : parsers_logic : loading parser modules
+2020-05-25 14:11:10,380 : parsers_logic : loading parser modules
+2020-05-25 14:11:10,402 : parsers_logic : loading parser modules
+2020-05-25 14:11:11,194 : parsers_logic : loading parser modules
+2020-05-25 14:12:50,316 : parsers_logic : loading parser modules
+2020-05-25 14:12:50,338 : parsers_logic : loading parser modules
+2020-05-25 14:12:51,080 : parsers_logic : loading parser modules
+2020-05-25 14:12:51,090 : parsers_logic : "'pose'"
+2020-05-25 14:13:59,606 : parsers_logic : loading parser modules
+2020-05-25 14:13:59,629 : parsers_logic : loading parser modules
+2020-05-25 14:14:00,439 : parsers_logic : loading parser modules
+2020-05-25 14:14:00,449 : parsers_logic : "'pose'"
+2020-05-25 14:14:45,979 : parsers_logic : loading parser modules
+2020-05-25 14:14:46,003 : parsers_logic : loading parser modules
+2020-05-25 14:14:46,719 : parsers_logic : loading parser modules
+2020-05-25 14:14:46,729 : parsers_logic : "'pose'"
+2020-05-25 14:16:31,509 : parsers_logic : loading parser modules
+2020-05-25 14:16:31,531 : parsers_logic : loading parser modules
+2020-05-25 14:16:32,262 : parsers_logic : loading parser modules
+2020-05-25 14:16:32,272 : parsers_logic : "'pose'"
+2020-05-25 14:16:58,680 : parsers_logic : loading parser modules
+2020-05-25 14:16:58,767 : parsers_logic : loading parser modules
+2020-05-25 14:17:00,325 : parsers_logic : loading parser modules
+2020-05-25 14:17:00,356 : parsers_logic : "'pose'"
+2020-05-25 14:18:43,027 : parsers_logic : loading parser modules
+2020-05-25 14:18:43,050 : parsers_logic : loading parser modules
+2020-05-25 14:18:43,793 : parsers_logic : loading parser modules
+2020-05-25 14:18:43,803 : parsers_logic : "'pose'"
+2020-05-25 14:19:14,927 : parsers_logic : loading parser modules
+2020-05-25 14:19:14,950 : parsers_logic : loading parser modules
+2020-05-25 14:19:14,950 : parsers_logic : {"user_id": 1, "datetime": 2, "result": "pose", "pose": 3}
+2020-05-25 14:19:14,950 : parsers_logic : {"user_id": 1, "datetime": 2, "result": "feelings", "feelings": 4}
+2020-05-25 14:19:15,656 : parsers_logic : loading parser modules
+2020-05-25 14:19:15,666 : parsers_logic : Expecting value: line 1 column 1 (char 0)
+2020-05-25 14:19:39,974 : parsers_logic : loading parser modules
+2020-05-25 14:19:40,014 : parsers_logic : loading parser modules
+2020-05-25 14:19:40,020 : parsers_logic : {"user_id": 1, "datetime": 2, "result": "pose", "pose": 3}
+2020-05-25 14:19:40,020 : parsers_logic : {"user_id": 1, "datetime": 2, "result": "feelings", "feelings": 4}
+2020-05-25 14:19:40,719 : parsers_logic : loading parser modules
+2020-05-25 14:19:40,730 : parsers_logic : Expecting value: line 1 column 1 (char 0)
+2020-05-25 14:20:23,902 : parsers_logic : loading parser modules
+2020-05-25 14:20:23,924 : parsers_logic : loading parser modules
+2020-05-25 14:20:23,924 : parsers_logic : {"user_id": 1, "datetime": 2, "result": "pose", "pose": 3}
+2020-05-25 14:20:23,925 : parsers_logic : {"user_id": 1, "datetime": 2, "result": "feelings", "feelings": 4}
+2020-05-25 14:20:24,631 : parsers_logic : loading parser modules
+2020-05-25 14:20:24,641 : parsers_logic : Expecting value: line 1 column 1 (char 0)
+2020-05-25 14:21:44,943 : parsers_logic : loading parser modules
+2020-05-25 14:21:44,966 : parsers_logic : loading parser modules
+2020-05-25 14:21:44,966 : parsers_logic : result is:
+2020-05-25 14:21:44,966 : parsers_logic : {"user_id": 1, "datetime": 2, "result": "pose", "pose": 3}
+2020-05-25 14:21:44,966 : parsers_logic : result is:
+2020-05-25 14:21:44,966 : parsers_logic : {"user_id": 1, "datetime": 2, "result": "feelings", "feelings": 4}
+2020-05-25 14:21:45,676 : parsers_logic : loading parser modules
+2020-05-25 14:21:45,686 : parsers_logic : error:
+2020-05-25 14:21:45,687 : parsers_logic : Expecting value: line 1 column 1 (char 0)
+2020-05-25 14:22:42,068 : parsers_logic : loading parser modules
+2020-05-25 14:22:42,078 : parsers_logic : error:
+2020-05-25 14:22:42,078 : parsers_logic : Expecting value: line 1 column 1 (char 0)
+2020-05-25 14:23:59,123 : parsers_logic : loading parser modules
+2020-05-25 14:23:59,134 : parsers_logic : error:
+2020-05-25 14:23:59,134 : parsers_logic : "'pose'"
+2020-05-25 14:25:31,229 : parsers_logic : loading parser modules
+2020-05-25 14:25:31,243 : parsers_logic : 'pose'
+2020-05-25 14:25:31,245 : parsers_logic : '/tmp/pytest-of-user/pytest-18/test_parse_cli0/file.txt'
+2020-05-25 14:25:31,248 : parsers_logic : error:
+2020-05-25 14:25:31,248 : parsers_logic : "'pose'"
+2020-05-25 14:26:19,980 : parsers_logic : loading parser modules
+2020-05-25 14:26:19,996 : parsers_logic : pose
+2020-05-25 14:26:19,996 : parsers_logic : '/tmp/pytest-of-user/pytest-19/test_parse_cli0/file.txt'
+2020-05-25 14:26:19,996 : parsers_logic : error:
+2020-05-25 14:26:19,996 : parsers_logic : Expecting value: line 1 column 1 (char 0)
+2020-05-25 14:26:51,040 : parsers_logic : loading parser modules
+2020-05-25 14:26:51,052 : parsers_logic : pose
+2020-05-25 14:26:51,052 : parsers_logic : '/tmp/pytest-of-user/pytest-20/test_parse_cli0/file.txt'
+2020-05-25 14:26:51,052 : parsers_logic : error:
+2020-05-25 14:26:51,053 : parsers_logic : <method-wrapper '__repr__' of JSONDecodeError object at 0x7fb417b9fc40>
+2020-05-25 14:44:12,931 : parsers_logic : loading parser modules
+2020-05-25 14:44:34,421 : parsers_logic : loading parser modules
+2020-05-25 14:45:34,837 : parsers_logic : loading parser modules
+2020-05-25 14:46:27,158 : parsers_logic : loading parser modules
+2020-05-25 14:47:20,699 : parsers_logic : loading parser modules
+2020-05-25 14:48:03,913 : parsers_logic : loading parser modules
+2020-05-25 14:48:04,807 : parsers_logic : loading parser modules
+2020-05-25 14:49:28,811 : parsers_logic : loading parser modules
+2020-05-25 14:49:29,602 : parsers_logic : loading parser modules
+2020-05-25 14:49:47,902 : parsers_logic : loading parser modules
+2020-05-25 14:51:08,952 : parsers_logic : loading parser modules
+2020-05-25 14:51:08,975 : parsers_logic : loading parser modules
+2020-05-25 14:51:09,782 : parsers_logic : loading parser modules
+2020-05-25 14:51:10,555 : parsers_logic : loading parser modules
+2020-05-25 15:11:05,674 : parsers_logic : loading parser modules
+2020-05-25 15:11:05,761 : parsers_logic : loading parser modules
+2020-05-25 15:11:06,875 : parsers_logic : loading parser modules
+2020-05-25 15:11:07,916 : parsers_logic : loading parser modules
+2020-05-25 15:20:36,083 : parsers_logic : loading parser modules
+2020-05-25 15:20:36,107 : parsers_logic : loading parser modules
+2020-05-25 15:20:36,913 : parsers_logic : loading parser modules
+2020-05-25 15:20:37,965 : parsers_logic : loading parser modules
+2020-05-25 15:20:39,804 : parsers_logic : loading parser modules
+2020-05-25 15:20:39,820 : parsers_logic : loading parser modules
+2020-05-25 15:20:39,836 : parsers_logic : creating a topic for snapshots
+2020-05-25 15:20:39,859 : parsers_logic : creating a topic for snapshots
+2020-05-25 15:20:39,863 : parsers_logic : subscribing pose parser to snapshot topic
+2020-05-25 15:20:39,891 : parsers_logic : subscribing feelings parser to snapshot topic
+2020-05-25 15:21:27,921 : parsers_logic : loading parser modules
+2020-05-25 15:21:28,017 : parsers_logic : loading parser modules
+2020-05-25 15:21:29,494 : parsers_logic : loading parser modules
+2020-05-25 15:21:30,505 : parsers_logic : loading parser modules
+2020-05-25 15:21:33,262 : parsers_logic : loading parser modules
+2020-05-25 15:21:33,329 : parsers_logic : creating a topic for snapshots
+2020-05-25 15:21:33,423 : parsers_logic : subscribing feelings parser to snapshot topic
+2020-05-25 15:24:08,408 : parsers_logic : loading parser modules
+2020-05-25 15:24:08,446 : parsers_logic : creating a topic for snapshots
+2020-05-25 15:24:08,480 : parsers_logic : subscribing feelings parser to snapshot topic
+2020-05-25 15:25:01,414 : parsers_logic : loading parser modules
+2020-05-25 15:25:01,426 : parsers_logic : creating a topic for snapshots
+2020-05-25 15:25:01,442 : parsers_logic : subscribing feelings parser to snapshot topic
+2020-05-25 15:26:07,439 : parsers_logic : loading parser modules
+2020-05-25 15:26:07,473 : parsers_logic : creating a topic for snapshots
+2020-05-25 15:26:07,519 : parsers_logic : subscribing feelings parser to snapshot topic
+2020-05-25 15:26:07,519 : parsers_logic : subscribed
+2020-05-25 15:26:07,519 : parsers_logic : running...
+2020-05-25 15:26:35,792 : parsers_logic : loading parser modules
+2020-05-25 15:26:35,831 : parsers_logic : creating a topic for snapshots
+2020-05-25 15:26:35,863 : parsers_logic : subscribing feelings parser to snapshot topic
+2020-05-25 15:26:35,863 : parsers_logic : subscribed
+2020-05-25 15:27:34,000 : parsers_logic : loading parser modules
+2020-05-25 15:27:34,062 : parsers_logic : creating a topic for snapshots
+2020-05-25 15:27:34,098 : parsers_logic : subscribing feelings parser to snapshot topic
+2020-05-25 15:27:34,098 : parsers_logic : subscribed
+2020-05-25 15:27:34,098 : parsers_logic : running...
+2020-05-25 15:27:34,165 : parsers_logic : loading parser modules
+2020-05-25 15:27:34,202 : parsers_logic : creating a topic for snapshots
+2020-05-25 15:27:34,231 : parsers_logic : subscribing pose parser to snapshot topic
+2020-05-25 15:27:34,231 : parsers_logic : subscribed
+2020-05-25 15:27:34,231 : parsers_logic : running...
+2020-05-25 15:28:08,886 : parsers_logic : loading parser modules
+2020-05-25 15:28:08,920 : parsers_logic : creating a topic for snapshots
+2020-05-25 15:28:08,970 : parsers_logic : subscribing pose parser to snapshot topic
+2020-05-25 15:28:08,970 : parsers_logic : running...
+2020-05-25 15:28:09,025 : parsers_logic : loading parser modules
+2020-05-25 15:28:09,045 : parsers_logic : creating a topic for snapshots
+2020-05-25 15:28:09,068 : parsers_logic : subscribing feelings parser to snapshot topic
+2020-05-25 15:28:09,069 : parsers_logic : running...
+2020-05-25 15:28:31,167 : parsers_logic : loading parser modules
+2020-05-25 15:28:31,170 : parsers_logic : loading parser modules
+2020-05-25 15:28:31,227 : parsers_logic : creating a topic for snapshots
+2020-05-25 15:28:31,231 : parsers_logic : creating a topic for snapshots
+2020-05-25 15:28:31,276 : parsers_logic : subscribing feelings parser to snapshot topic
+2020-05-25 15:28:31,276 : parsers_logic : subscribed
+2020-05-25 15:28:31,276 : parsers_logic : running...
+2020-05-25 15:28:31,288 : parsers_logic : subscribing pose parser to snapshot topic
+2020-05-25 15:28:31,288 : parsers_logic : subscribed
+2020-05-25 15:28:31,288 : parsers_logic : running...
+2020-05-25 15:29:21,670 : parsers_logic : loading parser modules
+2020-05-25 15:29:21,687 : parsers_logic : loading parser modules
+2020-05-25 15:29:21,696 : parsers_logic : creating a topic for snapshots
+2020-05-25 15:29:21,702 : parsers_logic : creating a topic for snapshots
+2020-05-25 15:29:21,719 : parsers_logic : subscribing pose parser to snapshot topic
+2020-05-25 15:29:21,753 : parsers_logic : subscribing feelings parser to snapshot topic
+2020-05-25 15:29:47,627 : parsers_logic : loading parser modules
+2020-05-25 15:29:47,679 : parsers_logic : creating a topic for snapshots
+2020-05-25 15:29:47,710 : parsers_logic : subscribing feelings parser to snapshot topic
+2020-05-25 15:30:06,529 : parsers_logic : loading parser modules
+2020-05-25 15:30:06,612 : parsers_logic : creating a topic for snapshots
+2020-05-25 15:30:06,627 : parsers_logic : loading parser modules
+2020-05-25 15:30:06,641 : parsers_logic : subscribing pose parser to snapshot topic
+2020-05-25 15:30:06,675 : parsers_logic : creating a topic for snapshots
+2020-05-25 15:30:06,714 : parsers_logic : subscribing feelings parser to snapshot topic
+2020-05-25 15:42:18,562 : parsers_logic : loading parser modules
+2020-05-25 15:42:18,603 : parsers_logic : loading parser modules
+2020-05-25 15:42:19,649 : parsers_logic : loading parser modules
+2020-05-25 15:42:21,020 : parsers_logic : loading parser modules
+2020-05-25 15:42:24,122 : parsers_logic : loading parser modules
+2020-05-25 15:42:24,171 : parsers_logic : creating a topic for snapshots
+2020-05-25 15:42:24,213 : parsers_logic : subscribing pose parser to snapshot topic
+2020-05-25 15:42:24,461 : parsers_logic : loading parser modules
+2020-05-25 15:42:24,492 : parsers_logic : creating a topic for snapshots
+2020-05-25 15:42:24,516 : parsers_logic : subscribing feelings parser to snapshot topic
