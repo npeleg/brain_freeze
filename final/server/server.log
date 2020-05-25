@@ -2980,3 +2980,53 @@
 2020-05-25 11:31:23,409 : server : 'str' object is not callable
 2020-05-25 16:58:59,680 : server : a user function was passed
 2020-05-25 16:58:59,698 : server : starting the server
+2020-05-25 18:07:39,239 : server : starting the server
+2020-05-25 18:07:40,714 : server : sending user to message queue
+2020-05-25 18:07:59,962 : server : sending parsers list to client
+2020-05-25 18:07:59,963 : server : ['feelings', 'pose', 'color_image']
+2020-05-25 18:08:27,375 : server : sending snapshot to message queue
+2020-05-25 18:08:46,602 : server : sending parsers list to client
+2020-05-25 18:08:46,602 : server : ['feelings', 'pose', 'color_image']
+2020-05-25 18:09:13,400 : server : sending snapshot to message queue
+2020-05-25 18:09:29,923 : server : sending parsers list to client
+2020-05-25 18:09:29,923 : server : ['feelings', 'pose', 'color_image']
+2020-05-25 18:09:58,979 : server : sending snapshot to message queue
+2020-05-25 18:10:15,153 : server : sending parsers list to client
+2020-05-25 18:10:15,153 : server : ['feelings', 'pose', 'color_image']
+2020-05-25 18:10:40,827 : server : sending snapshot to message queue
+2020-05-25 18:10:57,972 : server : sending parsers list to client
+2020-05-25 18:10:57,972 : server : ['feelings', 'pose', 'color_image']
+2020-05-25 18:12:45,241 : server : starting the server
+2020-05-25 18:12:46,020 : server : sending user to message queue
+2020-05-25 18:13:02,196 : server : sending parsers list to client
+2020-05-25 18:13:02,196 : server : ['feelings', 'pose', 'color_image']
+2020-05-25 18:13:26,689 : server : sending snapshot to message queue
+2020-05-25 18:13:42,073 : server : sending parsers list to client
+2020-05-25 18:13:42,073 : server : ['feelings', 'pose', 'color_image']
+2020-05-25 18:14:07,924 : server : sending snapshot to message queue
+2020-05-25 18:14:23,127 : server : sending parsers list to client
+2020-05-25 18:14:23,127 : server : ['feelings', 'pose', 'color_image']
+2020-05-25 18:14:47,497 : server : sending snapshot to message queue
+2020-05-25 18:15:03,999 : server : sending parsers list to client
+2020-05-25 18:15:03,999 : server : ['feelings', 'pose', 'color_image']
+2020-05-25 18:15:28,171 : server : sending snapshot to message queue
+2020-05-25 18:15:43,327 : server : sending parsers list to client
+2020-05-25 18:15:43,328 : server : ['feelings', 'pose', 'color_image']
+2020-05-25 18:16:09,030 : server : sending snapshot to message queue
+2020-05-25 18:22:18,465 : server : starting the server
+2020-05-25 18:22:18,749 : server : sending user to message queue
+2020-05-25 18:22:34,044 : server : sending parsers list to client
+2020-05-25 18:22:34,044 : server : ['feelings', 'pose', 'color_image']
+2020-05-25 18:23:04,815 : server : sending snapshot to message queue
+2020-05-25 18:23:25,321 : server : sending parsers list to client
+2020-05-25 18:23:25,321 : server : ['feelings', 'pose', 'color_image']
+2020-05-25 18:23:53,090 : server : sending snapshot to message queue
+2020-05-25 18:24:11,673 : server : sending parsers list to client
+2020-05-25 18:24:11,673 : server : ['feelings', 'pose', 'color_image']
+2020-05-25 18:24:37,142 : server : sending snapshot to message queue
+2020-05-25 18:24:53,048 : server : sending parsers list to client
+2020-05-25 18:24:53,048 : server : ['feelings', 'pose', 'color_image']
+2020-05-25 18:25:19,991 : server : sending snapshot to message queue
+2020-05-25 18:25:36,930 : server : sending parsers list to client
+2020-05-25 18:25:36,931 : server : ['feelings', 'pose', 'color_image']
+2020-05-25 18:26:01,659 : server : sending snapshot to message queue
