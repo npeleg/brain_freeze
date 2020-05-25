@@ -1,4 +1,4 @@
-from final import Reader
+from final.reader import Reader
 from final.utils import protocol
 
 
