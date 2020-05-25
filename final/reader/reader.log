@@ -774,3 +774,108 @@
 2020-05-24 22:28:24,307 : reader : yielding snapshot
 2020-05-24 22:28:28,587 : reader : returning snapshot
 2020-05-24 22:28:28,595 : reader : yielding snapshot
+2020-05-25 10:33:35,853 : reader : sending to parse_snapshot
+2020-05-25 10:33:54,198 : reader : returning snapshot
+2020-05-25 10:33:54,198 : reader : yielding snapshot
+2020-05-25 10:34:16,553 : reader : sending to parse_snapshot
+2020-05-25 10:34:32,449 : reader : returning snapshot
+2020-05-25 10:34:32,449 : reader : yielding snapshot
+2020-05-25 10:34:46,672 : reader : sending to parse_snapshot
+2020-05-25 10:35:01,976 : reader : returning snapshot
+2020-05-25 10:35:01,977 : reader : yielding snapshot
+2020-05-25 10:35:16,218 : reader : sending to parse_snapshot
+2020-05-25 10:35:31,771 : reader : returning snapshot
+2020-05-25 10:35:31,771 : reader : yielding snapshot
+2020-05-25 10:35:49,262 : reader : sending to parse_snapshot
+2020-05-25 10:36:05,812 : reader : returning snapshot
+2020-05-25 10:36:05,813 : reader : yielding snapshot
+2020-05-25 10:36:22,453 : reader : sending to parse_snapshot
+2020-05-25 10:36:39,803 : reader : returning snapshot
+2020-05-25 10:36:39,804 : reader : yielding snapshot
+2020-05-25 10:36:53,813 : reader : sending to parse_snapshot
+2020-05-25 10:37:14,940 : reader : returning snapshot
+2020-05-25 10:37:14,940 : reader : yielding snapshot
+2020-05-25 10:37:33,876 : reader : sending to parse_snapshot
+2020-05-25 10:37:48,518 : reader : returning snapshot
+2020-05-25 10:37:48,518 : reader : yielding snapshot
+2020-05-25 10:38:17,300 : reader : sending to parse_snapshot
+2020-05-25 10:38:40,086 : reader : returning snapshot
+2020-05-25 10:38:40,087 : reader : yielding snapshot
+2020-05-25 10:38:59,261 : reader : sending to parse_snapshot
+2020-05-25 10:39:19,577 : reader : returning snapshot
+2020-05-25 10:39:19,577 : reader : yielding snapshot
+2020-05-25 11:14:12,696 : reader : sending to parse_snapshot
+2020-05-25 11:14:27,814 : reader : returning snapshot
+2020-05-25 11:14:27,815 : reader : yielding snapshot
+2020-05-25 11:14:43,418 : reader : sending to parse_snapshot
+2020-05-25 11:14:57,989 : reader : returning snapshot
+2020-05-25 11:14:57,990 : reader : yielding snapshot
+2020-05-25 11:15:12,718 : reader : sending to parse_snapshot
+2020-05-25 11:15:30,265 : reader : returning snapshot
+2020-05-25 11:15:30,265 : reader : yielding snapshot
+2020-05-25 11:15:45,941 : reader : sending to parse_snapshot
+2020-05-25 11:16:05,243 : reader : returning snapshot
+2020-05-25 11:16:05,243 : reader : yielding snapshot
+2020-05-25 11:16:20,411 : reader : sending to parse_snapshot
+2020-05-25 11:16:45,584 : reader : returning snapshot
+2020-05-25 11:16:45,584 : reader : yielding snapshot
+2020-05-25 11:17:06,860 : reader : sending to parse_snapshot
+2020-05-25 11:17:29,246 : reader : returning snapshot
+2020-05-25 11:17:29,256 : reader : yielding snapshot
+2020-05-25 11:17:48,289 : reader : sending to parse_snapshot
+2020-05-25 11:18:03,212 : reader : returning snapshot
+2020-05-25 11:18:03,212 : reader : yielding snapshot
+2020-05-25 11:18:17,733 : reader : sending to parse_snapshot
+2020-05-25 11:18:32,514 : reader : returning snapshot
+2020-05-25 11:18:32,514 : reader : yielding snapshot
+2020-05-25 11:18:50,847 : reader : sending to parse_snapshot
+2020-05-25 11:19:07,507 : reader : returning snapshot
+2020-05-25 11:19:07,520 : reader : yielding snapshot
+2020-05-25 11:19:26,111 : reader : sending to parse_snapshot
+2020-05-25 11:19:42,757 : reader : returning snapshot
+2020-05-25 11:19:42,758 : reader : yielding snapshot
+2020-05-25 11:23:56,034 : reader : sending to parse_snapshot
+2020-05-25 11:23:56,055 : reader : sending to parse_snapshot
+2020-05-25 11:23:56,059 : reader : sending to parse_snapshot
+2020-05-25 11:24:43,483 : reader : returning snapshot
+2020-05-25 11:24:43,492 : reader : yielding snapshot
+2020-05-25 11:24:43,560 : reader : returning snapshot
+2020-05-25 11:24:43,560 : reader : yielding snapshot
+2020-05-25 11:24:44,251 : reader : returning snapshot
+2020-05-25 11:24:44,256 : reader : yielding snapshot
+2020-05-25 11:25:28,261 : reader : sending to parse_snapshot
+2020-05-25 11:25:28,462 : reader : sending to parse_snapshot
+2020-05-25 11:25:29,273 : reader : sending to parse_snapshot
+2020-05-25 11:26:13,005 : reader : returning snapshot
+2020-05-25 11:26:13,009 : reader : yielding snapshot
+2020-05-25 11:26:13,296 : reader : returning snapshot
+2020-05-25 11:26:13,296 : reader : yielding snapshot
+2020-05-25 11:26:14,827 : reader : returning snapshot
+2020-05-25 11:26:14,835 : reader : yielding snapshot
+2020-05-25 11:26:55,869 : reader : sending to parse_snapshot
+2020-05-25 11:26:56,602 : reader : sending to parse_snapshot
+2020-05-25 11:26:58,231 : reader : sending to parse_snapshot
+2020-05-25 11:27:40,155 : reader : returning snapshot
+2020-05-25 11:27:40,156 : reader : yielding snapshot
+2020-05-25 11:27:40,889 : reader : returning snapshot
+2020-05-25 11:27:40,896 : reader : yielding snapshot
+2020-05-25 11:27:42,859 : reader : returning snapshot
+2020-05-25 11:27:42,863 : reader : yielding snapshot
+2020-05-25 11:28:24,599 : reader : sending to parse_snapshot
+2020-05-25 11:28:25,832 : reader : sending to parse_snapshot
+2020-05-25 11:28:27,631 : reader : sending to parse_snapshot
+2020-05-25 11:29:09,139 : reader : returning snapshot
+2020-05-25 11:29:09,145 : reader : yielding snapshot
+2020-05-25 11:29:10,531 : reader : returning snapshot
+2020-05-25 11:29:10,535 : reader : yielding snapshot
+2020-05-25 11:29:13,079 : reader : returning snapshot
+2020-05-25 11:29:13,088 : reader : yielding snapshot
+2020-05-25 11:29:52,214 : reader : sending to parse_snapshot
+2020-05-25 11:29:54,098 : reader : sending to parse_snapshot
+2020-05-25 11:29:56,132 : reader : sending to parse_snapshot
+2020-05-25 11:30:36,873 : reader : returning snapshot
+2020-05-25 11:30:36,873 : reader : yielding snapshot
+2020-05-25 11:30:38,847 : reader : returning snapshot
+2020-05-25 11:30:38,854 : reader : yielding snapshot
+2020-05-25 11:30:41,492 : reader : returning snapshot
+2020-05-25 11:30:41,495 : reader : yielding snapshot

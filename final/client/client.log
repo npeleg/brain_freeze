@@ -963,3 +963,24 @@
 2020-05-24 22:23:46,973 : client : starting to upload snapshots to server
 2020-05-24 22:23:46,986 : client : starting to upload snapshots to server
 2020-05-24 22:23:47,020 : client : starting to upload snapshots to server
+2020-05-25 10:33:35,759 : client : uploading user information
+2020-05-25 10:33:35,769 : client : uploading snapshots to server
+2020-05-25 10:36:21,736 : client : finished uploading snapshots to server
+2020-05-25 10:36:22,358 : client : uploading user information
+2020-05-25 10:36:22,366 : client : uploading snapshots to server
+2020-05-25 10:39:34,113 : client : finished uploading snapshots to server
+2020-05-25 11:14:12,581 : client : uploading user information
+2020-05-25 11:14:12,602 : client : uploading snapshots to server
+2020-05-25 11:17:06,700 : client : finished uploading snapshots to server
+2020-05-25 11:17:06,753 : client : uploading user information
+2020-05-25 11:17:06,763 : client : uploading snapshots to server
+2020-05-25 11:20:00,665 : client : finished uploading snapshots to server
+2020-05-25 11:23:55,740 : client : uploading user information
+2020-05-25 11:23:55,744 : client : uploading user information
+2020-05-25 11:23:55,765 : client : uploading snapshots to server
+2020-05-25 11:23:55,771 : client : uploading user information
+2020-05-25 11:23:55,776 : client : uploading snapshots to server
+2020-05-25 11:23:55,795 : client : uploading snapshots to server
+2020-05-25 11:31:20,975 : client : finished uploading snapshots to server
+2020-05-25 11:31:22,515 : client : finished uploading snapshots to server
+2020-05-25 11:31:23,412 : client : finished uploading snapshots to server
