@@ -5068,3 +5068,5 @@
 2020-05-25 15:42:24,461 : parsers_logic : loading parser modules
 2020-05-25 15:42:24,492 : parsers_logic : creating a topic for snapshots
 2020-05-25 15:42:24,516 : parsers_logic : subscribing feelings parser to snapshot topic
+2020-05-25 16:58:59,681 : parsers_logic : loading parser modules
+2020-05-25 16:58:59,698 : parsers_logic : sending parsers names

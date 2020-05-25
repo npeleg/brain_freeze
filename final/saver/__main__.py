@@ -19,7 +19,11 @@ def save(database, parser_name, source_file):
         with open(source_file, 'r') as file:
             result = file.read()
         saver = Saver(database)
-        saver.save(parser_name, result)
+        result = saver.save(parser_name, result)
+        if result:
+            print('saved to db')
+        else:
+            print('saving to db failed')
     except Exception as error:
         print(f'Error during save command: {error}')
         return 1

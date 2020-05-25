@@ -2978,3 +2978,5 @@
 2020-05-25 11:31:22,511 : server : 'str' object is not callable
 2020-05-25 11:31:23,407 : server : error in user function or user passed a non callable object:
 2020-05-25 11:31:23,409 : server : 'str' object is not callable
+2020-05-25 16:58:59,680 : server : a user function was passed
+2020-05-25 16:58:59,698 : server : starting the server

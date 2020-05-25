@@ -1,3 +1,4 @@
+import sys
 import threading
 from ..utils import Logger, MQManager, DBManager
 
@@ -46,6 +47,8 @@ class Saver:
         mq.create_user_topic()
         logger.info(f'subscribing to user topic')
         wrapped_saver_func = wrap_saver(self.db, 'user')
+        print('running...')
+        sys.stdout.flush()
         mq.subscribe_to_user_topic(wrapped_saver_func)
 
 

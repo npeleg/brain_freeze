@@ -15562,3 +15562,39 @@
 2020-05-25 15:42:24,296 : rabbitmq : starting to consume from snapshots exchange 
 2020-05-25 15:42:24,515 : rabbitmq : creating snapshots exchange
 2020-05-25 15:42:24,550 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-25 17:37:29,359 : rabbitmq : creating feelings exchange
+2020-05-25 17:37:29,366 : rabbitmq : creating pose exchange
+2020-05-25 17:37:29,387 : rabbitmq : creating pose exchange
+2020-05-25 17:37:29,413 : rabbitmq : creating feelings exchange
+2020-05-25 17:37:29,436 : rabbitmq : starting to consume from feelings exchange 
+2020-05-25 17:37:29,472 : rabbitmq : starting to consume from pose exchange 
+2020-05-25 17:37:29,483 : rabbitmq : creating users exchange
+2020-05-25 17:37:29,489 : rabbitmq : creating users exchange
+2020-05-25 17:37:29,523 : rabbitmq : starting to consume from pose exchange 
+2020-05-25 17:37:29,528 : rabbitmq : starting to consume from feelings exchange 
+2020-05-25 17:37:29,539 : rabbitmq : starting to consume from users exchange 
+2020-05-25 17:37:29,541 : rabbitmq : starting to consume from users exchange 
+2020-05-25 17:38:15,784 : rabbitmq : creating pose exchange
+2020-05-25 17:38:15,798 : rabbitmq : creating pose exchange
+2020-05-25 17:38:15,818 : rabbitmq : creating feelings exchange
+2020-05-25 17:38:15,858 : rabbitmq : starting to consume from pose exchange 
+2020-05-25 17:38:15,869 : rabbitmq : creating feelings exchange
+2020-05-25 17:38:15,891 : rabbitmq : starting to consume from pose exchange 
+2020-05-25 17:38:15,893 : rabbitmq : creating users exchange
+2020-05-25 17:38:15,927 : rabbitmq : starting to consume from feelings exchange 
+2020-05-25 17:38:15,928 : rabbitmq : creating users exchange
+2020-05-25 17:38:15,954 : rabbitmq : starting to consume from feelings exchange 
+2020-05-25 17:38:15,969 : rabbitmq : starting to consume from users exchange 
+2020-05-25 17:38:15,971 : rabbitmq : starting to consume from users exchange 
+2020-05-25 17:39:07,886 : rabbitmq : creating feelings exchange
+2020-05-25 17:39:07,900 : rabbitmq : creating pose exchange
+2020-05-25 17:39:07,919 : rabbitmq : creating pose exchange
+2020-05-25 17:39:07,957 : rabbitmq : starting to consume from feelings exchange 
+2020-05-25 17:39:07,958 : rabbitmq : creating feelings exchange
+2020-05-25 17:39:07,990 : rabbitmq : creating users exchange
+2020-05-25 17:39:07,996 : rabbitmq : starting to consume from pose exchange 
+2020-05-25 17:39:08,033 : rabbitmq : creating users exchange
+2020-05-25 17:39:08,042 : rabbitmq : starting to consume from pose exchange 
+2020-05-25 17:39:08,067 : rabbitmq : starting to consume from feelings exchange 
+2020-05-25 17:39:08,069 : rabbitmq : starting to consume from users exchange 
+2020-05-25 17:39:08,075 : rabbitmq : starting to consume from users exchange 

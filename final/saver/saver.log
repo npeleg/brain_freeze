@@ -4366,3 +4366,39 @@
 2020-05-24 18:21:41,878 : saver : subscribing to pose topic
 2020-05-24 18:21:41,889 : saver : creating a topic for user data
 2020-05-24 18:21:41,984 : saver : subscribing to user topic
+2020-05-25 17:37:29,333 : saver : creating a topic for the parsed results of feelings parser
+2020-05-25 17:37:29,347 : saver : creating a topic for the parsed results of pose parser
+2020-05-25 17:37:29,366 : saver : subscribing to feelings topic
+2020-05-25 17:37:29,367 : saver : subscribing to pose topic
+2020-05-25 17:37:29,368 : saver : creating a topic for the parsed results of pose parser
+2020-05-25 17:37:29,370 : saver : creating a topic for the parsed results of feelings parser
+2020-05-25 17:37:29,401 : saver : subscribing to pose topic
+2020-05-25 17:37:29,418 : saver : subscribing to feelings topic
+2020-05-25 17:37:29,421 : saver : creating a topic for user data
+2020-05-25 17:37:29,423 : saver : creating a topic for user data
+2020-05-25 17:37:29,486 : saver : subscribing to user topic
+2020-05-25 17:37:29,493 : saver : subscribing to user topic
+2020-05-25 17:38:15,766 : saver : creating a topic for the parsed results of pose parser
+2020-05-25 17:38:15,780 : saver : creating a topic for the parsed results of pose parser
+2020-05-25 17:38:15,791 : saver : subscribing to pose topic
+2020-05-25 17:38:15,799 : saver : creating a topic for the parsed results of feelings parser
+2020-05-25 17:38:15,801 : saver : subscribing to pose topic
+2020-05-25 17:38:15,824 : saver : creating a topic for the parsed results of feelings parser
+2020-05-25 17:38:15,827 : saver : subscribing to feelings topic
+2020-05-25 17:38:15,844 : saver : creating a topic for user data
+2020-05-25 17:38:15,875 : saver : subscribing to feelings topic
+2020-05-25 17:38:15,882 : saver : creating a topic for user data
+2020-05-25 17:38:15,899 : saver : subscribing to user topic
+2020-05-25 17:38:15,937 : saver : subscribing to user topic
+2020-05-25 17:39:07,867 : saver : creating a topic for the parsed results of feelings parser
+2020-05-25 17:39:07,882 : saver : creating a topic for the parsed results of pose parser
+2020-05-25 17:39:07,887 : saver : subscribing to feelings topic
+2020-05-25 17:39:07,901 : saver : creating a topic for the parsed results of pose parser
+2020-05-25 17:39:07,903 : saver : subscribing to pose topic
+2020-05-25 17:39:07,925 : saver : creating a topic for the parsed results of feelings parser
+2020-05-25 17:39:07,929 : saver : subscribing to pose topic
+2020-05-25 17:39:07,945 : saver : creating a topic for user data
+2020-05-25 17:39:07,972 : saver : subscribing to feelings topic
+2020-05-25 17:39:07,991 : saver : creating a topic for user data
+2020-05-25 17:39:07,996 : saver : subscribing to user topic
+2020-05-25 17:39:08,035 : saver : subscribing to user topic

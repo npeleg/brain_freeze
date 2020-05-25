@@ -6373,3 +6373,61 @@
 2020-05-25 16:49:19,351 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'pose', 'pose': 3} to collection snapshots
 2020-05-25 16:49:19,452 : mongodb : inserting data to collection
 2020-05-25 16:49:19,452 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'feelings', 'feelings': 4} to collection snapshots
+2020-05-25 17:31:53,990 : mongodb : inserting data to collection
+2020-05-25 17:31:53,991 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'pose', 'pose': 3} to collection snapshots
+2020-05-25 17:31:54,006 : mongodb : inserting data to collection
+2020-05-25 17:31:54,006 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'feelings', 'feelings': 4} to collection snapshots
+2020-05-25 17:31:54,721 : mongodb : inserting data to collection
+2020-05-25 17:31:54,721 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'pose', 'pose': 3} to collection snapshots
+2020-05-25 17:31:55,906 : mongodb : inserting data to collection
+2020-05-25 17:31:55,906 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'feelings', 'feelings': 4} to collection snapshots
+2020-05-25 17:33:35,019 : mongodb : inserting data to collection
+2020-05-25 17:33:35,020 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'pose', 'pose': 3} to collection snapshots
+2020-05-25 17:33:35,027 : mongodb : inserting data to collection
+2020-05-25 17:33:35,027 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'feelings', 'feelings': 4} to collection snapshots
+2020-05-25 17:33:35,753 : mongodb : inserting data to collection
+2020-05-25 17:33:35,753 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'pose', 'pose': 3} to collection snapshots
+2020-05-25 17:33:36,935 : mongodb : inserting data to collection
+2020-05-25 17:33:36,935 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'feelings', 'feelings': 4} to collection snapshots
+2020-05-25 17:34:23,598 : mongodb : inserting data to collection
+2020-05-25 17:34:23,599 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'pose', 'pose': 3} to collection snapshots
+2020-05-25 17:34:23,614 : mongodb : inserting data to collection
+2020-05-25 17:34:23,615 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'feelings', 'feelings': 4} to collection snapshots
+2020-05-25 17:34:45,021 : mongodb : inserting data to collection
+2020-05-25 17:34:45,021 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'pose', 'pose': 3} to collection snapshots
+2020-05-25 17:34:45,034 : mongodb : inserting data to collection
+2020-05-25 17:34:45,034 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'feelings', 'feelings': 4} to collection snapshots
+2020-05-25 17:34:45,739 : mongodb : inserting data to collection
+2020-05-25 17:34:45,740 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'pose', 'pose': 3} to collection snapshots
+2020-05-25 17:34:46,933 : mongodb : inserting data to collection
+2020-05-25 17:34:46,934 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'feelings', 'feelings': 4} to collection snapshots
+2020-05-25 17:37:25,517 : mongodb : inserting data to collection
+2020-05-25 17:37:25,518 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'pose', 'pose': 3} to collection snapshots
+2020-05-25 17:37:25,531 : mongodb : inserting data to collection
+2020-05-25 17:37:25,531 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'feelings', 'feelings': 4} to collection snapshots
+2020-05-25 17:37:26,264 : mongodb : inserting data to collection
+2020-05-25 17:37:26,264 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'pose', 'pose': 3} to collection snapshots
+2020-05-25 17:37:27,462 : mongodb : inserting data to collection
+2020-05-25 17:37:27,462 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'feelings', 'feelings': 4} to collection snapshots
+2020-05-25 17:38:11,248 : mongodb : inserting data to collection
+2020-05-25 17:38:11,248 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'pose', 'pose': 3} to collection snapshots
+2020-05-25 17:38:11,261 : mongodb : inserting data to collection
+2020-05-25 17:38:11,262 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'feelings', 'feelings': 4} to collection snapshots
+2020-05-25 17:38:11,992 : mongodb : inserting data to collection
+2020-05-25 17:38:11,992 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'pose', 'pose': 3} to collection snapshots
+2020-05-25 17:38:13,632 : mongodb : inserting data to collection
+2020-05-25 17:38:13,633 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'feelings', 'feelings': 4} to collection snapshots
+2020-05-25 17:38:27,128 : mongodb : inserting data to collection
+2020-05-25 17:38:27,128 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'pose', 'pose': 3} to collection snapshots
+2020-05-25 17:38:27,145 : mongodb : inserting data to collection
+2020-05-25 17:38:27,145 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'feelings', 'feelings': 4} to collection snapshots
+2020-05-25 17:38:27,840 : mongodb : inserting data to collection
+2020-05-25 17:38:27,840 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'pose', 'pose': 3} to collection snapshots
+2020-05-25 17:39:04,105 : mongodb : inserting data to collection
+2020-05-25 17:39:04,105 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'pose', 'pose': 3} to collection snapshots
+2020-05-25 17:39:04,111 : mongodb : inserting data to collection
+2020-05-25 17:39:04,111 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'feelings', 'feelings': 4} to collection snapshots
+2020-05-25 17:39:04,818 : mongodb : inserting data to collection
+2020-05-25 17:39:04,818 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'pose', 'pose': 3} to collection snapshots
+2020-05-25 17:39:06,014 : mongodb : inserting data to collection
+2020-05-25 17:39:06,015 : mongodb : inserting data: {'user_id': 1, 'datetime': 2, 'result': 'feelings', 'feelings': 4} to collection snapshots
