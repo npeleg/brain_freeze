@@ -2,20 +2,22 @@
 [![codecov](https://codecov.io/gh/npeleg/final/branch/master/graph/badge.svg)](https://codecov.io/gh/npeleg/final)
 
 # BrainFreeze
-Welcome to the BrainFreeze project!
-Here you will find instructions for installation and basic usage of the project's features.
-For the full documentation click here.
+Welcome to the BrainFreeze project!  
+Here you will find instructions for installation and basic usage of the project's features.  
+For the full documentation click here.  
 
-BrainFreeze constitutes the software side of a computer-brain interface product.
-The product's hardware side constantly produces cognition snapshots of the user, sent to BrainFreeze system for processing and analysis.
-A cognition snapshot consists of: 
+BrainFreeze is the software side of a computer-brain interface product.  
+The product's hardware side constantly produces cognition snapshots of the user,  
+sent to BrainFreeze system for processing and analysis.  
+A cognition snapshot consists of:  
  - the user's location and head's rotation (combining those forms the user's 'pose')
  - the image that the user saw 
  - the depth image that the user saw (the distance of the nearest object in each point of the user's view)
  - the timestamp the snapshot was taken at
  
-To simulate the hardware side, you are supplied with a binary file containing the user's cognition snapshots taken in the morning hours of April 4th, 2019. 
-The software side - the BrainFreeze system and its components - is explained below.
+To simulate the hardware side, you are supplied with a binary file containing the user's basic information  
+and a list of their cognition snapshots taken in the morning hours of April 4th, 2019.   
+The software side, i.e. BrainFreeze system and its components, is explained below.
 
 ## Installation
 
@@ -49,95 +51,249 @@ The `brain_freeze` package provides the following components:
 
 - `client`
 
-    The client component encapsulates the concept of `foo`, and returns `"foo"` when run.
+    The client component is responsible for sending the user's information and cognition snapshots,  
+    found in a binary file, to a server.
+    The reading of the binary file is done using a 'reader' component (further explained in the documentation).  
+     
+    Uploading the binary file to server is simple: 
+    
+    ```pycon
+    >>> from brain_freeze.client import upload_sample
+    >>> upload_sample(host= '127.0.0.1' , port= 8000 , path= './sample/sample.mind.gz' )
+    uploading... # upload path to host : port
+    ```
+    
+    The client also provides a command-line interface:
+    
+    ```sh
+    $ python -m brain_freeze.client upload-sample \
+      -h/--host '127.0.0.1'                        \
+      -p/--port 8000                                \
+      'snapshot.mind.gz'
+    ```
+    
+  &nbsp;
+- `server`
 
-    In addition, it provides the `inc` method to increment integers, and the
-    `add` method to sum them.
+    The server receives user information and cognition snapshots, converts those to a suitable format  
+    and forwards them to a message queue.
 
     ```pycon
-    >>> from foobar import Foo
-    >>> foo = Foo()
-    >>> foo.run()
-    'foo'
-    >>> foo.inc(1)
-    2
-    >>> foo.add(1, 2)
-    3
+    >>> from brain_freeze.server import run_server
+    >>> def print_message(message):
+            print(message)
+    >>> run_server(host='127.0.0.1', port=8000, publish=print_message)
+    … # listen on host:port and pass received messages to publish
     ```
+    
+    Command-line interface:
+    
+    ```sh
+    $ python -m brain_freeze.server run-server \
+      -h/--host '127.0.0.1'                     \
+      -p/--port 8000                             \
+      'rabbitmq://127.0.0.1:5672/'
+    ```
+   the third argument is the message queue url
+   
+    &nbsp;
+- `parsers`
 
-- `Bar`
+    Parsers are simple functions or classes, consuming data (cognition snapshots) from the message queue,  
+    processing that data and producing the parsed results back to the queue.  
+    BrainFreeze currently supports parsing of a snapshot's pose, color image and feelings fields.  
+    
+    The parsers component consists of a "parsers logic" module that dynamically collects all the parsers  
+    functions from a specific folder, subscribes them to the message queue so that snapshots are sent  
+    to them and processed.  
+    
+    It is easy to add a parser of your choice - follow the instructions in the documentation. # TODO link    
 
-    This class encapsulates the concept of `bar`; it's very similar to `Foo`,
-    except it returns `"bar"` when run.
+    To run a specific parser on a "raw" snapshot and see  
+    the parsed result (here we are running the pose parser):
+    
+    ```pycon
+    >>> from brain_freeze.parsers import parse
+    >>> raw_snapshot = … 
+    >>> result = parse('pose', raw_snapshot)
+    ```
+     
+    Or do it the CLI way (you can also specify a destination file to which the result will be saved):
+    
+    ```sh
+    $ python -m brain_freeze.parsers parse 'pose' 'snapshot.raw' > 'pose.result'
+    ```
+      
+    Results of pose and feelings parsers will be printed to the screen, while the color image result  
+    will display the path of the saved file.  
+    
+    To subscribe a parser to the message queue run the following command:
+    
+    ```sh
+    $ python -m brain_freeze.parsers run-parser 'pose' 'rabbitmq://127.0.0.1:5672/' 
+    ```
+    
+  &nbsp;
+- `saver`
+
+    The saver component is responsible for receiving parsed results of snapshots from the message queue  
+    and saving them to a database.
+    
+    You can save a single result:
+    
+    ```pycon
+    >>> from brain_freeze.saver import Saver
+    >>> saver = Saver(database_url)
+    >>> parsed_result = …
+    >>> saver.save('pose', parsed_result)
+    ```
+    
+    ```sh
+    $ python -m brain_freeze.saver save        \
+      -d/--database 'mongodb://127.0.0.1:27017' \
+     'pose'                                      \
+     'pose.result' 
+    ```
+    The third argument is a path to the file in which the result is stored.  
+    
+    Or run the saver as a service, so that it subscribes to all available parser topics,  
+    and saves incoming parsed results to the database:
+    
+    ```sh
+    $ python -m brain_freeze.saver run-saver  \
+      'mongodb://127.0.0.1:27017'              \
+      'rabbitmq://127.0.0.1:5672/'               
+    ```
+    The second argument is the database url and the third is the message queue url.
+    
+    &nbsp;
+- `message queue`
+   
+   The project comes pre-packed with the RabbitMQ message queue service.  
+   It starts running automatically upon the deployment of BrainFreeze.  
+   
+   The message queue has a topic for incoming snapshots from the server, to which all the parsers subscribe.  
+   Each parser's results are published to a dedicated topic ('pose' topic for the pose parser, etc.),  
+   and the saver subscribes to each of these topics.
+
+    &nbsp;
+- `database`
+   
+   The project comes pre-packed with the MongoDB database service, and uses it via pymongo.  
+   It starts running automatically upon the deployment of BrainFreeze.  
+   
+   For the use of BrainFreeze, a single database named 'db' is created in MongoDB.  
+   Inside it there are two collections: 'users' and 'snapshots'.  
+   The users collection contains all the users information, and the snapshots collection stores  
+   all the parsed results of all the users' snapshots (there is no internal partition in the  
+   snapshots collection - every parsed result is inserted to the collection without any separation  
+   according to user or timestamp).
+   
+    &nbsp;
+- `api`
+   
+   This component exposes the results saved in the database using REST.  
+   
+   To run the API server:
 
     ```pycon
-    >>> from foobar import Bar
-    >>> bar = Bar()
-    >>> bar.run()
-    'bar'
+    >>> from brain_freeze.api import run_api_server
+    >>> run_api_server(
+    ...     host = '127.0.0.1',
+    ...     port = 5000,
+    ...     database_url = 'mongodb://127.0.0.1:27017'
+    ... )
+    … # listen on host:port and serve data from database_url
+    ```
+    
+    or using CLI:
+    
+    ```sh
+    $ python -m brain_freeze.api run-server \
+      -h/--host '127.0.0.1'                  \
+      -p/--port 5000                          \
+      -d/--database 'mongodb://127.0.0.1:27017'
+    ```
+    
+    The API server supports the following RESTful API endpoints:
+    
+    ```
+    GET /users
+    ```
+    Which returns the list of all the supported users, including their IDs and names.
+    
+    &nbsp;
+     ```
+    GET /users/user-id
+     ```
+    Which returns the specified user's details: ID, name, birthday and gender.
+    
+  &nbsp;  
+    ```
+    GET /users/user-id/snapshots
+    ```
+    Which returns the list of the specified user's snapshot IDs and datetimes.|
+    
+  &nbsp;  
+    ```
+    GET /users/user-id/snapshots/snapshot-id
+    ```
+    Which returns the specified snapshot's details: ID, datetime, and the available results' names (e.g. pose).
+    
+    &nbsp;
+    ```
+    GET /users/user-id/snapshots/snapshot-id/result-name
+    ```
+    Which returns the specified snapshot's result.  
+    Supported results are pose, color-image and feelings,  
+    where color-image result will show the data's path, to be used to get the data:
+    ```GET /users/user-id/snapshots/snapshot-id/color-image/path```
+   
+   &nbsp;
+- `cli`
+
+   The CLI consumes the API and reflects its results.  
+   In every command "1" argument is the user id, "2" is a snapshots id and "pose" is the result.  
+   All the commands accept the -h/--host and -p/--port flags to configure the host and port,  
+   and default to the API's default address.
+
+    ```sh
+    $ python -m brain_freeze.cli get-users
+    …
+    $ python -m brain_freeze.cli get-user 1
+    …
+    $ python -m brain_freeze.cli get-snapshots 1
+    …
+    $ python -m brain_freeze.cli get-snapshot 1 2
+    …
+    $ python -m brain_freeze.cli get-result 1 2 'pose'
+    …
     ```
 
-The `foobar` package also provides a command-line interface:
+   The get-result command also accepts the -s/--save flag that, if specified,  
+   receives a path and saves the result's data to that path.
 
-```sh
-$ python -m foobar
-foobar, version 0.1.0
-```
+    &nbsp;
+- `gui`
 
-All commands accept the `-q` or `--quiet` flag to suppress output, and the `-t`
-or `--traceback` flag to show the full traceback when an exception is raised
-(by default, only the error message is printed, and the program exits with a
-non-zero code).
-
-The CLI provides the `foo` command, with the `run`, `add` and `inc`
-subcommands:
-
-```sh
-$ python -m foobar foo run
-foo
-$ python -m foobar foo inc 1
-2
-$ python -m foobar foo add 1 2
-3
-```
-
-The CLI further provides the `bar` command, with the `run` and `error`
-subcommands.
-
-Curiously enough, `bar`'s `run` subcommand accepts the `-o` or `--output`
-option to write its output to a file rather than the standard output, and the
-`-u` or `--uppercase` option to do so in uppercase letters.
-
-```sh
-$ python -m foobar bar run
-bar
-$ python -m foobar bar run -u
-BAR
-$ python -m foobar bar run -o output.txt
-$ cat output.txt
-BAR
-```
-
-Do note that each command's options should be passed to *that* command, so for
-example the `-q` and `-t` options should be passed to `foobar`, not `foo` or
-`bar`.
-
-```sh
-$ python -m foobar bar run -q # this doesn't work
-ERROR: no such option: -q
-$ python -m foobar -q bar run # this does work
-```
-
-To showcase these options, consider `bar`'s `error` subcommand, which raises an
-exception:
-
-```sh
-$ python -m foobar bar error
-ERROR: something went terribly wrong :[
-$ python -m foobar -q bar error # suppress output
-$ python -m foobar -t bar error # show full traceback
-ERROR: something went terribly wrong :[
-Traceback (most recent call last):
-    ...
-RuntimeError: something went terrible wrong :[
-```
+   The GUI consumes the API and reflects it results.
+   
+   To run the GUI server:
+   ```pycon
+   >>> from brain_freeze.gui import run_server
+   >>> run_server(
+   ...     host = '127.0.0.1',
+   ...     port = 8080,
+   ...     api_host = '127.0.0.1',
+   ...     api_port = 5000,
+   ... )
+   ```
+  
+    Or using a CLI:
+    ```sh
+    $ python -m brain_freeze.gui run-server \
+       -h/--host '127.0.0.1'                 \
+       -p/--port 8080                         \
+       -H/--api-host '127.0.0.1'               \
+       -P/--api-port 5000
+    ```

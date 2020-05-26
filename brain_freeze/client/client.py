@@ -45,6 +45,7 @@ def upload_sample(host, port, path):
         sent_successfully = False
 
     logger.info('uploading snapshots to server')
+    print('uploading...')
     for snapshot in reader:
         parsers = get_parsers_from_server(host, port)
         if not parsers:

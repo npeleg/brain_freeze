@@ -998,3 +998,16 @@
 2020-05-25 18:22:18,742 : client : uploading user information
 2020-05-25 18:22:18,782 : client : uploading snapshots to server
 2020-05-25 18:26:01,897 : client : finished uploading snapshots to server
+2020-05-26 11:28:36,748 : client : uploading user information
+2020-05-26 11:28:36,760 : client : uploading snapshots to server
+2020-05-26 12:43:17,950 : client : uploading user information
+2020-05-26 12:43:17,962 : client : server did not accept data due to error. Got 404 status code
+2020-05-26 12:43:17,963 : client : uploading snapshots to server
+2020-05-26 12:43:56,217 : client : server did not accept data due to error. Got 404 status code
+2020-05-26 12:44:34,540 : client : server did not accept data due to error. Got 404 status code
+2020-05-26 12:45:12,572 : client : server did not accept data due to error. Got 404 status code
+2020-05-26 12:45:51,138 : client : server did not accept data due to error. Got 404 status code
+2020-05-26 12:46:29,544 : client : server did not accept data due to error. Got 404 status code
+2020-05-26 12:46:29,544 : client : finished uploading snapshots to server
+2020-05-26 13:24:04,454 : client : uploading user information
+2020-05-26 13:24:04,464 : client : uploading snapshots to server

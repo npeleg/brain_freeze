@@ -5467,3 +5467,15 @@
 2020-05-25 18:26:01,698 : parsers_logic : sending to feelings topic
 2020-05-25 18:26:02,801 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887603, "result": "color", "color_image": "color_image.jpg"}
 2020-05-25 18:26:02,801 : parsers_logic : sending to color_image topic
+2020-05-26 11:24:11,946 : parsers_logic : loading parser modules
+2020-05-26 11:24:11,974 : parsers_logic : sending parsers names
+2020-05-26 12:43:13,994 : parsers_logic : loading parser modules
+2020-05-26 12:43:14,006 : parsers_logic : creating a topic for snapshots
+2020-05-26 12:43:14,949 : parsers_logic : loading parser modules
+2020-05-26 12:43:14,959 : parsers_logic : creating a topic for snapshots
+2020-05-26 12:43:15,961 : parsers_logic : loading parser modules
+2020-05-26 12:43:15,971 : parsers_logic : creating a topic for snapshots
+2020-05-26 12:43:17,120 : parsers_logic : loading parser modules
+2020-05-26 12:43:17,130 : parsers_logic : sending parsers names
+2020-05-26 13:23:01,712 : parsers_logic : loading parser modules
+2020-05-26 13:23:01,737 : parsers_logic : sending parsers names
