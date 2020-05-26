@@ -20,7 +20,6 @@ Here you will find instructions for installation and basic usage of the project'
   :width: 600
   :alt: BrainFreeze components
 
-   :caption: Contents:
 
 
 
