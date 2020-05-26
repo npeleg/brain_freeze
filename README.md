@@ -50,7 +50,7 @@ The software side, i.e. BrainFreeze system and its components, is explained belo
 
 The `brain_freeze` package provides the following components:
 
-- `client`
+- ### client
 
     The client component is responsible for sending the user's information and cognition snapshots,  
     found in a binary file, to a server.
@@ -72,9 +72,10 @@ The `brain_freeze` package provides the following components:
       -p/--port 8000                                \
       'snapshot.mind.gz'
     ```
+    A sample file is available [here](https://storage.googleapis.com/advanced-system-design/sample.mind.gz)
     
   &nbsp;
-- `server`
+- ### server
 
     The server receives user information and cognition snapshots, converts those to a suitable format  
     and forwards them to a message queue.
@@ -98,7 +99,7 @@ The `brain_freeze` package provides the following components:
    The third argument is the message queue url.
    
     &nbsp;
-- `parsers`
+- ### parsers
 
     Parsers are simple functions or classes, consuming data (cognition snapshots) from the message queue,  
     processing that data and producing the parsed results back to the queue.  
@@ -135,7 +136,7 @@ The `brain_freeze` package provides the following components:
     ```
     
   &nbsp;
-- `saver`
+- ### saver
 
     The saver component is responsible for receiving parsed results of snapshots from the message queue  
     and saving them to a database.
@@ -168,7 +169,7 @@ The `brain_freeze` package provides the following components:
     The second argument is the database url and the third is the message queue url.
     
     &nbsp;
-- `message queue`
+- ### message queue
    
    The project comes pre-packed with the RabbitMQ message queue service.  
    It starts running automatically upon the deployment of BrainFreeze.  
@@ -178,7 +179,7 @@ The `brain_freeze` package provides the following components:
    and the saver subscribes to each of these topics.
 
     &nbsp;
-- `database`
+- ### database
    
    The project comes pre-packed with the MongoDB database service, and uses it via pymongo.  
    It starts running automatically upon the deployment of BrainFreeze.  
@@ -191,7 +192,7 @@ The `brain_freeze` package provides the following components:
    according to user or timestamp).
    
     &nbsp;
-- `api`
+- ### api
    
    This component exposes the results saved in the database using REST.  
    
@@ -251,7 +252,7 @@ The `brain_freeze` package provides the following components:
     ```GET /users/user-id/snapshots/snapshot-id/color-image/path```
    
    &nbsp;
-- `cli`
+- ### cli
 
    The CLI consumes the API and reflects its results.  
    In every command "1" argument is the user id, "2" is a snapshots id and "pose" is the result.  
@@ -275,7 +276,7 @@ The `brain_freeze` package provides the following components:
    receives a path and saves the result's data to that path.
 
     &nbsp;
-- `gui`
+- ### gui
 
    The GUI consumes the API and reflects it results.
    

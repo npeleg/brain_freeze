@@ -6,11 +6,19 @@
 Welcome to brain_freeze's documentation!
 ========================================
 
+Here you will find instructions for installation and basic usage of the project's features.
+
 .. toctree::
    :maxdepth: 2
 
-   usage/installation
-   usage/quickstart
+   about
+   installation
+   usage
+   project_components
+
+.. image:: .components.png
+  :width: 600
+  :alt: BrainFreeze components
 
    :caption: Contents:
 
