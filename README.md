@@ -1,5 +1,6 @@
-[![Build Status](https://travis-ci.com/npeleg/final.svg?branch=master)](https://travis-ci.com/npeleg/final)
+[![Build Status](https://travis-ci.com/npeleg/brain_freeze.svg?branch=master)](https://travis-ci.com/npeleg/brain_freeze)
 [![codecov](https://codecov.io/gh/npeleg/final/branch/master/graph/badge.svg)](https://codecov.io/gh/npeleg/final)
+[![Documentation Status](https://readthedocs.org/projects/brain-freeze/badge/?version=latest)](https://brain-freeze.readthedocs.io/en/latest/?badge=latest)
 
 # BrainFreeze
 Welcome to the BrainFreeze project!  
@@ -94,7 +95,7 @@ The `brain_freeze` package provides the following components:
       -p/--port 8000                             \
       'rabbitmq://127.0.0.1:5672/'
     ```
-   the third argument is the message queue url
+   The third argument is the message queue url.
    
     &nbsp;
 - `parsers`
