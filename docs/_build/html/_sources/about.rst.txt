@@ -1,19 +1,2 @@
-About
-=====
 
-BrainFreeze is the software side of a computer-brain interface product.
-The product's hardware side constantly produces cognition snapshots of the user,
-sent to BrainFreeze system for processing and analysis.
-A cognition snapshot consists of:
-
-- the user's **location** and head's **rotation** (combining those forms the user's **'pose'**)
-- the **color image** that the user saw
-- the **depth image** that the user saw (the distance of the nearest object in each point of the user's view)
-- the **timestamp** the snapshot was taken at
-
-To simulate the hardware side, you are supplied with a binary file (see "Usage" page under 'client'),
-containing the user's basic information and a list of their cognition snapshots taken
-in the morning hours of April 4th, 2019.
-
-The software side, i.e. BrainFreeze system and its components, is further explained in the usage page.
 

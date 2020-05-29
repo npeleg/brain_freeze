@@ -21,11 +21,10 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="BrainFreeze components" href="project_components.html" />
-    <link rel="prev" title="Installation" href="installation.html" />
+    <link rel="next" title="Add/Change Features" href="add_or_change_features.html" />
+    <link rel="prev" title="BrainFreeze" href="index.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -41,20 +40,230 @@
           <div class="body" role="main">
             
   <div class="section" id="usage">
-<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="_images/spacesuit.png"><img alt="BrainFreeze components" class="align-center" src="_images/spacesuit.png" style="width: 250px;" /></a>
 <p>The <strong>brain_freeze</strong> package consists of the following components:</p>
 <div class="section" id="client">
 <h2>client<a class="headerlink" href="#client" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><p>The client component is responsible for sending the user’s information and cognition snapshots,
+<p>The client component is responsible for sending the user’s information and cognition snapshots,
 found in a binary file, to a server.
 The reading of the binary file is done using a ‘reader’ component (see below).</p>
-<p>Uploading the binary file to server is simple:
-.. upload_sample::
-<code class="docutils literal"><span class="pre">from</span> <span class="pre">brain_freeze.client</span> <span class="pre">import</span> <span class="pre">upload_sample</span></code>
-<code class="docutils literal"><span class="pre">upload_sample(host=</span> <span class="pre">'127.0.0.1'</span> <span class="pre">,</span> <span class="pre">port=</span> <span class="pre">8000</span> <span class="pre">,</span> <span class="pre">path=</span> <span class="pre">'./sample/sample.mind.gz'</span> <span class="pre">)</span></code>
-<code class="docutils literal"><span class="pre">uploading...</span> <span class="pre">#</span> <span class="pre">upload</span> <span class="pre">path</span> <span class="pre">to</span> <span class="pre">host</span> <span class="pre">:</span> <span class="pre">port</span></code></p>
-</div></blockquote>
+<dl class="docutils">
+<dt>Uploading the binary file to server is simple:</dt>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">brain_freeze.client</span> <span class="k">import</span> <span class="n">upload_sample</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">upload_sample</span><span class="p">(</span><span class="n">host</span><span class="o">=</span> <span class="s1">&#39;127.0.0.1&#39;</span> <span class="p">,</span> <span class="n">port</span><span class="o">=</span> <span class="mi">8000</span> <span class="p">,</span> <span class="n">path</span><span class="o">=</span> <span class="s1">&#39;./sample/sample.mind.gz&#39;</span> <span class="p">)</span>
+<span class="go">uploading... # upload path to host : port</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>The client also provides a command-line interface:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python -m brain_freeze.client upload-sample \
+-h/--host &#39;127.0.0.1&#39;                          \
+-p/--port 8000                                  \
+&#39;sample/sample.mind.gz&#39;
+</pre></div>
+</div>
+</div>
+<div class="section" id="reader">
+<h2>reader<a class="headerlink" href="#reader" title="Permalink to this headline">¶</a></h2>
+<p>The reader handles the reading and parsing of the binary file containing the user’s information
+and cognition snapshots.</p>
+<dl class="docutils">
+<dt>Uploading the binary file to server is simple:</dt>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">brain_freeze.client.reader</span> <span class="k">import</span> <span class="n">Reader</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reader</span> <span class="o">=</span> <span class="n">Reader</span><span class="p">(</span><span class="s1">&#39;sample/sample.mind.gz&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">snapshot</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">:</span>
+<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="n">snapshot</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>Or through a command-line interface:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python -m brain_freeze.client.reader read &#39;sample/sample.mind.gz&#39;
+</pre></div>
+</div>
+<p>A sample file is available <a class="reference external" href="https://storage.googleapis.com/advanced-system-design/sample.mind.gz">here</a>.</p>
+</div>
+<div class="section" id="server">
+<h2>server<a class="headerlink" href="#server" title="Permalink to this headline">¶</a></h2>
+<p>The server receives user information and cognition snapshots, converts those to a suitable format
+and forwards them to a message queue or just sends them to a user supplied function:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">brain_freeze.server</span> <span class="k">import</span> <span class="n">run_server</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">print_message</span><span class="p">(</span><span class="n">message</span><span class="p">):</span>
+<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">run_server</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8000</span><span class="p">,</span> <span class="n">publish</span><span class="o">=</span><span class="n">print_message</span><span class="p">)</span>
+<span class="gp">... </span><span class="c1"># listen on host:port and pass received messages to publish</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">run_server</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8000</span><span class="p">,</span> <span class="n">publish</span><span class="o">=</span><span class="s1">&#39;rabbitmq://127.0.0.1:5672/&#39;</span><span class="p">)</span>
+<span class="gp">... </span><span class="c1"># listen on host:port and pass received messages to rabbitmq</span>
+</pre></div>
+</div>
+<p>Command-line interface:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python -m brain_freeze.server run-server \
+-h/--host &#39;127.0.0.1&#39;                       \
+-p/--port 8000                               \
+&#39;rabbitmq://127.0.0.1:5672/&#39;
+</pre></div>
+</div>
+<p>The third argument is the message queue url.</p>
+</div>
+<div class="section" id="parsers">
+<h2>parsers<a class="headerlink" href="#parsers" title="Permalink to this headline">¶</a></h2>
+<p>Parsers are simple functions or classes, consuming data (cognition snapshots) from the message queue,
+processing that data and producing the parsed results back to the queue.
+BrainFreeze currently supports parsing of a snapshot’s pose, color image and feelings fields.</p>
+<p>The parsers component consists of a “parsers logic” module that dynamically collects all the parsers
+functions from a specific folder, subscribes them to the message queue so that snapshots are sent
+to them and processed.</p>
+<p>It is easy to add a parser of your choice - follow the instructions in the documentation. # TODO link</p>
+<p>To run a specific parser on a “raw” snapshot and see
+the parsed result (here we are running the pose parser):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">brain_freeze.parsers</span> <span class="k">import</span> <span class="n">parse</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">raw_snapshot</span> <span class="o">=</span> <span class="o">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">parse</span><span class="p">(</span><span class="s1">&#39;pose&#39;</span><span class="p">,</span> <span class="n">raw_snapshot</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Or do it the CLI way (you can also specify a destination file to which the result will be saved):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python -m brain_freeze.parsers parse &#39;pose&#39; &#39;snapshot.raw&#39; &gt; &#39;pose.result&#39;
+</pre></div>
+</div>
+<p>Results of pose and feelings parsers will be printed to the screen, while the color image result
+will display the path of the saved file.</p>
+<p>To subscribe a parser to the message queue run the following command:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python -m brain_freeze.parsers run-parser &#39;pose&#39; &#39;rabbitmq://127.0.0.1:5672/&#39;
+</pre></div>
+</div>
+<p>If you want to add a parser, go to <a class="reference internal" href="add_or_change_features.html#parsers"><span class="std std-ref">Parsers</span></a> page.</p>
+</div>
+<div class="section" id="saver">
+<h2>saver<a class="headerlink" href="#saver" title="Permalink to this headline">¶</a></h2>
+<p>The saver component is responsible for receiving parsed results of snapshots from the message queue
+and saving them to a database.</p>
+<p>You can save a single result:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">brain_freeze.saver</span> <span class="k">import</span> <span class="n">Saver</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">saver</span> <span class="o">=</span> <span class="n">Saver</span><span class="p">(</span><span class="n">database_url</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">parsed_result</span> <span class="o">=</span> <span class="o">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">saver</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;pose&#39;</span><span class="p">,</span> <span class="n">parsed_result</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Or use the CLI:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python -m brain_freeze.saver save        \
+-d/--database &#39;mongodb://127.0.0.1:27017&#39; \
+&#39;pose&#39;                                      \
+&#39;pose.result&#39;
+</pre></div>
+</div>
+<p>The third argument is a path to the file in which the result is stored.</p>
+<p>Or run the saver as a service, so that it subscribes to all available parser topics,
+and saves incoming parsed results to the database:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python -m brain_freeze.saver run-saver  \
+&#39;mongodb://127.0.0.1:27017&#39;              \
+&#39;rabbitmq://127.0.0.1:5672/&#39;
+</pre></div>
+</div>
+<p>The second argument is the database url and the third is the message queue url.</p>
+</div>
+<div class="section" id="message-queue">
+<h2>message queue<a class="headerlink" href="#message-queue" title="Permalink to this headline">¶</a></h2>
+<p>The project comes pre-packed with the RabbitMQ message queue service.
+It starts running automatically upon the deployment of BrainFreeze.</p>
+<p>The message queue has a topic for incoming snapshots from the server, to which all the parsers subscribe.
+Each parser’s results are published to a dedicated topic (‘pose’ topic for the pose parser, etc.),
+and the saver subscribes to each of these topics.</p>
+<p>If you want to change the message queue used in BrainFreeze, go to <a class="reference internal" href="add_or_change_features.html#mqs"><span class="std std-ref">Message Queues</span></a> page.</p>
+</div>
+<div class="section" id="database">
+<h2>database<a class="headerlink" href="#database" title="Permalink to this headline">¶</a></h2>
+<p>The project comes pre-packed with the MongoDB database service, and uses it via pymongo.
+It starts running automatically upon the deployment of BrainFreeze.</p>
+<p>For the use of BrainFreeze, a single database named ‘db’ is created in MongoDB.
+Inside it there are two collections: ‘users’ and ‘snapshots’.
+The users collection contains all the users information, and the snapshots collection stores
+all the parsed results of all the users’ snapshots (there is no internal partition in the
+snapshots collection - every parsed result is inserted to the collection without any separation
+according to user or timestamp).</p>
+<p>If you want to change the message queue used in BrainFreeze, go to <a class="reference internal" href="add_or_change_features.html#dbs"><span class="std std-ref">Databases</span></a> page.</p>
+</div>
+<div class="section" id="api">
+<h2>api<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h2>
+<p>This component exposes the results saved in the database using REST.</p>
+<p>To run the API server:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">brain_freeze.api</span> <span class="k">import</span> <span class="n">run_api_server</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">run_api_server</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">host</span> <span class="o">=</span> <span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">port</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">database_url</span> <span class="o">=</span> <span class="s1">&#39;mongodb://127.0.0.1:27017&#39;</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">... </span><span class="c1"># listen on host:port and serve data from database_url</span>
+</pre></div>
+</div>
+<p>Or use the CLI:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python -m brain_freeze.api run-server \
+-h/--host &#39;127.0.0.1&#39;                  \
+-p/--port 5000                          \
+-d/--database &#39;mongodb://127.0.0.1:27017&#39;
+</pre></div>
+</div>
+<p>The API server supports the following RESTful API endpoints:</p>
+<p><code class="docutils literal"><span class="pre">GET</span> <span class="pre">/users</span></code></p>
+<p>Which returns the list of all the supported users, including their IDs and names.</p>
+<p><code class="docutils literal"><span class="pre">GET</span> <span class="pre">/users/user-id</span></code></p>
+<p>Which returns the specified user’s details: ID, name, birthday and gender.</p>
+<p><code class="docutils literal"><span class="pre">GET</span> <span class="pre">/users/user-id/snapshots</span></code></p>
+<p>Which returns the list of the specified user’s snapshot IDs and datetimes.</p>
+<p><code class="docutils literal"><span class="pre">GET</span> <span class="pre">/users/user-id/snapshots/snapshot-id</span></code></p>
+<p>Which returns the specified snapshot’s details: ID, datetime, and the available results’ names (e.g. pose).</p>
+<p><code class="docutils literal"><span class="pre">GET</span> <span class="pre">/users/user-id/snapshots/snapshot-id/result-name</span></code></p>
+<p>Which returns the specified snapshot’s result.
+Supported results are pose, color-image and feelings,
+where color-image result will show the data’s path, to be used to get the data:</p>
+<p><code class="docutils literal"><span class="pre">GET</span> <span class="pre">/users/user-id/snapshots/snapshot-id/color-image/path</span></code></p>
+</div>
+<div class="section" id="cli">
+<h2>CLI<a class="headerlink" href="#cli" title="Permalink to this headline">¶</a></h2>
+<p>The CLI consumes the API and reflects its results.
+(In every command “1” argument is the user id, “2” is a snapshots id and “pose” is the result.
+All the commands accept the -h/–host and -p/–port flags to configure the host and port,
+and default to the API’s default address):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python -m brain_freeze.cli get-users
+…
+$ python -m brain_freeze.cli get-user 1
+…
+$ python -m brain_freeze.cli get-snapshots 1
+…
+$ python -m brain_freeze.cli get-snapshot 1 2
+…
+$ python -m brain_freeze.cli get-result 1 2 &#39;pose&#39;
+…
+</pre></div>
+</div>
+<p>The get-result command also accepts the -s/–save flag that, if specified,
+receives a path and saves the result’s data to that path.</p>
+</div>
+<div class="section" id="gui">
+<h2>GUI<a class="headerlink" href="#gui" title="Permalink to this headline">¶</a></h2>
+<p>The GUI consumes the API and reflects it results.</p>
+<dl class="docutils">
+<dt>To run the GUI server:</dt>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">brain_freeze.gui</span> <span class="k">import</span> <span class="n">run_server</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">run_server</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">host</span> <span class="o">=</span> <span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">port</span> <span class="o">=</span> <span class="mi">8080</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">api_host</span> <span class="o">=</span> <span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">api_port</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>Or use the CLI:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python -m brain_freeze.gui run-server \
+-h/--host &#39;127.0.0.1&#39;                 \
+-p/--port 8080                         \
+-H/--api-host &#39;127.0.0.1&#39;               \
+-P/--api-port 5000
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -63,30 +272,14 @@ The reading of the binary file is done using a ‘reader’ component (see below
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Usage</a><ul>
-<li><a class="reference internal" href="#client">client</a></li>
+        <div class="sphinxsidebarwrapper"><h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_or_change_features.html">Add/Change Features</a></li>
 </ul>
-</li>
-</ul>
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="installation.html" title="previous chapter">Installation</a></li>
-      <li>Next: <a href="project_components.html" title="next chapter">BrainFreeze components</a></li>
-  </ul></li>
-</ul>
-</div>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/usage.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
+
+
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
@@ -108,9 +301,6 @@ The reading of the binary file is done using a ‘reader’ component (see below
       Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.7</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
       
-      |
-      <a href="_sources/usage.rst.txt"
-          rel="nofollow">Page source</a>
     </div>
 
     
