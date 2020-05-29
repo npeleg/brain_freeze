@@ -91,6 +91,8 @@ def receive_user():
             message_queue.publish_to_user_topic(json_message)
         return flask.jsonify({'result': 'accepted', 'error': None}), 201
     except Exception as error:
+        logger.error("error: ")
+        logger.error(str(error.__repr__))
         return flask.jsonify({'result': None, 'error': str(error)}), 404
 
 
@@ -114,7 +116,8 @@ def receive_snapshot(user_id):
             message_queue.publish_to_snapshot_topic(json_message)
         return flask.jsonify({'result': 'accepted', 'error': None}), 201
     except Exception as error:
-        logger.error(str(error))
+        logger.error("error: ")
+        logger.error(str(error.__repr__))
         return flask.jsonify({'result': None, 'error': str(error)}), 404
 
 

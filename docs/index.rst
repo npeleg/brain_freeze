@@ -16,7 +16,7 @@ Here you will find instructions for installation and basic usage of the project'
    usage
    project_components
 
-.. image:: .components.png
+.. image:: /components.png
   :width: 600
   :alt: BrainFreeze components
 

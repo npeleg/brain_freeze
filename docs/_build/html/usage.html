@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Welcome to brain_freeze’s documentation! &#8212; brain_freeze  documentation</title>
+    <title>Usage &#8212; brain_freeze  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -24,7 +24,8 @@
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="About" href="about.html" />
+    <link rel="next" title="BrainFreeze components" href="project_components.html" />
+    <link rel="prev" title="Installation" href="installation.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -39,29 +40,22 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="welcome-to-brain-freeze-s-documentation">
-<h1>Welcome to brain_freeze’s documentation!<a class="headerlink" href="#welcome-to-brain-freeze-s-documentation" title="Permalink to this headline">¶</a></h1>
-<p>Here you will find instructions for installation and basic usage of the project’s features.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="usage.html#client">client</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="project_components.html">BrainFreeze components</a></li>
-</ul>
+  <div class="section" id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<p>The <strong>brain_freeze</strong> package consists of the following components:</p>
+<div class="section" id="client">
+<h2>client<a class="headerlink" href="#client" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>The client component is responsible for sending the user’s information and cognition snapshots,
+found in a binary file, to a server.
+The reading of the binary file is done using a ‘reader’ component (see below).</p>
+<p>Uploading the binary file to server is simple:
+.. upload_sample::
+<code class="docutils literal"><span class="pre">from</span> <span class="pre">brain_freeze.client</span> <span class="pre">import</span> <span class="pre">upload_sample</span></code>
+<code class="docutils literal"><span class="pre">upload_sample(host=</span> <span class="pre">'127.0.0.1'</span> <span class="pre">,</span> <span class="pre">port=</span> <span class="pre">8000</span> <span class="pre">,</span> <span class="pre">path=</span> <span class="pre">'./sample/sample.mind.gz'</span> <span class="pre">)</span></code>
+<code class="docutils literal"><span class="pre">uploading...</span> <span class="pre">#</span> <span class="pre">upload</span> <span class="pre">path</span> <span class="pre">to</span> <span class="pre">host</span> <span class="pre">:</span> <span class="pre">port</span></code></p>
+</div></blockquote>
 </div>
-<a class="reference internal image-reference" href="_images/components.png"><img alt="BrainFreeze components" src="_images/components.png" style="width: 600px;" /></a>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
-<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
-</ul>
 </div>
 
 
@@ -70,23 +64,26 @@
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="#">Table Of Contents</a></h3>
+  <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Welcome to brain_freeze’s documentation!</a></li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+<li><a class="reference internal" href="#">Usage</a><ul>
+<li><a class="reference internal" href="#client">client</a></li>
+</ul>
+</li>
 </ul>
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
-  <li><a href="#">Documentation overview</a><ul>
-      <li>Next: <a href="about.html" title="next chapter">About</a></li>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="installation.html" title="previous chapter">Installation</a></li>
+      <li>Next: <a href="project_components.html" title="next chapter">BrainFreeze components</a></li>
   </ul></li>
 </ul>
 </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/index.rst.txt"
+      <li><a href="_sources/usage.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -112,7 +109,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
       
       |
-      <a href="_sources/index.rst.txt"
+      <a href="_sources/usage.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

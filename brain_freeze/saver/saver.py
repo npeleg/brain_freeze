@@ -10,9 +10,8 @@ lock = threading.Lock()
 def wrap_saver(db, content):
     """ returns a function that saves data to the relevant table in the db """
     def save_user_to_db(data):
-        with lock:
-            logger.info('sending user data to save in db')
-        db.insert_user(data)
+        logger.info('sending user data to save in db')
+        db.insert_user('', data)
 
     def save_snapshot_to_db(data):
         with lock:

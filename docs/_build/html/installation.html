@@ -1,12 +1,11 @@
 
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Index &#8212; brain_freeze  documentation</title>
+    <title>Installation &#8212; brain_freeze  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -23,8 +22,10 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="author" title="About these documents" href="about.html" />
-    <link rel="index" title="Index" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Usage" href="usage.html" />
+    <link rel="prev" title="About" href="about.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -39,11 +40,37 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic">
+<li><p class="first">Clone the repository and enter it:</p>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">`sh</span>
+<span class="pre">$</span> <span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/npeleg/brain_freeze.git</span>
+<span class="pre">...</span>
+<span class="pre">$</span> <span class="pre">cd</span> <span class="pre">brain_freeze/</span>
+<span class="pre">`</span></code></p>
+</div></blockquote>
+</li>
+<li><p class="first">Run the installation script and activate the virtual environment:</p>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">`sh</span>
+<span class="pre">$</span> <span class="pre">./scripts/install.sh</span>
+<span class="pre">...</span>
+<span class="pre">$</span> <span class="pre">source</span> <span class="pre">.env/bin/activate</span>
+<span class="pre">[brain_freeze]</span> <span class="pre">$</span> <span class="pre">#</span> <span class="pre">that's</span> <span class="pre">it!</span>
+<span class="pre">`</span></code></p>
+</div></blockquote>
+</li>
+<li><p class="first">To check that everything is working as expected, run the tests:</p>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">`sh</span>
+<span class="pre">$</span> <span class="pre">pytest</span> <span class="pre">tests/</span>
+<span class="pre">...</span>
+<span class="pre">`</span></code></p>
+</div></blockquote>
+</li>
+</ol>
 </div>
 
 
@@ -51,16 +78,22 @@
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-
-   <div class="relations">
+        <div class="sphinxsidebarwrapper"><div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="about.html" title="previous chapter">About</a></li>
+      <li>Next: <a href="usage.html" title="next chapter">Usage</a></li>
   </ul></li>
 </ul>
 </div>
-
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/installation.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
@@ -82,6 +115,9 @@
       Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.7</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
       
+      |
+      <a href="_sources/installation.rst.txt"
+          rel="nofollow">Page source</a>
     </div>
 
     
