@@ -3,7 +3,7 @@
 Usage
 ======
 
-.. image:: /spacesuit.png
+.. image:: /_static/spacesuit.png
   :align: center
   :width: 250
   :alt: Space Suit

@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. image:: /output-onlinepngtools.png
+.. image:: /_static/output-onlinepngtools.png
   :align: center
   :width: 200
   :alt: BrainFreeze
@@ -57,7 +57,7 @@ Installation
 System Components
 ------------------
 
-.. image:: /system_components.png
+.. image:: /_static/system_components.png
   :width: 600
   :alt: BrainFreeze components
 
