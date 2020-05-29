@@ -6,7 +6,8 @@ Usage
 .. image:: /spacesuit.png
   :align: center
   :width: 250
-  :alt: BrainFreeze components
+  :alt: Space Suit
+  :class: no-scaled-link
 
 The **brain_freeze** package consists of the following components:
 

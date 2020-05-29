@@ -7,6 +7,7 @@
   :align: center
   :width: 200
   :alt: BrainFreeze
+  :class: no-scaled-link
 
 BrainFreeze
 ========================================
@@ -62,10 +63,10 @@ System Components
 
 
 
+Proceed to other docs:
 
 .. toctree::
    :maxdepth: 1
-   :caption: Contents:
 
    usage
    add_or_change_features

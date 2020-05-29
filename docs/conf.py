@@ -28,6 +28,7 @@ html_show_sourcelink = False
 
 html_sidebars = {
     '**': [
+	'about.html',
         'navigation.html',
         'searchbox.html',
     ]
