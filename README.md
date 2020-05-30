@@ -2,6 +2,8 @@
 [![codecov](https://codecov.io/gh/npeleg/final/branch/master/graph/badge.svg)](https://codecov.io/gh/npeleg/final)
 [![Documentation Status](https://readthedocs.org/projects/brain-freeze/badge/?version=latest)](https://brain-freeze.readthedocs.io/en/latest/?badge=latest)
 
+<img src="https://i.imgur.com/2VeSpCG.png" class="center" alt="drawing" width="200">
+
 # BrainFreeze
 Welcome to the BrainFreeze project!  
 Here you will find instructions for installation and basic usage of the project's features.  
@@ -22,6 +24,7 @@ The software side, i.e. BrainFreeze system and its components, is explained belo
 
 ## Installation
 
+
 1. Clone the repository and enter it:
 
     ```sh
@@ -30,21 +33,27 @@ The software side, i.e. BrainFreeze system and its components, is explained belo
     $ cd brain_freeze/
     ```
 
-2. Run the installation script and activate the virtual environment:
+2. Run the database and message queue:
 
     ```sh
-    $ ./scripts/install.sh
+    $ sudo docker run -d -p 27017:27017 mongo
     ...
-    $ source .env/bin/activate
-    [brain_freeze] $ # that's it!
+    $ sudo docker run -d -p 5672:5672 rabbitmq
+    ...
     ```
 
-3. To check that everything is working as expected, run the tests:
+3. Run the pipeline script:
 
     ```sh
-    $ pytest tests/
+    $ scripts/run_pipeline.sh
     ...
+    You're good to go!
+    You can now start the client and see the results in your browser at localhost:8080
     ```
+
+## System components and data flow
+
+![Imgur](https://i.imgur.com/hzsdch3.png)
 
 ## Usage
 
@@ -54,7 +63,7 @@ The `brain_freeze` package provides the following components:
 
     The client component is responsible for sending the user's information and cognition snapshots,  
     found in a binary file, to a server.
-    The reading of the binary file is done using a 'reader' component (further explained in the documentation).  
+    The reading of the binary file is done using a 'reader' component (further explained in the [documentation](https://brain-freeze.readthedocs.io/)).  
      
     Uploading the binary file to server is simple: 
     
@@ -109,7 +118,7 @@ The `brain_freeze` package provides the following components:
     functions from a specific folder, subscribes them to the message queue so that snapshots are sent  
     to them and processed.  
     
-    It is easy to add a parser of your choice - follow the instructions in the documentation. # TODO link    
+    It is easy to add a parser of your choice - follow the instructions in the [documentation](https://brain-freeze.readthedocs.io/).   
 
     To run a specific parser on a "raw" snapshot and see  
     the parsed result (here we are running the pose parser):
@@ -299,3 +308,6 @@ The `brain_freeze` package provides the following components:
        -H/--api-host '127.0.0.1'               \
        -P/--api-port 5000
     ```
+
+<img src="https://i.imgur.com/ZU79Ihk.png" class="center" alt="drawing" width="200">
+  

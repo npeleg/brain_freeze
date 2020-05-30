@@ -38,7 +38,7 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <a class="no-scaled-link reference internal image-reference" href="_images/output-onlinepngtools.png"><img alt="BrainFreeze" class="no-scaled-link align-center" src="_images/output-onlinepngtools.png" style="width: 200px;" /></a>
+  <a class="reference external image-reference" href="https://i.imgur.com/2VeSpCG.png"><img alt="BrainFreeze" class="no-scaled-link align-center" src="2VeSpCG.png" style="width: 200px;" /></a>
 <div class="section" id="brainfreeze">
 <h1>BrainFreeze<a class="headerlink" href="#brainfreeze" title="Permalink to this headline">¶</a></h1>
 <p>BrainFreeze is the software side of a computer-brain interface product.</p>
@@ -65,17 +65,19 @@ $ cd brain_freeze/
 </pre></div>
 </div>
 </li>
-<li><p class="first">Run the installation script and activate the virtual environment:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ ./scripts/install.sh
+<li><p class="first">Run the database and message queue:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo docker run -d -p 27017:27017 mongo
 ...
-$ source .env/bin/activate
-[brain_freeze] $ # that&#39;s it!
+$ sudo docker run -d -p 5672:5672 rabbitmq
+...
 </pre></div>
 </div>
 </li>
-<li><p class="first">To check that everything is working as expected, run the tests:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ pytest tests/
+<li><p class="first">Run the pipeline script:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ scripts/run_pipeline.sh
 ...
+You&#39;re good to go!
+You can now start the client and see the results in your browser at localhost:8080
 </pre></div>
 </div>
 </li>
@@ -83,7 +85,7 @@ $ source .env/bin/activate
 </div>
 <div class="section" id="system-components">
 <h2>System Components<a class="headerlink" href="#system-components" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="_images/system_components.png"><img alt="BrainFreeze components" src="_images/system_components.png" style="width: 600px;" /></a>
+<a class="reference external image-reference" href="https://i.imgur.com/hzsdch3.png"><img alt="BrainFreeze components" src="hzsdch3.png" style="width: 600px;" /></a>
 <p>Proceed to other docs:</p>
 <div class="toctree-wrapper compound">
 <ul>

@@ -3,7 +3,8 @@
 Usage
 ======
 
-.. image:: /_static/spacesuit.png
+.. image:: ZU79Ihk.png
+  :target: https://i.imgur.com/ZU79Ihk.png
   :align: center
   :width: 250
   :alt: Space Suit

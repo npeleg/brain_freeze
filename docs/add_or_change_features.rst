@@ -64,7 +64,8 @@ add the following lines to your module:
 A .log file will appear next to your module and have your logs in it the next time it is called.
 
 
-.. image:: /_static/moon.png
+.. image:: qo3vMue.png
+  :target: https://i.imgur.com/qo3vMue.png
   :align: center
   :width: 200
   :alt: Moon

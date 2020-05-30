@@ -3,7 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. image:: /_static/output-onlinepngtools.png
+.. image:: 2VeSpCG.png
+  :target: https://i.imgur.com/2VeSpCG.png
   :align: center
   :width: 200
   :alt: BrainFreeze
@@ -40,24 +41,26 @@ Installation
        ...
        $ cd brain_freeze/
 
-2. Run the installation script and activate the virtual environment::
+2. Run the database and message queue::
 
-    $ ./scripts/install.sh
+       $ sudo docker run -d -p 27017:27017 mongo
+       ...
+       $ sudo docker run -d -p 5672:5672 rabbitmq
+       ...
+
+3. Run the pipeline script::
+
+    $ scripts/run_pipeline.sh
     ...
-    $ source .env/bin/activate
-    [brain_freeze] $ # that's it!
-
-3. To check that everything is working as expected, run the tests::
-
-    $ pytest tests/
-    ...
-
+    You're good to go!
+    You can now start the client and see the results in your browser at localhost:8080
 
 
 System Components
 ------------------
 
-.. image:: /_static/system_components.png
+.. image:: hzsdch3.png
+  :target: https://i.imgur.com/hzsdch3.png
   :width: 600
   :alt: BrainFreeze components
 
