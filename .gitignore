@@ -9,4 +9,4 @@ docs/build/
 **/sample
 **/sketches
 **/data_volume
-.log
+*.log
