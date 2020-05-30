@@ -4424,3 +4424,100 @@
 2020-05-30 11:15:54,586 : server : ['feelings', 'pose', 'color_image']
 2020-05-30 11:16:10,827 : server : error in user function or user passed a non callable object:
 2020-05-30 11:16:10,827 : server : 'str' object is not callable
+2020-05-30 11:41:41,109 : server : starting the server
+2020-05-30 11:41:45,768 : server : sending user to message queue
+2020-05-30 11:42:01,164 : server : sending parsers list to client
+2020-05-30 11:42:01,164 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:42:26,908 : server : sending snapshot to message queue
+2020-05-30 11:42:43,952 : server : sending parsers list to client
+2020-05-30 11:42:43,952 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:43:11,473 : server : sending snapshot to message queue
+2020-05-30 11:43:28,446 : server : sending parsers list to client
+2020-05-30 11:43:28,446 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:43:56,081 : server : sending snapshot to message queue
+2020-05-30 11:44:12,075 : server : sending parsers list to client
+2020-05-30 11:44:12,076 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:44:39,408 : server : sending snapshot to message queue
+2020-05-30 11:44:55,125 : server : sending parsers list to client
+2020-05-30 11:44:55,125 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:45:20,896 : server : sending snapshot to message queue
+2020-05-30 11:47:16,496 : server : a user function was passed
+2020-05-30 11:47:16,511 : server : starting the server
+2020-05-30 11:48:06,732 : server : sending parsers list to client
+2020-05-30 11:48:06,733 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:48:07,053 : server : sending parsers list to client
+2020-05-30 11:48:07,053 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:48:07,498 : server : sending parsers list to client
+2020-05-30 11:48:07,498 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:48:53,604 : server : error in user function or user passed a non callable object:
+2020-05-30 11:48:53,623 : server : 'str' object is not callable
+2020-05-30 11:48:54,176 : server : error in user function or user passed a non callable object:
+2020-05-30 11:48:54,177 : server : 'str' object is not callable
+2020-05-30 11:48:54,934 : server : error in user function or user passed a non callable object:
+2020-05-30 11:48:54,943 : server : 'str' object is not callable
+2020-05-30 11:49:38,428 : server : sending parsers list to client
+2020-05-30 11:49:38,429 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:49:39,965 : server : sending parsers list to client
+2020-05-30 11:49:39,965 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:49:41,821 : server : sending parsers list to client
+2020-05-30 11:49:41,821 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:50:24,413 : server : error in user function or user passed a non callable object:
+2020-05-30 11:50:24,413 : server : 'str' object is not callable
+2020-05-30 11:50:25,762 : server : error in user function or user passed a non callable object:
+2020-05-30 11:50:25,773 : server : 'str' object is not callable
+2020-05-30 11:50:26,572 : server : error in user function or user passed a non callable object:
+2020-05-30 11:50:26,572 : server : 'str' object is not callable
+2020-05-30 11:51:17,364 : server : sending parsers list to client
+2020-05-30 11:51:17,364 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:51:20,153 : server : sending parsers list to client
+2020-05-30 11:51:20,153 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:51:21,337 : server : sending parsers list to client
+2020-05-30 11:51:21,337 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:52:06,080 : server : error in user function or user passed a non callable object:
+2020-05-30 11:52:06,099 : server : 'str' object is not callable
+2020-05-30 11:52:08,809 : server : error in user function or user passed a non callable object:
+2020-05-30 11:52:08,809 : server : 'str' object is not callable
+2020-05-30 11:52:09,930 : server : error in user function or user passed a non callable object:
+2020-05-30 11:52:09,936 : server : 'str' object is not callable
+2020-05-30 11:52:51,885 : server : sending parsers list to client
+2020-05-30 11:52:51,885 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:52:55,301 : server : sending parsers list to client
+2020-05-30 11:52:55,301 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:52:56,673 : server : sending parsers list to client
+2020-05-30 11:52:56,674 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:53:35,012 : server : error in user function or user passed a non callable object:
+2020-05-30 11:53:35,012 : server : 'str' object is not callable
+2020-05-30 11:53:38,905 : server : error in user function or user passed a non callable object:
+2020-05-30 11:53:38,917 : server : 'str' object is not callable
+2020-05-30 11:53:40,208 : server : error in user function or user passed a non callable object:
+2020-05-30 11:53:40,208 : server : 'str' object is not callable
+2020-05-30 11:54:18,401 : server : sending parsers list to client
+2020-05-30 11:54:18,401 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:54:23,377 : server : sending parsers list to client
+2020-05-30 11:54:23,378 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:54:24,884 : server : sending parsers list to client
+2020-05-30 11:54:24,884 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:55:04,749 : server : error in user function or user passed a non callable object:
+2020-05-30 11:55:04,749 : server : 'str' object is not callable
+2020-05-30 11:55:08,256 : server : error in user function or user passed a non callable object:
+2020-05-30 11:55:08,265 : server : 'str' object is not callable
+2020-05-30 11:55:08,758 : server : error in user function or user passed a non callable object:
+2020-05-30 11:55:08,759 : server : 'str' object is not callable
+2020-05-30 11:56:03,740 : server : a user function was passed
+2020-05-30 11:56:03,758 : server : starting the server
+2020-05-30 11:56:27,207 : server : sending parsers list to client
+2020-05-30 11:56:27,208 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:56:44,432 : server : error in user function or user passed a non callable object:
+2020-05-30 11:56:44,432 : server : 'str' object is not callable
+2020-05-30 11:57:00,929 : server : sending parsers list to client
+2020-05-30 11:57:00,929 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:57:18,429 : server : error in user function or user passed a non callable object:
+2020-05-30 11:57:18,429 : server : 'str' object is not callable
+2020-05-30 11:57:36,496 : server : sending parsers list to client
+2020-05-30 11:57:36,496 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:57:51,260 : server : error in user function or user passed a non callable object:
+2020-05-30 11:57:51,260 : server : 'str' object is not callable
+2020-05-30 11:58:07,041 : server : sending parsers list to client
+2020-05-30 11:58:07,041 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:58:36,829 : server : error in user function or user passed a non callable object:
+2020-05-30 11:58:36,832 : server : 'str' object is not callable
