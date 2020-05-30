@@ -5479,3 +5479,16 @@
 2020-05-26 12:43:17,130 : parsers_logic : sending parsers names
 2020-05-26 13:23:01,712 : parsers_logic : loading parser modules
 2020-05-26 13:23:01,737 : parsers_logic : sending parsers names
+2020-05-30 13:33:04,336 : parsers_logic : loading parser modules
+2020-05-30 13:33:04,348 : parsers_logic : creating a topic for snapshots
+2020-05-30 13:33:04,365 : parsers_logic : subscribing pose parser to snapshot topic
+2020-05-30 13:33:05,336 : parsers_logic : loading parser modules
+2020-05-30 13:33:05,348 : parsers_logic : creating a topic for snapshots
+2020-05-30 13:33:05,364 : parsers_logic : subscribing feelings parser to snapshot topic
+2020-05-30 13:33:06,368 : parsers_logic : loading parser modules
+2020-05-30 13:33:06,380 : parsers_logic : creating a topic for snapshots
+2020-05-30 13:33:06,397 : parsers_logic : subscribing color_image parser to snapshot topic
+2020-05-30 13:33:07,864 : parsers_logic : loading parser modules
+2020-05-30 13:33:07,879 : parsers_logic : sending parsers names
+2020-05-30 13:33:38,801 : parsers_logic : loading parser modules
+2020-05-30 13:33:38,813 : parsers_logic : sending parsers names

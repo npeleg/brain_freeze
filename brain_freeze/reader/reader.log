@@ -1375,3 +1375,6 @@
 2020-05-26 12:46:05,332 : reader : returning snapshot
 2020-05-26 12:46:05,332 : reader : yielding snapshot
 2020-05-26 13:24:04,696 : reader : sending to parse_snapshot
+2020-05-30 13:33:42,221 : reader : sending to parse_snapshot
+2020-05-30 13:33:42,238 : reader : sending to parse_snapshot
+2020-05-30 13:33:42,284 : reader : sending to parse_snapshot

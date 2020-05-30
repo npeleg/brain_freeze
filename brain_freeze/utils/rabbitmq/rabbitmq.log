@@ -18120,3 +18120,15 @@
 2020-05-25 18:26:02,077 : rabbitmq : callback function called on data b'{"user_id": 42, "datetime": 1575446887603, "result": "feelings", "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}'
 2020-05-25 18:26:02,814 : rabbitmq : sending message to color_image exchange
 2020-05-25 18:26:02,814 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f57119d5c00>
+2020-05-30 13:33:03,418 : rabbitmq : creating feelings exchange
+2020-05-30 13:33:03,441 : rabbitmq : creating pose exchange
+2020-05-30 13:33:03,459 : rabbitmq : starting to consume from feelings exchange 
+2020-05-30 13:33:03,481 : rabbitmq : creating users exchange
+2020-05-30 13:33:03,505 : rabbitmq : starting to consume from pose exchange 
+2020-05-30 13:33:03,517 : rabbitmq : starting to consume from users exchange 
+2020-05-30 13:33:04,364 : rabbitmq : creating snapshots exchange
+2020-05-30 13:33:04,389 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-30 13:33:05,363 : rabbitmq : creating snapshots exchange
+2020-05-30 13:33:05,384 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-30 13:33:06,395 : rabbitmq : creating snapshots exchange
+2020-05-30 13:33:06,417 : rabbitmq : starting to consume from snapshots exchange 
