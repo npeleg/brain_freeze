@@ -5579,3 +5579,9 @@
 2020-05-30 12:55:17,482 : saver : creating a topic for user data
 2020-05-30 12:55:17,527 : saver : subscribing to user topic
 2020-05-30 12:55:26,183 : saver : sending user data to save in db
+2020-05-30 14:10:37,763 : saver : creating a topic for the parsed results of pose parser
+2020-05-30 14:10:37,779 : saver : subscribing to pose topic
+2020-05-30 14:10:37,780 : saver : creating a topic for the parsed results of feelings parser
+2020-05-30 14:10:37,807 : saver : subscribing to feelings topic
+2020-05-30 14:10:37,811 : saver : creating a topic for user data
+2020-05-30 14:10:37,842 : saver : subscribing to user topic

@@ -4547,3 +4547,5 @@
 2020-05-30 12:02:07,700 : server : 'str' object is not callable
 2020-05-30 12:55:21,495 : server : starting the server
 2020-05-30 12:55:26,166 : server : sending user to message queue
+2020-05-30 14:10:56,474 : server : a user function was passed
+2020-05-30 14:10:56,486 : server : starting the server

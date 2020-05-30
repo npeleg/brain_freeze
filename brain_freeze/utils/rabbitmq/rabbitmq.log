@@ -19276,3 +19276,13 @@
 2020-05-30 12:55:26,181 : rabbitmq : sending the message <method-wrapper '__repr__' of str object at 0x7f7b15db0c00>
 2020-05-30 12:55:26,183 : rabbitmq : callback function save_user_to_db called
 2020-05-30 12:55:26,183 : rabbitmq : callback function called on data b'{"user_id": 42, "username": "Dan Gittik", "birthday": 699746400, "gender": "MALE"}'
+2020-05-30 14:10:37,778 : rabbitmq : creating pose exchange
+2020-05-30 14:10:37,798 : rabbitmq : creating feelings exchange
+2020-05-30 14:10:37,817 : rabbitmq : starting to consume from pose exchange 
+2020-05-30 14:10:37,830 : rabbitmq : creating users exchange
+2020-05-30 14:10:37,856 : rabbitmq : starting to consume from feelings exchange 
+2020-05-30 14:10:37,873 : rabbitmq : starting to consume from users exchange 
+2020-05-30 14:10:38,754 : rabbitmq : creating snapshots exchange
+2020-05-30 14:10:38,776 : rabbitmq : starting to consume from snapshots exchange 
+2020-05-30 14:10:39,762 : rabbitmq : creating snapshots exchange
+2020-05-30 14:10:39,784 : rabbitmq : starting to consume from snapshots exchange 
