@@ -1,6 +1,6 @@
 import requests
 from ..reader import Reader
-from .utils import protocol, Logger
+from ..utils import protocol, Logger
 
 logger = Logger(__name__).logger
 
