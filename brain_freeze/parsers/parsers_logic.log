@@ -5966,3 +5966,29 @@
 2020-05-30 10:59:44,253 : parsers_logic : sending to feelings topic
 2020-05-30 10:59:47,725 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887476, "result": "color", "color_image": "color_image.jpg"}
 2020-05-30 10:59:47,725 : parsers_logic : sending to color_image topic
+2020-05-30 11:01:02,867 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887541, "result": "feelings", "feelings": {"hunger": 0.003000000026077032, "thirst": 0.008999999612569809, "exhaustion": 0.006000000052154064, "happiness": 0.0}}
+2020-05-30 11:01:02,867 : parsers_logic : sending to feelings topic
+2020-05-30 11:01:02,870 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887541, "result": "pose", "pose": {"translation": {"x": -0.06873919069766998, "y": 0.06515509635210037, "z": 0.20628340542316437}, "rotation": {"x": -0.2268025104015529, "y": 0.016296475938769883, "z": 0.034513309202044845, "w": 0.9731926210342198}}}
+2020-05-30 11:01:02,870 : parsers_logic : sending to pose topic
+2020-05-30 11:01:04,937 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887541, "result": "color", "color_image": "color_image.jpg"}
+2020-05-30 11:01:04,937 : parsers_logic : sending to color_image topic
+2020-05-30 11:02:06,498 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887603, "result": "feelings", "feelings": {"hunger": 0.004000000189989805, "thirst": 0.012000000104308128, "exhaustion": 0.00800000037997961, "happiness": 0.30000001192092896}}
+2020-05-30 11:02:06,498 : parsers_logic : sending to feelings topic
+2020-05-30 11:02:06,501 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887603, "result": "pose", "pose": {"translation": {"x": -0.08363257348537445, "y": 0.03274262696504593, "z": 0.44446834921836853}, "rotation": {"x": -0.18523385018409705, "y": -0.011889715927864218, "z": 0.01159230178272562, "w": 0.9825541582734808}}}
+2020-05-30 11:02:06,501 : parsers_logic : sending to pose topic
+2020-05-30 11:02:07,988 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887603, "result": "color", "color_image": "color_image.jpg"}
+2020-05-30 11:02:07,988 : parsers_logic : sending to color_image topic
+2020-05-30 11:02:13,129 : parsers_logic : loading parser modules
+2020-05-30 11:02:13,149 : parsers_logic : sending parsers names
+2020-05-30 11:10:16,532 : parsers_logic : loading parser modules
+2020-05-30 11:10:16,552 : parsers_logic : loading parser modules
+2020-05-30 11:10:17,347 : parsers_logic : loading parser modules
+2020-05-30 11:10:18,105 : parsers_logic : loading parser modules
+2020-05-30 11:10:19,716 : parsers_logic : loading parser modules
+2020-05-30 11:10:19,736 : parsers_logic : loading parser modules
+2020-05-30 11:10:19,748 : parsers_logic : creating a topic for snapshots
+2020-05-30 11:10:19,770 : parsers_logic : creating a topic for snapshots
+2020-05-30 11:10:19,773 : parsers_logic : subscribing pose parser to snapshot topic
+2020-05-30 11:10:19,811 : parsers_logic : subscribing feelings parser to snapshot topic
+2020-05-30 11:11:00,475 : parsers_logic : loading parser modules
+2020-05-30 11:11:00,488 : parsers_logic : sending parsers names

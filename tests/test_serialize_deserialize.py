@@ -1,4 +1,4 @@
-from brain_freeze.client.reader import Reader
+from brain_freeze.reader import Reader
 from brain_freeze.utils import protocol
 
 

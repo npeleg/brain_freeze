@@ -1293,3 +1293,46 @@
 2020-05-30 10:57:57,865 : client : snapshot 1 uploaded successfully
 2020-05-30 10:58:57,430 : client : snapshot 2 uploaded successfully
 2020-05-30 10:59:44,320 : client : snapshot 3 uploaded successfully
+2020-05-30 11:01:02,926 : client : snapshot 4 uploaded successfully
+2020-05-30 11:02:06,548 : client : snapshot 5 uploaded successfully
+2020-05-30 11:02:06,549 : client : finished uploading snapshots to server
+2020-05-30 11:02:16,726 : client : uploading user information
+2020-05-30 11:02:16,731 : client : uploading user information
+2020-05-30 11:02:16,760 : client : uploading snapshots to server
+2020-05-30 11:02:16,770 : client : uploading user information
+2020-05-30 11:02:16,774 : client : uploading snapshots to server
+2020-05-30 11:02:16,817 : client : uploading snapshots to server
+2020-05-30 11:03:50,595 : client : snapshot 1 uploaded successfully
+2020-05-30 11:03:51,890 : client : snapshot 1 uploaded successfully
+2020-05-30 11:03:52,514 : client : snapshot 1 uploaded successfully
+2020-05-30 11:05:24,027 : client : snapshot 2 uploaded successfully
+2020-05-30 11:05:27,156 : client : snapshot 2 uploaded successfully
+2020-05-30 11:05:27,782 : client : snapshot 2 uploaded successfully
+2020-05-30 11:07:07,291 : client : snapshot 3 uploaded successfully
+2020-05-30 11:07:13,035 : client : snapshot 3 uploaded successfully
+2020-05-30 11:07:13,044 : client : snapshot 3 uploaded successfully
+2020-05-30 11:08:37,963 : client : snapshot 4 uploaded successfully
+2020-05-30 11:08:46,290 : client : snapshot 4 uploaded successfully
+2020-05-30 11:08:46,673 : client : snapshot 4 uploaded successfully
+2020-05-30 11:10:09,381 : client : snapshot 5 uploaded successfully
+2020-05-30 11:10:09,381 : client : finished uploading snapshots to server
+2020-05-30 11:10:16,397 : client : snapshot 5 uploaded successfully
+2020-05-30 11:10:16,397 : client : finished uploading snapshots to server
+2020-05-30 11:10:16,486 : client : snapshot 5 uploaded successfully
+2020-05-30 11:10:16,486 : client : finished uploading snapshots to server
+2020-05-30 11:11:02,098 : client : uploading user information
+2020-05-30 11:11:02,108 : client : uploading snapshots to server
+2020-05-30 11:11:32,140 : client : snapshot 1 uploaded successfully
+2020-05-30 11:12:03,746 : client : snapshot 2 uploaded successfully
+2020-05-30 11:12:34,090 : client : snapshot 3 uploaded successfully
+2020-05-30 11:13:05,748 : client : snapshot 4 uploaded successfully
+2020-05-30 11:13:35,676 : client : snapshot 5 uploaded successfully
+2020-05-30 11:13:35,676 : client : finished uploading snapshots to server
+2020-05-30 11:13:35,714 : client : uploading user information
+2020-05-30 11:13:35,727 : client : uploading snapshots to server
+2020-05-30 11:14:06,963 : client : snapshot 1 uploaded successfully
+2020-05-30 11:14:37,051 : client : snapshot 2 uploaded successfully
+2020-05-30 11:15:09,742 : client : snapshot 3 uploaded successfully
+2020-05-30 11:15:39,480 : client : snapshot 4 uploaded successfully
+2020-05-30 11:16:10,831 : client : snapshot 5 uploaded successfully
+2020-05-30 11:16:10,831 : client : finished uploading snapshots to server
