@@ -1,6 +1,6 @@
 import requests
 from ..reader import Reader
-from ..utils import protocol, Logger
+from .utils import protocol, Logger
 
 logger = Logger(__name__).logger
 
@@ -46,7 +46,9 @@ def upload_sample(host, port, path):
 
     logger.info('uploading snapshots to server')
     print('uploading...')
+    count = 0
     for snapshot in reader:
+        count += 1
         parsers = get_parsers_from_server(host, port)
         if not parsers:
             logger.info("no parsers supported in this server")
@@ -56,7 +58,10 @@ def upload_sample(host, port, path):
         serialized_snapshot_message = protocol.serialize(partial_snapshot)
         sent = send_to_server(host, port, serialized_snapshot_message, user_message.user_id)
         if not sent:
+            logger.debug(f'snapshot {count} upload failed')
             sent_successfully = False
+        else:
+            logger.debug(f'snapshot {count} uploaded successfully')
     logger.info('finished uploading snapshots to server')
 
     if not sent_successfully:

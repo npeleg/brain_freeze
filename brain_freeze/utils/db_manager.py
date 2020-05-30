@@ -13,8 +13,8 @@ class DBManager:
     def __init__(self, url):
         self.db = find_service(url, dbs)
 
-    def insert_user(self, data):
-        return self.db.insert(USER_TABLE, json.loads(data))
+    def insert_user(self, name, data):
+        return self.db.insert(USER_TABLE, name, json.loads(data))
 
     def insert_snapshot(self, parser_name, data):
         return self.db.insert(SNAPSHOT_TABLE, parser_name, json.loads(data))
