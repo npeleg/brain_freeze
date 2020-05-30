@@ -62,11 +62,3 @@ add the following lines to your module:
     >>> logger = Logger(__name__).logger
 
 A .log file will appear next to your module and have your logs in it the next time it is called.
-
-
-.. image:: qo3vMue.png
-  :target: https://i.imgur.com/qo3vMue.png
-  :align: center
-  :width: 200
-  :alt: Moon
-  :class: no-scaled-link

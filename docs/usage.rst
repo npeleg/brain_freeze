@@ -3,13 +3,6 @@
 Usage
 ======
 
-.. image:: ZU79Ihk.png
-  :target: https://i.imgur.com/ZU79Ihk.png
-  :align: center
-  :width: 250
-  :alt: Space Suit
-  :class: no-scaled-link
-
 The **brain_freeze** package consists of the following components:
 
 

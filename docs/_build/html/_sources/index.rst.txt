@@ -3,12 +3,6 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. image:: 2VeSpCG.png
-  :target: https://i.imgur.com/2VeSpCG.png
-  :align: center
-  :width: 200
-  :alt: BrainFreeze
-  :class: no-scaled-link
 
 BrainFreeze
 ========================================
@@ -54,15 +48,6 @@ Installation
     ...
     You're good to go!
     You can now start the client and see the results in your browser at localhost:8080
-
-
-System Components
-------------------
-
-.. image:: hzsdch3.png
-  :target: https://i.imgur.com/hzsdch3.png
-  :width: 600
-  :alt: BrainFreeze components
 
 
 

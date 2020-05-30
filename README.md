@@ -2,7 +2,10 @@
 [![codecov](https://codecov.io/gh/npeleg/final/branch/master/graph/badge.svg)](https://codecov.io/gh/npeleg/final)
 [![Documentation Status](https://readthedocs.org/projects/brain-freeze/badge/?version=latest)](https://brain-freeze.readthedocs.io/en/latest/?badge=latest)
 
-<img src="https://i.imgur.com/2VeSpCG.png" class="center" alt="drawing" width="200">
+<p align="center">
+  <img width="200" src="https://i.imgur.com/2VeSpCG.png" alt="drawing">
+</p>
+
 
 # BrainFreeze
 Welcome to the BrainFreeze project!  
@@ -308,6 +311,7 @@ The `brain_freeze` package provides the following components:
        -H/--api-host '127.0.0.1'               \
        -P/--api-port 5000
     ```
-
-<img src="https://i.imgur.com/ZU79Ihk.png" class="center" alt="drawing" width="200">
-  
+ 
+<p align="center">
+  <img width="200" src="https://i.imgur.com/ZU79Ihk.png" alt="drawing">
+</p>
