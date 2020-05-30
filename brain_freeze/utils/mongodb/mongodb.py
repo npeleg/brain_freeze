@@ -34,6 +34,3 @@ class MongoDB:
 
     def get_one_of_each(self, collection, query, distinct_key):
         return self._get_general(collection, query, distinct_key)
-
-    def get_all(self, collection):
-        return list(self.db[collection].find({}))
