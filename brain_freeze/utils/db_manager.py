@@ -22,7 +22,7 @@ class DBManager:
     def get_all_users(self):
         query = {}
         distinct_key = 'user_id'
-        return self.db.get_one_of_each(USER_TABLE, query, distinct_key)
+        return list(self.db.get_one_of_each(USER_TABLE, query, distinct_key))
 
     def get_user_data(self, user_id):
         query = {'user_id': user_id}
