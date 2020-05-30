@@ -5501,3 +5501,15 @@
 2020-05-30 10:56:33,460 : saver : creating a topic for user data
 2020-05-30 10:56:33,494 : saver : subscribing to user topic
 2020-05-30 10:56:42,426 : saver : sending user data to save in db
+2020-05-30 10:57:57,876 : saver : sending snapshot data to save in db
+2020-05-30 10:57:57,877 : saver : sending snapshot data to save in db
+2020-05-30 10:57:57,896 : saver : sending snapshot data to save in db
+2020-05-30 10:57:57,900 : saver : sending snapshot data to save in db
+2020-05-30 10:58:57,422 : saver : sending snapshot data to save in db
+2020-05-30 10:58:57,424 : saver : sending snapshot data to save in db
+2020-05-30 10:58:57,450 : saver : sending snapshot data to save in db
+2020-05-30 10:58:57,453 : saver : sending snapshot data to save in db
+2020-05-30 10:59:44,330 : saver : sending snapshot data to save in db
+2020-05-30 10:59:44,332 : saver : sending snapshot data to save in db
+2020-05-30 10:59:44,341 : saver : sending snapshot data to save in db
+2020-05-30 10:59:44,343 : saver : sending snapshot data to save in db

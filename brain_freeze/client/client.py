@@ -1,5 +1,5 @@
 import requests
-from brain_freeze.client.reader import Reader
+from .reader import Reader
 from .utils import protocol, Logger
 
 logger = Logger(__name__).logger

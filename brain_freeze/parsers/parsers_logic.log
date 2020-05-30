@@ -5948,3 +5948,21 @@
 2020-05-30 10:56:36,402 : parsers_logic : subscribing color_image parser to snapshot topic
 2020-05-30 10:56:37,554 : parsers_logic : loading parser modules
 2020-05-30 10:56:37,566 : parsers_logic : sending parsers names
+2020-05-30 10:57:57,812 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887339, "result": "pose", "pose": {"translation": {"x": 0.4873843491077423, "y": 0.007090016733855009, "z": -1.1306129693984985}, "rotation": {"x": -0.10888676356214629, "y": -0.26755994585035286, "z": -0.021271118915446748, "w": 0.9571326384559261}}}
+2020-05-30 10:57:57,813 : parsers_logic : sending to pose topic
+2020-05-30 10:57:57,815 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887339, "result": "feelings", "feelings": {"hunger": 0.0, "thirst": 0.0, "exhaustion": 0.0, "happiness": 0.0}}
+2020-05-30 10:57:57,815 : parsers_logic : sending to feelings topic
+2020-05-30 10:57:59,385 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887339, "result": "color", "color_image": "color_image.jpg"}
+2020-05-30 10:57:59,386 : parsers_logic : sending to color_image topic
+2020-05-30 10:58:57,342 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887412, "result": "feelings", "feelings": {"hunger": 0.0010000000474974513, "thirst": 0.003000000026077032, "exhaustion": 0.0020000000949949026, "happiness": 0.0}}
+2020-05-30 10:58:57,342 : parsers_logic : sending to feelings topic
+2020-05-30 10:58:57,349 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887412, "result": "pose", "pose": {"translation": {"x": 0.15600797533988953, "y": 0.08133671432733536, "z": -0.49068963527679443}, "rotation": {"x": -0.2959017411322204, "y": -0.16749024140672616, "z": -0.04752900380336424, "w": 0.9392178514199446}}}
+2020-05-30 10:58:57,349 : parsers_logic : sending to pose topic
+2020-05-30 10:58:59,341 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887412, "result": "color", "color_image": "color_image.jpg"}
+2020-05-30 10:58:59,341 : parsers_logic : sending to color_image topic
+2020-05-30 10:59:44,250 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887476, "result": "pose", "pose": {"translation": {"x": -0.05690298229455948, "y": 0.09136273711919785, "z": -0.1454082578420639}, "rotation": {"x": -0.30262250114734884, "y": 0.024984587319575428, "z": 0.01379476785565966, "w": 0.9526831039624887}}}
+2020-05-30 10:59:44,250 : parsers_logic : sending to pose topic
+2020-05-30 10:59:44,252 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887476, "result": "feelings", "feelings": {"hunger": 0.0020000000949949026, "thirst": 0.006000000052154064, "exhaustion": 0.004000000189989805, "happiness": 0.0}}
+2020-05-30 10:59:44,253 : parsers_logic : sending to feelings topic
+2020-05-30 10:59:47,725 : parsers_logic : parsed data is: {"user_id": 42, "datetime": 1575446887476, "result": "color", "color_image": "color_image.jpg"}
+2020-05-30 10:59:47,725 : parsers_logic : sending to color_image topic

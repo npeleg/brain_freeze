@@ -4307,3 +4307,12 @@
 2020-05-30 10:56:42,394 : server : sending user to message queue
 2020-05-30 10:57:07,756 : server : sending parsers list to client
 2020-05-30 10:57:07,757 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 10:57:57,756 : server : sending snapshot to message queue
+2020-05-30 10:58:28,265 : server : sending parsers list to client
+2020-05-30 10:58:28,265 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 10:58:57,311 : server : sending snapshot to message queue
+2020-05-30 10:59:15,101 : server : sending parsers list to client
+2020-05-30 10:59:15,101 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 10:59:44,208 : server : sending snapshot to message queue
+2020-05-30 11:00:04,978 : server : sending parsers list to client
+2020-05-30 11:00:04,978 : server : ['feelings', 'pose', 'color_image']
