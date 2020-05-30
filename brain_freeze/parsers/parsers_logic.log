@@ -6047,3 +6047,14 @@
 2020-05-30 11:55:12,214 : parsers_logic : subscribing feelings parser to snapshot topic
 2020-05-30 11:56:03,741 : parsers_logic : loading parser modules
 2020-05-30 11:56:03,758 : parsers_logic : sending parsers names
+2020-05-30 12:55:18,384 : parsers_logic : loading parser modules
+2020-05-30 12:55:18,398 : parsers_logic : creating a topic for snapshots
+2020-05-30 12:55:18,415 : parsers_logic : subscribing pose parser to snapshot topic
+2020-05-30 12:55:19,339 : parsers_logic : loading parser modules
+2020-05-30 12:55:19,351 : parsers_logic : creating a topic for snapshots
+2020-05-30 12:55:19,368 : parsers_logic : subscribing feelings parser to snapshot topic
+2020-05-30 12:55:20,312 : parsers_logic : loading parser modules
+2020-05-30 12:55:20,325 : parsers_logic : creating a topic for snapshots
+2020-05-30 12:55:20,341 : parsers_logic : subscribing color_image parser to snapshot topic
+2020-05-30 12:55:21,483 : parsers_logic : loading parser modules
+2020-05-30 12:55:21,495 : parsers_logic : sending parsers names

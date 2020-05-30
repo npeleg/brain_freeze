@@ -4521,3 +4521,29 @@
 2020-05-30 11:58:07,041 : server : ['feelings', 'pose', 'color_image']
 2020-05-30 11:58:36,829 : server : error in user function or user passed a non callable object:
 2020-05-30 11:58:36,832 : server : 'str' object is not callable
+2020-05-30 11:59:10,167 : server : sending parsers list to client
+2020-05-30 11:59:10,167 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 11:59:28,634 : server : error in user function or user passed a non callable object:
+2020-05-30 11:59:28,635 : server : 'str' object is not callable
+2020-05-30 11:59:44,461 : server : sending parsers list to client
+2020-05-30 11:59:44,461 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 12:00:00,051 : server : error in user function or user passed a non callable object:
+2020-05-30 12:00:00,052 : server : 'str' object is not callable
+2020-05-30 12:00:16,721 : server : sending parsers list to client
+2020-05-30 12:00:16,721 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 12:00:32,413 : server : error in user function or user passed a non callable object:
+2020-05-30 12:00:32,414 : server : 'str' object is not callable
+2020-05-30 12:00:48,163 : server : sending parsers list to client
+2020-05-30 12:00:48,164 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 12:01:04,218 : server : error in user function or user passed a non callable object:
+2020-05-30 12:01:04,219 : server : 'str' object is not callable
+2020-05-30 12:01:19,750 : server : sending parsers list to client
+2020-05-30 12:01:19,750 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 12:01:34,627 : server : error in user function or user passed a non callable object:
+2020-05-30 12:01:34,627 : server : 'str' object is not callable
+2020-05-30 12:01:49,651 : server : sending parsers list to client
+2020-05-30 12:01:49,651 : server : ['feelings', 'pose', 'color_image']
+2020-05-30 12:02:07,700 : server : error in user function or user passed a non callable object:
+2020-05-30 12:02:07,700 : server : 'str' object is not callable
+2020-05-30 12:55:21,495 : server : starting the server
+2020-05-30 12:55:26,166 : server : sending user to message queue
