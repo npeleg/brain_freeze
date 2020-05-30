@@ -20,7 +20,9 @@ class DBManager:
         return self.db.insert(SNAPSHOT_TABLE, parser_name, json.loads(data))
 
     def get_all_users(self):
-        return self.db.get_all(USER_TABLE)
+        query = {}
+        distinct_key = 'user_id'
+        return list(self.db.get_one_of_each(USER_TABLE, query, distinct_key))
 
     def get_user_data(self, user_id):
         query = {'user_id': user_id}
@@ -41,7 +43,7 @@ class DBManager:
         return self.db.get(SNAPSHOT_TABLE, query)
 
     def _get_result_by_id(self, _id):
-        """ for testing: returns the item using its internal id """
+        """ function for testing: returns the item using its internal id """
         query = {'_id': _id}
         print(query)
         return self.db.get(SNAPSHOT_TABLE, query)
