@@ -10,9 +10,11 @@ data_volume = '/data_volume'
 
 
 def to_datetime(timestamp, milliseconds):
+    _format = '%Y-%m-%d'
     if milliseconds:
-        return dt.fromtimestamp(timestamp / 1000).strftime('%Y-%m-%d_%H-%M-%S.%f')[:-3]
-    return dt.fromtimestamp(timestamp).strftime('%Y-%m-%d')
+        _format = '%Y-%m-%d_%H-%M-%S.%f'
+        return dt.fromtimestamp(timestamp / 1000).strftime(_format)[:-3]
+    return dt.fromtimestamp(timestamp).strftime(_format)
 
 
 @app.route('/users', methods=['GET'])
@@ -21,7 +23,8 @@ def get_all_users():
         users = db.get_all_users()
         output = []
         for user in users:
-            output.append({'user_id': user['user_id'], 'username': user['username']})
+            output.append({'user_id': user['user_id'],
+                           'username': user['username']})
         return jsonify({'result': output, 'error': None})
     except Exception as error:
         return jsonify({'result': None, 'error': str(error)}), 404
@@ -32,7 +35,8 @@ def get_user(user_id):
     try:
         user = db.get_user_data(user_id)
         if user:
-            user['birthday'] = to_datetime(user['birthday'], milliseconds=False)
+            user['birthday'] = to_datetime(user['birthday'],
+                                           milliseconds=False)
             output = user
         else:
             output = "No such user"
@@ -66,18 +70,22 @@ def get_snapshot_fields(user_id, snapshot_id):
         return jsonify({'result': None, 'error': str(error)})
 
 
-@app.route('/users/<int:user_id>/snapshots/<int:snapshot_id>/<result_name>', methods=['GET'])
+@app.route('/users/<int:user_id>/snapshots/<int:snapshot_id>/<result_name>',
+           methods=['GET'])
 def get_result(user_id, snapshot_id, result_name):
     try:
         output = db.get_result(user_id, snapshot_id, result_name)
-        return jsonify({'result': output, 'error': None})
+        return jsonify({'result': output[result_name], 'error': None})
     except Exception as error:
         return jsonify({'result': None, 'error': str(error)})
 
 
-@app.route('/users/<int:user_id>/snapshots/<int:snapshot_id>/<result_name>/<data_path>', methods=['GET'])
+@app.route('/users/<int:user_id>/snapshots/<int:snapshot_id>/'
+           '<result_name>/<data_path>', methods=['GET'])
 def get_data(user_id, snapshot_id, result_name, data_path):
-    send_from_directory(directory=data_volume + f'{user_id}/{snapshot_id}', filename=data_path, as_attachment=True)
+    send_from_directory(directory=data_volume + f'{user_id}/{snapshot_id}',
+                        filename=data_path,
+                        as_attachment=True)
 
 
 def run_api_server(host, port, database_url):

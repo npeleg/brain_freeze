@@ -110,12 +110,15 @@ def receive_snapshot(user_id):
             try:
                 user_function(snapshot_message)
             except Exception as error:
-                logger.info('error in user function or user passed a non callable object:')
+                logger.info('error in user function or user'
+                            'passed a non callable object:')
                 logger.info(str(error))
         else:
-            path, color_path, depth_path = store_images(snapshot_message, user_id)
+            path, color_path, depth_path = store_images(snapshot_message,
+                                                        user_id)
             json_message = build_snapshot_json(snapshot_message,
-                                               user_id, path, color_path, depth_path)
+                                               user_id, path,
+                                               color_path, depth_path)
             logger.info('sending snapshot to message queue')
             message_queue.publish_to_snapshot_topic(json_message)
         return flask.jsonify({'result': 'accepted', 'error': None}), 201

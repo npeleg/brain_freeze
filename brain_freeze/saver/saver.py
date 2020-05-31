@@ -3,7 +3,7 @@ import threading
 from ..utils import Logger, MQManager, DBManager
 
 logger = Logger(__name__).logger
-parser_names = {'pose', 'feelings'}
+parser_names = {'pose', 'feelings', 'color_image'}
 lock = threading.Lock()
 
 

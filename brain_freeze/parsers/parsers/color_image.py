@@ -11,12 +11,12 @@ def parse(json_snapshot):
                              '/color_image.jpg')
     with open(src_path, 'rb') as file:
         data = file.read()
-    image = PIL.new('RGB', (2500, 2500))  # TODO change to variables
+    image = PIL.new('RGB', (2500, 2500))
     image.putdata(data)
     image.save(dest_path)
     color_image = dict(user_id=snapshot['user_id'],
                        datetime=snapshot['datetime'],
-                       result='color',
+                       result='color_image',
                        color_image='color_image.jpg')
     return json.dumps(color_image)
 

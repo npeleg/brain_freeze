@@ -1,41 +1,34 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>BrainFreeze &#8212; BrainFreeze  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Usage" href="usage.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+  
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
-  </head>
-  <body>
+  </head><body>
   
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
   <div class="section" id="brainfreeze">
@@ -45,10 +38,10 @@
 sent to BrainFreeze system for processing and analysis.
 A cognition snapshot is a structure which consists of:</p>
 <ul class="simple">
-<li>the user’s <strong>location</strong> and head’s <strong>rotation</strong> (combining those forms the user’s <strong>‘pose’</strong>)</li>
-<li>the <strong>color image</strong> that the user saw</li>
-<li>the <strong>depth image</strong> that the user saw (the distance of the nearest object in each point of the user’s view)</li>
-<li>the <strong>timestamp</strong> the snapshot was taken at</li>
+<li><p>the user’s <strong>location</strong> and head’s <strong>rotation</strong> (combining those forms the user’s <strong>‘pose’</strong>)</p></li>
+<li><p>the <strong>color image</strong> that the user saw</p></li>
+<li><p>the <strong>depth image</strong> that the user saw (the distance of the nearest object in each point of the user’s view)</p></li>
+<li><p>the <strong>timestamp</strong> the snapshot was taken at</p></li>
 </ul>
 <p>To simulate the hardware side, a binary file is available for you (<a class="reference external" href="https://storage.googleapis.com/advanced-system-design/sample.mind.gz">here</a>),
 containing the user’s basic information and a list of their cognition snapshots taken
@@ -57,23 +50,23 @@ in the morning hours of April 4th, 2019.</p>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">Clone the repository and enter it:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ git clone https://github.com/npeleg/brain_freeze.git
+<li><p>Clone the repository and enter it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/npeleg/brain_freeze.git
 ...
 $ cd brain_freeze/
 </pre></div>
 </div>
 </li>
-<li><p class="first">Run the database and message queue:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo docker run -d -p 27017:27017 mongo
+<li><p>Run the database and message queue:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo docker run -d -p 27017:27017 mongo
 ...
 $ sudo docker run -d -p 5672:5672 rabbitmq
 ...
 </pre></div>
 </div>
 </li>
-<li><p class="first">Run the pipeline script:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ scripts/run_pipeline.sh
+<li><p>Run the pipeline script:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ scripts/run_pipeline.sh
 ...
 You&#39;re good to go!
 Start the client and see the results in your browser at localhost:8080
@@ -93,6 +86,7 @@ Start the client and see the results in your browser at localhost:8080
 
 
           </div>
+          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -114,15 +108,15 @@ Start the client and see the results in your browser at localhost:8080
 
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
     </form>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -131,8 +125,8 @@ Start the client and see the results in your browser at localhost:8080
       &copy;2020, Peleg Neufeld.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.7</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
     </div>
 

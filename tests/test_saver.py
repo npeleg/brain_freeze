@@ -3,8 +3,10 @@ from brain_freeze.saver import Saver
 from brain_freeze.utils import DBManager
 from utils.simulate_process import run_subprocess, sleep
 
-parsed_pose = json.dumps(dict(user_id=1, datetime=2, result='pose', pose=3))
-parsed_feelings = json.dumps(dict(user_id=1, datetime=2, result='feelings', feelings=4))
+parsed_pose = json.dumps(dict(user_id=1, datetime=2,
+                              result='pose', pose=3))
+parsed_feelings = json.dumps(dict(user_id=1, datetime=2,
+                                  result='feelings', feelings=4))
 parsed_results = {'pose': parsed_pose, 'feelings': parsed_feelings}
 
 db_url = 'mongodb://127.0.0.1:27017'
@@ -24,7 +26,8 @@ def test_save_cli(tmp_path):
         with open(str(file), 'w') as f:
             f.write(parsed_results[result])
         saver_process = run_subprocess("python -m brain_freeze.saver save "
-                                       f"-d mongodb://127.0.0.1:27017 {result} {str(file)}")
+                                       f"-d mongodb://127.0.0.1:27017 {result} "
+                                       f"{str(file)}")
         saver_process.wait()
         saver_process.terminate()
         out, err = saver_process.communicate()
@@ -35,8 +38,9 @@ def test_save_cli(tmp_path):
 def test_run_saver_cli():
     processes = []
     for result in parsed_results:
-        saver_process = run_subprocess("python -m brain_freeze.saver run-saver "
-                                       "mongodb://127.0.0.1:27017 rabbitmq://127.0.0.1:5672/")
+        saver_process = run_subprocess("python -m brain_freeze.saver "
+                                       "run-saver mongodb://127.0.0.1:27017 "
+                                       "rabbitmq://127.0.0.1:5672/")
         processes.append(saver_process)
     sleep(5)
     for process in processes:

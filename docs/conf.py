@@ -21,15 +21,13 @@ project = 'BrainFreeze'
 copyright = '2020, Peleg Neufeld'
 author = 'Peleg Neufeld'
 
-
 # -- General configuration ---------------------------------------------------
 
 html_show_sourcelink = False
 
-
 html_sidebars = {
     '**': [
-	'about.html',
+        'about.html',
         'navigation.html',
         'searchbox.html',
     ]
@@ -51,7 +49,6 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -62,4 +59,6 @@ html_theme = 'alabaster'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static', '_static/output-onlinepngtools.png', '_static/moon.png', '_static/spacesuit.png', '_static/system_components.png',]
+html_static_path = ['_static', '_static/output-onlinepngtools.png',
+                    '_static/moon.png', '_static/spacesuit.png',
+                    '_static/system_components.png', ]

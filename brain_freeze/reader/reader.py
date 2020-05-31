@@ -50,7 +50,7 @@ def parse_snapshot(snapshot_message):
                                             snapshot.color_image.width,
                                             snapshot.color_image.width,
                                             snapshot.color_image.data,
-                                            1, 2, 3,  # TODO implement depth_image
+                                            1, 2, 3,  # depth_image
                                             snapshot.feelings.hunger,
                                             snapshot.feelings.thirst,
                                             snapshot.feelings.exhaustion,
@@ -76,7 +76,8 @@ class Reader:
                 snapshot_size = struct.unpack('I', snapshot_size)[0]
                 snapshot_bytes = file.read(snapshot_size)
                 if not snapshot_bytes:
-                    raise Exception("Illegal file format or problem in reading")
+                    raise Exception("Illegal file format or"
+                                    "problem in reading")
                 logger.info('sending to parse_snapshot')
                 snapshot = parse_snapshot(snapshot_bytes)
                 logger.info('yielding snapshot')

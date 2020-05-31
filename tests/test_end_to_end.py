@@ -21,18 +21,25 @@ def test_end_to_end():
 
     # Starting to run services:
     saver_process = run_subprocess("python -m brain_freeze.saver run-saver "
-                                   "mongodb://127.0.0.1:27017 rabbitmq://127.0.0.1:5672/")
+                                   "mongodb://127.0.0.1:27017 "
+                                   "rabbitmq://127.0.0.1:5672/")
     time.sleep(1)
-    pose_process = run_subprocess("python -m brain_freeze.parsers run-parser pose rabbitmq://127.0.0.1:5672/")
+    pose_process = run_subprocess("python -m brain_freeze.parsers run-parser "
+                                  "pose rabbitmq://127.0.0.1:5672/")
     time.sleep(1)
-    feelings_process = run_subprocess("python -m brain_freeze.parsers run-parser feelings rabbitmq://127.0.0.1:5672/")
+    feelings_process = run_subprocess("python -m brain_freeze.parsers "
+                                      "run-parser feelings "
+                                      "rabbitmq://127.0.0.1:5672/")
     time.sleep(1)
-    color_process = run_subprocess("python -m brain_freeze.parsers run-parser color_image rabbitmq://127.0.0.1:5672/")
+    color_process = run_subprocess("python -m brain_freeze.parsers run-parser "
+                                   "color_image rabbitmq://127.0.0.1:5672/")
     time.sleep(1)
-    server_process = run_subprocess("python -m brain_freeze.server run-server rabbitmq://127.0.0.1:5672/")
+    server_process = run_subprocess("python -m brain_freeze.server run-server"
+                                    " rabbitmq://127.0.0.1:5672/")
     time.sleep(5)
     # Running the client:
-    client_process = run_subprocess("python -m brain_freeze.client upload_sample " + SMALL_SAMPLE_PATH)
+    client_process = run_subprocess("python -m brain_freeze.client "
+                                    "upload_sample " + SMALL_SAMPLE_PATH)
     time.sleep(350)
 
     # Running the api and cli:
@@ -42,11 +49,23 @@ def test_end_to_end():
     time.sleep(5)
     cli_user_process = run_subprocess("python -m brain_freeze.cli get-user 42")
     time.sleep(5)
-    cli_snapshots_process = run_subprocess("python -m brain_freeze.cli get-snapshots 42")
+    cli_snapshots_process = run_subprocess("python -m brain_freeze.cli "
+                                           "get-snapshots 42")
     time.sleep(5)
-    cli_snapshot_process = run_subprocess("python -m brain_freeze.cli get-snapshot 42 1575446887339")
+    cli_snapshot_process = run_subprocess("python -m brain_freeze.cli "
+                                          "get-snapshot 42 1575446887339")
     time.sleep(5)
-    cli_result_process = run_subprocess("python -m brain_freeze.cli get-result 42 1575446887339 pose")
+    cli_pose_result_process = run_subprocess("python -m brain_freeze.cli "
+                                             "get-result 42 1575446887339 "
+                                             "pose")
+    time.sleep(5)
+    cli_feelings_result_process = run_subprocess("python -m brain_freeze.cli "
+                                                 "get-result 42 1575446887339 "
+                                                 "feelings")
+    time.sleep(5)
+    cli_color_result_process = run_subprocess("python -m brain_freeze.cli "
+                                              "get-result 42 1575446887339 "
+                                              "color_image")
     time.sleep(5)
 
     # Checking the results:
@@ -107,7 +126,17 @@ def test_end_to_end():
     assert b'pose' in out
     assert b'feelings' in out
 
-    out, err = cli_result_process.communicate()
-    print("cli_result_process out: " + out.decode())
-    print("cli_result_process err: " + err.decode())
+    out, err = cli_pose_result_process.communicate()
+    print("cli_pose_result_process out: " + out.decode())
+    print("cli_pose_result_process err: " + err.decode())
     assert b'0.4873843491077423' in out
+
+    out, err = cli_feelings_result_process.communicate()
+    print("cli_feelings_result_process out: " + out.decode())
+    print("cli_feelings_result_process err: " + err.decode())
+    assert b'0.0' in out
+
+    out, err = cli_color_result_process.communicate()
+    print("cli_color_result_process out: " + out.decode())
+    print("cli_color_result_process err: " + err.decode())
+    assert b'color_image.jpg' in out

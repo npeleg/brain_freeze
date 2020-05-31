@@ -21,24 +21,30 @@ time.sleep(1)
 
 # Starting the saver:
 saver_process = run_subprocess("python -m brain_freeze.saver run-saver "
-                               "mongodb://127.0.0.1:27017 rabbitmq://127.0.0.1:5672/")
+                               "mongodb://127.0.0.1:27017 "
+                               "rabbitmq://127.0.0.1:5672/")
 time.sleep(1)
 
 # Starting the pose parser:
-pose_process = run_subprocess("python -m brain_freeze.parsers run-parser pose rabbitmq://127.0.0.1:5672/")
+pose_process = run_subprocess("python -m brain_freeze.parsers run-parser "
+                              "pose rabbitmq://127.0.0.1:5672/")
 time.sleep(1)
 
 # Starting the feelings parser:
-feelings_process = run_subprocess("python -m brain_freeze.parsers run-parser feelings rabbitmq://127.0.0.1:5672/")
+feelings_process = run_subprocess("python -m brain_freeze.parsers run-parser "
+                                  "feelings rabbitmq://127.0.0.1:5672/")
 time.sleep(1)
 
 # Starting the color image parser:
-color_process = run_subprocess("python -m brain_freeze.parsers run-parser color_image rabbitmq://127.0.0.1:5672/")
+color_process = run_subprocess("python -m brain_freeze.parsers run-parser "
+                               "color_image rabbitmq://127.0.0.1:5672/")
 time.sleep(1)
 
 # Starting the server:
-server_process = run_subprocess("python -m brain_freeze.server run-server rabbitmq://127.0.0.1:5672/")
+server_process = run_subprocess("python -m brain_freeze.server run-server "
+                                "rabbitmq://127.0.0.1:5672/")
 time.sleep(3)
 
 print("You're good to go!")
-print("You can now start the client and see the results in your browser at localhost:8080")
+print("You can now start the client and see the results"
+      " in your browser at localhost:8080")

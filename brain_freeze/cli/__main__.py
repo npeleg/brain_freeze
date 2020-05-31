@@ -6,9 +6,6 @@ import requests
 def send_and_handle_request(request, is_list, file_path):
     try:
         r = requests.get(request).json()
-        print('in cli main:')
-        print(r)
-        sys.stdout.flush()
         if r['result'] is None:
             print(r['error'])
             return
@@ -97,7 +94,8 @@ def get_snapshot(host, port, user_id, snapshot_id):
 def get_result(host, port, user_id, snapshot_id, result, save):
     """ Get the RESULT of snapshot SNAPSHOT_ID of USER_ID,
     optionally saving it to SAVE path. """
-    request = f'http://{host}:{port}/users/{user_id}/snapshots/{snapshot_id}/{result}'
+    request = f'http://{host}:{port}/users/{user_id}/' \
+              f'snapshots/{snapshot_id}/{result}'
     send_and_handle_request(request, is_list=False, file_path=save)
 
 

@@ -27,7 +27,8 @@ def parse(parser_name, source_file):
 @click.argument('parser_name', type=click.STRING)
 @click.argument('url', type=click.STRING)
 def run_parser(parser_name, url):
-    """ Subscribes PARSER_NAME parser to the 'incoming' topic of the message queue. """
+    """ Subscribes PARSER_NAME parser to the
+    'incoming' topic of the message queue. """
     try:
         Parsers().run_parser(parser_name, url)
     except Exception as error:

@@ -9,9 +9,12 @@ def main():
 
 
 @main.command('run-server')
-@click.option('-h', '--host', type=click.STRING, default='127.0.0.1', help='IP address of the server')
-@click.option('-p', '--port', type=click.INT, default=5000, help='port of the server')
-@click.option('-d', '--database', type=click.STRING, default='mongodb://localhost:27017')
+@click.option('-h', '--host', type=click.STRING, default='127.0.0.1',
+              help='IP address of the server')
+@click.option('-p', '--port', type=click.INT, default=5000,
+              help='port of the server')
+@click.option('-d', '--database', type=click.STRING,
+              default='mongodb://localhost:27017')
 def run_api_server(host, port, database):
     """ Listen on HOST:PORT and serve data from DATABASE"""
     try:
