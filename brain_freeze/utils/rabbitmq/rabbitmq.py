@@ -9,13 +9,15 @@ class RabbitMQ:
         self.host = host
 
     def create_topic(self, topic):
-        connection = pika.BlockingConnection(pika.ConnectionParameters(self.host))
+        host = self.host
+        connection = pika.BlockingConnection(pika.ConnectionParameters(host))
         channel = connection.channel()
         logger.info(f'creating {topic} exchange')
         channel.exchange_declare(exchange=topic, exchange_type='fanout')
 
     def subscribe_to_topic(self, topic, func):
-        connection = pika.BlockingConnection(pika.ConnectionParameters(self.host))
+        host = self.host
+        connection = pika.BlockingConnection(pika.ConnectionParameters(host))
         channel = connection.channel()
         result = channel.queue_declare(queue='', exclusive=True)
         queue_name = result.method.queue
@@ -33,10 +35,10 @@ class RabbitMQ:
         channel.start_consuming()
 
     def publish_to_topic(self, topic, data):
-        connection = pika.BlockingConnection(pika.ConnectionParameters(self.host))
+        host = self.host
+        connection = pika.BlockingConnection(pika.ConnectionParameters(host))
         channel = connection.channel()
         logger.info(f'sending message to {topic} exchange')
         logger.debug(f'sending the message {data.__repr__}')
         channel.basic_publish(exchange=topic, routing_key='', body=data)
         connection.close()
-

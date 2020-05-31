@@ -86,7 +86,7 @@ The parsers component consists of a "parsers logic" module that dynamically coll
 functions from a specific folder, subscribes them to the message queue so that snapshots are sent
 to them and processed.
 
-It is easy to add a parser of your choice - follow the instructions in the documentation. # TODO link
+It is easy to add a parser of your choice - go to :ref:`parsers` page.
 
 To run a specific parser on a "raw" snapshot and see
 the parsed result (here we are running the pose parser):
@@ -108,8 +108,6 @@ To subscribe a parser to the message queue run the following command::
 
         $ python -m brain_freeze.parsers run-parser 'pose' 'rabbitmq://127.0.0.1:5672/'
 
-
-If you want to add a parser, go to :ref:`parsers` page.
 
 
 

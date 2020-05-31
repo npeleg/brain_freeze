@@ -22,7 +22,8 @@ def build_user_json(user):
     return json.dumps(message)
 
 
-def build_snapshot_json(snapshot, user_id, path, color_image_path, depth_image_path):
+def build_snapshot_json(snapshot, user_id, path,
+                        color_image_path, depth_image_path):
     message = dict(user_id=user_id,
                    datetime=snapshot.datetime,
                    pose=dict(translation=dict(x=snapshot.pose.translation.x,
@@ -49,7 +50,8 @@ def build_snapshot_json(snapshot, user_id, path, color_image_path, depth_image_p
 
 
 def store_images(snapshot, user_id):
-    """ stores color_image and depth_image, if exist in snapshot, and returns their paths"""
+    """ stores color_image and depth_image,
+    if exist in snapshot, and returns their paths"""
     try:
         path = pathlib.Path(data_volume + f'/{user_id}/{snapshot.datetime}')
         path.mkdir(parents=True, exist_ok=True)
@@ -76,7 +78,8 @@ def store_images(snapshot, user_id):
 def send_parsers():
     logger.info('sending parsers list to client')
     logger.debug(parsers)
-    return flask.jsonify({'result': 'accepted', 'parsers': parsers, 'error': None})
+    return flask.jsonify({'result': 'accepted',
+                          'parsers': parsers, 'error': None})
 
 
 @app.route('/users', methods=['POST'])
@@ -111,7 +114,8 @@ def receive_snapshot(user_id):
                 logger.info(str(error))
         else:
             path, color_path, depth_path = store_images(snapshot_message, user_id)
-            json_message = build_snapshot_json(snapshot_message, user_id, path, color_path, depth_path)
+            json_message = build_snapshot_json(snapshot_message,
+                                               user_id, path, color_path, depth_path)
             logger.info('sending snapshot to message queue')
             message_queue.publish_to_snapshot_topic(json_message)
         return flask.jsonify({'result': 'accepted', 'error': None}), 201

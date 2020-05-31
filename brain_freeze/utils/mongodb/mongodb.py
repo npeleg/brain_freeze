@@ -10,7 +10,7 @@ class MongoDB:
         self.db = client.db
 
     def insert(self, collection, data_type, data):
-        logger.info(f'inserting data to collection')
+        logger.info('inserting data to collection')
         logger.debug(f'inserting data: {data} to collection {collection}')
         result = self.db[collection].insert_one(data)
         return result.inserted_id
@@ -26,7 +26,7 @@ class MongoDB:
         else:
             result = self.db[collection].find_one(query)
             if result:
-                del result['_id']  # deleting id to hide internal db implementation
+                del result['_id']  # deleting id to hide internal db impl.
             return result
 
     def get(self, collection, query):
@@ -34,3 +34,15 @@ class MongoDB:
 
     def get_one_of_each(self, collection, query, distinct_key):
         return self._get_general(collection, query, distinct_key)
+
+    def get_all(self, collection, distinct_key):
+        keys = self.db[collection].find({}).distinct(distinct_key)
+        print('in mongodb: keys are')
+        print(keys)
+        results = []
+        for key in keys:
+            result = self.db[collection].find_one({distinct_key: key})
+            del result['_id']  # deleting id to hide internal db impl.
+            results.append(result)
+        print(results)
+        return results

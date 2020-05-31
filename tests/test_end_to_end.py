@@ -33,7 +33,7 @@ def test_end_to_end():
     time.sleep(5)
     # Running the client:
     client_process = run_subprocess("python -m brain_freeze.client upload_sample " + SMALL_SAMPLE_PATH)
-    time.sleep(300)
+    time.sleep(350)
 
     # Running the api and cli:
     api_process = run_subprocess("python -m brain_freeze.api run-server")

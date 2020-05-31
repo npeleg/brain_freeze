@@ -9,8 +9,9 @@ def main():
 
 
 @main.command('save')
-@click.option('-d', '--database', type=click.STRING, default='mongodb://127.0.0.1:27017',
-              help='Database in which the data is stored')
+@click.option('-d', '--database', type=click.STRING,
+              default='mongodb://127.0.0.1:27017',
+              help='DB in which data is stored')
 @click.argument('parser_name', type=click.STRING)
 @click.argument('source_file', type=click.STRING)
 def save(database, parser_name, source_file):
@@ -33,7 +34,8 @@ def save(database, parser_name, source_file):
 @click.argument('database', type=click.STRING)
 @click.argument('message_queue', type=click.STRING)
 def run_saver(database, message_queue):
-    """ Subscribes the saver to messages from MESSAGE_QUEUE and saves them to DATABASE. """
+    """ Subscribes the saver to messages from
+    MESSAGE_QUEUE and saves them to DATABASE. """
     try:
         Saver(database).run_saver(message_queue)
     except Exception as error:

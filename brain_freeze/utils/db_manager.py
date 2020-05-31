@@ -2,6 +2,7 @@ import json
 from .logger import Logger
 from .mongodb import MongoDB
 from .service_finder import find_service
+import sys
 
 logger = Logger(__name__).logger
 dbs = {"mongodb": MongoDB}
@@ -20,9 +21,13 @@ class DBManager:
         return self.db.insert(SNAPSHOT_TABLE, parser_name, json.loads(data))
 
     def get_all_users(self):
-        query = {}
         distinct_key = 'user_id'
-        return list(self.db.get_one_of_each(USER_TABLE, query, distinct_key))
+        lst = self.db.get_all(USER_TABLE, distinct_key)
+        logger.info(str(lst))
+        print('in db manager:')
+        print(lst)
+        sys.stdout.flush()
+        return lst
 
     def get_user_data(self, user_id):
         query = {'user_id': user_id}
@@ -39,11 +44,11 @@ class DBManager:
         return self.db.get_one_of_each(SNAPSHOT_TABLE, query, distinct_key)
 
     def get_result(self, user_id, datetime, result_name):
-        query = {'user_id': user_id, 'datetime': datetime, 'result': result_name}
+        query = {'user_id': user_id, 'datetime': datetime,
+                 'result': result_name}
         return self.db.get(SNAPSHOT_TABLE, query)
 
     def _get_result_by_id(self, _id):
         """ function for testing: returns the item using its internal id """
         query = {'_id': _id}
-        print(query)
         return self.db.get(SNAPSHOT_TABLE, query)

@@ -9,11 +9,14 @@ def main():
 
 
 @main.command('run-server')
-@click.option('-h', '--host', type=click.STRING, default='127.0.0.1', help='IP address of the server')
-@click.option('-p', '--port', type=click.INT, default=8000, help='port to be bound')
+@click.option('-h', '--host', type=click.STRING, default='127.0.0.1',
+              help='IP address of the server')
+@click.option('-p', '--port', type=click.INT, default=8000,
+              help='port to be bound')
 @click.argument('url', type=click.STRING)
 def server_run_server(host, port, url):
-    """ Passes snapshots received from clients to the message queue specified in url. """
+    """ Passes snapshots received from clients
+    to the message queue specified in url. """
     try:
         print('running from cli')
         run_server(host, int(port), url)

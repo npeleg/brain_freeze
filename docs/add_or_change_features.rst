@@ -55,10 +55,14 @@ Next time you start BrainFreeze, pass the database's url to the saver and API.
 Logger
 ------------
 
-BrainFreeze uses python's logging module and slightly customizes.
+BrainFreeze uses a custom logger based on python's logging module.
 If you want to use logging in one of your added modules (most modules of the system already use logging),
 add the following lines to your module:
     >>> from ..utils import Logger # (or the appropriate path to the utils package)
+    ...
     >>> logger = Logger(__name__).logger
+    ...
+    >>> logger.error('an error has occurred!')
+    ...
 
 A .log file will appear next to your module and have your logs in it the next time it is called.

@@ -44,9 +44,9 @@ def get_user(user_id):
     if error:
         return result
     snapshots_link = f"http://{gui_host}:{gui_port}/users/{user_id}/snapshots"
-    return render_template('user.html', username=result['username'], user_id=user_id,
-                           birthday=result['birthday'], gender=result['gender'].title(),
-                           snapshots_link=snapshots_link)
+    return render_template('user.html', username=result['username'],
+                           user_id=user_id, birthday=result['birthday'],
+                           gender=result['gender'].title(), snapshots_link=snapshots_link)
 
 
 @app.route('/users/<int:user_id>/snapshots', methods=['GET'])

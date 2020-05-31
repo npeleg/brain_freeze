@@ -47,11 +47,11 @@ Installation
     $ scripts/run_pipeline.sh
     ...
     You're good to go!
-    You can now start the client and see the results in your browser at localhost:8080
+    Start the client and see the results in your browser at localhost:8080
 
 
 
-Proceed to other docs:
+Proceed to other pages:
 
 .. toctree::
    :maxdepth: 1

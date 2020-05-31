@@ -34,20 +34,20 @@ class Saver:
         return self.db.insert_snapshot(parser_name, data)
 
     def run_saver(self, mq_url):
+        logger.info('run_saver initiated')
         mq = MQManager(mq_url)
         for parser in parser_names:
-            logger.info(f'creating a topic for the parsed results of {parser} parser')
+            logger.info(f'creating topic for the results of {parser} parser')
             mq.create_topic(parser)
             logger.info(f'subscribing to {parser} topic')
             wrapped_saver_func = wrap_saver(self.db, 'snapshot')
-            thread = threading.Thread(target=mq.subscribe_to_topic, args=(parser, wrapped_saver_func))
+            thread = threading.Thread(target=mq.subscribe_to_topic,
+                                      args=(parser, wrapped_saver_func))
             thread.start()
-        logger.info(f'creating a topic for user data')
+        logger.info('creating a topic for user data')
         mq.create_user_topic()
-        logger.info(f'subscribing to user topic')
+        logger.info('subscribing to user topic')
         wrapped_saver_func = wrap_saver(self.db, 'user')
         print('running...')
         sys.stdout.flush()
         mq.subscribe_to_user_topic(wrapped_saver_func)
-
-

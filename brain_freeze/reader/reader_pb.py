@@ -1,5 +1,6 @@
 from protobuf3.message import Message
-from protobuf3.fields import FloatField, MessageField, UInt64Field, UInt32Field, BytesField, EnumField, DoubleField, StringField
+from protobuf3.fields import FloatField, MessageField, UInt64Field, UInt32Field,\
+    BytesField, EnumField, DoubleField, StringField
 from enum import Enum
 
 
@@ -34,6 +35,7 @@ class DepthImage(Message):
 
 class Feelings(Message):
     pass
+
 
 User.add_field('user_id', UInt64Field(field_number=1, optional=True))
 User.add_field('username', StringField(field_number=2, optional=True))

@@ -19,5 +19,3 @@ class Logger:
         file_handler.setFormatter(formatter)
         file_handler.setLevel(logging.DEBUG)
         self.logger.addHandler(file_handler)
-
-

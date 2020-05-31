@@ -1,3 +1,4 @@
+
 [![Build Status](https://travis-ci.com/npeleg/brain_freeze.svg?branch=master)](https://travis-ci.com/npeleg/brain_freeze)
 [![codecov](https://codecov.io/gh/npeleg/final/branch/master/graph/badge.svg)](https://codecov.io/gh/npeleg/final)
 [![Documentation Status](https://readthedocs.org/projects/brain-freeze/badge/?version=latest)](https://brain-freeze.readthedocs.io/en/latest/?badge=latest)
@@ -10,7 +11,7 @@
 # BrainFreeze
 Welcome to the BrainFreeze project!  
 Here you will find instructions for installation and basic usage of the project's features.  
-For the full documentation click here.  
+For the full documentation click [here](https://brain-freeze.readthedocs.io/)).  
 
 BrainFreeze is the software side of a computer-brain interface product.  
 The product's hardware side constantly produces cognition snapshots of the user,  
@@ -121,7 +122,7 @@ The `brain_freeze` package provides the following components:
     functions from a specific folder, subscribes them to the message queue so that snapshots are sent  
     to them and processed.  
     
-    It is easy to add a parser of your choice - follow the instructions in the [documentation](https://brain-freeze.readthedocs.io/).   
+    It is easy to add a parser of your own - follow the instructions in the [documentation](https://brain-freeze.readthedocs.io/en/latest/add_or_change_features.html).   
 
     To run a specific parser on a "raw" snapshot and see  
     the parsed result (here we are running the pose parser):
@@ -188,8 +189,10 @@ The `brain_freeze` package provides the following components:
    
    The message queue has a topic for incoming snapshots from the server, to which all the parsers subscribe.  
    Each parser's results are published to a dedicated topic ('pose' topic for the pose parser, etc.),  
-   and the saver subscribes to each of these topics.
-
+   and the saver subscribes to each of these topics.  
+   
+   Want to use a different message queue? Find how to do so [here](https://brain-freeze.readthedocs.io/en/latest/add_or_change_features.html).
+   
     &nbsp;
 - ### database
    
@@ -202,6 +205,9 @@ The `brain_freeze` package provides the following components:
    all the parsed results of all the users' snapshots (there is no internal partition in the  
    snapshots collection - every parsed result is inserted to the collection without any separation  
    according to user or timestamp).
+   
+   Prefer a different database? Learn [here](https://brain-freeze.readthedocs.io/en/latest/add_or_change_features.html)
+   how to make BrainFreeze use it instead of MongoDB.  
    
     &nbsp;
 - ### api

@@ -1,5 +1,6 @@
 from protobuf3.message import Message
-from protobuf3.fields import UInt64Field, StringField, EnumField, FloatField, UInt32Field, BytesField, MessageField, DoubleField
+from protobuf3.fields import UInt64Field, StringField, EnumField, FloatField,\
+    UInt32Field, BytesField, MessageField, DoubleField
 from enum import Enum
 
 
@@ -33,6 +34,7 @@ class SnapshotP(Message):
 
     class FeelingsP(Message):
         pass
+
 
 UserP.add_field('user_id', UInt64Field(field_number=1, optional=True))
 UserP.add_field('username', StringField(field_number=2, optional=True))
