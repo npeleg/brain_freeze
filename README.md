@@ -11,7 +11,7 @@
 # BrainFreeze
 Welcome to the BrainFreeze project!  
 Here you will find instructions for installation and basic usage of the project's features.  
-For the full documentation click [here](https://brain-freeze.readthedocs.io/)).  
+For the full documentation click [here](https://brain-freeze.readthedocs.io/).  
 
 BrainFreeze is the software side of a computer-brain interface product.  
 The product's hardware side constantly produces cognition snapshots of the user,  
