@@ -46,7 +46,16 @@ The software side, i.e. BrainFreeze system and its components, is explained belo
     ...
     ```
 
-3. Run the pipeline script:
+3. Install the virtual environment and enter it:
+
+    ```sh
+    $ scripts/install.sh
+    ...
+    $ source .env/bin/activate
+    [brain_freeze] $
+    ```
+   
+4. Run the pipeline script:
 
     ```sh
     $ scripts/run_pipeline.sh

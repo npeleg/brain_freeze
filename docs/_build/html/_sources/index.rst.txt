@@ -42,7 +42,15 @@ Installation
        $ sudo docker run -d -p 5672:5672 rabbitmq
        ...
 
-3. Run the pipeline script::
+3. Install the virtual environment and enter it::
+
+      $ scripts/install.sh
+      ...
+      $ source .env/bin/activate
+      [brain_freeze] $
+
+
+4. Run the pipeline script::
 
     $ scripts/run_pipeline.sh
     ...
