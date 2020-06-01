@@ -17,11 +17,9 @@ def send_and_handle_request(request):
             return r['result'], False
         else:
             logger.error(f"{r['error']}")
-            print('here')
             return render_template('error.html'), True
     except Exception as error:
         logger.error(f"{error}")
-        print('there')
         return render_template('error.html'), True
 
 

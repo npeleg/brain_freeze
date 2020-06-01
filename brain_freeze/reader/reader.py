@@ -57,7 +57,6 @@ def parse_snapshot(snapshot_message):
                                             snapshot.feelings.happiness)
     except Exception as error:
         logger.error(error)
-    logger.info('returning snapshot')
     return protocol_snapshot
 
 
@@ -78,7 +77,6 @@ class Reader:
                 if not snapshot_bytes:
                     raise Exception("Illegal file format or"
                                     "problem in reading")
-                logger.info('sending to parse_snapshot')
                 snapshot = parse_snapshot(snapshot_bytes)
                 logger.info('yielding snapshot')
                 yield snapshot

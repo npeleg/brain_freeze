@@ -23,10 +23,6 @@ class DBManager:
     def get_all_users(self):
         distinct_key = 'user_id'
         lst = self.db.get_all(USER_TABLE, distinct_key)
-        logger.info(str(lst))
-        print('in db manager:')
-        print(lst)
-        sys.stdout.flush()
         return lst
 
     def get_user_data(self, user_id):

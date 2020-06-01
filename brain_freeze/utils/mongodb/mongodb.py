@@ -37,12 +37,9 @@ class MongoDB:
 
     def get_all(self, collection, distinct_key):
         keys = self.db[collection].find({}).distinct(distinct_key)
-        print('in mongodb: keys are')
-        print(keys)
         results = []
         for key in keys:
             result = self.db[collection].find_one({distinct_key: key})
             del result['_id']  # deleting id to hide internal db impl.
             results.append(result)
-        print(results)
         return results
