@@ -23,7 +23,7 @@ A cognition snapshot consists of:
  - the timestamp the snapshot was taken at
  
 To simulate the hardware side, you are supplied with a binary file containing the user's basic information  
-and a list of their cognition snapshots taken in the morning hours of April 4th, 2019.   
+and a list of their cognition snapshots taken in the morning hours of December 4th, 2019.   
 The software side, i.e. BrainFreeze system and its components, is explained below.
 
 ## Installation
@@ -57,7 +57,17 @@ The software side, i.e. BrainFreeze system and its components, is explained belo
 
 ## System components and data flow
 
-![Imgur](https://i.imgur.com/hzsdch3.png)
+BrainFreeze was designed to be a flexible system, so that it is easy to:
+* scale horizontally (by adding more instances of a certain parser)  
+* change its functionally (by using a different message queue or database)  
+* use almost every component independently, without connecting it to the other components in the data flow of the system  
+
+
+![Imgur](https://i.imgur.com/ED1cD2S.png)  
+
+
+The reader, the client and server, the parsers and the saver can each be accessed and function on its own,  
+using the API or CLI (see 'usage' below).  
 
 ## Usage
 
@@ -210,7 +220,7 @@ The `brain_freeze` package provides the following components:
    how to make BrainFreeze use it instead of MongoDB.  
    
     &nbsp;
-- ### api
+- ### API
    
    This component exposes the results saved in the database using REST.  
    
@@ -270,7 +280,7 @@ The `brain_freeze` package provides the following components:
     ```GET /users/user-id/snapshots/snapshot-id/color-image/path```
    
    &nbsp;
-- ### cli
+- ### CLI
 
    The CLI consumes the API and reflects its results.  
    In every command "1" argument is the user id, "2" is a snapshots id and "pose" is the result.  
@@ -294,7 +304,7 @@ The `brain_freeze` package provides the following components:
    receives a path and saves the result's data to that path.
 
     &nbsp;
-- ### gui
+- ### GUI
 
    The GUI consumes the API and reflects it results.
    
