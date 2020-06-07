@@ -67,12 +67,20 @@ The software side, i.e. BrainFreeze system and its components, is explained belo
 ## System components and data flow
 
 BrainFreeze was designed to be a flexible system, so that it is easy to:
-* scale horizontally (by adding more instances of a certain parser)  
-* change its functionally (by using a different message queue or database)  
+* scale horizontally (e.g. by adding more instances of a certain parser)  
+* change its functionally (e.g. by using a different message queue or database)  
 * use almost every component independently, without connecting it to the other components in the data flow of the system  
 
+The data flow in the system is as follows:
+- A snapshot from the binary sample file is read by the Client
+- The Client queries the server for the available parsers and recontructs the snapshot accordingly
+- The reconstructed snapshot is sent to the server
+- The Server publishes the data to a message queue
+- Different parsers are invoked upon receiving the snapshot. Each parser extracts the relevant content from the snapshot and publishes it back to the message queue after re-wrapping it
+- The Saver is invoked upon receiving the parsed snapshot results and stores them in a Database
+- The stored snapshot contents can be accessed via a CLI or a GUI
 
-![Imgur](https://i.imgur.com/ED1cD2S.png)  
+![Imgur](https://i.imgur.com/31dTIzI.png)  
 
 
 The reader, the client and server, the parsers and the saver can each be accessed and function on its own,  
