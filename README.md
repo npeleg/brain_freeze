@@ -114,7 +114,7 @@ The `brain_freeze` package provides the following components:
       -p/--port 8000                                \
       'snapshot.mind.gz'
     ```
-    A sample file is available [here](https://storage.googleapis.com/advanced-system-design/sample.mind.gz)
+    A sample file is available [here](https://storage.googleapis.com/advanced-system-design/sample.mind.gz) (a large binary file will be downloaded)
     
   &nbsp;
 - ### server
